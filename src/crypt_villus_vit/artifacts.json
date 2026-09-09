@@ -1,7 +1,8 @@
 {
   "schema_version": 1,
   "release": "1.0.0rc1",
-  "publication_status": "pending_author_upload",
+  "publication_status": "private_github_prerelease",
+  "private_release": "https://github.com/amonell/TissueMapper-Image/releases/tag/v1.0.0rc1",
   "artifacts": {
     "xenium": {
       "description": "Frozen shared-scale xenium image model",
