@@ -1,21 +1,35 @@
-# TissueMapper-Image model card
+# TissueMapper-Image
 
-The released coordinate architecture is paired-representation-shared-scale-v2. Local and context DAPI crops share one transformer: 16-pixel patches, 256-dimensional embeddings, six blocks, eight attention heads and MLP expansion four. Learned positional and scale embeddings are retained during fine-tuning. Centered 4× token readouts summarize each scale. A separate fine CNN supplies the third representation; concatenation and a shared MLP feed two sigmoid coordinate heads.
+## Model
 
-The representation checkpoint exports the exponential-moving-average teacher from paired-scale masked feature pretraining. Student losses predict teacher features within and across scales, with variance/covariance regularization. Stop-gradient targets prevent gradients through the teacher. The fine branch enters during supervised fine-tuning.
+Local and context DAPI crops share a vision transformer. A separate CNN processes the fine crop. Their features are combined to predict crypt–villus position and epithelial distance, each from 0 to 1.
 
-Artifacts include the Xenium coordinate model, the final corrected IF adaptation, the representation teacher and the representation-pretrained Peyer classifier. The classifier keeps the coordinate backbone and replaces coordinate heads with a binary head; its threshold is 0.5. Safe release exports preserve every parameter tensor.
+The transformer uses 16-pixel patches, 256-dimensional embeddings, six blocks, eight attention heads, and an MLP expansion factor of four. Positional and scale embeddings are retained during fine-tuning. Each scale averages the central 4 × 4 token features.
 
-## Input contract
+The Peyer’s patch classifier uses the same encoder with a binary head and a threshold of 0.5.
 
-Use DAPI and full-resolution centroids. Nominal local/context/fine crop widths are 512/2048/128 reference pixels at 0.325 µm per pixel. Native widths scale with source calibration; inputs are 256/256/128 pixels. TIFF pyramid selection, centered zero-padded crops, per-crop percentile normalization, direct bilinear resize and uint8 quantization are fixed parts of production inference.
+## Pretraining
 
-OpenJPEG decoding may differ by one native intensity count from the original Java JPEG2000 reader. Golden checks distinguish exact input identity from tolerance-level downstream equivalence. Exact figure reproduction uses frozen prepared data.
+A masked student predicts teacher features within and across scales. The teacher is updated as an exponential moving average of the student’s weights. Gradients pass through the student; teacher targets stay fixed during each update. Variance and covariance losses help prevent collapsed representations.
 
-## Scope
+The teacher initializes the local and context branches for fine-tuning. The fine CNN is trained during fine-tuning.
 
-Graph-derived coordinates supervise the Xenium image model; these are not direct manual coordinate labels. Main Figure 3 uses the fixed sample_008 field, previously used for architecture/readout diagnostics. It illustrates graph-to-image agreement, not an untouched independent-specimen estimate. IF performance uses spatially disjoint regions of two sections. One section per treatment condition makes treatment comparisons descriptive.
+## Image preparation
 
-The model does not segment cells or estimate uncertainty. New stains, microscopes, anatomy or image calibration can cause domain shift. Validate predictions and gate interpretation before drawing biological conclusions. Research use, not clinical diagnosis.
+Inputs are DAPI images and full-resolution cell centroids.
 
-See packaged artifacts.json for immutable release/source checkpoint hashes. The original internal checkpoint format strings are retained for backward compatibility.
+| Crop | Width at 0.325 µm per pixel | Model input |
+| --- | --- | --- |
+| Local | 512 pixels | 256 × 256 pixels |
+| Context | 2,048 pixels | 256 × 256 pixels |
+| Fine | 128 pixels | 128 × 128 pixels |
+
+Crop widths are scaled to each image’s pixel size. Processing uses TIFF pyramid levels, centered crops, and zero padding. Each crop is normalized using its 1st and 99.8th percentiles, resized bilinearly, and converted to uint8.
+
+JPEG2000 decoders can produce small pixel differences. Paper figures use saved prepared inputs.
+
+## Evaluation and use
+
+The Xenium model was trained against graph-derived coordinates. Figure 3 shows agreement with those coordinates in `sample_008`, a section also used for architecture and readout diagnostics. IF evaluation used spatially disjoint regions of two sections. Treatment comparisons are descriptive because there was one section per condition.
+
+Cell detection is a separate preprocessing step. Predictions provide coordinates or class probabilities, without uncertainty estimates. Validate them on new stains, microscopes, and tissues. This software is intended for research.

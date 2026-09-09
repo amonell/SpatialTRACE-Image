@@ -1,7 +1,35 @@
-# Examples
+# Train on example images
 
-Run `tissuemapper-image create-demo --output-dir runs/demo` to generate the complete synthetic tutorial, including microscopy, source and cell tables, annotations, and prespecified section splits. No download is needed. See the repository README for tested training and inference commands.
+This example creates synthetic DAPI images, trains a small coordinate model, and predicts.
 
-For real images, adapt the small templates below. Paths in `sources.csv` are relative to that CSV. These rows describe a schema, not real data; replace them before running inference. Cell coordinates are full-resolution pixels and pixel size is micrometres per pixel.
+Run these commands from the repository:
 
-The previous static demo and Conda environment are superseded by the generated tutorial and locked uv installation.
+```bash
+uv run --locked --extra cpu tissuemapper-image create-demo \
+  --output-dir runs/demo
+
+uv run --locked --extra cpu tissuemapper-image train \
+  --source-manifest runs/demo/sources.csv \
+  --supervised-manifest runs/demo/labels.csv \
+  --output-dir runs/demo/model --epochs 2 --device cpu \
+  --input-size-px 64 --local-crop-px 64 --context-crop-px 128 \
+  --fine-crop-px 32 --fine-input-size-px 32 \
+  --embed-dim 64 --depth 1 --num-heads 4
+
+uv run --locked --extra cpu tissuemapper-image predict-cells \
+  --source-manifest runs/demo/sources.csv --cells-csv runs/demo/cells.csv \
+  --checkpoint runs/demo/model/crypt_villus_vit_model.pt \
+  --output-dir runs/demo/predictions --device cpu
+
+uv run --locked --extra cpu tissuemapper-image export-qupath \
+  --predictions runs/demo/predictions/predictions.csv \
+  --output runs/demo/predictions/predictions.geojson
+```
+
+Use a new output directory when repeating the example.
+
+## Your images
+
+Start with [sources.csv](templates/sources.csv) and [cells.csv](templates/cells.csv). Replace the example rows with your image paths and cell centroids. Paths are relative to the source table; centroids are in full-resolution pixels.
+
+See the [input guide](../docs/apply_to_own_data.md) for image formats and calibration.

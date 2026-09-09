@@ -1,33 +1,60 @@
 # Pretraining and fine-tuning
 
-The default supervised CLI uses the released shared local/context transformer, retained scale embeddings, centered token readouts, fine CNN and concatenation head. The older pretrain command is a reconstruction baseline. Production representation pretraining uses pretrain-representation.
+The image model uses local, context, and fine crops. Local and context crops share a transformer with scale embeddings. A small CNN processes the fine crop.
 
-## Fine-tune the representation
+## Fine-tune a pretrained model
 
-Provide a source manifest and supervised CSV with inference columns, target_axis, epithelial_distance_clipped_1p0, and split. Use train/validation/test labels and hold out complete sections where possible. Test rows are excluded from optimization and selection. Missing targets are never copied from another coordinate.
+Prepare a label CSV with the cell columns from the [input guide](apply_to_own_data.md), plus:
 
-```bash
-uv run --locked --extra cpu tissuemapper-image download --model representation --from-dir /path/to/release-weights --output-dir weights
-uv run --locked --extra cpu tissuemapper-image train --source-manifest sources.csv --supervised-manifest labels.csv --pretrained-checkpoint weights/tissuemapper-image-representation-v1.pt --output-dir runs/fine_tuning --epochs 20 --device cpu
-```
+- `target_axis`: crypt–villus position from 0 to 1.
+- `epithelial_distance_clipped_1p0`: epithelial distance from 0 to 1.
+- `split`: `train`, `validation`, or `test`.
 
-For adaptation from complete coordinate weights, use --initial-checkpoint weights/tissuemapper-image-xenium-v1.pt instead. Configurations must match exactly; do not provide both initialization options. Encoder loading is strict, including scale embeddings.
+Hold out complete sections where possible. Training and validation rows are required; test rows are reserved for evaluation.
 
-Training uses AdamW and Smooth L1 coordinate losses. Validation loss selects the checkpoint. Both final and best checkpoint files contain selected weights; history records all epochs. --freeze-mode heads freezes image encoders; last1 also trains the final transformer block and normalization; none trains all parameters.
-
-Random cell-level validation is available explicitly with --validation-fraction, but can overlap crops. Use it for development, not section-held-out evaluation. Explicit splits must contain training and validation rows; test rows are never reassigned.
-
-## Train a representation on your images
-
-Supply prespecified centers excluding downstream test sections. Preparation stores matched local/context arrays without fitting.
+[Download the representation weights](artifacts.md), then run:
 
 ```bash
-uv run --locked --extra cpu tissuemapper-image prepare-pretraining --source-manifest sources.csv --cells-csv pretraining_centers.csv --output-dir runs/prepared
-uv run --locked --extra cpu tissuemapper-image pretrain-representation --prepared-metadata runs/prepared/metadata.json --output-dir runs/representation --epochs 35 --device cpu
+uv run --locked --extra cpu tissuemapper-image train \
+  --source-manifest sources.csv --supervised-manifest labels.csv \
+  --pretrained-checkpoint weights/tissuemapper-image-representation-v1.pt \
+  --output-dir runs/fine_tuning --epochs 20 --device cpu
 ```
 
-A masked student predicts stop-gradient features from an exponential-moving-average teacher, using within-scale and cross-scale losses with variance/covariance regularization. The teacher encoder initializes supervised local/context encoding. The fine CNN is learned during fine-tuning. Pretraining validation is section-grouped and requires at least two sections.
+To adapt the trained coordinate model instead, replace `--pretrained-checkpoint` with `--initial-checkpoint weights/tissuemapper-image-xenium-v1.pt`.
 
-Own-data preparation uses the direct-crop protocol. Exact manuscript reproduction requires frozen prepared arrays and configuration, including the original augmentation lineage. Generic training does not reconstruct the paper dataset.
+The architecture must match the checkpoint. Scale embeddings are retained during fine-tuning.
 
-See [Peyer classification](peyer_patch_workflow.md) for the matched binary head.
+## Training settings
+
+Training uses AdamW and Smooth L1 coordinate losses. Validation loss selects the saved model. Both the best and final checkpoint files contain those selected weights.
+
+Choose which layers to train with `--freeze-mode`:
+
+- `heads`: output heads only.
+- `last1`: heads, final transformer block, and normalization.
+- `none`: all parameters.
+
+Cell-level validation is available through `--validation-fraction`. Nearby cells can have overlapping crops, so section-level splits give a stronger test of generalization.
+
+## Pretrain on your images
+
+Choose cell centers from the pretraining sections, excluding downstream test sections. At least two sections are needed for pretraining and validation.
+
+```bash
+uv run --locked --extra cpu tissuemapper-image prepare-pretraining \
+  --source-manifest sources.csv --cells-csv pretraining_centers.csv \
+  --output-dir runs/prepared
+
+uv run --locked --extra cpu tissuemapper-image pretrain-representation \
+  --prepared-metadata runs/prepared/metadata.json \
+  --output-dir runs/representation --epochs 35 --device cpu
+```
+
+A masked student predicts features from a teacher. The teacher is updated as an exponential moving average of the student’s weights. Its targets are held fixed during each gradient update. Losses compare features within and across scales; variance and covariance terms help prevent collapsed representations.
+
+The teacher initializes the local and context branches for fine-tuning. The fine CNN is trained during fine-tuning.
+
+Use `pretrain-representation` for this workflow. The older `pretrain` command runs a reconstruction baseline.
+
+See [Peyer’s patch classification](peyer_patch_workflow.md) for training the binary model.

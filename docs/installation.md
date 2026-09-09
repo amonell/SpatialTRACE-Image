@@ -1,16 +1,25 @@
 # Installation
 
-Install uv using the [official installation instructions](https://docs.astral.sh/uv/getting-started/installation/). From a TissueMapper-Image checkout:
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/). In the repository:
 
 ```bash
-uv sync --locked --extra cpu --extra dev
+uv sync --locked --extra cpu
 uv run --locked --extra cpu tissuemapper-image --help
 ```
 
-The .python-version file selects Python 3.12. uv.lock pins the environment; --locked refuses unintended dependency resolution changes. Keep the same torch extra on subsequent uv run commands.
+uv installs Python 3.12 and the versions listed in `uv.lock`.
 
-For Linux/NVIDIA, choose --extra cu126 instead of cpu and --device cuda in model commands. A compatible NVIDIA driver is required; uv installs PyTorch's runtime libraries. Mac and Windows GPU acceleration are not validated. CPU installation does not require CUDA.
+## NVIDIA GPUs
 
-Optional extras: dev (tests/build), docs (MkDocs). Graph adds expression for scVI workflows; installing it does not supply the missing trained reference encoder. Image adds embedding for optional UMAP use. Paper rendering does not refit UMAP.
+On Linux, replace `--extra cpu` with `--extra cu126`. Use `--device cuda` when training or predicting. Install a compatible NVIDIA driver first.
 
-See [uv's PyTorch guide](https://docs.astral.sh/uv/guides/integration/pytorch/) for index/extra behavior. Never synchronize an unrelated active environment; run from this checkout.
+Keep the same CPU or GPU option in subsequent `uv run` commands. Linux CPU and NVIDIA GPU workflows have been tested.
+
+## Optional packages
+
+Add an extra to `uv sync` and `uv run` as needed:
+
+- `--extra dev`: tests and package builds.
+- `--extra docs`: documentation.
+- `--extra figures`: paper figures.
+- `--extra embedding`: UMAP.

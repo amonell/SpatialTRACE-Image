@@ -1,19 +1,29 @@
-# Verified model artifacts
+# Pretrained models
 
-The packaged src/crypt_villus_vit/artifacts.json is the authority for filenames, SHA256 hashes and original checkpoint identities. It is included in built wheels.
+| Model ID | Use |
+| --- | --- |
+| `xenium` | Coordinates in Xenium DAPI images |
+| `if` | Coordinates in immunofluorescence DAPI images |
+| `peyer` | Peyer’s patch probability |
+| `representation` | Pretrained encoder for fine-tuning |
 
-The four checkpoints are available on the private GitHub prerelease `v1.0.0rc1`. Repository access and an authenticated GitHub CLI are required:
+Download the weights:
 
 ```bash
-gh release download v1.0.0rc1 --repo amonell/TissueMapper-Image --pattern '*.pt' --pattern checksums.json --pattern LICENSE --dir release-weights
-uv run --locked --extra cpu tissuemapper-image download --model xenium --from-dir release-weights --output-dir weights
-uv run --locked --extra cpu tissuemapper-image download --model if --from-dir release-weights --output-dir weights
-uv run --locked --extra cpu tissuemapper-image download --model peyer --from-dir release-weights --output-dir weights
-uv run --locked --extra cpu tissuemapper-image download --model representation --from-dir release-weights --output-dir weights
+gh release download v1.0.0rc1 --repo amonell/TissueMapper-Image \
+  --pattern '*.pt' --pattern checksums.json --pattern LICENSE \
+  --dir release-weights
 ```
 
-The second through fifth commands verify the packaged SHA256 identities before installing the downloaded files. Use a new download directory; neither workflow silently replaces existing files.
+Install the model you need:
 
-Anonymous public URLs remain unset while the repository is private. The Python downloader does not read GitHub credentials; use `gh release download` for authentication and then `--from-dir` for verified installation. An eventual public HTTPS release can use `--base-url`. Existing corrupt files are rejected, not overwritten. Downloads use private temporary files and validate hashes before installation.
+```bash
+uv run --locked --extra cpu tissuemapper-image download \
+  --model xenium --from-dir release-weights --output-dir weights
+```
 
-Only tensor weights and basic model metadata are exported. All parameter tensors match the frozen models. Code and the four designated Image checkpoints are licensed under GPL-3.0-only. Microscopy and figure data have separate terms. Never download checkpoints from an untrusted source.
+Replace `xenium` with another model ID as needed. This command checks the file’s SHA256 checksum before installation. Model filenames and checksums are listed in `src/crypt_villus_vit/artifacts.json`.
+
+Use a new download directory. To reuse a model already installed in `weights/`, pass its path directly to `predict-cells` or `train`.
+
+The four models use GPL-3.0-only. Figure data have separate licensing terms.

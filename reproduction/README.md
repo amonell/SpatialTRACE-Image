@@ -1,35 +1,54 @@
-# Reproduce the paper figures
+# Reproduce the figures
 
-This directory contains the rendering code and registered layouts for all eight current paper figures. It redraws plots and microscopy layers from frozen numeric/image inputs and assembles them with the approved schematic vectors. It does not copy finished scientific panels or rerun training, checkpoint selection, inference, UMAP fitting, ablations, or statistical analyses.
+Render all eight figures from saved predictions, metrics, images, and schematic artwork.
 
-## Inputs and installation
+## Setup
 
-The separately distributed `paper_bundle_v3` contains 152 hash-locked inputs (15.3 GB uncompressed). Public hosting and data licensing await author confirmation; no download URL is claimed yet. Only TissueMapper-Image distributes pretrained weights, under GPL-3.0-only. Graph checkpoint binaries are excluded from the figure bundle: their recorded identities are checked as provenance, while frozen prediction tables, metrics, and all other distributed inputs retain full content-hash verification.
+Get `paper_bundle_v3` from the authors (15.3 GB). Install Poppler (`poppler-utils` on Debian or Ubuntu) and Arial fonts.
+
+Then install the Python packages:
 
 ```bash
 uv sync --locked --extra cpu --extra figures
-uv run --locked --extra cpu --extra figures python reproduction/render.py --bundle /path/to/paper_bundle_v3 --output-dir runs/paper --verify-only
-uv run --locked --extra cpu --extra figures python reproduction/render.py --bundle /path/to/paper_bundle_v3 --output-dir runs/paper
 ```
 
-Tested on Linux with Python 3.12. Install Poppler's `pdftoppm`, `pdffonts`, `pdftotext`, and `pdfimages` commands separately (the `poppler-utils` package on Debian/Ubuntu). Exact typography requires licensed Arial fonts. Fonts are not redistributed. If they are not installed at the standard Linux path, append `--arial-dir /path/to/fonts`, containing `Arial.ttf`, `Arial_Bold.ttf`, `Arial_Italic.ttf`, and `Arial_Bold_Italic.ttf`. Font substitution is rejected. Figure rendering uses the CPU and does not need a GPU.
+If Arial is installed outside the standard Linux font directory, add `--arial-dir /path/to/fonts` to the commands below. That directory must contain `Arial.ttf`, `Arial_Bold.ttf`, `Arial_Italic.ttf`, and `Arial_Bold_Italic.ttf`.
 
-Use a new output directory for every run. Verification fails on altered frozen data. Files in the bundle are read-only during rendering; historical workstation paths inside immutable provenance are resolved against the bundle, and attempted reads from the original workstation are rejected.
+## Render
 
-## Select figures
-
-Both model repositories carry the same small rendering snapshot so either can rebuild the complete paper. To render only the graph figures:
+Check the inputs, then render:
 
 ```bash
-uv run --locked --extra cpu --extra figures python reproduction/render.py --bundle /path/to/paper_bundle_v3 --output-dir runs/graph_figures --figures Figure_2 Figure_2_Extended Figure_2_Extended_2
+uv run --locked --extra cpu --extra figures python reproduction/render.py \
+  --bundle /path/to/paper_bundle_v3 --output-dir runs/paper --verify-only
+
+uv run --locked --extra cpu --extra figures python reproduction/render.py \
+  --bundle /path/to/paper_bundle_v3 --output-dir runs/paper
 ```
 
-For the image figures, select `Figure_3 Figure_3_Extended Figure_4 Figure_4_Extended`. `Figure_1` is the shared overview. Omitting `--figures` renders all eight.
+Use a new output directory for each run. Input checksums must match the supplied bundle.
 
-## Outputs and updates
+Both repositories include the same figure code. To render selected figures, add `--figures` followed by their names:
 
-Each figure directory contains its complete PDF and PNG, `reproduction.json`, QA reports, and freshly generated `components/`. `components/final_panels/panel_X_final.pdf` is the registered, editable PDF layer for each panel letter. These layers retain the full page canvas: import at the origin without rescaling. Recomposition is checked against the direct full-page rendering at 150 dpi. Automated checks cover geometry, embedded Arial fonts, required/obsolete text, panel letters, clipping, private PDF content, and raster-resolution requirements.
+- Overview: `Figure_1`
+- Graph: `Figure_2 Figure_2_Extended Figure_2_Extended_2`
+- Image: `Figure_3 Figure_3_Extended Figure_4 Figure_4_Extended`
 
-`paper_code/Figure_N/assembly/layout.json` controls the approved positions and wording. Panel-specific plotting functions live under that package; shared rendering helpers are under `paper_code/figure_assembly/`. `code_manifest.json` identifies the tested source snapshot. For an intentional code/layout edit, pass `--allow-code-changes`; input-data checks remain mandatory. Rebuild into a new folder and review the resulting PDF. Changing scientific results requires a separately verified preprocessing release, not a plotting-time refit.
+## Outputs
 
-The paper's held-out-section definitions, development-set exposure, graph-derived image references, jointly fitted scVI features, and single-section-per-condition IF comparison are unchanged. Generic training tutorials test the software and do not reproduce the paper's full model-development experiments. See the model cards and Methods for the scope of those results.
+Each figure folder contains:
+
+- The full-page PDF and PNG.
+- `components/`: individual plots and images.
+- `components/final_panels/panel_X_final.pdf`: one editable layer per panel.
+- `reproduction.json` and QA reports.
+
+Panel layers use the full-page canvas. Import them at the origin without rescaling.
+
+## Update a panel
+
+Positions and labels are set in `paper_code/Figure_N/assembly/layout.json`. Plotting code is in the same figure package; shared helpers are in `paper_code/figure_assembly/`.
+
+After editing code or layout, add `--allow-code-changes` and render into a new folder. Input checksums are still checked. Review the PDF for spacing, labels, and image quality.
+
+Rendering uses saved scientific results. New predictions or analyses require updated preprocessing outputs. The bundle contains Graph checkpoint IDs for provenance, with the weight files excluded.
