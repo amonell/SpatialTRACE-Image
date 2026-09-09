@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "verified_date": "2026-09-04",
+  "method": "Transfer the original QuPath snapshot's visible 50 µm scale bar to its unresized crop. No raw-slide ROI transform is required.",
+  "snapshot_size_px": [2171, 1290],
+  "source_bar_bounds_xyxy": [10, 1257, 89, 1260],
+  "source_bar_label": "50 µm",
+  "physical_length_um": 50.0,
+  "rendered_bar_length_snapshot_px": 79,
+  "effective_um_per_snapshot_pixel": 0.6329113924050633,
+  "measurement_precision": "79-pixel rasterized source bar. Effective pixel calibration is derived from that rendered width, not asserted to be the full-precision raw-slide calibration.",
+  "conditions": {
+    "DMSO": {
+      "source": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Data/Histology/histology_snapshots/DMSO.png",
+      "source_sha256": "284b4661d6c1448b8a4ce01bc4a90dfdc49974cf05cee0ea8164c2f87744acca"
+    },
+    "RARi": {
+      "source": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Data/Histology/histology_snapshots/RAR.png",
+      "source_sha256": "951188d7134fbc709576859bac86033ea2924d793d1f6d5f7e92eb139902d06e"
+    }
+  },
+  "output_policy": "Preserve every crop pixel and the existing orientation. Add the scale bar in a separate black footer, not over tissue. PDF bar and Arial label are vector."
+}

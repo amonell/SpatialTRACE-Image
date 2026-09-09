@@ -1,0 +1,1876 @@
+{
+  "schema_version": 1,
+  "figure": "Figure_2",
+  "page_size_pt": [
+    595.276,
+    841.89
+  ],
+  "reference_pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure2.pdf",
+  "reference_sha256": "354a480a460d1c75b78aef79cdb2ce13295469727b6b724a64d517d838f72e2f",
+  "coordinate_system": "top-left PDF points",
+  "dpi": 300,
+  "elements": [
+    {
+      "kind": "pdf",
+      "path": "panel_A/panel_A_section_class_maps.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_A_panel_A_section_class_maps",
+      "panel": "A"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_A/panel_A_scvi_embedding.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_A_panel_A_scvi_embedding",
+      "panel": "A"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_A/panel_A_spatial_neighbor_graph.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_A_panel_A_spatial_neighbor_graph",
+      "panel": "A"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_B/panel_B_crypt_villus_day90_whole_section.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_B_panel_B_crypt_villus_day90_whole_section",
+      "panel": "B"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_B/panel_B_crypt_villus_day90_zoom.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_B_panel_B_crypt_villus_day90_zoom",
+      "panel": "B"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_B/panel_B_epithelial_distance_day90_whole_section.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_B_panel_B_epithelial_distance_day90_whole_section",
+      "panel": "B"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_B/panel_B_epithelial_distance_day90_zoom.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_B_panel_B_epithelial_distance_day90_zoom",
+      "panel": "B"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_C/panel_C_crypt_villus_day90_whole_section.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_C_panel_C_crypt_villus_day90_whole_section",
+      "panel": "C"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_C/panel_C_crypt_villus_day90_zoom.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_C_panel_C_crypt_villus_day90_zoom",
+      "panel": "C"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_C/panel_C_epithelial_distance_day90_whole_section.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_C_panel_C_epithelial_distance_day90_whole_section",
+      "panel": "C"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_C/panel_C_epithelial_distance_day90_zoom.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_C_panel_C_epithelial_distance_day90_zoom",
+      "panel": "C"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_D/panel_D_section_disjoint_scatter.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_D_panel_D_section_disjoint_scatter",
+      "panel": "D"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_E/panel_E_training_villus_scaling.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_E_panel_E_training_villus_scaling",
+      "panel": "E"
+    },
+    {
+      "id": "source_label_13",
+      "kind": "text",
+      "text": "b.",
+      "x_pt": 15.746699999999999,
+      "y_pt": 342.2516,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:b.",
+      "panel": "B"
+    },
+    {
+      "id": "source_label_14",
+      "kind": "text",
+      "text": "c.",
+      "x_pt": 307.709,
+      "y_pt": 342.25329999999997,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:c.",
+      "panel": "C"
+    },
+    {
+      "id": "source_label_15",
+      "kind": "text",
+      "text": "e.",
+      "x_pt": 406.25,
+      "y_pt": 671.9466,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:e.",
+      "panel": "E"
+    },
+    {
+      "id": "source_label_16",
+      "kind": "text",
+      "text": "Day 90 SI sparse labeling",
+      "x_pt": 108.3457,
+      "y_pt": 353.4379,
+      "font_size_pt": 9.6,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:Day 90 SI sparse labeling",
+      "panel": "B"
+    },
+    {
+      "id": "source_label_17",
+      "kind": "text",
+      "text": "Day 90 SI dense predictions",
+      "x_pt": 415.27689999999996,
+      "y_pt": 353.4379,
+      "font_size_pt": 9.6,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:Day 90 SI dense predictions",
+      "panel": "C"
+    },
+    {
+      "id": "source_label_18",
+      "kind": "text",
+      "text": "d.",
+      "x_pt": 19.8975,
+      "y_pt": 671.8343,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:d.",
+      "panel": "D"
+    },
+    {
+      "id": "panel_A_panel_A_sparse_coordinate_example",
+      "panel": "A",
+      "kind": "pdf",
+      "path": "panel_A/panel_A_sparse_coordinate_example.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact"
+    },
+    {
+      "id": "panel_A_panel_A_dense_coordinate_example",
+      "panel": "A",
+      "kind": "pdf",
+      "path": "panel_A/panel_A_dense_coordinate_example.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact"
+    },
+    {
+      "id": "panel_A_panel_A_peyer_classifier_example",
+      "panel": "A",
+      "kind": "pdf",
+      "path": "panel_A/panel_A_peyer_classifier_example.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact"
+    }
+  ],
+  "render_specs": {
+    "panel_A_section_class_maps": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            30.2685776,
+            68.21830809999994,
+            43.02719739999999,
+            44.064004899999986
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im9",
+          "match_source_image_footprint": true,
+          "preserve_limits": false
+        },
+        {
+          "rect_pt": [
+            83.1310196,
+            69.43107669999995,
+            43.20000110000001,
+            38.88000099999999
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im10",
+          "match_source_image_footprint": true,
+          "preserve_limits": false
+        },
+        {
+          "rect_pt": [
+            33.326355,
+            116.53160160000004,
+            43.0271974,
+            42.681604799999945
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im11",
+          "match_source_image_footprint": true,
+          "preserve_limits": false
+        },
+        {
+          "rect_pt": [
+            82.8059464,
+            114.68364020000001,
+            38.361604299999996,
+            44.064004899999986
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im12",
+          "match_source_image_footprint": true,
+          "preserve_limits": false
+        }
+      ],
+      "marker_area_scale": 0.15,
+      "hide_legend": true
+    },
+    "panel_A_scvi_embedding": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            25.5891724,
+            216.46714839999993,
+            72.6768024,
+            77.43960260000006
+          ],
+          "title": "",
+          "xlabel": "",
+          "ylabel": "",
+          "hide_legend": true,
+          "anchor": true,
+          "xlim": [
+            -2.2,
+            1.9
+          ],
+          "ylim": [
+            -2.2,
+            2.25
+          ],
+          "source_anchor": "page//Im13",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        }
+      ],
+      "marker_area_scale": 0.13
+    },
+    "panel_A_spatial_neighbor_graph": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            175,
+            195,
+            97,
+            86
+          ],
+          "anchor": false,
+          "hide_collections_indices": [
+            0
+          ]
+        }
+      ],
+      "marker_area_scale": 0.08,
+      "line_scale": 0.3
+    },
+    "panel_B_crypt_villus_day90_whole_section": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            50.7817078,
+            376.7844702,
+            94.46400450000002,
+            108.74879809999999
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im0",
+          "match_source_image_footprint": true,
+          "preserve_limits": false
+        },
+        {
+          "rect_pt": [
+            19.8972816,
+            353.4380347,
+            5.990400300000001,
+            117.96480559999998
+          ],
+          "ylabel": "Crypt-villus axis label",
+          "label_left": true,
+          "ticks": [
+            0,
+            0.5,
+            1
+          ],
+          "source_anchor": "page//Im1",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true
+        }
+      ],
+      "font_size_pt": 8,
+      "label_size_pt": 9.3,
+      "tick_size_pt": 7.5,
+      "marker_area_scale": 0.22,
+      "line_scale": 0.6
+    },
+    "panel_B_crypt_villus_day90_zoom": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            156.6432648,
+            389.24900879999996,
+            118.88639280000001,
+            59.44319780000001
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im8",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        },
+        null
+      ],
+      "marker_area_scale": 0.08
+    },
+    "panel_B_epithelial_distance_day90_whole_section": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            50.4694977,
+            531.3872229,
+            98.44240979999998,
+            111.9953705
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im17",
+          "match_source_image_footprint": true,
+          "preserve_limits": false
+        },
+        {
+          "rect_pt": [
+            22.0787601,
+            522.5026098999999,
+            6.2426894,
+            121.4865112
+          ],
+          "ylabel": "Epithelial-distance axis label",
+          "label_left": true,
+          "ticks": [
+            0,
+            0.35,
+            0.7
+          ],
+          "source_anchor": "page//Im18",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true
+        }
+      ],
+      "font_size_pt": 8,
+      "label_size_pt": 9.3,
+      "tick_size_pt": 7.5,
+      "marker_area_scale": 0.22,
+      "line_scale": 0.6
+    },
+    "panel_B_epithelial_distance_day90_zoom": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            161.0336151,
+            547.5851905,
+            117.89478199999999,
+            59.44320669999999
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im20",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        },
+        null
+      ],
+      "marker_area_scale": 0.08
+    },
+    "panel_C_crypt_villus_day90_whole_section": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            349.9987183,
+            367.84578,
+            103.8240017,
+            111.39662859999999
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im2",
+          "match_source_image_footprint": true,
+          "preserve_limits": false
+        },
+        {
+          "rect_pt": [
+            320.6654358,
+            359.1722571,
+            5.990400299999976,
+            117.96480559999998
+          ],
+          "ylabel": "Crypt-villus axis predicted",
+          "label_left": true,
+          "ticks": [
+            0,
+            0.5,
+            1
+          ],
+          "source_anchor": "page//Im3",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true
+        }
+      ],
+      "font_size_pt": 8,
+      "label_size_pt": 9.3,
+      "tick_size_pt": 7.5,
+      "marker_area_scale": 0.22,
+      "line_scale": 0.6
+    },
+    "panel_C_crypt_villus_day90_zoom": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            457.5073853,
+            381.4062354,
+            117.89479089999998,
+            59.44320299999998
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im4",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        },
+        null
+      ],
+      "marker_area_scale": 0.08
+    },
+    "panel_C_epithelial_distance_day90_whole_section": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            354.3374023,
+            525.4056860000001,
+            95.89244070000001,
+            108.12618509999999
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im5",
+          "match_source_image_footprint": true,
+          "preserve_limits": false
+        },
+        {
+          "rect_pt": [
+            323.8789978,
+            514.3329931000001,
+            6.552000099999987,
+            129.0240021
+          ],
+          "ylabel": "Epithelial-distance axis predicted",
+          "label_left": true,
+          "ticks": [
+            0,
+            0.35,
+            0.7
+          ],
+          "source_anchor": "page//Im6",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true
+        }
+      ],
+      "font_size_pt": 8,
+      "label_size_pt": 9.3,
+      "tick_size_pt": 7.5,
+      "marker_area_scale": 0.22,
+      "line_scale": 0.6
+    },
+    "panel_C_epithelial_distance_day90_zoom": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            459.7957153,
+            535.519364,
+            117.14287679999995,
+            57.94336479999998
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im7",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        },
+        null
+      ],
+      "marker_area_scale": 0.08
+    },
+    "panel_D_section_disjoint_scatter": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            35.2913,
+            692.3224,
+            119.808,
+            119.808
+          ],
+          "xlabel": "Manual reference",
+          "anchor": true,
+          "source_anchor": "path_spines:2549",
+          "title_anchor": {
+            "text": "Crypt-villus coordinate",
+            "x_pt": 53.2637,
+            "y_pt": 687.5228,
+            "font_size_pt": 8,
+            "rotation_degrees": 0
+          }
+        },
+        {
+          "rect_pt": [
+            229.4845,
+            691.2642,
+            119.808,
+            119.808
+          ],
+          "xlabel": "Manual reference",
+          "anchor": true,
+          "source_anchor": "path_spines:7407",
+          "title_anchor": {
+            "text": "Epithelial-distance coordinate",
+            "x_pt": 234.6196,
+            "y_pt": 686.4642,
+            "font_size_pt": 8,
+            "rotation_degrees": 0
+          }
+        },
+        {
+          "rect_pt": [
+            158.1497803,
+            692.2504584,
+            6.1440000999999995,
+            119.808001
+          ],
+          "source_anchor": "page//Im21",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true
+        },
+        {
+          "rect_pt": [
+            352.4242249,
+            691.1922308999999,
+            5.952000100000021,
+            119.80800100000002
+          ],
+          "source_anchor": "page//Im22",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true
+        }
+      ],
+      "font_size_pt": 7.4,
+      "title_size_pt": 7.5,
+      "label_size_pt": 7.5,
+      "tick_size_pt": 7.5,
+      "annotation_size_pt": 7,
+      "line_scale": 0.7
+    },
+    "panel_E_training_villus_scaling": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            416.0298,
+            688.8852,
+            169.166,
+            130.918
+          ],
+          "source_anchor": "path_spines:7639",
+          "anchor": true
+        }
+      ],
+      "font_size_pt": 7.5,
+      "label_size_pt": 8,
+      "tick_size_pt": 7.5,
+      "legend_size_pt": 7,
+      "line_scale": 0.85
+    },
+    "panel_A_sparse_coordinate_example": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            171.4476624,
+            77.42265380000003,
+            72.84208519999999,
+            42.491216399999985
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im14",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        },
+        {
+          "rect_pt": [
+            254.7025452,
+            80.69279539999991,
+            4.394986400000022,
+            36.556502600000044
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im15",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        }
+      ],
+      "spine_width_pt": 0.4,
+      "line_scale": 1
+    },
+    "panel_A_dense_coordinate_example": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            469.7193604,
+            122.22398429999998,
+            72.84208279999996,
+            39.108924900000034
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im16",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        },
+        {
+          "rect_pt": [
+            544.9116211,
+            124.55699219999997,
+            4.394986399999993,
+            36.556502600000044
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im23",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        }
+      ],
+      "spine_width_pt": 0.4,
+      "line_scale": 1
+    },
+    "panel_A_peyer_classifier_example": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            478.2796936,
+            220.72612059999994,
+            49.12877070000002,
+            49.12877070000002
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im19",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        }
+      ],
+      "spine_width_pt": 0.4,
+      "line_scale": 1
+    }
+  },
+  "anchors": [
+    {
+      "id": "panel_A_section_class_maps.axis0",
+      "rect_pt": [
+        30.2685776,
+        68.21830809999994,
+        43.02719739999999,
+        44.064004899999986
+      ]
+    },
+    {
+      "id": "panel_A_section_class_maps.axis1",
+      "rect_pt": [
+        83.1310196,
+        69.43107669999995,
+        43.20000110000001,
+        38.88000099999999
+      ]
+    },
+    {
+      "id": "panel_A_section_class_maps.axis2",
+      "rect_pt": [
+        33.326355,
+        116.53160160000004,
+        43.0271974,
+        42.681604799999945
+      ]
+    },
+    {
+      "id": "panel_A_section_class_maps.axis3",
+      "rect_pt": [
+        82.8059464,
+        114.68364020000001,
+        38.361604299999996,
+        44.064004899999986
+      ]
+    },
+    {
+      "id": "panel_A_scvi_embedding.axis0",
+      "rect_pt": [
+        25.5891724,
+        216.46714839999993,
+        72.6768024,
+        77.43960260000006
+      ]
+    },
+    {
+      "id": "panel_B_crypt_villus_day90_whole_section.axis0",
+      "rect_pt": [
+        50.7817078,
+        376.7844702,
+        94.46400450000002,
+        108.74879809999999
+      ]
+    },
+    {
+      "id": "panel_B_crypt_villus_day90_whole_section.axis1",
+      "rect_pt": [
+        19.8972816,
+        353.4380347,
+        5.990400300000001,
+        117.96480559999998
+      ]
+    },
+    {
+      "id": "panel_B_crypt_villus_day90_zoom.axis0",
+      "rect_pt": [
+        156.6432648,
+        389.24900879999996,
+        118.88639280000001,
+        59.44319780000001
+      ]
+    },
+    {
+      "id": "panel_B_epithelial_distance_day90_whole_section.axis0",
+      "rect_pt": [
+        50.4694977,
+        531.3872229,
+        98.44240979999998,
+        111.9953705
+      ]
+    },
+    {
+      "id": "panel_B_epithelial_distance_day90_whole_section.axis1",
+      "rect_pt": [
+        22.0787601,
+        522.5026098999999,
+        6.2426894,
+        121.4865112
+      ]
+    },
+    {
+      "id": "panel_B_epithelial_distance_day90_zoom.axis0",
+      "rect_pt": [
+        161.0336151,
+        547.5851905,
+        117.89478199999999,
+        59.44320669999999
+      ]
+    },
+    {
+      "id": "panel_C_crypt_villus_day90_whole_section.axis0",
+      "rect_pt": [
+        349.9987183,
+        367.84578,
+        103.8240017,
+        111.39662859999999
+      ]
+    },
+    {
+      "id": "panel_C_crypt_villus_day90_whole_section.axis1",
+      "rect_pt": [
+        320.6654358,
+        359.1722571,
+        5.990400299999976,
+        117.96480559999998
+      ]
+    },
+    {
+      "id": "panel_C_crypt_villus_day90_zoom.axis0",
+      "rect_pt": [
+        457.5073853,
+        381.4062354,
+        117.89479089999998,
+        59.44320299999998
+      ]
+    },
+    {
+      "id": "panel_C_epithelial_distance_day90_whole_section.axis0",
+      "rect_pt": [
+        354.3374023,
+        525.4056860000001,
+        95.89244070000001,
+        108.12618509999999
+      ]
+    },
+    {
+      "id": "panel_C_epithelial_distance_day90_whole_section.axis1",
+      "rect_pt": [
+        323.8789978,
+        514.3329931000001,
+        6.552000099999987,
+        129.0240021
+      ]
+    },
+    {
+      "id": "panel_C_epithelial_distance_day90_zoom.axis0",
+      "rect_pt": [
+        459.7957153,
+        535.519364,
+        117.14287679999995,
+        57.94336479999998
+      ]
+    },
+    {
+      "id": "panel_D_section_disjoint_scatter.axis0",
+      "rect_pt": [
+        35.2913,
+        692.3224,
+        119.808,
+        119.808
+      ]
+    },
+    {
+      "id": "panel_D_section_disjoint_scatter.axis1",
+      "rect_pt": [
+        229.4845,
+        691.2642,
+        119.808,
+        119.808
+      ]
+    },
+    {
+      "id": "panel_D_section_disjoint_scatter.axis2",
+      "rect_pt": [
+        158.1497803,
+        692.2504584,
+        6.1440000999999995,
+        119.808001
+      ]
+    },
+    {
+      "id": "panel_D_section_disjoint_scatter.axis3",
+      "rect_pt": [
+        352.4242249,
+        691.1922308999999,
+        5.952000100000021,
+        119.80800100000002
+      ]
+    },
+    {
+      "id": "panel_E_training_villus_scaling.axis0",
+      "rect_pt": [
+        416.0298,
+        688.8852,
+        169.166,
+        130.918
+      ]
+    },
+    {
+      "id": "panel_A_sparse_coordinate_example.axis0",
+      "rect_pt": [
+        171.4476624,
+        77.42265380000003,
+        72.84208519999999,
+        42.491216399999985
+      ]
+    },
+    {
+      "id": "panel_A_sparse_coordinate_example.axis1",
+      "rect_pt": [
+        254.7025452,
+        80.69279539999991,
+        4.394986400000022,
+        36.556502600000044
+      ]
+    },
+    {
+      "id": "panel_A_dense_coordinate_example.axis0",
+      "rect_pt": [
+        469.7193604,
+        122.22398429999998,
+        72.84208279999996,
+        39.108924900000034
+      ]
+    },
+    {
+      "id": "panel_A_dense_coordinate_example.axis1",
+      "rect_pt": [
+        544.9116211,
+        124.55699219999997,
+        4.394986399999993,
+        36.556502600000044
+      ]
+    },
+    {
+      "id": "panel_A_peyer_classifier_example.axis0",
+      "rect_pt": [
+        478.2796936,
+        220.72612059999994,
+        49.12877070000002,
+        49.12877070000002
+      ]
+    }
+  ],
+  "expected_text": [
+    "Coordinate GAT example",
+    "Spatial cell graph",
+    "Manual reference",
+    "Graph-model prediction",
+    "Held-out-section Pearson r",
+    "Training villi",
+    "Separate coordinate regressors",
+    "Peyer’s patch classifier"
+  ],
+  "forbidden_text": [
+    "Trainable GAT architecture",
+    "Single classification",
+    "Single or multi regression tasks",
+    "Separate Peyer"
+  ],
+  "manual_text_replacements": [
+    {
+      "source_text": "Trainable GAT architecture",
+      "replacement_text": "Coordinate GAT example"
+    },
+    {
+      "source_text": "Single classification",
+      "replacement_text": "Peyer’s patch",
+      "x_pt": 517.6989,
+      "align": "center"
+    },
+    {
+      "source_text": "tasks",
+      "replacement_text": "classifier",
+      "x_pt": 517.6989,
+      "align": "center"
+    },
+    {
+      "source_text": "Single or multi",
+      "replacement_text": "Separate coordinate",
+      "x_pt": 517.1593,
+      "align": "center",
+      "font_size_pt": 7.5
+    },
+    {
+      "source_text": "regression tasks",
+      "replacement_text": "regressors",
+      "x_pt": 517.1593,
+      "align": "center",
+      "font_size_pt": 7.5
+    }
+  ],
+  "intentional_differences": [
+    "The illustrated 64D-per-head to 1D GAT is explicitly identified as the coordinate GAT example. The separate Peyer classifier uses two centered lines in its original box, retaining the original 9.6-point baseline spacing and 8-point Arial. Its 128D-per-head architecture is not depicted. Boxes, arrows and the sigmoid-plus-BCE label are unchanged.",
+    "Original manual vectors are selectively extracted into a new text-free asset; original text is replaced with Arial, with duplicates removed.",
+    "Current frozen eight-fold section-disjoint scatter and 1–45-villus scaling results are freshly rendered.",
+    "The schematic Peyer output uses corrected-label graph-classifier calls from the unchanged locked example window.",
+    "The fixed MDE schematic viewport is x=[-2.2,1.9], y=[-2.2,2.25], matching the artwork's central embedding; rare extreme coordinates remain in the frozen input and no embedding is refit.",
+    "The graph schematic displays all prepared nodes and the focus node's 20 incident edges; the all-edge gray underlay is hidden to match the artist's focus-neighborhood diagram.",
+    "Source registration uses measured original image CTMs and vector spine coordinates, rather than a nominal grid. Artist-scaled source footprints are reproduced in the fresh rendering; all scientific rows are preserved.",
+    "User-requested panel letters without trailing periods; preserve letter case, font, size, and anchors.",
+    "User-requested wording-only revision, 7 September 2026. Longer labels may wrap or use text-specific fit adjustments; scientific inputs, values, gates, colors, markers and axes remain unchanged."
+  ],
+  "warnings": [],
+  "static_groups": {
+    "keep_paint_indices": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      9,
+      10,
+      20,
+      21,
+      22,
+      31,
+      32,
+      33,
+      34,
+      315,
+      317,
+      318
+    ],
+    "excluded_original_content": "All text; images; graph nodes/edges; microscopy/maps; colorbars; scatter/curve paths; Illustrator round-trip data.",
+    "measured_source_crop_borders_pt": [
+      [
+        156.643,
+        389.249,
+        118.886,
+        59.443
+      ],
+      [
+        161.034,
+        547.585,
+        117.895,
+        59.443
+      ],
+      [
+        457.507,
+        381.406,
+        117.895,
+        59.443
+      ],
+      [
+        459.796,
+        535.52,
+        117.143,
+        57.943
+      ]
+    ],
+    "by_panel": {
+      "A": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313
+      ],
+      "B": [
+        9,
+        10,
+        34,
+        315,
+        317,
+        318
+      ],
+      "C": [
+        20,
+        21,
+        22,
+        31,
+        32,
+        33
+      ]
+    }
+  },
+  "package": "Figure_2",
+  "title": "Figure 2",
+  "panels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "png_dpi": 300,
+  "source_anchors": [
+    {
+      "id": "panel_A_section_class_maps.axis0",
+      "rect_pt": [
+        30.2685776,
+        68.21830809999994,
+        43.02719739999999,
+        44.064004899999986
+      ],
+      "source": "page//Im9"
+    },
+    {
+      "id": "panel_A_section_class_maps.axis1",
+      "rect_pt": [
+        83.1310196,
+        69.43107669999995,
+        43.20000110000001,
+        38.88000099999999
+      ],
+      "source": "page//Im10"
+    },
+    {
+      "id": "panel_A_section_class_maps.axis2",
+      "rect_pt": [
+        33.326355,
+        116.53160160000004,
+        43.0271974,
+        42.681604799999945
+      ],
+      "source": "page//Im11"
+    },
+    {
+      "id": "panel_A_section_class_maps.axis3",
+      "rect_pt": [
+        82.8059464,
+        114.68364020000001,
+        38.361604299999996,
+        44.064004899999986
+      ],
+      "source": "page//Im12"
+    },
+    {
+      "id": "panel_A_scvi_embedding.axis0",
+      "rect_pt": [
+        25.5891724,
+        216.46714839999993,
+        72.6768024,
+        77.43960260000006
+      ],
+      "source": "page//Im13"
+    },
+    {
+      "id": "panel_B_crypt_villus_day90_whole_section.axis0",
+      "rect_pt": [
+        50.7817078,
+        376.7844702,
+        94.46400450000002,
+        108.74879809999999
+      ],
+      "source": "page//Im0"
+    },
+    {
+      "id": "panel_B_crypt_villus_day90_whole_section.axis1",
+      "rect_pt": [
+        19.8972816,
+        353.4380347,
+        5.990400300000001,
+        117.96480559999998
+      ],
+      "source": "page//Im1"
+    },
+    {
+      "id": "panel_B_crypt_villus_day90_zoom.axis0",
+      "rect_pt": [
+        156.6432648,
+        389.24900879999996,
+        118.88639280000001,
+        59.44319780000001
+      ],
+      "source": "page//Im8"
+    },
+    {
+      "id": "panel_B_epithelial_distance_day90_whole_section.axis0",
+      "rect_pt": [
+        50.4694977,
+        531.3872229,
+        98.44240979999998,
+        111.9953705
+      ],
+      "source": "page//Im17"
+    },
+    {
+      "id": "panel_B_epithelial_distance_day90_whole_section.axis1",
+      "rect_pt": [
+        22.0787601,
+        522.5026098999999,
+        6.2426894,
+        121.4865112
+      ],
+      "source": "page//Im18"
+    },
+    {
+      "id": "panel_B_epithelial_distance_day90_zoom.axis0",
+      "rect_pt": [
+        161.0336151,
+        547.5851905,
+        117.89478199999999,
+        59.44320669999999
+      ],
+      "source": "page//Im20"
+    },
+    {
+      "id": "panel_C_crypt_villus_day90_whole_section.axis0",
+      "rect_pt": [
+        349.9987183,
+        367.84578,
+        103.8240017,
+        111.39662859999999
+      ],
+      "source": "page//Im2"
+    },
+    {
+      "id": "panel_C_crypt_villus_day90_whole_section.axis1",
+      "rect_pt": [
+        320.6654358,
+        359.1722571,
+        5.990400299999976,
+        117.96480559999998
+      ],
+      "source": "page//Im3"
+    },
+    {
+      "id": "panel_C_crypt_villus_day90_zoom.axis0",
+      "rect_pt": [
+        457.5073853,
+        381.4062354,
+        117.89479089999998,
+        59.44320299999998
+      ],
+      "source": "page//Im4"
+    },
+    {
+      "id": "panel_C_epithelial_distance_day90_whole_section.axis0",
+      "rect_pt": [
+        354.3374023,
+        525.4056860000001,
+        95.89244070000001,
+        108.12618509999999
+      ],
+      "source": "page//Im5"
+    },
+    {
+      "id": "panel_C_epithelial_distance_day90_whole_section.axis1",
+      "rect_pt": [
+        323.8789978,
+        514.3329931000001,
+        6.552000099999987,
+        129.0240021
+      ],
+      "source": "page//Im6"
+    },
+    {
+      "id": "panel_C_epithelial_distance_day90_zoom.axis0",
+      "rect_pt": [
+        459.7957153,
+        535.519364,
+        117.14287679999995,
+        57.94336479999998
+      ],
+      "source": "page//Im7"
+    },
+    {
+      "id": "panel_D_section_disjoint_scatter.axis0",
+      "rect_pt": [
+        35.2913,
+        692.3224,
+        119.808,
+        119.808
+      ],
+      "source": "path_spines:2549"
+    },
+    {
+      "id": "panel_D_section_disjoint_scatter.axis1",
+      "rect_pt": [
+        229.4845,
+        691.2642,
+        119.808,
+        119.808
+      ],
+      "source": "path_spines:7407"
+    },
+    {
+      "id": "panel_D_section_disjoint_scatter.axis2",
+      "rect_pt": [
+        158.1497803,
+        692.2504584,
+        6.1440000999999995,
+        119.808001
+      ],
+      "source": "page//Im21"
+    },
+    {
+      "id": "panel_D_section_disjoint_scatter.axis3",
+      "rect_pt": [
+        352.4242249,
+        691.1922308999999,
+        5.952000100000021,
+        119.80800100000002
+      ],
+      "source": "page//Im22"
+    },
+    {
+      "id": "panel_E_training_villus_scaling.axis0",
+      "rect_pt": [
+        416.0298,
+        688.8852,
+        169.166,
+        130.918
+      ],
+      "source": "path_spines:7639"
+    },
+    {
+      "id": "panel_A_sparse_coordinate_example.axis0",
+      "rect_pt": [
+        171.4476624,
+        77.42265380000003,
+        72.84208519999999,
+        42.491216399999985
+      ],
+      "source": "page//Im14"
+    },
+    {
+      "id": "panel_A_sparse_coordinate_example.axis1",
+      "rect_pt": [
+        254.7025452,
+        80.69279539999991,
+        4.394986400000022,
+        36.556502600000044
+      ],
+      "source": "page//Im15"
+    },
+    {
+      "id": "panel_A_dense_coordinate_example.axis0",
+      "rect_pt": [
+        469.7193604,
+        122.22398429999998,
+        72.84208279999996,
+        39.108924900000034
+      ],
+      "source": "page//Im16"
+    },
+    {
+      "id": "panel_A_dense_coordinate_example.axis1",
+      "rect_pt": [
+        544.9116211,
+        124.55699219999997,
+        4.394986399999993,
+        36.556502600000044
+      ],
+      "source": "page//Im23"
+    },
+    {
+      "id": "panel_A_peyer_classifier_example.axis0",
+      "rect_pt": [
+        478.2796936,
+        220.72612059999994,
+        49.12877070000002,
+        49.12877070000002
+      ],
+      "source": "page//Im19"
+    }
+  ],
+  "source_registration": "source_registration.json",
+  "panel_letter_punctuation": "none"
+}

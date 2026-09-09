@@ -1,0 +1,1732 @@
+{
+  "schema_version": 1,
+  "figure": "Figure_2_Extended",
+  "page_size_pt": [
+    595.276,
+    841.89
+  ],
+  "reference_pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure2_Extended.pdf",
+  "reference_sha256": "b9af73f74b982ed0ab69cf948e4495a9e90de48dd990264a134a2c6742056f79",
+  "dpi": 300,
+  "coordinate_system": "top-left PDF points",
+  "elements": [
+    {
+      "kind": "pdf",
+      "path": "panel_A/panel_A_crypt_villus_manual_labels.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_A_panel_A_crypt_villus_manual_labels",
+      "panel": "A"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_A/panel_A_crypt_villus_dense_predictions.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_A_panel_A_crypt_villus_dense_predictions",
+      "panel": "A"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_A/panel_A_epithelial_distance_manual_labels.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_A_panel_A_epithelial_distance_manual_labels",
+      "panel": "A"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_A/panel_A_epithelial_distance_dense_predictions.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_A_panel_A_epithelial_distance_dense_predictions",
+      "panel": "A"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_B/panel_B_training_runtime.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_B_panel_B_training_runtime",
+      "panel": "B"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_C/panel_C_heldout_villus_mae.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_C_panel_C_heldout_villus_mae",
+      "panel": "C"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_D/panel_D_heldout_villus_r2.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_D_panel_D_heldout_villus_r2",
+      "panel": "D"
+    },
+    {
+      "id": "A_column_0",
+      "panel": "A",
+      "kind": "text",
+      "text": "Crypt-villus reference",
+      "x_pt": 109.5,
+      "y_pt": 37,
+      "font_size_pt": 7,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "A_column_1",
+      "panel": "A",
+      "kind": "text",
+      "text": "Crypt-villus prediction",
+      "x_pt": 243.5,
+      "y_pt": 37,
+      "font_size_pt": 7,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "A_column_2",
+      "panel": "A",
+      "kind": "text",
+      "text": "Epithelial-distance reference",
+      "x_pt": 377.5,
+      "y_pt": 37,
+      "font_size_pt": 7,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "A_column_3",
+      "panel": "A",
+      "kind": "text",
+      "text": "Epithelial-distance prediction",
+      "x_pt": 511.5,
+      "y_pt": 37,
+      "font_size_pt": 7,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "A_section_0",
+      "panel": "A",
+      "kind": "text",
+      "text": "Day 6 SI",
+      "x_pt": 18,
+      "y_pt": 102,
+      "font_size_pt": 8,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left",
+      "rotation_degrees": 90
+    },
+    {
+      "id": "A_section_1",
+      "panel": "A",
+      "kind": "text",
+      "text": "Day 8 SI",
+      "x_pt": 18,
+      "y_pt": 191,
+      "font_size_pt": 8,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left",
+      "rotation_degrees": 90
+    },
+    {
+      "id": "A_section_2",
+      "panel": "A",
+      "kind": "text",
+      "text": "Day 30 SI",
+      "x_pt": 18,
+      "y_pt": 280,
+      "font_size_pt": 8,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left",
+      "rotation_degrees": 90
+    },
+    {
+      "id": "letter_B",
+      "panel": "B",
+      "kind": "text",
+      "text": "b.",
+      "x_pt": 18,
+      "y_pt": 328,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_C",
+      "panel": "C",
+      "kind": "text",
+      "text": "c.",
+      "x_pt": 217,
+      "y_pt": 328,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_D",
+      "panel": "D",
+      "kind": "text",
+      "text": "d.",
+      "x_pt": 412,
+      "y_pt": 328,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_A",
+      "panel": "A",
+      "kind": "text",
+      "text": "a.",
+      "x_pt": 15,
+      "y_pt": 20,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_E",
+      "panel": "E",
+      "kind": "text",
+      "text": "e.",
+      "x_pt": 15,
+      "y_pt": 486,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "E_title",
+      "panel": "E",
+      "kind": "text",
+      "text": "Spatial information and learned attention",
+      "x_pt": 297.6,
+      "y_pt": 487,
+      "font_size_pt": 9,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "E_crypt",
+      "panel": "E",
+      "kind": "text",
+      "text": "Crypt-villus coordinate",
+      "x_pt": 170,
+      "y_pt": 509,
+      "font_size_pt": 7.5,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "E_epi",
+      "panel": "E",
+      "kind": "text",
+      "text": "Epithelial-distance coordinate",
+      "x_pt": 450,
+      "y_pt": 509,
+      "font_size_pt": 7.5,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "panel_E_panel_E_graph_component_comparison",
+      "panel": "E",
+      "kind": "pdf",
+      "path": "panel_E/panel_E_graph_component_comparison.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact"
+    },
+    {
+      "id": "letter_F",
+      "panel": "F",
+      "kind": "text",
+      "text": "f",
+      "x_pt": 15,
+      "y_pt": 663,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "F_title",
+      "panel": "F",
+      "kind": "text",
+      "text": "Matched annotation requirements",
+      "x_pt": 297.6,
+      "y_pt": 664,
+      "font_size_pt": 9,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "F_crypt",
+      "panel": "F",
+      "kind": "text",
+      "text": "Crypt-villus coordinate",
+      "x_pt": 170,
+      "y_pt": 686,
+      "font_size_pt": 7.5,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "F_epi",
+      "panel": "F",
+      "kind": "text",
+      "text": "Epithelial-distance coordinate",
+      "x_pt": 450,
+      "y_pt": 686,
+      "font_size_pt": 7.5,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "panel_F_panel_F_matched_annotation_budgets",
+      "panel": "F",
+      "kind": "pdf",
+      "path": "panel_F/panel_F_matched_annotation_budgets.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact"
+    }
+  ],
+  "render_specs": {
+    "panel_A_crypt_villus_manual_labels": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            45,
+            54.49183162327924,
+            66,
+            65.01633675344152
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im6",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            45,
+            147.743625255131,
+            66,
+            56.512749489737985
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im7",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            45,
+            234.0271992598402,
+            66,
+            61.94560148031965
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im8",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            73,
+            306,
+            72,
+            3.5
+          ],
+          "ylabel": "",
+          "ticks": [
+            0,
+            0.5,
+            1
+          ],
+          "source_anchor": "page//Im15",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true,
+          "title": "",
+          "hide_text": false,
+          "tick_size_pt": 6,
+          "tick_axis": "x"
+        },
+        {
+          "rect_pt": [
+            117,
+            60.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        },
+        {
+          "rect_pt": [
+            117,
+            149.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        },
+        {
+          "rect_pt": [
+            117,
+            238.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        }
+      ],
+      "title_size_pt": 10,
+      "label_size_pt": 8,
+      "tick_size_pt": 6,
+      "marker_area_scale": 0.1024
+    },
+    "panel_A_crypt_villus_dense_predictions": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            179,
+            54.49183162327924,
+            66,
+            65.01633675344152
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im9",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            179,
+            147.743625255131,
+            66,
+            56.512749489737985
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im10",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            179,
+            234.0271992598402,
+            66,
+            61.94560148031965
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im11",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            207,
+            306,
+            72,
+            3.5
+          ],
+          "ylabel": "",
+          "ticks": [
+            0,
+            0.5,
+            1
+          ],
+          "source_anchor": "page//Im14",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true,
+          "title": "",
+          "hide_text": false,
+          "tick_size_pt": 6,
+          "tick_axis": "x"
+        },
+        {
+          "rect_pt": [
+            251,
+            60.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        },
+        {
+          "rect_pt": [
+            251,
+            149.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        },
+        {
+          "rect_pt": [
+            251,
+            238.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        }
+      ],
+      "title_size_pt": 10,
+      "label_size_pt": 8,
+      "tick_size_pt": 6,
+      "marker_area_scale": 0.1024
+    },
+    "panel_A_epithelial_distance_manual_labels": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            313,
+            52.3190101970097,
+            66,
+            69.3619796059806
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im3",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            313,
+            145.39302255744764,
+            66,
+            61.2139548851047
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im4",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            313,
+            231.46256724952192,
+            66,
+            67.07486550095614
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im5",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            341,
+            306,
+            72,
+            3.5
+          ],
+          "ylabel": "",
+          "ticks": [
+            0,
+            0.35,
+            0.7
+          ],
+          "source_anchor": "page//Im12",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true,
+          "title": "",
+          "hide_text": false,
+          "tick_size_pt": 6,
+          "tick_axis": "x"
+        },
+        {
+          "rect_pt": [
+            385,
+            60.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        },
+        {
+          "rect_pt": [
+            385,
+            149.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        },
+        {
+          "rect_pt": [
+            385,
+            238.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        }
+      ],
+      "title_size_pt": 10,
+      "label_size_pt": 8,
+      "tick_size_pt": 6,
+      "marker_area_scale": 0.1024
+    },
+    "panel_A_epithelial_distance_dense_predictions": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            447,
+            52.3190101970097,
+            66,
+            69.3619796059806
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im0",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            447,
+            145.39302255744764,
+            66,
+            61.2139548851047
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im1",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            447,
+            231.46256724952192,
+            66,
+            67.07486550095614
+          ],
+          "title": "",
+          "anchor": true,
+          "source_anchor": "page//Im2",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "hide_text": true
+        },
+        {
+          "rect_pt": [
+            475,
+            306,
+            72,
+            3.5
+          ],
+          "ylabel": "",
+          "ticks": [
+            0,
+            0.35,
+            0.7
+          ],
+          "source_anchor": "page//Im13",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true,
+          "title": "",
+          "hide_text": false,
+          "tick_size_pt": 6,
+          "tick_axis": "x"
+        },
+        {
+          "rect_pt": [
+            519,
+            60.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        },
+        {
+          "rect_pt": [
+            519,
+            149.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        },
+        {
+          "rect_pt": [
+            519,
+            238.0,
+            54,
+            54
+          ],
+          "anchor": true,
+          "title": "",
+          "background_color": "#ffffff",
+          "marker_area_scale": 0.25,
+          "annotation_size_pt": 5.2
+        }
+      ],
+      "title_size_pt": 10,
+      "label_size_pt": 8,
+      "tick_size_pt": 6,
+      "marker_area_scale": 0.1024
+    },
+    "panel_B_training_runtime": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            43,
+            348,
+            145,
+            100
+          ],
+          "source_anchor": "path_spines:121",
+          "anchor": true
+        }
+      ],
+      "font_size_pt": 7,
+      "title_size_pt": 7,
+      "label_size_pt": 7,
+      "tick_size_pt": 6.5,
+      "legend_size_pt": 6,
+      "line_scale": 0.8
+    },
+    "panel_C_heldout_villus_mae": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            242,
+            348,
+            145,
+            100
+          ],
+          "source_anchor": "path_spines:208",
+          "anchor": true
+        }
+      ],
+      "hide_legend": true,
+      "font_size_pt": 7,
+      "label_size_pt": 7,
+      "tick_size_pt": 6.5,
+      "line_scale": 0.8,
+      "legend_size_pt": 6
+    },
+    "panel_D_heldout_villus_r2": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            437,
+            348,
+            145,
+            100
+          ],
+          "source_anchor": "path_spines:292",
+          "anchor": true
+        }
+      ],
+      "hide_legend": true,
+      "font_size_pt": 7,
+      "label_size_pt": 7,
+      "tick_size_pt": 6.5,
+      "line_scale": 0.8,
+      "legend_size_pt": 6
+    },
+    "panel_E_graph_component_comparison": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            48,
+            522,
+            105,
+            98
+          ],
+          "anchor": true,
+          "xticklabels": [
+            "Full graph",
+            "Cell only",
+            "Uniform",
+            "Randomized"
+          ],
+          "title": "",
+          "xtick_rotation": 25
+        },
+        {
+          "rect_pt": [
+            328,
+            522,
+            105,
+            98
+          ],
+          "anchor": true,
+          "xticklabels": [
+            "Full graph",
+            "Cell only",
+            "Uniform",
+            "Randomized"
+          ],
+          "title": "",
+          "xtick_rotation": 25
+        },
+        {
+          "rect_pt": [
+            188,
+            522,
+            105,
+            98
+          ],
+          "anchor": true,
+          "xticklabels": [
+            "Full graph",
+            "Cell only",
+            "Uniform",
+            "Randomized"
+          ],
+          "title": "",
+          "xtick_rotation": 25
+        },
+        {
+          "rect_pt": [
+            468,
+            522,
+            105,
+            98
+          ],
+          "anchor": true,
+          "xticklabels": [
+            "Full graph",
+            "Cell only",
+            "Uniform",
+            "Randomized"
+          ],
+          "title": "",
+          "xtick_rotation": 25
+        }
+      ],
+      "font_size_pt": 6.5,
+      "label_size_pt": 6.5,
+      "tick_size_pt": 6,
+      "annotation_size_pt": 6,
+      "marker_area_scale": 0.55,
+      "line_scale": 0.8
+    },
+    "panel_F_matched_annotation_budgets": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            48,
+            698,
+            105,
+            96
+          ],
+          "anchor": true,
+          "title": "",
+          "xlabel": "Annotated training villi"
+        },
+        {
+          "rect_pt": [
+            328,
+            698,
+            105,
+            96
+          ],
+          "anchor": true,
+          "title": "",
+          "xlabel": "Annotated training villi"
+        },
+        {
+          "rect_pt": [
+            188,
+            698,
+            105,
+            96
+          ],
+          "anchor": true,
+          "title": "",
+          "xlabel": "Annotated training villi"
+        },
+        {
+          "rect_pt": [
+            468,
+            698,
+            105,
+            96
+          ],
+          "anchor": true,
+          "title": "",
+          "xlabel": "Annotated training villi"
+        }
+      ],
+      "font_size_pt": 6.5,
+      "label_size_pt": 6.5,
+      "tick_size_pt": 6,
+      "line_scale": 0.8,
+      "figure_legend": {
+        "anchor_pt": [
+          297.638,
+          834
+        ],
+        "font_size_pt": 7
+      }
+    }
+  },
+  "anchors": [
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis0",
+      "rect_pt": [
+        45,
+        54.49183162327924,
+        66,
+        65.01633675344152
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis1",
+      "rect_pt": [
+        45,
+        147.743625255131,
+        66,
+        56.512749489737985
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis2",
+      "rect_pt": [
+        45,
+        234.0271992598402,
+        66,
+        61.94560148031965
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis3",
+      "rect_pt": [
+        73,
+        306,
+        72,
+        3.5
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis0",
+      "rect_pt": [
+        179,
+        54.49183162327924,
+        66,
+        65.01633675344152
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis1",
+      "rect_pt": [
+        179,
+        147.743625255131,
+        66,
+        56.512749489737985
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis2",
+      "rect_pt": [
+        179,
+        234.0271992598402,
+        66,
+        61.94560148031965
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis3",
+      "rect_pt": [
+        207,
+        306,
+        72,
+        3.5
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis0",
+      "rect_pt": [
+        313,
+        52.3190101970097,
+        66,
+        69.3619796059806
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis1",
+      "rect_pt": [
+        313,
+        145.39302255744764,
+        66,
+        61.2139548851047
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis2",
+      "rect_pt": [
+        313,
+        231.46256724952192,
+        66,
+        67.07486550095614
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis3",
+      "rect_pt": [
+        341,
+        306,
+        72,
+        3.5
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis0",
+      "rect_pt": [
+        447,
+        52.3190101970097,
+        66,
+        69.3619796059806
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis1",
+      "rect_pt": [
+        447,
+        145.39302255744764,
+        66,
+        61.2139548851047
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis2",
+      "rect_pt": [
+        447,
+        231.46256724952192,
+        66,
+        67.07486550095614
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis3",
+      "rect_pt": [
+        475,
+        306,
+        72,
+        3.5
+      ]
+    },
+    {
+      "id": "panel_B_training_runtime.axis0",
+      "rect_pt": [
+        43,
+        348,
+        145,
+        100
+      ]
+    },
+    {
+      "id": "panel_C_heldout_villus_mae.axis0",
+      "rect_pt": [
+        242,
+        348,
+        145,
+        100
+      ]
+    },
+    {
+      "id": "panel_D_heldout_villus_r2.axis0",
+      "rect_pt": [
+        437,
+        348,
+        145,
+        100
+      ]
+    },
+    {
+      "id": "panel_E_graph_component_comparison.axis0",
+      "rect_pt": [
+        48,
+        522,
+        105,
+        98
+      ]
+    },
+    {
+      "id": "panel_E_graph_component_comparison.axis1",
+      "rect_pt": [
+        328,
+        522,
+        105,
+        98
+      ]
+    },
+    {
+      "id": "panel_E_graph_component_comparison.axis2",
+      "rect_pt": [
+        188,
+        522,
+        105,
+        98
+      ]
+    },
+    {
+      "id": "panel_E_graph_component_comparison.axis3",
+      "rect_pt": [
+        468,
+        522,
+        105,
+        98
+      ]
+    },
+    {
+      "id": "panel_F_matched_annotation_budgets.axis0",
+      "rect_pt": [
+        48,
+        698,
+        105,
+        96
+      ]
+    },
+    {
+      "id": "panel_F_matched_annotation_budgets.axis1",
+      "rect_pt": [
+        328,
+        698,
+        105,
+        96
+      ]
+    },
+    {
+      "id": "panel_F_matched_annotation_budgets.axis2",
+      "rect_pt": [
+        188,
+        698,
+        105,
+        96
+      ]
+    },
+    {
+      "id": "panel_F_matched_annotation_budgets.axis3",
+      "rect_pt": [
+        468,
+        698,
+        105,
+        96
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis4",
+      "rect_pt": [
+        251,
+        60.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis5",
+      "rect_pt": [
+        251,
+        149.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis6",
+      "rect_pt": [
+        251,
+        238.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis4",
+      "rect_pt": [
+        519,
+        60.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis5",
+      "rect_pt": [
+        519,
+        149.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis6",
+      "rect_pt": [
+        519,
+        238.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis4",
+      "rect_pt": [
+        117,
+        60.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis5",
+      "rect_pt": [
+        117,
+        149.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis6",
+      "rect_pt": [
+        117,
+        238.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis4",
+      "rect_pt": [
+        385,
+        60.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis5",
+      "rect_pt": [
+        385,
+        149.0,
+        54,
+        54
+      ]
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis6",
+      "rect_pt": [
+        385,
+        238.0,
+        54,
+        54
+      ]
+    }
+  ],
+  "expected_text": [
+    "Day 6 SI",
+    "Day 8 SI",
+    "Day 30 SI",
+    "Training villi",
+    "Held-out-section MAE",
+    "Held-out-section R\u00b2",
+    "Spatial information and learned attention",
+    "Full graph",
+    "Cell only",
+    "Pearson r",
+    "Uniform",
+    "Randomized",
+    "Matched annotation requirements",
+    "Annotated training villi",
+    "TissueMapper-Graph",
+    "Uniform neighbors",
+    "200 \u00b5m"
+  ],
+  "forbidden_text": [
+    "TissueFrame",
+    "Held-out-villus MAE",
+    "Held-out-villus R\u00b2",
+    "Paired points: held-out sections (n = 8) \u00b7 bars: section means"
+  ],
+  "intentional_differences": [
+    "All generated and manual text is embedded Arial; original non-Arial glyph metrics require reviewed label positioning.",
+    "Panels B\u2013D use current eight-fold section-disjoint 1\u201345-villus results, replacing the artwork's obsolete within-section 1\u201370-villus curves.",
+    "Runtime is median and interquartile range across eight matched folds; MAE and R\u00b2 show section values and mean \u00b1 SEM, including negative R\u00b2.",
+    "Source registration uses measured original image CTMs and vector spine coordinates, rather than a nominal grid. Artist-scaled source footprints are reproduced in the fresh rendering; all scientific rows are preserved.",
+    "September 6 user-approved panel addition and layout reflow; original artwork hashes and source geometry remain recorded. All existing panels and scientific rows are retained.",
+    "User-requested panel letters without trailing periods; preserve letter case, font, size, and anchors.",
+    "User-approved budget integration: add F below E; compact the existing grid and chart rows, preserving all data, map aspect ratios, legends and Arial label sizes.",
+    "Six matched geometry-selected prediction zooms with vector ROI boxes, connectors and external 200 \u00b5m bars. Panel A row centers, reference maps, headings and panels B\u2013F remain unchanged; whole prediction maps are 66 points wide to accommodate 54-point zooms.",
+    "Reference-only follow-up: six gray-background, sparse-annotation zooms match the locked prediction fields. Reference map sizes and horizontal colorbars match the prediction columns; all existing prediction geometry and other panels are unchanged."
+  ],
+  "warnings": [],
+  "package": "Figure_2_Extended",
+  "title": "Figure 2 Extended",
+  "panels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "png_dpi": 300,
+  "source_anchors": [
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis0",
+      "rect_pt": [
+        98.075325,
+        40.20890869999994,
+        132.95328889999996,
+        125.95432930000004
+      ],
+      "source": "page//Im6"
+    },
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis1",
+      "rect_pt": [
+        244.8635254,
+        47.15776130000006,
+        132.9532889,
+        110.57962239999995
+      ],
+      "source": "page//Im7"
+    },
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis2",
+      "rect_pt": [
+        392.9457703,
+        43.32237299999997,
+        132.95328890000002,
+        121.22365030000003
+      ],
+      "source": "page//Im8"
+    },
+    {
+      "id": "panel_A_crypt_villus_manual_labels.axis3",
+      "rect_pt": [
+        30.0736027,
+        44.02879389999998,
+        5.990400300000001,
+        117.96480559999998
+      ],
+      "source": "page//Im15"
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis0",
+      "rect_pt": [
+        97.4283295,
+        179.4197851,
+        132.95328889999996,
+        130.97175459999994
+      ],
+      "source": "page//Im9"
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis1",
+      "rect_pt": [
+        244.2165222,
+        187.17125,
+        132.95330910000004,
+        113.84177350000004
+      ],
+      "source": "page//Im10"
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis2",
+      "rect_pt": [
+        391.0047302,
+        179.4197852000001,
+        134.24732590000002,
+        126.00047499999994
+      ],
+      "source": "page//Im11"
+    },
+    {
+      "id": "panel_A_crypt_villus_dense_predictions.axis3",
+      "rect_pt": [
+        28.6662273,
+        189.73448240000005,
+        5.990400300000001,
+        117.96480559999998
+      ],
+      "source": "page//Im14"
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis0",
+      "rect_pt": [
+        92.754425,
+        329.4971777999999,
+        136.6074452,
+        133.47437540000004
+      ],
+      "source": "page//Im3"
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis1",
+      "rect_pt": [
+        243.0364532,
+        336.24086059999996,
+        136.6074452,
+        117.18172870000001
+      ],
+      "source": "page//Im4"
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis2",
+      "rect_pt": [
+        389.8246765,
+        329.49717780000003,
+        136.60744520000003,
+        128.46125329999995
+      ],
+      "source": "page//Im5"
+    },
+    {
+      "id": "panel_A_epithelial_distance_manual_labels.axis3",
+      "rect_pt": [
+        29.7238293,
+        335.0647742,
+        6.242689399999996,
+        121.4865112
+      ],
+      "source": "page//Im12"
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis0",
+      "rect_pt": [
+        88.832222,
+        482.0771948,
+        137.2541499,
+        144.2457507
+      ],
+      "source": "page//Im0"
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis1",
+      "rect_pt": [
+        241.7345734,
+        496.9763038,
+        137.91722580000004,
+        127.916043
+      ],
+      "source": "page//Im1"
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis2",
+      "rect_pt": [
+        389.1697998,
+        482.0771948,
+        137.91722580000004,
+        140.1633238
+      ],
+      "source": "page//Im2"
+    },
+    {
+      "id": "panel_A_epithelial_distance_dense_predictions.axis3",
+      "rect_pt": [
+        29.5418816,
+        491.1519629,
+        6.552000099999997,
+        129.0240021
+      ],
+      "source": "page//Im13"
+    },
+    {
+      "id": "panel_B_training_runtime.axis0",
+      "rect_pt": [
+        32.4174,
+        672.0435,
+        176.076,
+        131.872
+      ],
+      "source": "path_spines:121"
+    },
+    {
+      "id": "panel_C_heldout_villus_mae.axis0",
+      "rect_pt": [
+        234.0769,
+        677.1639,
+        163.662,
+        125.592
+      ],
+      "source": "path_spines:208"
+    },
+    {
+      "id": "panel_D_heldout_villus_r2.axis0",
+      "rect_pt": [
+        428.5662,
+        679.1545,
+        163.554,
+        125.592
+      ],
+      "source": "path_spines:292"
+    }
+  ],
+  "source_registration": "source_registration.json",
+  "authorized_reflow": {
+    "date": "2026-09-06",
+    "user_request": "Remove the two evaluation footers and add these panels into the figures; adjust spacing or orientation as needed so they fit cleanly.",
+    "reference_panels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "added_panels": [
+      "E",
+      "F"
+    ],
+    "source_artwork_modified": false,
+    "scientific_values_modified": false,
+    "subsequent_requests": [
+      {
+        "date": "2026-09-07",
+        "user_request": "Add the completed annotation-budget comparison at the appropriate place in the figures.",
+        "placement": "F follows graph component comparison E; all original panels retained."
+      },
+      {
+        "date": "2026-09-07",
+        "user_request": "Add clean zoom insets to all Crypt-villus prediction and Epithelial-distance prediction tissues, without materially changing figure spacing.",
+        "scope": "Six prediction insets within existing panel A rows; other panels and reference maps unchanged.",
+        "whole_prediction_width_pt": 66,
+        "inset_size_pt": 54,
+        "row_centers_pt": [
+          87,
+          176,
+          265
+        ],
+        "prediction_colorbars": "Horizontal below the third row, with unchanged color ranges."
+      },
+      {
+        "date": "2026-09-07",
+        "user_request": "Add the insets to the reference intestines as well so everything is balanced.",
+        "scope": "Six sparse-reference zooms in the same fields as predictions; all four columns share whole-map and inset dimensions.",
+        "unchanged": "Prediction components, row spacing, headings and panels B\u2013F."
+      }
+    ]
+  },
+  "panel_letter_punctuation": "none"
+}

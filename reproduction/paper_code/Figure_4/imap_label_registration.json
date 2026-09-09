@@ -1,0 +1,475 @@
+{
+  "schema": "original-imap-label-registration-v1",
+  "page_size_pt": [
+    595.276,
+    841.89
+  ],
+  "font": "Arial",
+  "font_weight": "bold",
+  "font_size_pt": 6.6,
+  "references": {
+    "P14": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure4.pdf",
+      "sha256": "e4ae363565e2231c7e36f475d5dadc2c973dd951e95d8ae599faba40ffae1697"
+    },
+    "non-P14": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure4_extended.pdf",
+      "sha256": "917587bf3b208a67256fca7da475bead1d79be0e56f6698d22e96b3e73d7abfd"
+    }
+  },
+  "policy": "Original box locations, spacing, abbreviations and line breaks are retained; current frozen percentages replace original numbers. Source Bezier paths are imported without reshaping. September 7 follow-up restores Musc to IMAPs and Muscularis to non-IMAPs. The independent non-P14 RARi Crypt LP text-fit correction is retained.",
+  "populations": {
+    "P14": {
+      "DMSO": {
+        "axis_rect_pt": [
+          407.315,
+          463.505,
+          173.601,
+          111.996
+        ],
+        "labels": [
+          {
+            "gate": "Top IE",
+            "path_index": 9246,
+            "box_rect_pt": [
+              409.0232,
+              494.7586,
+              23.223,
+              17.275
+            ],
+            "lines": [
+              {
+                "text": "Top IE",
+                "x_pt": 410.4531,
+                "y_pt": 500.7513
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 411.8523,
+                "y_pt": 508.6713
+              }
+            ]
+          },
+          {
+            "gate": "Top LP",
+            "path_index": 9248,
+            "box_rect_pt": [
+              518.6485,
+              483.2767,
+              44.642,
+              8.57
+            ],
+            "lines": [
+              {
+                "text": "Top LP {percentage:.1f}%",
+                "x_pt": 519.8364,
+                "y_pt": 489.2699
+              }
+            ]
+          },
+          {
+            "gate": "Crypt IE",
+            "path_index": 9250,
+            "box_rect_pt": [
+              409.315,
+              557.7038,
+              29.284,
+              15.946
+            ],
+            "lines": [
+              {
+                "text": "Crypt IE",
+                "x_pt": 410.9341,
+                "y_pt": 563.6966
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 415.1449,
+                "y_pt": 571.6166
+              }
+            ]
+          },
+          {
+            "gate": "Crypt LP",
+            "path_index": 9252,
+            "box_rect_pt": [
+              515.836,
+              535.3699,
+              50.267,
+              8.572
+            ],
+            "lines": [
+              {
+                "text": "Crypt LP {percentage:.1f}%",
+                "x_pt": 517.0239,
+                "y_pt": 541.3636
+              }
+            ]
+          },
+          {
+            "gate": "Muscularis",
+            "path_index": 9254,
+            "box_rect_pt": [
+              557.0409,
+              552.2427,
+              22.424,
+              16.554
+            ],
+            "lines": [
+              {
+                "text": "Musc",
+                "x_pt": 560.085,
+                "y_pt": 558.2357
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 561.0024,
+                "y_pt": 566.1557
+              }
+            ]
+          }
+        ]
+      },
+      "RARi": {
+        "axis_rect_pt": [
+          406.794,
+          597.404,
+          173.601,
+          111.996
+        ],
+        "labels": [
+          {
+            "gate": "Top IE",
+            "path_index": 11805,
+            "box_rect_pt": [
+              408.502,
+              639.3198,
+              23.223,
+              17.275
+            ],
+            "lines": [
+              {
+                "text": "Top IE",
+                "x_pt": 409.9321,
+                "y_pt": 645.3129
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 411.3313,
+                "y_pt": 653.2329
+              }
+            ]
+          },
+          {
+            "gate": "Top LP",
+            "path_index": 11281,
+            "box_rect_pt": [
+              523.3539,
+              625.6403,
+              44.642,
+              8.57
+            ],
+            "lines": [
+              {
+                "text": "Top LP {percentage:.1f}%",
+                "x_pt": 524.542,
+                "y_pt": 631.6332
+              }
+            ]
+          },
+          {
+            "gate": "Crypt IE",
+            "path_index": 11283,
+            "box_rect_pt": [
+              408.5018,
+              690.7289,
+              27.786,
+              16.506
+            ],
+            "lines": [
+              {
+                "text": "Crypt IE",
+                "x_pt": 409.5776,
+                "y_pt": 696.9144
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 413.7884,
+                "y_pt": 704.8344
+              }
+            ]
+          },
+          {
+            "gate": "Crypt LP",
+            "path_index": 11285,
+            "box_rect_pt": [
+              525.5891,
+              667.519,
+              50.267,
+              8.572
+            ],
+            "lines": [
+              {
+                "text": "Crypt LP {percentage:.1f}%",
+                "x_pt": 526.7773,
+                "y_pt": 673.513
+              }
+            ]
+          },
+          {
+            "gate": "Muscularis",
+            "path_index": 11807,
+            "box_rect_pt": [
+              555.3211,
+              688.6372,
+              22.424,
+              16.554
+            ],
+            "lines": [
+              {
+                "text": "Musc",
+                "x_pt": 558.3652,
+                "y_pt": 694.6302
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 557.4478,
+                "y_pt": 702.5502
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "non-P14": {
+      "DMSO": {
+        "axis_rect_pt": [
+          44.887,
+          322.236,
+          173.601,
+          111.996
+        ],
+        "labels": [
+          {
+            "gate": "Top IE",
+            "path_index": 248,
+            "box_rect_pt": [
+              47.9098,
+              310.9344,
+              42.564,
+              8.57
+            ],
+            "lines": [
+              {
+                "text": "Top IE {percentage:.1f}%",
+                "x_pt": 49.0977,
+                "y_pt": 316.9281
+              }
+            ]
+          },
+          {
+            "gate": "Top LP",
+            "path_index": 250,
+            "box_rect_pt": [
+              178.6542,
+              328.675,
+              29.485,
+              16.691
+            ],
+            "lines": [
+              {
+                "text": "Top LP",
+                "x_pt": 182.2368,
+                "y_pt": 334.6683
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 184.6722,
+                "y_pt": 342.5883
+              }
+            ]
+          },
+          {
+            "gate": "Crypt IE",
+            "path_index": 252,
+            "box_rect_pt": [
+              47.9097,
+              416.5694,
+              27.662,
+              16.319
+            ],
+            "lines": [
+              {
+                "text": "Crypt IE",
+                "x_pt": 48.6362,
+                "y_pt": 422.5619
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 52.847,
+                "y_pt": 430.4819
+              }
+            ]
+          },
+          {
+            "gate": "Crypt LP",
+            "path_index": 254,
+            "box_rect_pt": [
+              165.6759,
+              392.4413,
+              46.595,
+              8.572
+            ],
+            "lines": [
+              {
+                "text": "Crypt LP {percentage:.1f}%",
+                "x_pt": 166.8638,
+                "y_pt": 398.4349
+              }
+            ]
+          },
+          {
+            "gate": "Muscularis",
+            "path_index": 256,
+            "box_rect_pt": [
+              193.3968,
+              415.4357,
+              21.77,
+              15.291
+            ],
+            "lines": [
+              {
+                "text": "Musc",
+                "x_pt": 194.6372,
+                "y_pt": 421.6205
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 194.6372,
+                "y_pt": 429.5405
+              }
+            ]
+          }
+        ]
+      },
+      "RARi": {
+        "axis_rect_pt": [
+          287.556,
+          322.236,
+          173.601,
+          111.996
+        ],
+        "labels": [
+          {
+            "gate": "Top IE",
+            "path_index": 289,
+            "box_rect_pt": [
+              290.578,
+              310.9344,
+              42.563,
+              8.57
+            ],
+            "lines": [
+              {
+                "text": "Top IE {percentage:.1f}%",
+                "x_pt": 291.7661,
+                "y_pt": 316.9281
+              }
+            ]
+          },
+          {
+            "gate": "Top LP",
+            "path_index": 308,
+            "box_rect_pt": [
+              416.8987,
+              328.675,
+              29.485,
+              16.691
+            ],
+            "lines": [
+              {
+                "text": "Top LP",
+                "x_pt": 420.481,
+                "y_pt": 334.6683
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 422.9164,
+                "y_pt": 342.5883
+              }
+            ]
+          },
+          {
+            "gate": "Crypt IE",
+            "path_index": 304,
+            "box_rect_pt": [
+              289.8403,
+              415.2582,
+              27.662,
+              16.319
+            ],
+            "lines": [
+              {
+                "text": "Crypt IE",
+                "x_pt": 290.5669,
+                "y_pt": 421.2513
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 294.7777,
+                "y_pt": 429.1713
+              }
+            ]
+          },
+          {
+            "gate": "Crypt LP",
+            "path_index": 291,
+            "box_rect_pt": [
+              411.4223,
+              393.7318,
+              46.595,
+              8.572
+            ],
+            "lines": [
+              {
+                "text": "Crypt LP {percentage:.1f}%",
+                "x_pt": 412.6104,
+                "y_pt": 399.725
+              }
+            ],
+            "display_box_rect_pt": [
+              409.5863,
+              393.7318,
+              50.267,
+              8.572
+            ],
+            "text_x_shift_pt": -1.836000000000002,
+            "intentional_difference": "Current10.5% requires one extra digit versus original7.6%; expand only box width around its original center, keeping baseline, font size, corner shape, and padding. Explicitly approved by user workflow."
+          },
+          {
+            "gate": "Muscularis",
+            "path_index": 306,
+            "box_rect_pt": [
+              434.7195,
+              415.4357,
+              21.77,
+              15.291
+            ],
+            "lines": [
+              {
+                "text": "Musc",
+                "x_pt": 435.96,
+                "y_pt": 421.6205
+              },
+              {
+                "text": "{percentage:.1f}%",
+                "x_pt": 435.96,
+                "y_pt": 429.5405
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

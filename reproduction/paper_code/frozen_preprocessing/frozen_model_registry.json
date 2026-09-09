@@ -1,0 +1,1021 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-03T19:59:45.298877-07:00",
+  "git_commits": {
+    "home_project": null,
+    "sata_project": null,
+    "crypt_villus_vit_package": "ce27214d4788a0f136ffcdf57e3495e0b3e17e05"
+  },
+  "models": {
+    "graph_coordinate_all_label_visualization": {
+      "status": "FROZEN_FOR_SPATIAL_VISUALIZATION_NOT_HELD_OUT_EVALUATION",
+      "config": {
+        "role": "graph_model_config",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure2/config.yaml",
+        "sha256": "d328ddf8f9a55cebeefdd0346511d53080b3b01506f87a322bdb84f31dca3a86",
+        "bytes": 2172
+      },
+      "sparse_labels": {
+        "role": "parsed_sparse_labels",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure2/labelme_parse/parsed_villus_labels.csv",
+        "sha256": "6eabc5f269efcb8c2a263b44016404aa8e34900fa49a1cca1a7b2f447d63be2c",
+        "bytes": 2032188
+      },
+      "checkpoints": [
+        {
+          "role": "crypt_villus_checkpoint",
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure2/train_models/outputs/crypt_villus_checkpoints/epoch=482-step=11109.ckpt",
+          "sha256": "8f29739953f1817b57c04a436ce103aeb8b14be79fd6a6b11d21f8f50b1fc091",
+          "bytes": 117757
+        },
+        {
+          "role": "epithelial_distance_checkpoint",
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure2/train_models/outputs/epithelial_distance_checkpoints/epoch=59-step=1380.ckpt",
+          "sha256": "aa6055082b034054f5e3faad7be1327e3ccf78ca6b175d2a4648a53ef25ba927",
+          "bytes": 117757
+        }
+      ],
+      "outputs": [
+        {
+          "role": "crypt_villus_whole_dataset_predictions",
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure2/train_models/outputs/crypt_villus.predictions.npy",
+          "sha256": "89f3f115349118bb74a1ef5eaa6669dfb935c9d73fefeb1ac8c91af9c4a5c5e0",
+          "bytes": 10906520
+        },
+        {
+          "role": "epithelial_distance_whole_dataset_predictions",
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure2/train_models/outputs/epithelial_distance.predictions.npy",
+          "sha256": "cc6cdc767b97ead0b40596fa8273ce9638ba463534487e209dcf8b5fef40b5aa",
+          "bytes": 10906520
+        }
+      ]
+    },
+    "graph_coordinate_section_disjoint_oof": {
+      "status": "FROZEN_FINAL_EVALUATION",
+      "split": {
+        "role": "locked_split",
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/splits/graph_model_section_disjoint_oof_v1.json",
+        "sha256": "746c72b9181d33883f43bc9db481c023d02abadfe67346df5b90d18f05c210f2",
+        "bytes": 8144
+      },
+      "checkpoint_manifest": {
+        "role": "sixteen_checkpoints",
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure2/section_disjoint_evaluation/fold_checkpoint_manifest.tsv",
+        "sha256": "0abf125b2110d0dded82c16f9b4b5ddf18a41fea1b7bb90af8f605bfa2526238",
+        "bytes": 6216
+      },
+      "predictions": {
+        "role": "out_of_fold_predictions",
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure2/section_disjoint_evaluation/predictions.parquet",
+        "sha256": "56b4647a7bce1956f104386c6e8bbab6941c6891dcd56495989133179cc7a660",
+        "bytes": 1019888
+      }
+    },
+    "graph_coordinate_training_villus_scaling": {
+      "status": "FROZEN_SECTION_DISJOINT_ANNOTATION_SCALING",
+      "split": {
+        "role": "locked_eight_fold_scaling_split",
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/splits/graph_model_section_disjoint_villus_scaling_v1.json",
+        "sha256": "e1779c3caab90164eea05ba38d2dc93c3432ad845711fd7428f281bd52eaa0f8",
+        "bytes": 108715
+      },
+      "metrics": {
+        "role": "one_hundred_sixty_section_level_metrics",
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure2/section_disjoint_villus_scaling_v1/per_fold_metrics.tsv",
+        "sha256": "462e31be3c8c6cfe0ec7aff09f282bfe5bb685f16f151bd3484f3478e75dcf94",
+        "bytes": 26975
+      },
+      "checkpoint_manifest": {
+        "role": "one_hundred_sixty_checkpoints",
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure2/section_disjoint_villus_scaling_v1/checkpoint_manifest.tsv",
+        "sha256": "e9771443cdb07dc9db6437c8d8c58f5da29ed44e870e5ac440d3c8bc511aeeb0",
+        "bytes": 47671
+      },
+      "predictions": {
+        "role": "all_held_out_section_predictions",
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure2/section_disjoint_villus_scaling_v1/all_test_predictions.parquet",
+        "sha256": "a9ecb312caa4516870fd809af0c1906584cc7c52ca1b14a5825442e651867385",
+        "bytes": 5767660
+      },
+      "provenance": {
+        "role": "scaling_pipeline_provenance",
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure2/section_disjoint_villus_scaling_v1/provenance.json",
+        "sha256": "16e3fe06fa6c8de661148419b67df2d5a9fc6479ae2e9b6edcd27fcee847b84a",
+        "bytes": 2035
+      }
+    },
+    "peyer_graph_classifier": {
+      "status": "FROZEN_CORRECTED_LABEL_SEPARATE_CLASSIFICATION_LINEAGE",
+      "architecture": {
+        "name": "BinaryGAT",
+        "input_features": 30,
+        "input_representation": "X_scVI",
+        "spatial_neighbors_per_cell": 20,
+        "section_separated_graph": true,
+        "hidden_features": 128,
+        "first_layer_heads": 4,
+        "dropout": 0.15,
+        "output": "single binary logit"
+      },
+      "config": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/config.json",
+        "sha256": "dac64b2249eb7c3cd9b25a0340e5d0c47f2ab54eae49b6698b8daf7d07aeaccc",
+        "bytes": 9618
+      },
+      "checkpoint": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/gat/gat_peyer_classifier.pt",
+        "sha256": "c4f9c94b81f47ff01fe25a3f5587a0e9258ec0f2799c4106abd986a9853e82cc",
+        "bytes": 337173
+      },
+      "predictions": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/gat/gat_peyer_predictions.csv",
+        "sha256": "b00f2d3194ae6316444789ff9f95c4e5dfe517f7df5d657f83f9d4f7ed64a119",
+        "bytes": 217244200
+      },
+      "manual_labels": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/labels/xenium_peyer_manual_labels.csv",
+        "sha256": "69f29f6670d184e9cd5d24303703243e996376debb3fd09e975756737dbb27f7",
+        "bytes": 181333974
+      },
+      "training_history": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/gat/gat_history.csv",
+        "sha256": "ffbf5d2b88b3ad7b6cbdc29c19f0c3a70568952ed17da7beea0e6bcb84bac961",
+        "bytes": 10989
+      },
+      "training_summary": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/gat/gat_summary.json",
+        "sha256": "7cba6c82827234de12d34a829c0ab6c8829a83a4798560a6a7c558ced1a36d41",
+        "bytes": 9026
+      },
+      "metrics_by_split": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/gat/gat_metrics.tsv",
+        "sha256": "8601cd5bfdc435c786452462bc495a2ead3b48d55b347c86e0412dc0b99d81ec",
+        "bytes": 2456
+      },
+      "display_window_lock": {
+        "role": "locked_day90_test_window",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Peyers_Pipeline/outputs/gat/figures/gat_heldout_peyer_patch_zoom_summary.json",
+        "sha256": "4eab7f0ebd338a3de0e5fa8fa407323860f5c62be11443d0f21a9338b7b3e837",
+        "bytes": 1523
+      },
+      "prepared_panel_inputs": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_2_Extended_2/stored_outputs/corrected_labels_v1/prepared_inputs_manifest.json",
+        "sha256": "ef18bf9315c658c5b2fa8bfea1e5bc471dbde39d31af37eb4b5c978d2d6bebe6",
+        "bytes": 6989
+      },
+      "release_manifest": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/release_manifest.json",
+        "sha256": "e378b349ec48db306bed6ffd255190c04e377078b86ff8bf637660f509da1699",
+        "bytes": 34555
+      },
+      "training_seeds": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/gat/training_seed_nodes.tsv",
+        "sha256": "e43c1bba796c8af083c09630515170b8c813fbcd5ed5c63eb553db6359ff02c8",
+        "bytes": 5566309
+      },
+      "label_lock": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/lock.json",
+        "sha256": "6b55e7d03d01366c6dcf4be218ee944f45cf4e525048a7a2c61088d9f618bf42",
+        "bytes": 37507
+      },
+      "hard_call_threshold": 0.95,
+      "completed_epochs": 22,
+      "selected_epoch": 10,
+      "threshold_selection": "validation F1 on unchanged 0.05–0.95 grid; selected at upper edge",
+      "evaluation_scope": "Previously evaluated, section-disjoint supervised cohort; upstream joint scVI/scaling limitation"
+    },
+    "peyer_image_classifier": {
+      "status": "FROZEN_REPRESENTATION_PRETRAINED_AXIS_ARCHITECTURE_CLASSIFIER",
+      "version": "paired-representation-shared-scale-peyer-v1",
+      "checkpoint": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_manual_sparse/best_tissueframe_peyer.pt",
+        "sha256": "78f5e785bb72814aadd583436ee8991052244ba05474f4e04b918b218926b1c9",
+        "bytes": 20882353
+      },
+      "pretraining_checkpoint": {
+        "role": "paired_representation_pretraining",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/paired_representation_pretraining/pretraining/dapi_encoder_pretrain.pt",
+        "sha256": "d4698fe67251bb56b805624a1e810cacc86f1a553b969ae4b23d54ba5ff3c23a",
+        "bytes": 85503375
+      },
+      "axis_architecture_reference": {
+        "role": "released_xenium_checkpoint",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/best_crypt_villus_vit_model.pt",
+        "sha256": "d0e02005b18a670c77c7956d5500d8c599879e183def79badae7fbb526aaf137",
+        "bytes": 20891340
+      },
+      "architecture": {
+        "local_crop_px": 512,
+        "context_crop_px": 2048,
+        "fine_crop_px": 128,
+        "input_size_px": 256,
+        "fine_input_size_px": 128,
+        "patch_size_px": 16,
+        "embed_dim": 256,
+        "depth": 6,
+        "num_heads": 8,
+        "mlp_ratio": 4.0,
+        "dropout": 0.0,
+        "use_local_branch": true,
+        "use_context_branch": true,
+        "use_fine_branch": true,
+        "local_readout": "center_4x",
+        "context_readout": "center_4x",
+        "encoder_architecture": "shared_scale_aware",
+        "retain_scale_embeddings": true,
+        "fusion_architecture": "concat",
+        "fine_gate_init": -3.0
+      },
+      "config": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/lock.json",
+        "sha256": "deedb27e4453e98a747cce3aac72675832ecffaeac08d04504eb779b9a441e45",
+        "bytes": 29126
+      },
+      "training_manifest": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/sparse/sft_with_repaired_gat_soft_targets.csv",
+        "sha256": "6e030942e5f1dba9d29d835db17fc35ed96d3502f421705e58de1e2a7ae66f9b",
+        "bytes": 224781
+      },
+      "test_manifest": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/sparse/xenium_peyer_test_region_sparse_cells_corrected_labels.csv",
+        "sha256": "dcd9a4ebe4f7dc5e4c60b24c0faffc79f68ae2a5198cd8aef30390dfdb975d86",
+        "bytes": 227463
+      },
+      "release_manifest": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/release_manifest.json",
+        "sha256": "e2eb84f803316473212b2bd857dc6df9b21fc3d9ba256ef887607522b212f8e1",
+        "bytes": 19824
+      },
+      "source_files": [
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/activation_patch.py",
+          "sha256": "dd2321351b14175f98e5fa99692224878031d81f664dd11b88f754a3b7bfa20e",
+          "bytes": 5311
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/capture_figure_outputs.py",
+          "sha256": "e315d8adc5921d811083fcccf951df19b6c26434213fccc271a02425700c08f2",
+          "bytes": 1048
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/capture_figure_sources.py",
+          "sha256": "02f5aac83c6352e3f39699ed4a478655604a88c2f9940e2d44dc4225f7f6fe2d",
+          "bytes": 988
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/freeze_release.py",
+          "sha256": "939b339aa06d49e448d9ed9c360ac84af4af65b62b13d8456bc719e8e4a048a6",
+          "bytes": 5656
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/infer_windows.py",
+          "sha256": "8f13bddb24042e4b18565f75767319e2b7fb4cad09168db120901addf74a942d",
+          "bytes": 3825
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/model.py",
+          "sha256": "e43dc1430d8174b7aef6387fa9123d74141f07608078370ca2d03bcf6ce43fa3",
+          "bytes": 3544
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/peyer_common.py",
+          "sha256": "b835635e07c6e88cbfacc3f1226c33a778c20dc4119c0fc89c3f8a642d2a6c37",
+          "bytes": 1609
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/prepare.py",
+          "sha256": "26d591b8afe92edb5ddfe0eb4e5570bf3b38d8e5e4ca4bfb339e588016216eaa",
+          "bytes": 11848
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/prepare_bounded.py",
+          "sha256": "456e28653fce6f00062b1739eba3ee63fd52516e5914fcb4afd2667a5f60cd2e",
+          "bytes": 6934
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/publish_viewing_copies.py",
+          "sha256": "1b0cdd4776ea89d1b4bd07ad5221ddbac1f3407aaf985850903ec230def8b173",
+          "bytes": 1506
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/release.py",
+          "sha256": "e8489f63c6677b54a76c52a36150b4847bfcc640eb6370c865f771a6f1c40bc7",
+          "bytes": 1724
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/test_model.py",
+          "sha256": "8bcdefeb0aac79a7d3fded93eeb1692ef1e44c513c8543b40a0dde87296b63b9",
+          "bytes": 2365
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/train.py",
+          "sha256": "00ed0c1aa9bcb251bf114b1d9b3ea3c7ea15c4c3c44436a7f8c42a1aa6346cfc",
+          "bytes": 12631
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/verify_axis_crop_overlap.py",
+          "sha256": "a914c336900d95a0c3b2fe0fd54ff765084a8b83481723b0e5609f749591cb9a",
+          "bytes": 3037
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/verify_figure_release.py",
+          "sha256": "186d43ccc6b9469f06c501cbda00aa636d410cc0881a6e65993bb801fb578d00",
+          "bytes": 3028
+        }
+      ],
+      "model_dependencies": [
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/__init__.py",
+          "sha256": "dad1b3bff86cb508c8a1ee2f5205bb0d1e77a303d7a8d63044b1d784cb0147ad",
+          "bytes": 667
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/augmentation.py",
+          "sha256": "63b40fc1d25463dd5c9d6a4f4ccdc613252db05d56c349100e4e97ea11cdd1ac",
+          "bytes": 5227
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/cli.py",
+          "sha256": "62882d241d51313ad4fef8409b926cccfa7a9b4348f893d2d32c50aa9f10f329",
+          "bytes": 22387
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/crops.py",
+          "sha256": "10f0c846c2d9f443d9d170853a72f0a911fcac9bbfd02eae3c5e8a4d6b8622cd",
+          "bytes": 5125
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/download.py",
+          "sha256": "5dd0ccb409c39941570e8bd03d650fb88a8e7d22cf6c5aec5fb8bfc8f9723e80",
+          "bytes": 2903
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/gates.py",
+          "sha256": "bfbb80d0b15b32370132df4bf8ceefcb1d2dea0addb56b2d21b04904e723f7d5",
+          "bytes": 3495
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/geojson.py",
+          "sha256": "ba24023b934393365a6706b4f1104140513813f29e2fb97430cdc73e86cce887",
+          "bytes": 1619
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/model.py",
+          "sha256": "ae00846c02f96d5be5c6b4c9dd092f8482e1e5675b92efd2b1e4cefad2bae3f2",
+          "bytes": 27513
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/plotting.py",
+          "sha256": "1857475f9395a37a4ac003049017671bcbcd45d0f21936edf38a839dbef12357",
+          "bytes": 2589
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/predict.py",
+          "sha256": "9a0d8131deedd1d736f20162a646a7381abf53db8f3dfba3b702098d87a1184d",
+          "bytes": 14587
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/prepared.py",
+          "sha256": "17f4bed3255e76cf8bb503e7648b0e99e1f58484995f326f5be023028ebcf072",
+          "bytes": 16713
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/pretrain.py",
+          "sha256": "1270dd84e642f0a36c7de87bb81eae7cb34d1ffdfbde6c38f47fade06576ba2b",
+          "bytes": 33687
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/qupath.py",
+          "sha256": "3f00f98487697ec9f09dd16c595df4a230c31d9985c40f6094beb064e29050a6",
+          "bytes": 7557
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/representation_pretrain.py",
+          "sha256": "90d6efe0023ea290547e04fd882fcaf0219eb23d106bd8558c802be1ab784c55",
+          "bytes": 39095
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/sources.py",
+          "sha256": "cbf093153efbda97d54c94e85c55189e2bc0ae8c380d68ee85ea95f041ac3d5c",
+          "bytes": 3002
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/train.py",
+          "sha256": "b84a4d5d47c0a8450386267e03e719f5eb2d883e89eb5860b746a588858ca95c",
+          "bytes": 35287
+        },
+        {
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/vit_representation_model/source/crypt_villus_vit_package/src/crypt_villus_vit/xenium_manifest.py",
+          "sha256": "e7c2a73ff89876a9308f8d81753070d69b2cfdd7ed5cca19a3eea8f3a8dc6b04",
+          "bytes": 12844
+        }
+      ],
+      "conditions": {
+        "frozen_manual_sparse": {
+          "variant": "frozen_manual_sparse",
+          "checkpoint": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/frozen_manual_sparse/best_tissueframe_peyer.pt",
+            "sha256": "cfeeb0f800608fa9b88ffd923879a2bb0eee13ea18ee59b14e1ac681f1758d00",
+            "bytes": 20882353
+          },
+          "history": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/frozen_manual_sparse/history.csv",
+            "sha256": "1a2eac09a8ef84b6d82296f3215c02a6594e2da9c270bd48dfa8fad567240b93",
+            "bytes": 1672
+          },
+          "initialization_audit": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/frozen_manual_sparse/initialization_audit.json",
+            "sha256": "b9f396a4426c63e6e6d08a0a052c0b3b4ecb3ff4e654ba541bf5492fe90e3208",
+            "bytes": 13403
+          },
+          "best_epoch": 19,
+          "completed_epochs": 20,
+          "best_validation_average_precision": 0.1672675871548189,
+          "target_column": "peyer_label",
+          "training": {
+            "frozen_encoder": true,
+            "fine_encoder_trainable": true,
+            "trainable_parameters": 340609,
+            "total_parameters": 5212033
+          },
+          "test_metrics_computed": false,
+          "test_predictions": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/frozen_manual_sparse/xenium_test_predictions/predictions.csv",
+            "sha256": "3fc8ca47aabf1144d1c6d46e4e53e08f469c84c5cc45d7b9edcce80f8cdd9f30",
+            "bytes": 287840
+          },
+          "test_metrics": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/frozen_manual_sparse/xenium_test_predictions/metrics.json",
+            "sha256": "884bb4e1c572eb561dc6569314597e25d4c407f2057fa84749498abe2cdad121",
+            "bytes": 1562
+          }
+        },
+        "full_manual_sparse": {
+          "variant": "full_manual_sparse",
+          "checkpoint": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_manual_sparse/best_tissueframe_peyer.pt",
+            "sha256": "78f5e785bb72814aadd583436ee8991052244ba05474f4e04b918b218926b1c9",
+            "bytes": 20882353
+          },
+          "history": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_manual_sparse/history.csv",
+            "sha256": "f50101ed1d5cbacbb997ff7c04026adbe0bc73a8702284507f0f53335be55198",
+            "bytes": 1675
+          },
+          "initialization_audit": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_manual_sparse/initialization_audit.json",
+            "sha256": "6433f9604d842aac2bc797a60d83563cfbbc7794d1f161775790f8a40b8c5bb8",
+            "bytes": 13405
+          },
+          "best_epoch": 20,
+          "completed_epochs": 20,
+          "best_validation_average_precision": 0.2645215139374104,
+          "target_column": "peyer_label",
+          "training": {
+            "frozen_encoder": false,
+            "fine_encoder_trainable": true,
+            "trainable_parameters": 5212033,
+            "total_parameters": 5212033
+          },
+          "test_metrics_computed": false,
+          "test_predictions": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_manual_sparse/xenium_test_predictions/predictions.csv",
+            "sha256": "a3a1812c5d6a5afcbe47cd6ca94ad3dc71777b0f104aab08ae3810eb9fac61f9",
+            "bytes": 288555
+          },
+          "test_metrics": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_manual_sparse/xenium_test_predictions/metrics.json",
+            "sha256": "a4c8207fd7ecb9897ba2805fb0e81aea336de86d9562ae696d6e55f461edfdb2",
+            "bytes": 1560
+          }
+        },
+        "frozen_gat_soft_sparse": {
+          "variant": "frozen_gat_soft_sparse",
+          "checkpoint": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/frozen_gat_soft_sparse/best_tissueframe_peyer.pt",
+            "sha256": "fe4a458f79106054d84a6ee23baea464bd35ad0523256849980817eb2c10e766",
+            "bytes": 20882353
+          },
+          "history": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/frozen_gat_soft_sparse/history.csv",
+            "sha256": "abf69fa4cb4c56b6529847822981f4a5d8c58c1ecbd308a778581f20be1a44cc",
+            "bytes": 1656
+          },
+          "initialization_audit": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/frozen_gat_soft_sparse/initialization_audit.json",
+            "sha256": "b970ccbee2ecd86ce5843702c7c502be712136512187278c0e2e6b29d96f9217",
+            "bytes": 13422
+          },
+          "best_epoch": 18,
+          "completed_epochs": 20,
+          "best_validation_average_precision": 0.15838817337953282,
+          "target_column": "peyer_soft_label",
+          "training": {
+            "frozen_encoder": true,
+            "fine_encoder_trainable": true,
+            "trainable_parameters": 340609,
+            "total_parameters": 5212033
+          },
+          "test_metrics_computed": false,
+          "test_predictions": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/frozen_gat_soft_sparse/xenium_test_predictions/predictions.csv",
+            "sha256": "6d272fb20de22d9ef2f3552de2527d19dc546ee4836d9b6eea3b2ed45999a69c",
+            "bytes": 286587
+          },
+          "test_metrics": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/frozen_gat_soft_sparse/xenium_test_predictions/metrics.json",
+            "sha256": "9ef7aa6e18872c9e3fc9720005ca71096d3915fd91badf6bef4f33b4155eecaa",
+            "bytes": 1537
+          }
+        },
+        "full_gat_soft_sparse": {
+          "variant": "full_gat_soft_sparse",
+          "checkpoint": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_gat_soft_sparse/best_tissueframe_peyer.pt",
+            "sha256": "e0d4497f9ea7fa285bb2421d2f95fb14a08ccd089e0d861e3c4bde961f2368fd",
+            "bytes": 20882353
+          },
+          "history": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_gat_soft_sparse/history.csv",
+            "sha256": "b1f58894015ef5c4a17a0080f0724a95618f37b12cb9e624f49c67e76f2e1238",
+            "bytes": 1664
+          },
+          "initialization_audit": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_gat_soft_sparse/initialization_audit.json",
+            "sha256": "76d1c48e366439aa07f2ab179d8a0fe7903dcbe3c6f6a53f36493f1b2ccc6553",
+            "bytes": 13424
+          },
+          "best_epoch": 16,
+          "completed_epochs": 20,
+          "best_validation_average_precision": 0.27546121081956987,
+          "target_column": "peyer_soft_label",
+          "training": {
+            "frozen_encoder": false,
+            "fine_encoder_trainable": true,
+            "trainable_parameters": 5212033,
+            "total_parameters": 5212033
+          },
+          "test_metrics_computed": false,
+          "test_predictions": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_gat_soft_sparse/xenium_test_predictions/predictions.csv",
+            "sha256": "1fb82b3f63a1f562adcc5b9108e1cc76d64d20069979315b360675f1b956fefc",
+            "bytes": 286765
+          },
+          "test_metrics": {
+            "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_gat_soft_sparse/xenium_test_predictions/metrics.json",
+            "sha256": "7a0c9e5b05debe09d2c796d3f49011b7414c567394f1b0d82ea6ff5a0c9810c8",
+            "bytes": 1562
+          }
+        }
+      },
+      "strategy_metrics": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/strategy_metrics.tsv",
+        "sha256": "7db8178dc8fc863f3727b5640f7d838e25df0599b1a363ad20f3509d33137442",
+        "bytes": 1028
+      },
+      "sparse_test_predictions": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/vit/full_manual_sparse/xenium_test_predictions/predictions.csv",
+        "sha256": "a3a1812c5d6a5afcbe47cd6ca94ad3dc71777b0f104aab08ae3810eb9fac61f9",
+        "bytes": 288555
+      },
+      "display_window_predictions": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/image_windows/display_window_fixed_threshold.csv",
+        "sha256": "a2006b06132f3a3f7ea555163295dd65140131347b33a8cbb98024cb523d8bf4",
+        "bytes": 797290
+      },
+      "display_window_summary": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/image_windows/fixed_threshold_window_summary.json",
+        "sha256": "8f40ccd49e941a9efd1efd793115499ce073d212d5d17ad4eb384e507386dbcf",
+        "bytes": 3624
+      },
+      "if_display_window_predictions": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/image_windows/if_predictions/predictions.csv",
+        "sha256": "e8e87a1558575ac2da122249baf1f5f1064f245f46e44e4adc04ea87b0135ce0",
+        "bytes": 833060
+      },
+      "if_display_window_prediction_summary": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/image_windows/if_predictions/summary.json",
+        "sha256": "71bfbc20aa809b92d58e32fc942d138ecdbbadaddd9afe07fd9f4e70e677100d",
+        "bytes": 2193
+      },
+      "window_release": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/image_windows/manifest.json",
+        "sha256": "715b071e1dca6c91fd4ffd206e332a8d0e2516d8b15b23ca154c30e558862df0",
+        "bytes": 4904
+      },
+      "roc_manifest": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/roc/manifest.json",
+        "sha256": "b2e5e394aea1a91790cc7a4dff621fc92d3432c6e4f4aa52c9048714c6166c22",
+        "bytes": 2723
+      },
+      "label_lock": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/lock.json",
+        "sha256": "6b55e7d03d01366c6dcf4be218ee944f45cf4e525048a7a2c61088d9f618bf42",
+        "bytes": 37507
+      },
+      "hard_call_threshold": 0.5,
+      "selected_epoch": 20,
+      "completed_epochs": 20,
+      "comparison_design": {
+        "training_targets": [
+          "manual binary labels",
+          "GAT soft probabilities"
+        ],
+        "adaptation_depths": [
+          "frozen shared ViT; fine branch and classifier train",
+          "full-model SFT"
+        ],
+        "training_rows": 280,
+        "validation_rows": 486,
+        "test_rows": 819,
+        "positive_test_rows": 91,
+        "selected_variant": "full_manual_sparse",
+        "selection_policy": "Full-model SFT with manual targets prespecified before fitting, matching axis-model adaptation; no test-based strategy selection.",
+        "training_seed": 0
+      },
+      "whole_tissue_classifier_release": false,
+      "evaluation_scope": "Previously examined 819-cell cohort; unchanged qualitative IF windows",
+      "previous_registry": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/source_snapshot/frozen_model_registry.json",
+        "sha256": "d32d3edc5074eb8d6a6c5904b82409497078b84877b484a29ca46483d577cfe3",
+        "bytes": 43900
+      },
+      "previous_release": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/release_manifest.json",
+        "sha256": "e378b349ec48db306bed6ffd255190c04e377078b86ff8bf637660f509da1699",
+        "bytes": 34555
+      }
+    },
+    "xenium_image_coordinate_model": {
+      "status": "FROZEN_RELEASE_MODEL",
+      "version": "paired-representation-shared-scale-v2",
+      "checkpoint": {
+        "role": "released_xenium_checkpoint",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/best_crypt_villus_vit_model.pt",
+        "sha256": "d0e02005b18a670c77c7956d5500d8c599879e183def79badae7fbb526aaf137",
+        "bytes": 20891340
+      },
+      "pretraining_checkpoint": {
+        "role": "paired_representation_pretraining",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/paired_representation_pretraining/pretraining/dapi_encoder_pretrain.pt",
+        "sha256": "d4698fe67251bb56b805624a1e810cacc86f1a553b969ae4b23d54ba5ff3c23a",
+        "bytes": 85503375
+      },
+      "release_manifest": {
+        "role": "release_manifest",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/production_release_manifest.json",
+        "sha256": "c5be148bcbae6597ee8a281db1b8bffc6be2e4f7585f687cbfa529431688518b",
+        "bytes": 5453
+      },
+      "production_selection": {
+        "role": "validation_only_checkpoint_selection",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/production_selection.json",
+        "sha256": "e89cba4983d95acbe8ab981c7502dd19e54abcf0acee8fd04b5191630d4fe4aa",
+        "bytes": 3006
+      },
+      "pretraining_history": {
+        "role": "paired_representation_pretraining_history",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/paired_representation_pretraining/pretraining/pretrain_history.csv",
+        "sha256": "d3227f0c39ee235cb04335b8da0f55dad87a8f46398fae243a56e014208fbb59",
+        "bytes": 18794
+      },
+      "pretraining_summary": {
+        "role": "paired_representation_pretraining_summary",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/paired_representation_pretraining/pretraining/pretrain_summary.json",
+        "sha256": "daecdd0e75be017a65bd231a062d2a7ca77960cf237a169ab4dca552ae023f1f",
+        "bytes": 4336
+      },
+      "supervised_history": {
+        "role": "released_supervised_training_history",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/history.csv",
+        "sha256": "72dde255d67cf441e39d54042b354f06ae2b410551d8ddf262518a60312e3516",
+        "bytes": 3328
+      },
+      "pretraining_ablation_outputs": {
+        "metrics": {
+          "role": "matched_three_seed_pretraining_comparison",
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/paired_representation_pretraining/metrics/performance_by_seed.csv",
+          "sha256": "6fc901ad0041a81dea630c9b9a00ca413da3bb1cb6406cb98d35ae787e890bae",
+          "bytes": 2238
+        },
+        "run_summary": {
+          "role": "pretraining_comparison_run_summary",
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/paired_representation_pretraining/run_summary.json",
+          "sha256": "8ec3a212915d40fafd35f9da8cbd27dbdac085a082b3a85b41294fb3a31188da",
+          "bytes": 8650
+        }
+      },
+      "confirmatory_split": {
+        "role": "locked_confirmatory_section",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/production_confirmatory_test_v2/split_manifest.json",
+        "sha256": "f2bb9c494138d51759b098ce75715da3b1a32cba31c418344aa1e0c8d437f6ec",
+        "bytes": 3449105
+      },
+      "confirmatory_predictions": {
+        "role": "production_v2_cell_predictions",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/production_confirmatory_test_v2/evaluation/production_v2_predictions.parquet",
+        "sha256": "07741e8fb4097c9517acdc89651d62d1656b102698cf63c73827efccb1ed7e8c",
+        "bytes": 15609007
+      },
+      "confirmatory_prediction_provenance": {
+        "role": "production_v2_prediction_provenance",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/production_confirmatory_test_v2/evaluation/provenance.json",
+        "sha256": "d2d60f38f244a5b232680ecc92013bbe8f034d8976a7ce71280bdb16566ad6c7",
+        "bytes": 9104
+      },
+      "figure3_display_source": {
+        "selection_status": "USER_SELECTED_HISTORICAL_TISSUE_FOR_MORPHOLOGY",
+        "source_id": "sample_008",
+        "independent_test_claim": false,
+        "source_lock": {
+          "role": "locked_sample008_display_source",
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure3/production_sample_008_v2/split_manifest.json",
+          "sha256": "f707d0598722c0381c552ad9f4803174de8652e56d8adf99d64cf8bed61994e2",
+          "bytes": 1552299
+        },
+        "predictions": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/predictions_current_references.parquet",
+          "sha256": "40c339827c18129a86bd4462614c0a7d35ccb6e5bd6a59f7a155bb68cf6c9ade",
+          "bytes": 4311765
+        },
+        "metrics": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/metrics.json",
+          "sha256": "299f71bb47b02ffd04152447b152685ee55892e53992c221414e462bf17008d6",
+          "bytes": 369
+        },
+        "prediction_provenance": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/manifest.json",
+          "sha256": "562da00d1fa80b2e6bbcd27d1a15fc09c27226688ab16ee6808ae350e25015b3",
+          "bytes": 22816
+        },
+        "embedding_selection": {
+          "role": "deterministic_30000_cell_selection",
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure3/production_sample_008_v2/panel_inputs/embedding_selection.json",
+          "sha256": "3f884b2fe134b3f0cb1b9f7fe58c25b72e2957b874bb120754d0eba7dfec0c61",
+          "bytes": 1451
+        },
+        "embedding_matrix": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/figure3f_embeddings.npz",
+          "sha256": "6743fc4a3425efcfd18ff5fbeb4a74c631e9414da64f02a55a430f6d21c9929a",
+          "bytes": 28309490
+        },
+        "embedding_metadata": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/embedding_metadata_current_references.csv",
+          "sha256": "4aca7f5308025a1408a65e39e8fdd84a79a01093508526ccaa84c91cf3ffdc55",
+          "bytes": 6607291
+        },
+        "umap": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/figure3f_umap.csv",
+          "sha256": "46cec4c0277721a717be1dc2a1ea74d0dd85077a257c4741a4f3d39ddec2b6ff",
+          "bytes": 602647
+        },
+        "reference_repair": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/reference_repair_v1/manifest.json",
+          "sha256": "cab5a3f912367de55b8cb72f35dccbe93006fe576f4899b7419610cbd84311c9",
+          "bytes": 5456
+        },
+        "image_predictions_changed": true,
+        "cell_membership_changed": false,
+        "umap_geometry_changed": true,
+        "input_preparation_release": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/manifest.json",
+          "sha256": "562da00d1fa80b2e6bbcd27d1a15fc09c27226688ab16ee6808ae350e25015b3",
+          "bytes": 22816
+        },
+        "input_protocol": "direct_pyramid_crop_normalize_resize_uint8_v1",
+        "embedding_membership_changed": false,
+        "model_refitted": false
+      },
+      "ablation_outputs": {
+        "role": "retrained_ablation_metrics",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/ablations/corrected/ablation_metrics_prepared_test.csv",
+        "sha256": "1cb1a90433fc6de2a3a669b0b80eda91ab72716d618f65bc4847ec4c57816830",
+        "bytes": 1110
+      },
+      "ablation_summary": {
+        "role": "retrained_ablation_summary",
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/ablations/corrected/prepared_test_summary.json",
+        "sha256": "18d01fded327133bcf658f17e32c9115bd68efbbce03ee25aa8b75dbbe12eb96",
+        "bytes": 2076
+      },
+      "scale_importance_outputs": {
+        "metrics": {
+          "role": "frozen_scale_permutation_metrics",
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/scale_importance/scale_importance_metrics.csv",
+          "sha256": "0c5b9de2226d9c335766d61d2cf436f5b6d6d62dfc7ea87b8073fcfd1ffee60c",
+          "bytes": 3949
+        },
+        "deltas": {
+          "role": "five_repeat_branch_shuffle_deltas",
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/scale_importance/scale_importance_deltas.csv",
+          "sha256": "23608adef77b6a27417187df298ad466c960fedf5710d8dc348e91e8ef061247",
+          "bytes": 7409
+        },
+        "summary": {
+          "role": "branch_shuffle_summary",
+          "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/scale_importance/scale_importance_summary.json",
+          "sha256": "55bf6d53307ba451cc16b27b1f0ef4a1b0e4bbaf00c77cbb4d1c4e0adba796ac",
+          "bytes": 2398
+        }
+      }
+    },
+    "if_image_coordinate_model": {
+      "status": "FROZEN_BUFFERED_SHARED_REFERENCE_RELEASE",
+      "config": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/config.json",
+        "sha256": "24384da9556b3b935f868e893e54a2ec9ddb2cfc620c22f026f01559163a0b8e",
+        "bytes": 3602
+      },
+      "checkpoint": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/stage2_full/best_crypt_villus_vit_model.pt",
+        "sha256": "b512cb49918a77602575a6768ee6ccc1b5fcda04d3fdd10221510aafec0fc7b2",
+        "bytes": 20896396
+      },
+      "strict_test_split": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/splits/if_final_strict_test_v1.json",
+        "sha256": "7d9c9120c5ef55a2c30a2fe2b3c0e0fe3b16a111ca61ff5339029ae6e4a2ac48",
+        "bytes": 3879
+      },
+      "strict_test_predictions": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/strict_test/predictions.parquet",
+        "sha256": "e7b8457e73a2a603f26e310d5df0477f4fc01c70f03dfba8dbb5aca4f648575e",
+        "bytes": 625118
+      },
+      "fine_tuning_history": {
+        "stage1_history": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/stage1_heads/history.csv",
+          "sha256": "47cb5ed5f1552521e6d2fc5bcfd62bb3912e3b3ebb44c90fe448d90bd76242e4",
+          "bytes": 1291
+        },
+        "stage1_summary": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/stage1_heads/training_summary.json",
+          "sha256": "3fced379904c840791834a8c4410840a3fa0ca6566f44974048c72a153154ff7",
+          "bytes": 5344
+        },
+        "stage2_history": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/stage2_full/history.csv",
+          "sha256": "e8243ede915de6781f2a40c0ba0e5f1f9de399d0262e3f9e6dd9378d3c3e1e08",
+          "bytes": 833
+        },
+        "stage2_summary": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/stage2_full/training_summary.json",
+          "sha256": "56039d5c4774d670059f803b05fa20ebc493347b18756b093d0d8be104d06a8d",
+          "bytes": 8300
+        }
+      },
+      "transfer_comparison": {
+        "metrics": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/transfer_comparison/final_lineage_transfer_metrics.tsv",
+          "sha256": "d1b811d232d79593c01d9f2d7c65b54bfde57270ef600899cef8dce2d0078ce2",
+          "bytes": 2310
+        },
+        "grouped_bootstrap": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/transfer_comparison/grouped_bootstrap_metrics.tsv",
+          "sha256": "bbd7fc1158becc537e1062307885727ab6d9258e574b79da90de2f304014b3ea",
+          "bytes": 3559
+        },
+        "paired_improvements": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/transfer_comparison/fine_tuning_improvement.tsv",
+          "sha256": "05938ca3a2196f6427e19428a2476195eed18546869905d58c1bc8efb5452a7d",
+          "bytes": 563
+        }
+      },
+      "imap_analysis": {
+        "gate_definitions": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/imap/p14_gate_definitions.json",
+          "sha256": "744ba4dbc4f13a6bf2a84b5435d2c8b88a27dc264bd98d33898aaf6e7bcf3c4b",
+          "bytes": 1459
+        },
+        "p14_gate_counts": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/imap/p14_composition_by_gate.tsv",
+          "sha256": "9e362a1659fa6b2ae4de815045687365d5d6543945582cf7cbe838702731efc0",
+          "bytes": 887
+        },
+        "p14_gate_fractions": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/imap/p14_composition_by_gate.tsv",
+          "sha256": "9e362a1659fa6b2ae4de815045687365d5d6543945582cf7cbe838702731efc0",
+          "bytes": 887
+        },
+        "non_p14_gate_counts": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/imap/non_p14_counts_and_fractions.tsv",
+          "sha256": "d53c0024d230713a4f92fa623178da63f969e84cc792692962d589e77fdb385e",
+          "bytes": 709
+        },
+        "non_p14_gate_fractions": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/imap/non_p14_counts_and_fractions.tsv",
+          "sha256": "d53c0024d230713a4f92fa623178da63f969e84cc792692962d589e77fdb385e",
+          "bytes": 709
+        },
+        "p14_abundance": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/imap/p14_abundance_by_gate.tsv",
+          "sha256": "ff71862c37105491291176ee0aaf2a1e0b5f44f2eafdfc7f8ee3ff2e04848918",
+          "bytes": 1064
+        },
+        "p14_composition": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/imap/p14_composition_by_gate.tsv",
+          "sha256": "9e362a1659fa6b2ae4de815045687365d5d6543945582cf7cbe838702731efc0",
+          "bytes": 887
+        },
+        "common_density": {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/imap/density_manifest.json",
+          "sha256": "c405d50af8b09777420e7dd60cf1ae6f109daa5424f2ada299f359d6da18968a",
+          "bytes": 3546
+        }
+      },
+      "whole_tissue_predictions": [
+        {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/whole_tissue/dmso_predictions.parquet",
+          "sha256": "488b5dcf951c403613a01f35f00e4ac3ace2d2a2fbcc40ac49cd4827528b3548",
+          "bytes": 17718166
+        },
+        {
+          "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/whole_tissue/rari_predictions.parquet",
+          "sha256": "9f1a7f95a0b8bb470d7cc011c127ea29f0c4b87bfa1b6c1f88384726f9e44223",
+          "bytes": 15121937
+        }
+      ],
+      "version": "production_v2_scientific_repair_v1",
+      "release_manifest": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/release_manifest.json",
+        "sha256": "f1b3d77147ad618ae3b02554a20ebbc8abefd161893e9f14966db67c3012d694",
+        "bytes": 12904
+      },
+      "xenium_initialization": {
+        "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/best_crypt_villus_vit_model.pt",
+        "sha256": "d0e02005b18a670c77c7956d5500d8c599879e183def79badae7fbb526aaf137",
+        "bytes": 20891340
+      },
+      "training_lock": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/lock.json",
+        "sha256": "e38db97a2fbd6a2ec3154c7062113d4fc50a5e24872df81ecf44955e900593f8",
+        "bytes": 17785
+      },
+      "test_reference_version": "if_shared_training_p99_v1",
+      "training_n": 5822,
+      "validation_n": 2312,
+      "test_n": 4843,
+      "train_validation_crop_overlaps": 0,
+      "test_training_crop_overlaps": 0,
+      "test_validation_crop_overlaps": 0,
+      "strict_test_metrics": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/strict_test/metrics.json",
+        "sha256": "3f7c7711c89ff11591817aa64f8645c40b53b56089b20f849c29eeb7e7ba8606",
+        "bytes": 1150
+      },
+      "scientific_configuration_unchanged_during_numerical_recovery": true,
+      "full_stage_attention_backend": "math SDPA",
+      "source_snapshot_lock": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/lock.json",
+        "sha256": "e38db97a2fbd6a2ec3154c7062113d4fc50a5e24872df81ecf44955e900593f8",
+        "bytes": 17785
+      },
+      "training_completion": {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/training_completed.json",
+        "sha256": "d5f95fb9ce08b06c1fd738f6150374057f38cb750b58f7f51cbaf84e90781ca5",
+        "bytes": 17591
+      },
+      "evaluation_scope": "Previously evaluated within-section crop-disjoint cohort, not an untouched new confirmatory cohort"
+    }
+  },
+  "scientific_repair": {
+    "created_utc": "2026-09-05T23:01:04.917166+00:00",
+    "command": "/home/amonell/Desktop/spatial_axes_manuscript/Figure2/.venv/bin/python frozen_preprocessing/scientific_repair_v1/prepare_registry_promotion.py --registry /home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/frozen_model_registry.json --expected-registry-sha256 633470b5e6f397fbce2eec2dbe70d08ae66430d42e4a1557a129e3de499ae0f0 --output-dir /mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/audits/scientific_repair_v1_registry_promotion",
+    "python": "3.13.11",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.18.0",
+      "torch": "2.8.0",
+      "matplotlib": "3.10.9",
+      "pyarrow": "24.0.0",
+      "scikit-learn": "1.9.0"
+    },
+    "git_commit": null,
+    "git_warning": "No usable Git history in code repository",
+    "status": "VERIFIED_RELEASES_READY_FOR_COMPONENT_RENDERING",
+    "previous_registry": {
+      "path": "/home/amonell/Desktop/spatial_axes_manuscript/frozen_preprocessing/scientific_repair_v1/original_sources/frozen_model_registry.json",
+      "sha256": "633470b5e6f397fbce2eec2dbe70d08ae66430d42e4a1557a129e3de499ae0f0",
+      "bytes": 37906
+    },
+    "releases": [
+      {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_label_repair_v1/release_manifest.json",
+        "sha256": "e378b349ec48db306bed6ffd255190c04e377078b86ff8bf637660f509da1699",
+        "bytes": 34555
+      },
+      {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/scientific_repair_v1/evaluation/release_manifest.json",
+        "sha256": "f1b3d77147ad618ae3b02554a20ebbc8abefd161893e9f14966db67c3012d694",
+        "bytes": 12904
+      },
+      {
+        "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/reference_repair_v1/manifest.json",
+        "sha256": "cab5a3f912367de55b8cb72f35dccbe93006fe576f4899b7419610cbd84311c9",
+        "bytes": 5456
+      }
+    ],
+    "original_checkpoints_and_predictions_preserved": true,
+    "new_xenium_or_pretraining_or_ablation_fits": false
+  }
+}

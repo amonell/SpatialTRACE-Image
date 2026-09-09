@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-09-05",
+  "code_root": "/home/amonell/Desktop/spatial_axes_manuscript",
+  "output_root": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript",
+  "authority": "Original Figures/*.pdf hashes and reference_panels preserve the reviewed artist layouts; explicit September 6 user-authorized additions establish generated panel order in panels. Original PDFs are never overwritten.",
+  "figures": [
+    {
+      "package": "Figure_1",
+      "label": "Figure 1",
+      "reference": "Figures/Figure1.pdf",
+      "reference_sha256": "407668aa19bda1eba81242503eacad33beda282d6683941d78633b91dea240fd",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "package": "Figure_2",
+      "label": "Figure 2",
+      "reference": "Figures/Figure2.pdf",
+      "reference_sha256": "354a480a460d1c75b78aef79cdb2ce13295469727b6b724a64d517d838f72e2f",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "package": "Figure_2_Extended",
+      "label": "Extended Figure 2",
+      "reference": "Figures/Figure2_Extended.pdf",
+      "reference_sha256": "b9af73f74b982ed0ab69cf948e4495a9e90de48dd990264a134a2c6742056f79",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "reference_panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "generated_layout_revision": {
+        "date": "2026-09-06",
+        "user_request": "Remove the two evaluation footers and add these panels into the figures; adjust spacing or orientation as needed so they fit cleanly.",
+        "subsequent_requests": [
+          {
+            "date": "2026-09-07",
+            "user_request": "Add the completed annotation-budget comparison at the appropriate place in the figures.",
+            "added_panels": [
+              "F"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "Figure_2_Extended_2",
+      "label": "Extended Figure 2 page 2",
+      "reference": "Figures/Figure2_Extended_2.pdf",
+      "reference_sha256": "32d04fbab93fb0018518e755e6d2cc37d0a39494f7774854ac7ab39607b0f7f4",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "package": "Figure_3",
+      "label": "Figure 3",
+      "reference": "Figures/Figure3.pdf",
+      "reference_sha256": "af288a503dd65070919e1638b36bd4e153ce72ffd70125c576d8b703a98217b5",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "package": "Figure_3_Extended",
+      "label": "Extended Figure 3",
+      "reference": "Figures/Figure3_Extended.pdf",
+      "reference_sha256": "c124a3765ac89e71439d705e7af72b422074e0d157153f7e76e66fb09f0a3e6f",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "reference_panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "generated_layout_revision": {
+        "date": "2026-09-06",
+        "user_request": "Remove the two evaluation footers and add these panels into the figures; adjust spacing or orientation as needed so they fit cleanly.",
+        "panel_reorder": {
+          "date": "2026-09-07",
+          "user_request": "Move Extended Figure 3 H before F and G in the same figure.",
+          "old_to_new": {
+            "F": "G",
+            "G": "H",
+            "H": "F"
+          },
+          "translation_y_pt_by_previous_panel": {
+            "F": 105,
+            "G": 105,
+            "H": -251
+          },
+          "scientific_values_modified": false
+        }
+      }
+    },
+    {
+      "package": "Figure_4",
+      "label": "Figure 4",
+      "reference": "Figures/Figure4.pdf",
+      "reference_sha256": "e4ae363565e2231c7e36f475d5dadc2c973dd951e95d8ae599faba40ffae1697",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "package": "Figure_4_Extended",
+      "label": "Extended Figure 4",
+      "reference": "Figures/Figure4_extended.pdf",
+      "reference_sha256": "917587bf3b208a67256fca7da475bead1d79be0e56f6698d22e96b3e73d7abfd",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "reference_panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "generated_layout_revision": {
+        "date": "2026-09-06",
+        "user_request": "Remove the two evaluation footers and add these panels into the figures; adjust spacing or orientation as needed so they fit cleanly.",
+        "panel_reorder": {
+          "old_to_new": {
+            "D": "E",
+            "E": "F",
+            "F": "D"
+          },
+          "user_request": "Former F becomes D; former D/E become E/F."
+        }
+      }
+    }
+  ],
+  "review_notes": "All eight September 5 PDF pages visually reviewed for complete-figure assembly. Visible panel order unchanged. Current verified scientific releases supersede historical values visible in these layout references. Arial replacement and Figure 4b aspect-ratio correction explicitly approved."
+}

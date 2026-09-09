@@ -1,0 +1,828 @@
+{
+  "reference_pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure2_Extended.pdf",
+  "reference_sha256": "b9af73f74b982ed0ab69cf948e4495a9e90de48dd990264a134a2c6742056f79",
+  "method": "Original image unit-square transformed by recursive PDF CTMs; original path paint bounds; direct text-paint baselines.",
+  "images": [
+    {
+      "id": "page//Im0",
+      "rect_pt": [
+        88.832222,
+        482.0771948,
+        137.2541499,
+        144.2457507
+      ],
+      "pixels": [
+        207,
+        212
+      ]
+    },
+    {
+      "id": "page//Im1",
+      "rect_pt": [
+        241.7345734,
+        496.9763038,
+        137.91722580000004,
+        127.916043
+      ],
+      "pixels": [
+        208,
+        188
+      ]
+    },
+    {
+      "id": "page//Im2",
+      "rect_pt": [
+        389.1697998,
+        482.0771948,
+        137.91722580000004,
+        140.1633238
+      ],
+      "pixels": [
+        208,
+        206
+      ]
+    },
+    {
+      "id": "page//Im3",
+      "rect_pt": [
+        92.754425,
+        329.4971777999999,
+        136.6074452,
+        133.47437540000004
+      ],
+      "pixels": [
+        207,
+        213
+      ]
+    },
+    {
+      "id": "page//Im4",
+      "rect_pt": [
+        243.0364532,
+        336.24086059999996,
+        136.6074452,
+        117.18172870000001
+      ],
+      "pixels": [
+        207,
+        187
+      ]
+    },
+    {
+      "id": "page//Im5",
+      "rect_pt": [
+        389.8246765,
+        329.49717780000003,
+        136.60744520000003,
+        128.46125329999995
+      ],
+      "pixels": [
+        207,
+        205
+      ]
+    },
+    {
+      "id": "page//Im6",
+      "rect_pt": [
+        98.075325,
+        40.20890869999994,
+        132.95328889999996,
+        125.95432930000004
+      ],
+      "pixels": [
+        207,
+        213
+      ]
+    },
+    {
+      "id": "page//Im7",
+      "rect_pt": [
+        244.8635254,
+        47.15776130000006,
+        132.9532889,
+        110.57962239999995
+      ],
+      "pixels": [
+        207,
+        187
+      ]
+    },
+    {
+      "id": "page//Im8",
+      "rect_pt": [
+        392.9457703,
+        43.32237299999997,
+        132.95328890000002,
+        121.22365030000003
+      ],
+      "pixels": [
+        207,
+        205
+      ]
+    },
+    {
+      "id": "page//Im9",
+      "rect_pt": [
+        97.4283295,
+        179.4197851,
+        132.95328889999996,
+        130.97175459999994
+      ],
+      "pixels": [
+        207,
+        212
+      ]
+    },
+    {
+      "id": "page//Im10",
+      "rect_pt": [
+        244.2165222,
+        187.17125,
+        132.95330910000004,
+        113.84177350000004
+      ],
+      "pixels": [
+        208,
+        188
+      ]
+    },
+    {
+      "id": "page//Im11",
+      "rect_pt": [
+        391.0047302,
+        179.4197852000001,
+        134.24732590000002,
+        126.00047499999994
+      ],
+      "pixels": [
+        208,
+        206
+      ]
+    },
+    {
+      "id": "page//Im12",
+      "rect_pt": [
+        29.7238293,
+        335.0647742,
+        6.242689399999996,
+        121.4865112
+      ],
+      "pixels": [
+        13,
+        256
+      ]
+    },
+    {
+      "id": "page//Im13",
+      "rect_pt": [
+        29.5418816,
+        491.1519629,
+        6.552000099999997,
+        129.0240021
+      ],
+      "pixels": [
+        13,
+        256
+      ]
+    },
+    {
+      "id": "page//Im14",
+      "rect_pt": [
+        28.6662273,
+        189.73448240000005,
+        5.990400300000001,
+        117.96480559999998
+      ],
+      "pixels": [
+        13,
+        256
+      ]
+    },
+    {
+      "id": "page//Im15",
+      "rect_pt": [
+        30.0736027,
+        44.02879389999998,
+        5.990400300000001,
+        117.96480559999998
+      ],
+      "pixels": [
+        13,
+        256
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "index": 121,
+      "rect_pt": [
+        32.4174,
+        672.0435,
+        0,
+        131.872
+      ]
+    },
+    {
+      "index": 122,
+      "rect_pt": [
+        32.4174,
+        803.9155,
+        176.076,
+        0
+      ]
+    },
+    {
+      "index": 208,
+      "rect_pt": [
+        234.0769,
+        677.1639,
+        0,
+        125.592
+      ]
+    },
+    {
+      "index": 209,
+      "rect_pt": [
+        234.0769,
+        802.7559,
+        163.662,
+        0
+      ]
+    },
+    {
+      "index": 291,
+      "rect_pt": [
+        428.5662,
+        762.1407,
+        163.554,
+        0
+      ]
+    },
+    {
+      "index": 292,
+      "rect_pt": [
+        428.5662,
+        679.1545,
+        0,
+        125.592
+      ]
+    },
+    {
+      "index": 293,
+      "rect_pt": [
+        428.5662,
+        804.7465,
+        163.554,
+        0
+      ]
+    }
+  ],
+  "texts": [
+    {
+      "text": "a.",
+      "x_pt": 15.814,
+      "y_pt": 27.000400000000013,
+      "font_size_pt": 10.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "b.",
+      "x_pt": 20.5978,
+      "y_pt": 657.697,
+      "font_size_pt": 10.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "c.",
+      "x_pt": 219.3652,
+      "y_pt": 658.8088,
+      "font_size_pt": 10.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Day 6 SI",
+      "x_pt": 145.6201,
+      "y_pt": 31.734699999999975,
+      "font_size_pt": 12,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Day 8 SI",
+      "x_pt": 292.2961,
+      "y_pt": 34.38670000000002,
+      "font_size_pt": 12,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Day 30 SI",
+      "x_pt": 436.80010000000004,
+      "y_pt": 34.38670000000002,
+      "font_size_pt": 12,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "d.",
+      "x_pt": 403.145,
+      "y_pt": 658.266,
+      "font_size_pt": 10.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Epithelial distance axis label",
+      "x_pt": 20.8779,
+      "y_pt": 456.8094,
+      "font_size_pt": 9.6,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "0.0",
+      "x_pt": 40.0991,
+      "y_pt": 458.7552,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.35",
+      "x_pt": 38.952734,
+      "y_pt": 397.6352,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.70",
+      "x_pt": 38.952734,
+      "y_pt": 337.9712,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Epithelial-distance axis predicted",
+      "x_pt": 21.8916,
+      "y_pt": 627.0882,
+      "font_size_pt": 9.6,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "0.0",
+      "x_pt": 40.3247,
+      "y_pt": 623.0120999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.35",
+      "x_pt": 40.100411,
+      "y_pt": 558.5320999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.70",
+      "x_pt": 40.141946000000004,
+      "y_pt": 493.80409999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Crypt-villus axis predicted",
+      "x_pt": 22.5508,
+      "y_pt": 304.29139999999995,
+      "font_size_pt": 9.6,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "0.0",
+      "x_pt": 41.7915,
+      "y_pt": 310.07949999999994,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.5",
+      "x_pt": 40.371003,
+      "y_pt": 251.4074999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 39.789513,
+      "y_pt": 192.93549999999993,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Crypt-villus axis label",
+      "x_pt": 23.2295,
+      "y_pt": 153.74159999999995,
+      "font_size_pt": 9.6,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "0.0",
+      "x_pt": 41.1128,
+      "y_pt": 163.84019999999998,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.5",
+      "x_pt": 39.692303,
+      "y_pt": 105.16819999999996,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 39.110813,
+      "y_pt": 46.696199999999976,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 35.7979,
+      "y_pt": 812.8382,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 57.5938,
+      "y_pt": 812.8382,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 80.7925,
+      "y_pt": 812.8382,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30",
+      "x_pt": 103.9902,
+      "y_pt": 812.8382,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "40",
+      "x_pt": 127.189,
+      "y_pt": 812.8382,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "50",
+      "x_pt": 150.3877,
+      "y_pt": 812.8382,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "60",
+      "x_pt": 173.5864,
+      "y_pt": 812.8382,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "70",
+      "x_pt": 196.7842,
+      "y_pt": 812.8382,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "T",
+      "x_pt": 107.317,
+      "y_pt": 821.975,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "raining villi",
+      "x_pt": 111.457,
+      "y_pt": 821.975,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 21.4961,
+      "y_pt": 794.6,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 21.4961,
+      "y_pt": 766.5755,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30",
+      "x_pt": 21.4961,
+      "y_pt": 738.5521,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "40",
+      "x_pt": 21.4961,
+      "y_pt": 710.5287,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "50",
+      "x_pt": 21.4961,
+      "y_pt": 682.5043,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "T",
+      "x_pt": 16.9136,
+      "y_pt": 769.6693,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "raining runtime (s)",
+      "x_pt": 16.9136,
+      "y_pt": 765.5293,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Crypt-villus coordinate",
+      "x_pt": 50.165,
+      "y_pt": 681.1517,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Epithelial-distance coordinate",
+      "x_pt": 50.165,
+      "y_pt": 688.347,
+      "font_size_pt": 7.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 237.0239,
+      "y_pt": 813.3968,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 257.251,
+      "y_pt": 813.3968,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 278.8135,
+      "y_pt": 813.3968,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30",
+      "x_pt": 300.376,
+      "y_pt": 813.3968,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "40",
+      "x_pt": 321.9395,
+      "y_pt": 813.3968,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "50",
+      "x_pt": 343.502,
+      "y_pt": 813.3968,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "60",
+      "x_pt": 365.0654,
+      "y_pt": 813.3968,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "70",
+      "x_pt": 386.6279,
+      "y_pt": 813.3968,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "T",
+      "x_pt": 300.2999,
+      "y_pt": 822.1967999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "raining villi",
+      "x_pt": 304.8999,
+      "y_pt": 822.1967999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.05",
+      "x_pt": 215.5303,
+      "y_pt": 790.1527,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.10",
+      "x_pt": 215.5303,
+      "y_pt": 770.5209,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.15",
+      "x_pt": 215.5303,
+      "y_pt": 750.89,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.20",
+      "x_pt": 215.5303,
+      "y_pt": 731.2591,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.25",
+      "x_pt": 215.5303,
+      "y_pt": 711.6273,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.30",
+      "x_pt": 215.5303,
+      "y_pt": 691.9964,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Held-out-villus MAE",
+      "x_pt": 212.1738,
+      "y_pt": 773.0531,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "0",
+      "x_pt": 431.5098,
+      "y_pt": 814.3871,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 451.7227,
+      "y_pt": 814.3871,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 473.2715,
+      "y_pt": 814.3871,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30",
+      "x_pt": 494.8193,
+      "y_pt": 814.3871,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "40",
+      "x_pt": 516.3682,
+      "y_pt": 814.3871,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "50",
+      "x_pt": 537.917,
+      "y_pt": 814.3871,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "60",
+      "x_pt": 559.4658,
+      "y_pt": 814.3871,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "70",
+      "x_pt": 581.0146,
+      "y_pt": 814.3871,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "T",
+      "x_pt": 495.7346,
+      "y_pt": 824.1871,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "raining villi",
+      "x_pt": 500.3346,
+      "y_pt": 824.1871,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "−0.4",
+      "x_pt": 409.8877,
+      "y_pt": 796.3138,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "−0.2",
+      "x_pt": 409.8877,
+      "y_pt": 780.5882,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 412.6914,
+      "y_pt": 764.8616999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 412.6914,
+      "y_pt": 749.1351,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 412.6914,
+      "y_pt": 733.4086,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.6",
+      "x_pt": 412.6914,
+      "y_pt": 717.682,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.8",
+      "x_pt": 412.6914,
+      "y_pt": 701.9554,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 412.6914,
+      "y_pt": 686.2289,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Held-out-villus R²",
+      "x_pt": 407.5322,
+      "y_pt": 767.3714,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    }
+  ]
+}

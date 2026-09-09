@@ -1,0 +1,14 @@
+site_name: TissueMapper-Image
+site_description: Research software for intestinal anatomical mapping.
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Inputs: apply_to_own_data.md
+  - Training: training.md
+  - Artifacts: artifacts.md
+  - Peyer classifier: peyer_patch_workflow.md
+  - QuPath: qupath_export.md
+  - Multiple tissues: multi_tissue_workflow.md
+  - Model card: model_card.md
+theme:
+  name: mkdocs

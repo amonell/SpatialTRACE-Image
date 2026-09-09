@@ -1,0 +1,743 @@
+{
+  "schema_version": 1,
+  "figure": "Figure 3",
+  "package": "Figure_3",
+  "panels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "page_size_pt": [
+    595.276,
+    841.89
+  ],
+  "reference": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure3.pdf",
+  "reference_sha256": "af288a503dd65070919e1638b36bd4e153ce72ffd70125c576d8b703a98217b5",
+  "source_image_events": {
+    "student_local": 0,
+    "overview": 1,
+    "local": 2,
+    "fine": 3,
+    "context": 4,
+    "augmentation_original": 5,
+    "augmentation_rotation": 6,
+    "augmentation_flip": 7,
+    "student_context": 8,
+    "teacher_context": 9,
+    "sft_local": 10,
+    "sft_context": 11,
+    "sft_fine": 12,
+    "head_cv": 13,
+    "head_colorbar": 14,
+    "head_epi": 15,
+    "context_cv": 17,
+    "context_epi": 19,
+    "umap_cv_colorbar": 20,
+    "umap_epi_colorbar": 21,
+    "cv_reference_colorbar": 22,
+    "cv_reference_zoom_colorbar": 23,
+    "cv_prediction_colorbar": 24,
+    "cv_prediction_zoom_colorbar": 25,
+    "epi_reference_colorbar": 26,
+    "epi_reference_zoom_colorbar": 27,
+    "epi_prediction_colorbar": 28,
+    "epi_prediction_zoom_colorbar": 29,
+    "scatter_cv_colorbar": 30,
+    "scatter_epi_colorbar": 31,
+    "umap_cv": 32,
+    "umap_epi": 33,
+    "cv_reference": 34,
+    "cv_prediction": 35,
+    "cv_reference_zoom": 36,
+    "cv_prediction_zoom": 37,
+    "epi_prediction": 38,
+    "epi_reference": 39,
+    "epi_reference_zoom": 40,
+    "epi_prediction_zoom": 41,
+    "teacher_local": 42
+  },
+  "slots": {
+    "student_local": [
+      174.741,
+      175.1063,
+      36.7542,
+      36.9506
+    ],
+    "overview": [
+      25.6263,
+      42.5238,
+      93.744,
+      93.744
+    ],
+    "local": [
+      51.7067,
+      219.4597,
+      61.8935,
+      62.0954
+    ],
+    "fine": [
+      50.645,
+      302.2823,
+      64.1554,
+      61.8964
+    ],
+    "context": [
+      51.0634,
+      151.468,
+      62.496,
+      62.496
+    ],
+    "augmentation_original": [
+      164.2055,
+      47.6989,
+      36.7632,
+      36.7632
+    ],
+    "augmentation_rotation": [
+      203.859,
+      47.6989,
+      36.7632,
+      36.7632
+    ],
+    "augmentation_flip": [
+      243.1903,
+      48.2033,
+      36.7632,
+      36.7632
+    ],
+    "student_context": [
+      225.9083,
+      175.2371,
+      36.7632,
+      36.7632
+    ],
+    "teacher_context": [
+      225.5781,
+      253.6386,
+      36.7632,
+      36.7632
+    ],
+    "sft_local": [
+      308.3018,
+      99.9519,
+      31.9643,
+      32.5227
+    ],
+    "sft_context": [
+      308.1696,
+      55.0285,
+      32.2754,
+      32.7325
+    ],
+    "sft_fine": [
+      311.7062,
+      168.9586,
+      33.1324,
+      32.8271
+    ],
+    "head_cv": [
+      446.2912,
+      243.9053,
+      32.4698,
+      31.7701
+    ],
+    "head_colorbar": [
+      494.5092,
+      242.0998,
+      3.9212,
+      78.7803
+    ],
+    "head_epi": [
+      446.2912,
+      296.1262,
+      32.4698,
+      31.7701
+    ],
+    "context_cv": [
+      528.0654,
+      240.022,
+      39.6548,
+      40.2165
+    ],
+    "context_epi": [
+      528.0654,
+      293.0558,
+      39.6548,
+      40.2165
+    ],
+    "umap_cv_colorbar": [
+      18.0612,
+      413.9737,
+      90.9792,
+      4.6656
+    ],
+    "umap_epi_colorbar": [
+      134.5288,
+      414.6695,
+      90.9792,
+      4.6656
+    ],
+    "cv_reference_colorbar": [
+      134.7064,
+      559.2836,
+      5.76,
+      108.864
+    ],
+    "cv_reference_zoom_colorbar": [
+      418.6744,
+      559.2836,
+      5.76,
+      109.44
+    ],
+    "cv_prediction_colorbar": [
+      276.9785,
+      559.2836,
+      5.184,
+      109.44
+    ],
+    "cv_prediction_zoom_colorbar": [
+      560.9464,
+      559.2836,
+      5.76,
+      109.44
+    ],
+    "epi_reference_colorbar": [
+      133.3441,
+      695.9314,
+      5.76,
+      108.864
+    ],
+    "epi_reference_zoom_colorbar": [
+      417.3121,
+      695.9314,
+      5.76,
+      109.44
+    ],
+    "epi_prediction_colorbar": [
+      275.6161,
+      695.9314,
+      5.184,
+      109.44
+    ],
+    "epi_prediction_zoom_colorbar": [
+      559.5841,
+      695.9314,
+      5.76,
+      109.44
+    ],
+    "scatter_cv_colorbar": [
+      385.109,
+      406.081,
+      5.651,
+      113.026
+    ],
+    "scatter_epi_colorbar": [
+      564.2335,
+      406.081,
+      5.651,
+      113.026
+    ],
+    "umap_cv": [
+      21.973,
+      430.1022,
+      81.9072,
+      69.12
+    ],
+    "umap_epi": [
+      136.1711,
+      429.0309,
+      81.9072,
+      69.12
+    ],
+    "cv_reference": [
+      20.9418,
+      564.345,
+      109.728,
+      108
+    ],
+    "cv_prediction": [
+      163.06,
+      564.42,
+      109.728,
+      108
+    ],
+    "cv_reference_zoom": [
+      303.4502,
+      558.5048,
+      113.184,
+      111.456
+    ],
+    "cv_prediction_zoom": [
+      444.3672,
+      558.5048,
+      113.184,
+      111.456
+    ],
+    "epi_prediction": [
+      163.06,
+      703.5863,
+      109.728,
+      108
+    ],
+    "epi_reference": [
+      21.0034,
+      703.6565,
+      109.728,
+      108
+    ],
+    "epi_reference_zoom": [
+      301.3889,
+      695.4198,
+      113.184,
+      111.456
+    ],
+    "epi_prediction_zoom": [
+      444.3672,
+      694.9234,
+      113.184,
+      111.456
+    ],
+    "teacher_local": [
+      173.8063,
+      253.6552,
+      36.7542,
+      36.9506
+    ],
+    "scatter_cv": [
+      269.5598,
+      406.081,
+      113.026,
+      113.026
+    ],
+    "scatter_epi": [
+      448.6843,
+      406.081,
+      113.026,
+      113.026
+    ]
+  },
+  "anchors": [
+    {
+      "id": "student_local",
+      "rect_pt": [
+        174.741,
+        175.1063,
+        36.7542,
+        36.9506
+      ]
+    },
+    {
+      "id": "overview",
+      "rect_pt": [
+        25.6263,
+        42.5238,
+        93.744,
+        93.744
+      ]
+    },
+    {
+      "id": "local",
+      "rect_pt": [
+        51.7067,
+        219.4597,
+        61.8935,
+        62.0954
+      ]
+    },
+    {
+      "id": "fine",
+      "rect_pt": [
+        50.645,
+        302.2823,
+        64.1554,
+        61.8964
+      ]
+    },
+    {
+      "id": "context",
+      "rect_pt": [
+        51.0634,
+        151.468,
+        62.496,
+        62.496
+      ]
+    },
+    {
+      "id": "augmentation_original",
+      "rect_pt": [
+        164.2055,
+        47.6989,
+        36.7632,
+        36.7632
+      ]
+    },
+    {
+      "id": "augmentation_rotation",
+      "rect_pt": [
+        203.859,
+        47.6989,
+        36.7632,
+        36.7632
+      ]
+    },
+    {
+      "id": "augmentation_flip",
+      "rect_pt": [
+        243.1903,
+        48.2033,
+        36.7632,
+        36.7632
+      ]
+    },
+    {
+      "id": "student_context",
+      "rect_pt": [
+        225.9083,
+        175.2371,
+        36.7632,
+        36.7632
+      ]
+    },
+    {
+      "id": "teacher_context",
+      "rect_pt": [
+        225.5781,
+        253.6386,
+        36.7632,
+        36.7632
+      ]
+    },
+    {
+      "id": "sft_local",
+      "rect_pt": [
+        308.3018,
+        99.9519,
+        31.9643,
+        32.5227
+      ]
+    },
+    {
+      "id": "sft_context",
+      "rect_pt": [
+        308.1696,
+        55.0285,
+        32.2754,
+        32.7325
+      ]
+    },
+    {
+      "id": "sft_fine",
+      "rect_pt": [
+        311.7062,
+        168.9586,
+        33.1324,
+        32.8271
+      ]
+    },
+    {
+      "id": "head_cv",
+      "rect_pt": [
+        446.2912,
+        243.9053,
+        32.4698,
+        31.7701
+      ]
+    },
+    {
+      "id": "head_colorbar",
+      "rect_pt": [
+        494.5092,
+        242.0998,
+        3.9212,
+        78.7803
+      ]
+    },
+    {
+      "id": "head_epi",
+      "rect_pt": [
+        446.2912,
+        296.1262,
+        32.4698,
+        31.7701
+      ]
+    },
+    {
+      "id": "context_cv",
+      "rect_pt": [
+        528.0654,
+        240.022,
+        39.6548,
+        40.2165
+      ]
+    },
+    {
+      "id": "context_epi",
+      "rect_pt": [
+        528.0654,
+        293.0558,
+        39.6548,
+        40.2165
+      ]
+    },
+    {
+      "id": "umap_cv_colorbar",
+      "rect_pt": [
+        18.0612,
+        413.9737,
+        90.9792,
+        4.6656
+      ]
+    },
+    {
+      "id": "umap_epi_colorbar",
+      "rect_pt": [
+        134.5288,
+        414.6695,
+        90.9792,
+        4.6656
+      ]
+    },
+    {
+      "id": "cv_reference_colorbar",
+      "rect_pt": [
+        134.7064,
+        559.2836,
+        5.76,
+        108.864
+      ]
+    },
+    {
+      "id": "cv_reference_zoom_colorbar",
+      "rect_pt": [
+        418.6744,
+        559.2836,
+        5.76,
+        109.44
+      ]
+    },
+    {
+      "id": "cv_prediction_colorbar",
+      "rect_pt": [
+        276.9785,
+        559.2836,
+        5.184,
+        109.44
+      ]
+    },
+    {
+      "id": "cv_prediction_zoom_colorbar",
+      "rect_pt": [
+        560.9464,
+        559.2836,
+        5.76,
+        109.44
+      ]
+    },
+    {
+      "id": "epi_reference_colorbar",
+      "rect_pt": [
+        133.3441,
+        695.9314,
+        5.76,
+        108.864
+      ]
+    },
+    {
+      "id": "epi_reference_zoom_colorbar",
+      "rect_pt": [
+        417.3121,
+        695.9314,
+        5.76,
+        109.44
+      ]
+    },
+    {
+      "id": "epi_prediction_colorbar",
+      "rect_pt": [
+        275.6161,
+        695.9314,
+        5.184,
+        109.44
+      ]
+    },
+    {
+      "id": "epi_prediction_zoom_colorbar",
+      "rect_pt": [
+        559.5841,
+        695.9314,
+        5.76,
+        109.44
+      ]
+    },
+    {
+      "id": "scatter_cv_colorbar",
+      "rect_pt": [
+        385.109,
+        406.081,
+        5.651,
+        113.026
+      ]
+    },
+    {
+      "id": "scatter_epi_colorbar",
+      "rect_pt": [
+        564.2335,
+        406.081,
+        5.651,
+        113.026
+      ]
+    },
+    {
+      "id": "umap_cv",
+      "rect_pt": [
+        21.973,
+        430.1022,
+        81.9072,
+        69.12
+      ]
+    },
+    {
+      "id": "umap_epi",
+      "rect_pt": [
+        136.1711,
+        429.0309,
+        81.9072,
+        69.12
+      ]
+    },
+    {
+      "id": "cv_reference",
+      "rect_pt": [
+        20.9418,
+        564.345,
+        109.728,
+        108
+      ]
+    },
+    {
+      "id": "cv_prediction",
+      "rect_pt": [
+        163.06,
+        564.42,
+        109.728,
+        108
+      ]
+    },
+    {
+      "id": "cv_reference_zoom",
+      "rect_pt": [
+        303.4502,
+        558.5048,
+        113.184,
+        111.456
+      ]
+    },
+    {
+      "id": "cv_prediction_zoom",
+      "rect_pt": [
+        444.3672,
+        558.5048,
+        113.184,
+        111.456
+      ]
+    },
+    {
+      "id": "epi_prediction",
+      "rect_pt": [
+        163.06,
+        703.5863,
+        109.728,
+        108
+      ]
+    },
+    {
+      "id": "epi_reference",
+      "rect_pt": [
+        21.0034,
+        703.6565,
+        109.728,
+        108
+      ]
+    },
+    {
+      "id": "epi_reference_zoom",
+      "rect_pt": [
+        301.3889,
+        695.4198,
+        113.184,
+        111.456
+      ]
+    },
+    {
+      "id": "epi_prediction_zoom",
+      "rect_pt": [
+        444.3672,
+        694.9234,
+        113.184,
+        111.456
+      ]
+    },
+    {
+      "id": "teacher_local",
+      "rect_pt": [
+        173.8063,
+        253.6552,
+        36.7542,
+        36.9506
+      ]
+    },
+    {
+      "id": "scatter_cv",
+      "rect_pt": [
+        269.5598,
+        406.081,
+        113.026,
+        113.026
+      ]
+    },
+    {
+      "id": "scatter_epi",
+      "rect_pt": [
+        448.6843,
+        406.081,
+        113.026,
+        113.026
+      ]
+    }
+  ],
+  "elements": [],
+  "expected_text": [
+    "Shared transformer",
+    "scale embeddings",
+    "Paired representation learning",
+    "Coordinate supervision",
+    "Graph-derived coordinate targets",
+    "666 µm",
+    "Fine branch (fine-tuning only)"
+  ],
+  "forbidden_text": [
+    "22,048",
+    "176,384",
+    "13 supervised epochs",
+    "20 supervised epochs",
+    "Pretraining Data Summary",
+    "Total augmented crops",
+    "selected epoch",
+    "0.909",
+    "0.797",
+    "Xenium-aligned training",
+    "Fine branch (SFT only)"
+  ],
+  "intentional_differences": [
+    "The four main Figure 3a paired-view thumbnails now use the actual frozen dataset pair shared with Extended Figure 3a: variant-0 clean teachers and variant-1 students with shared rotation and intensity augmentation. This corrects the simplified baseline thumbnails; all four registered slots and other artwork remain unchanged.",
+    "The training-matched input refresh regenerates predictions and embeddings for the same 50,000 cells and current graph references. One new UMAP retains the original 30,000-cell subset and settings. Spatial zooms and every registered layout rectangle stay fixed.",
+    "The original Cont1 pretraining illustration and user-approved Day90 Xenium supervised side are preserved unchanged from the previous Figure 3A release. Centroid markers represent saved cell predictions, not segmented nuclei.",
+    "Original manual shapes are structurally extracted; live text is replaced with Arial at measured baselines, with width-constrained sizes.",
+    "Shared-weight and scale-embedding descriptions and paired student–teacher views reflect the released architecture. Training-report text is replaced at its original baselines by concise representation-learning and coordinate-supervision descriptions; crop widths use physical units while resized network inputs remain in pixels. Counts and training schedules are reported in Methods.",
+    "User-requested panel letters without trailing periods; preserve letter case, font, size, and anchors.",
+    "User-requested wording-only revision, 7 September 2026. Longer labels may wrap or use text-specific fit adjustments; scientific inputs, values, gates, colors, markers and axes remain unchanged."
+  ],
+  "panel_letter_punctuation": "none"
+}

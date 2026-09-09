@@ -1,0 +1,1540 @@
+{
+  "reference_pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure2.pdf",
+  "reference_sha256": "354a480a460d1c75b78aef79cdb2ce13295469727b6b724a64d517d838f72e2f",
+  "method": "Original image unit-square transformed by recursive PDF CTMs; original path paint bounds; direct text-paint baselines.",
+  "images": [
+    {
+      "id": "page//Im0",
+      "rect_pt": [
+        50.7817078,
+        376.7844702,
+        94.46400450000002,
+        108.74879809999999
+      ],
+      "pixels": [
+        205,
+        236
+      ]
+    },
+    {
+      "id": "page//Im1",
+      "rect_pt": [
+        19.8972816,
+        353.4380347,
+        5.990400300000001,
+        117.96480559999998
+      ],
+      "pixels": [
+        13,
+        256
+      ]
+    },
+    {
+      "id": "page//Im2",
+      "rect_pt": [
+        349.9987183,
+        367.84578,
+        103.8240017,
+        111.39662859999999
+      ],
+      "pixels": [
+        206,
+        236
+      ]
+    },
+    {
+      "id": "page//Im3",
+      "rect_pt": [
+        320.6654358,
+        359.1722571,
+        5.990400299999976,
+        117.96480559999998
+      ],
+      "pixels": [
+        13,
+        256
+      ]
+    },
+    {
+      "id": "page//Im4",
+      "rect_pt": [
+        457.5073853,
+        381.4062354,
+        117.89479089999998,
+        59.44320299999998
+      ],
+      "pixels": [
+        343,
+        173
+      ]
+    },
+    {
+      "id": "page//Im5",
+      "rect_pt": [
+        354.3374023,
+        525.4056860000001,
+        95.89244070000001,
+        108.12618509999999
+      ],
+      "pixels": [
+        206,
+        236
+      ]
+    },
+    {
+      "id": "page//Im6",
+      "rect_pt": [
+        323.8789978,
+        514.3329931000001,
+        6.552000099999987,
+        129.0240021
+      ],
+      "pixels": [
+        13,
+        256
+      ]
+    },
+    {
+      "id": "page//Im7",
+      "rect_pt": [
+        459.7957153,
+        535.519364,
+        117.14287679999995,
+        57.94336479999998
+      ],
+      "pixels": [
+        343,
+        173
+      ]
+    },
+    {
+      "id": "page//Im8",
+      "rect_pt": [
+        156.6432648,
+        389.24900879999996,
+        118.88639280000001,
+        59.44319780000001
+      ],
+      "pixels": [
+        344,
+        173
+      ]
+    },
+    {
+      "id": "page//Im9",
+      "rect_pt": [
+        30.2685776,
+        68.21830809999994,
+        43.02719739999999,
+        44.064004899999986
+      ],
+      "pixels": [
+        249,
+        255
+      ]
+    },
+    {
+      "id": "page//Im10",
+      "rect_pt": [
+        83.1310196,
+        69.43107669999995,
+        43.20000110000001,
+        38.88000099999999
+      ],
+      "pixels": [
+        250,
+        225
+      ]
+    },
+    {
+      "id": "page//Im11",
+      "rect_pt": [
+        33.326355,
+        116.53160160000004,
+        43.0271974,
+        42.681604799999945
+      ],
+      "pixels": [
+        249,
+        247
+      ]
+    },
+    {
+      "id": "page//Im12",
+      "rect_pt": [
+        82.8059464,
+        114.68364020000001,
+        38.361604299999996,
+        44.064004899999986
+      ],
+      "pixels": [
+        222,
+        255
+      ]
+    },
+    {
+      "id": "page//Im13",
+      "rect_pt": [
+        25.5891724,
+        216.46714839999993,
+        72.6768024,
+        77.43960260000006
+      ],
+      "pixels": [
+        412,
+        439
+      ]
+    },
+    {
+      "id": "page//Im14",
+      "rect_pt": [
+        171.4476624,
+        77.42265380000003,
+        72.84208519999999,
+        42.491216399999985
+      ],
+      "pixels": [
+        204,
+        119
+      ]
+    },
+    {
+      "id": "page//Im15",
+      "rect_pt": [
+        254.7025452,
+        80.69279539999991,
+        4.394986400000022,
+        36.556502600000044
+      ],
+      "pixels": [
+        18,
+        280
+      ]
+    },
+    {
+      "id": "page//Im16",
+      "rect_pt": [
+        469.7193604,
+        122.22398429999998,
+        72.84208279999996,
+        39.108924900000034
+      ],
+      "pixels": [
+        199,
+        128
+      ]
+    },
+    {
+      "id": "page//Im17",
+      "rect_pt": [
+        50.4694977,
+        531.3872229,
+        98.44240979999998,
+        111.9953705
+      ],
+      "pixels": [
+        205,
+        236
+      ]
+    },
+    {
+      "id": "page//Im18",
+      "rect_pt": [
+        22.0787601,
+        522.5026098999999,
+        6.2426894,
+        121.4865112
+      ],
+      "pixels": [
+        13,
+        256
+      ]
+    },
+    {
+      "id": "page//Im19",
+      "rect_pt": [
+        478.2796936,
+        220.72612059999994,
+        49.12877070000002,
+        49.12877070000002
+      ],
+      "pixels": [
+        936,
+        936
+      ]
+    },
+    {
+      "id": "page//Im20",
+      "rect_pt": [
+        161.0336151,
+        547.5851905,
+        117.89478199999999,
+        59.44320669999999
+      ],
+      "pixels": [
+        355,
+        179
+      ]
+    },
+    {
+      "id": "page//Im21",
+      "rect_pt": [
+        158.1497803,
+        692.2504584,
+        6.1440000999999995,
+        119.808001
+      ],
+      "pixels": [
+        32,
+        624
+      ]
+    },
+    {
+      "id": "page//Im22",
+      "rect_pt": [
+        352.4242249,
+        691.1922308999999,
+        5.952000100000021,
+        119.80800100000002
+      ],
+      "pixels": [
+        31,
+        624
+      ]
+    },
+    {
+      "id": "page//Im23",
+      "rect_pt": [
+        544.9116211,
+        124.55699219999997,
+        4.394986399999993,
+        36.556502600000044
+      ],
+      "pixels": [
+        18,
+        280
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "index": 2549,
+      "rect_pt": [
+        35.2913,
+        692.3224,
+        0,
+        119.808
+      ]
+    },
+    {
+      "index": 2550,
+      "rect_pt": [
+        155.0993,
+        692.3224,
+        0,
+        119.808
+      ]
+    },
+    {
+      "index": 2551,
+      "rect_pt": [
+        35.2913,
+        812.1304,
+        119.808,
+        0
+      ]
+    },
+    {
+      "index": 2552,
+      "rect_pt": [
+        35.2913,
+        692.3224,
+        119.808,
+        0
+      ]
+    },
+    {
+      "index": 7407,
+      "rect_pt": [
+        229.4845,
+        691.2642,
+        0,
+        119.808
+      ]
+    },
+    {
+      "index": 7408,
+      "rect_pt": [
+        349.2925,
+        691.2642,
+        0,
+        119.808
+      ]
+    },
+    {
+      "index": 7409,
+      "rect_pt": [
+        229.4845,
+        811.0722,
+        119.808,
+        0
+      ]
+    },
+    {
+      "index": 7410,
+      "rect_pt": [
+        229.4845,
+        691.2642,
+        119.808,
+        0
+      ]
+    },
+    {
+      "index": 7639,
+      "rect_pt": [
+        416.0298,
+        688.8852,
+        0,
+        130.918
+      ]
+    },
+    {
+      "index": 7640,
+      "rect_pt": [
+        416.0298,
+        819.8032,
+        169.166,
+        0
+      ]
+    }
+  ],
+  "texts": [
+    {
+      "text": "a.",
+      "x_pt": 12.9927,
+      "y_pt": 17.46320000000003,
+      "font_size_pt": 10.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "b.",
+      "x_pt": 15.746699999999999,
+      "y_pt": 342.2516,
+      "font_size_pt": 10.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "c.",
+      "x_pt": 307.709,
+      "y_pt": 342.25329999999997,
+      "font_size_pt": 10.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Crypt-villus axis label",
+      "x_pt": 13.0527,
+      "y_pt": 463.1507,
+      "font_size_pt": 9.6,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Crypt-villus axis predicted",
+      "x_pt": 314.5498,
+      "y_pt": 473.7289,
+      "font_size_pt": 9.6,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "e.",
+      "x_pt": 406.25,
+      "y_pt": 671.9466,
+      "font_size_pt": 10.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Epithelial-distance axis predicted",
+      "x_pt": 316.2285,
+      "y_pt": 650.2699,
+      "font_size_pt": 9.6,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "E",
+      "x_pt": 365.9048,
+      "y_pt": 184.55409999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "L",
+      "x_pt": 371.17349970000004,
+      "y_pt": 184.55409999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "U",
+      "x_pt": 375.2889308,
+      "y_pt": 184.55409999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30D scVI latent",
+      "x_pt": 345.918,
+      "y_pt": 51.3451,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "k",
+      "x_pt": 348.6484,
+      "y_pt": 65.43200000000002,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "...",
+      "x_pt": 370.7876,
+      "y_pt": 63.75229999999999,
+      "font_size_pt": 5.5,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Dropout (p=0.1)",
+      "x_pt": 344.0405,
+      "y_pt": 92.84609999999998,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "GAT Convolutional Layer 1",
+      "x_pt": 326.6958,
+      "y_pt": 117.91729999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "heads = 4 ",
+      "x_pt": 357.4902,
+      "y_pt": 126.29329999999993,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "64D output per head ",
+      "x_pt": 337.82620000000003,
+      "y_pt": 154.3092999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Dropout (p=0.1)",
+      "x_pt": 344.27,
+      "y_pt": 216.80499999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "GAT Convolutional Layer 2",
+      "x_pt": 326.0615,
+      "y_pt": 241.06679999999994,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "heads = 1 ",
+      "x_pt": 353.354,
+      "y_pt": 252.72789999999998,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1D output per head ",
+      "x_pt": 339.92199999999997,
+      "y_pt": 280.74389999999994,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Task specific output head",
+      "x_pt": 330.4346,
+      "y_pt": 310.80989999999997,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "scVI integration",
+      "x_pt": 55.8027,
+      "y_pt": 172.7704,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Epithelial",
+      "x_pt": 111.0815,
+      "y_pt": 249.45590000000004,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Immune",
+      "x_pt": 111.0815,
+      "y_pt": 260.6399,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Stromal",
+      "x_pt": 111.0815,
+      "y_pt": 272.3519,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Neuronal",
+      "x_pt": 111.0815,
+      "y_pt": 283.35990000000004,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "scVI joint embedding",
+      "x_pt": 25.295196399999995,
+      "y_pt": 213.1359,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Spatial transcriptomics data",
+      "x_pt": 33.722973399999994,
+      "y_pt": 57.703899999999976,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Preprocessing",
+      "x_pt": 55.8891814,
+      "y_pt": 38.887899999999945,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Preprocessing",
+      "x_pt": 55.8882,
+      "y_pt": 38.89729999999997,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Spatial cell graph",
+      "x_pt": 197.2573,
+      "y_pt": 40.577,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Sparse manual labeling",
+      "x_pt": 188.8589,
+      "y_pt": 57.71180000000004,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "crypt-villus ",
+      "x_pt": 281.9531,
+      "y_pt": 118.6703,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "axis label",
+      "x_pt": 291.55310000000003,
+      "y_pt": 115.34230000000002,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Unlabeled cell",
+      "x_pt": 209.124,
+      "y_pt": 142.12779999999998,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Neighbor graph construction",
+      "x_pt": 178.6724,
+      "y_pt": 169.4588,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "N",
+      "x_pt": 172.66905200000002,
+      "y_pt": 187.2908,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "N",
+      "x_pt": 172.6724,
+      "y_pt": 187.2899,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": " labeled training cells:",
+      "x_pt": 178.2305,
+      "y_pt": 187.2899,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30D scVI ",
+      "x_pt": 105.5547,
+      "y_pt": 203.30309999999997,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "latent",
+      "x_pt": 113.10669999999999,
+      "y_pt": 212.9031,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "N",
+      "x_pt": 321.0107,
+      "y_pt": 64.58309999999994,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "N",
+      "x_pt": 321.0151,
+      "y_pt": 64.58339999999998,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "x",
+      "x_pt": 335.5947,
+      "y_pt": 64.62829999999997,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30D scVI latent",
+      "x_pt": 204.8774,
+      "y_pt": 302.72399999999993,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "k=20",
+      "x_pt": 193.8228,
+      "y_pt": 314.80989999999997,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "...",
+      "x_pt": 230.7471,
+      "y_pt": 313.13019999999995,
+      "font_size_pt": 5.5,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "k=20",
+      "x_pt": 249.7354,
+      "y_pt": 202.94759999999997,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Trainable GAT architecture",
+      "x_pt": 339.5703,
+      "y_pt": 40.12099999999998,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Outputs",
+      "x_pt": 508.2944,
+      "y_pt": 71.01260000000002,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Single or multi",
+      "x_pt": 492.7764,
+      "y_pt": 92.09169999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "regression tasks",
+      "x_pt": 489.14360480000005,
+      "y_pt": 101.69169999999997,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Sigmoid + MSE loss",
+      "x_pt": 482.9434,
+      "y_pt": 114.47109999999998,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Single classification",
+      "x_pt": 484.1162,
+      "y_pt": 193.22349999999994,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "tasks",
+      "x_pt": 508.7145336,
+      "y_pt": 202.82349999999997,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Sigmoid + BCE loss",
+      "x_pt": 483.0337,
+      "y_pt": 214.48569999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Peyer’s",
+      "x_pt": 554.1514,
+      "y_pt": 243.32409999999993,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Patch",
+      "x_pt": 557.1453773999999,
+      "y_pt": 252.92409999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "crypt-villus ",
+      "x_pt": 574.1465,
+      "y_pt": 162.10289999999998,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "axis predicted",
+      "x_pt": 583.7465,
+      "y_pt": 166.78289999999993,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Epithelial distance axis label",
+      "x_pt": 13.2324,
+      "y_pt": 644.2479,
+      "font_size_pt": 9.6,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Day 90 SI sparse labeling",
+      "x_pt": 108.3457,
+      "y_pt": 353.4379,
+      "font_size_pt": 9.6,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Day 90 SI dense predictions",
+      "x_pt": 415.27689999999996,
+      "y_pt": 353.4379,
+      "font_size_pt": 9.6,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "d.",
+      "x_pt": 19.8975,
+      "y_pt": 671.8343,
+      "font_size_pt": 10.2,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 30.8413,
+      "y_pt": 822.3177,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 54.8027,
+      "y_pt": 822.3177,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 78.7646,
+      "y_pt": 822.3177,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.6",
+      "x_pt": 102.7261,
+      "y_pt": 822.3177,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.8",
+      "x_pt": 126.6875,
+      "y_pt": 822.3177,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 150.6494,
+      "y_pt": 822.3177,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Manual reference",
+      "x_pt": 70.27340000000001,
+      "y_pt": 831.3817,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 20.791,
+      "y_pt": 814.4241999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 20.791,
+      "y_pt": 790.4623,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 20.791,
+      "y_pt": 766.5013,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.6",
+      "x_pt": 20.791,
+      "y_pt": 742.5394,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.8",
+      "x_pt": 20.791,
+      "y_pt": 718.5775,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 20.791,
+      "y_pt": 694.6166,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Graph-model prediction",
+      "x_pt": 16.3164,
+      "y_pt": 785.6966,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Crypt-villus coordinate",
+      "x_pt": 53.2637,
+      "y_pt": 687.5228,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Pearson r = 0.959",
+      "x_pt": 38.8853,
+      "y_pt": 701.0668,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "MAE = 0.054",
+      "x_pt": 38.8853,
+      "y_pt": 708.9308,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "R² = 0.918",
+      "x_pt": 38.8853,
+      "y_pt": 716.7948,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 225.0347,
+      "y_pt": 821.2591,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 248.9956,
+      "y_pt": 821.2591,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 272.9575,
+      "y_pt": 821.2591,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.6",
+      "x_pt": 296.9194,
+      "y_pt": 821.2591,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.8",
+      "x_pt": 320.8804,
+      "y_pt": 821.2591,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 344.8423,
+      "y_pt": 821.2591,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Manual reference",
+      "x_pt": 264.46630000000005,
+      "y_pt": 830.3231,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 214.9844,
+      "y_pt": 813.3656,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 214.9844,
+      "y_pt": 789.4037,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 214.9844,
+      "y_pt": 765.4427,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.6",
+      "x_pt": 214.9844,
+      "y_pt": 741.4808,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.8",
+      "x_pt": 214.9844,
+      "y_pt": 717.5189,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 214.9844,
+      "y_pt": 693.558,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Graph-model prediction",
+      "x_pt": 210.5093,
+      "y_pt": 786.638,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Epithelial-distance coordinate",
+      "x_pt": 234.6196,
+      "y_pt": 686.4642,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Pearson r = 0.871",
+      "x_pt": 233.0786,
+      "y_pt": 700.0082,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "MAE = 0.107",
+      "x_pt": 233.0786,
+      "y_pt": 707.8722,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "R² = 0.757",
+      "x_pt": 233.0786,
+      "y_pt": 715.7362,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1",
+      "x_pt": 169.8213,
+      "y_pt": 815.5735999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 173.3813,
+      "y_pt": 815.5735999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 177.0533,
+      "y_pt": 811.1176,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1",
+      "x_pt": 169.8213,
+      "y_pt": 756.0521,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 173.3813,
+      "y_pt": 756.0521,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1",
+      "x_pt": 177.0533,
+      "y_pt": 751.5880999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1",
+      "x_pt": 169.8213,
+      "y_pt": 696.5296,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 173.3813,
+      "y_pt": 696.5296,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "2",
+      "x_pt": 177.0533,
+      "y_pt": 692.0735999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Cell count",
+      "x_pt": 188.0088,
+      "y_pt": 766.4642,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "1",
+      "x_pt": 364.0142,
+      "y_pt": 814.515,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 367.5742,
+      "y_pt": 814.515,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 371.24620000000004,
+      "y_pt": 810.059,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1",
+      "x_pt": 364.0142,
+      "y_pt": 778.3294999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 367.5742,
+      "y_pt": 778.3294999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1",
+      "x_pt": 371.24620000000004,
+      "y_pt": 773.8655,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1",
+      "x_pt": 364.0142,
+      "y_pt": 742.1439,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 367.5742,
+      "y_pt": 742.1439,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "2",
+      "x_pt": 371.24620000000004,
+      "y_pt": 737.6799,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1",
+      "x_pt": 364.0142,
+      "y_pt": 705.9574,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 367.5742,
+      "y_pt": 705.9574,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "3",
+      "x_pt": 371.24620000000004,
+      "y_pt": 701.5014,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Cell count",
+      "x_pt": 382.2017,
+      "y_pt": 765.4056,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "1",
+      "x_pt": 416.0303,
+      "y_pt": 830.4105,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 447.2217,
+      "y_pt": 830.4105,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 483.2158,
+      "y_pt": 830.4105,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30",
+      "x_pt": 519.208,
+      "y_pt": 830.4105,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "40",
+      "x_pt": 555.2002,
+      "y_pt": 830.4105,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "45",
+      "x_pt": 573.1963,
+      "y_pt": 830.4105,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "T",
+      "x_pt": 478.9082,
+      "y_pt": 839.2298,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "raining villi",
+      "x_pt": 483.36420000000004,
+      "y_pt": 839.2298,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 401.2427,
+      "y_pt": 812.9886,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 401.2427,
+      "y_pt": 788.6781,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 401.2427,
+      "y_pt": 764.3666,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.6",
+      "x_pt": 401.2427,
+      "y_pt": 740.056,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.8",
+      "x_pt": 401.2427,
+      "y_pt": 715.7455,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 401.2427,
+      "y_pt": 691.4339,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Held-out-section Pearson r",
+      "x_pt": 398.1938,
+      "y_pt": 800.1791,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Crypt-villus coordinate",
+      "x_pt": 485.1318,
+      "y_pt": 803.9896,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Epithelial-distance coordinate",
+      "x_pt": 485.1318,
+      "y_pt": 813.1576,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "MDE 1",
+      "x_pt": 53.6719,
+      "y_pt": 302.50379999999996,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "MDE 2",
+      "x_pt": 19.2617,
+      "y_pt": 264.05409999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "1.0",
+      "x_pt": 261.3306,
+      "y_pt": 83.34609999999998,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.5",
+      "x_pt": 261.870555,
+      "y_pt": 102.81809999999996,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 261.870555,
+      "y_pt": 118.10609999999997,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 551.5396,
+      "y_pt": 127.21029999999996,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.5",
+      "x_pt": 552.0795549999999,
+      "y_pt": 146.68229999999994,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 552.0795549999999,
+      "y_pt": 161.97029999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 30.93990999999994,
+      "y_pt": 473.2502999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.5",
+      "x_pt": 29.51941299999994,
+      "y_pt": 414.5782999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 28.93792299999994,
+      "y_pt": 356.1062999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 333.79651599999994,
+      "y_pt": 479.5222999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.5",
+      "x_pt": 332.3760189999999,
+      "y_pt": 420.85029999999995,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 331.79452899999995,
+      "y_pt": 362.37829999999997,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 32.46009099999998,
+      "y_pt": 646.2022999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 334.668751,
+      "y_pt": 646.2022999999999,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.35",
+      "x_pt": 31.313724999999977,
+      "y_pt": 585.0823,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.70",
+      "x_pt": 31.313724999999977,
+      "y_pt": 525.4103,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.35",
+      "x_pt": 334.436155,
+      "y_pt": 581.7143,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.70",
+      "x_pt": 334.47769,
+      "y_pt": 516.9863,
+      "font_size_pt": 8,
+      "rotation_degrees": 0
+    }
+  ]
+}

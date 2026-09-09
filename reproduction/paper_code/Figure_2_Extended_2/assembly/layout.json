@@ -1,0 +1,921 @@
+{
+  "schema_version": 1,
+  "figure": "Figure_2_Extended_2",
+  "page_size_pt": [
+    595.276,
+    841.89
+  ],
+  "reference_pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure2_Extended_2.pdf",
+  "reference_sha256": "32d04fbab93fb0018518e755e6d2cc37d0a39494f7774854ac7ab39607b0f7f4",
+  "dpi": 300,
+  "coordinate_system": "top-left PDF points",
+  "elements": [
+    {
+      "kind": "pdf",
+      "path": "panel_A/panel_A_peyer_training_seeds.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_A_panel_A_peyer_training_seeds",
+      "panel": "A"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_B/panel_B_peyer_gat_training_history.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_B_panel_B_peyer_gat_training_history",
+      "panel": "B"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_C/panel_C_heldout_xenium_morphology.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_C_panel_C_heldout_xenium_morphology",
+      "panel": "C"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_C/panel_C_heldout_manual_peyer_label.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_C_panel_C_heldout_manual_peyer_label",
+      "panel": "C"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_C/panel_C_heldout_gat_peyer_probability.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_C_panel_C_heldout_gat_peyer_probability",
+      "panel": "C"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_C/panel_C_heldout_gat_peyer_class.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_C_panel_C_heldout_gat_peyer_class",
+      "panel": "C"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_D/panel_D_peyer_gat_heldout_performance.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_D_panel_D_peyer_gat_heldout_performance",
+      "panel": "D"
+    },
+    {
+      "id": "source_letter_c.",
+      "kind": "text",
+      "text": "c.",
+      "x_pt": 404.6128,
+      "y_pt": 177.77769999999998,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:c.",
+      "panel": "C"
+    },
+    {
+      "id": "source_letter_b.",
+      "kind": "text",
+      "text": "b.",
+      "x_pt": 14.544400000000053,
+      "y_pt": 177.66549999999995,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:b.",
+      "panel": "B"
+    },
+    {
+      "id": "source_letter_d.",
+      "kind": "text",
+      "text": "d.",
+      "x_pt": 15.25,
+      "y_pt": 487.71619999999996,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:d.",
+      "panel": "D"
+    },
+    {
+      "id": "source_letter_a.",
+      "kind": "text",
+      "text": "a.",
+      "x_pt": 14.9346,
+      "y_pt": 26.05989999999997,
+      "font_size_pt": 10.2,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:a.",
+      "panel": "A"
+    },
+    {
+      "id": "source_day_0",
+      "kind": "text",
+      "text": "Day 6 SI rep1",
+      "x_pt": 51.0171,
+      "y_pt": 30.733799999999974,
+      "font_size_pt": 8,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:Day 6 SI ",
+      "panel": "A"
+    },
+    {
+      "id": "source_day_1",
+      "kind": "text",
+      "text": "Day 8 SI rep1",
+      "x_pt": 202.2168,
+      "y_pt": 30.733799999999974,
+      "font_size_pt": 8,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:Day 8 SI ",
+      "panel": "A"
+    },
+    {
+      "id": "source_day_2",
+      "kind": "text",
+      "text": "Day 30 SI rep1",
+      "x_pt": 351.4102,
+      "y_pt": 30.733799999999974,
+      "font_size_pt": 8,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:Day 30 SI ",
+      "panel": "A"
+    },
+    {
+      "id": "source_day_3",
+      "kind": "text",
+      "text": "Day 90 SI rep1",
+      "x_pt": 502.6104,
+      "y_pt": 30.733799999999974,
+      "font_size_pt": 8,
+      "font": "Arial",
+      "rotation_degrees": 0,
+      "color": "#222222",
+      "source_anchor": "text:Day 90 SI ",
+      "panel": "A"
+    },
+    {
+      "id": "source_legend_15",
+      "kind": "text",
+      "text": "\u25cf",
+      "x_pt": 215.879,
+      "y_pt": 174.441,
+      "font_size_pt": 8.4,
+      "font": "Arial",
+      "color": "#C9C9C9",
+      "panel": "A"
+    },
+    {
+      "id": "source_legend_16",
+      "kind": "text",
+      "text": "negative seed",
+      "x_pt": 223.9282,
+      "y_pt": 174.4408,
+      "font_size_pt": 8.4,
+      "font": "Arial",
+      "color": "#222222",
+      "panel": "A"
+    },
+    {
+      "id": "source_legend_17",
+      "kind": "text",
+      "text": "\u25cf",
+      "x_pt": 299.59,
+      "y_pt": 174.4574,
+      "font_size_pt": 8.4,
+      "font": "Arial",
+      "color": "#7652A7",
+      "panel": "A"
+    },
+    {
+      "id": "source_legend_18",
+      "kind": "text",
+      "text": "Peyer seed",
+      "x_pt": 307.383,
+      "y_pt": 174.4574,
+      "font_size_pt": 8.4,
+      "font": "Arial",
+      "color": "#222222",
+      "panel": "A"
+    }
+  ],
+  "render_specs": {
+    "panel_A_peyer_training_seeds": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            9.3463573,
+            40.55937259999996,
+            126.1679871,
+            123.81600930000002
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im0",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "title": ""
+        },
+        {
+          "rect_pt": [
+            156.5143585,
+            41.73533689999999,
+            134.2319982,
+            121.63199840000004
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im1",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "title": ""
+        },
+        {
+          "rect_pt": [
+            310.0663452,
+            40.559372600000074,
+            129.69599830000004,
+            123.98399829999994
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im2",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "title": ""
+        },
+        {
+          "rect_pt": [
+            468.9943542,
+            40.72734129999992,
+            114.0720086,
+            123.81600930000002
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im3",
+          "match_source_image_footprint": true,
+          "preserve_limits": false,
+          "title": ""
+        }
+      ],
+      "font_size_pt": 8,
+      "title_size_pt": 8,
+      "marker_area_scale": 0.4
+    },
+    "panel_B_peyer_gat_training_history": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            34.1461,
+            198.5846,
+            158.561,
+            101.95
+          ],
+          "source_anchor": "path_spines:113",
+          "anchor": true,
+          "title_anchor": {
+            "text": "Loss",
+            "x_pt": 102.6621,
+            "y_pt": 194.79719999999998,
+            "font_size_pt": 8.4,
+            "rotation_degrees": 0
+          }
+        },
+        {
+          "rect_pt": [
+            224.3989,
+            198.5846,
+            158.561,
+            101.95
+          ],
+          "source_anchor": "path_spines:149",
+          "anchor": true,
+          "title_anchor": {
+            "text": "Average Precision",
+            "x_pt": 274.44165920000006,
+            "y_pt": 194.8979999999998,
+            "font_size_pt": 8.4,
+            "rotation_degrees": 0
+          }
+        },
+        {
+          "rect_pt": [
+            34.1461,
+            348.367,
+            158.561,
+            101.95
+          ],
+          "source_anchor": "path_spines:183",
+          "anchor": true,
+          "title_anchor": {
+            "text": "AUROC",
+            "x_pt": 100.17481660000011,
+            "y_pt": 346.1315999999999,
+            "font_size_pt": 8.4,
+            "rotation_degrees": 0
+          }
+        },
+        {
+          "rect_pt": [
+            224.3989,
+            347.367,
+            158.561,
+            101.95
+          ],
+          "source_anchor": "path_spines:217",
+          "anchor": true,
+          "title_anchor": {
+            "text": "F1 at 0.5",
+            "x_pt": 292.2988666000001,
+            "y_pt": 345.1319999999999,
+            "font_size_pt": 8.4,
+            "rotation_degrees": 0
+          }
+        }
+      ],
+      "font_size_pt": 8,
+      "title_size_pt": 8,
+      "label_size_pt": 8,
+      "tick_size_pt": 8,
+      "legend_size_pt": 7,
+      "line_scale": 0.85
+    },
+    "panel_C_heldout_xenium_morphology": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            413.138092,
+            197.7297216999999,
+            132.29999689999994,
+            132.29999690000005
+          ],
+          "title": "Held-out Xenium morphology",
+          "anchor": true,
+          "source_anchor": "page//Im4",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title_anchor": {
+            "x_pt": 433.5376,
+            "y_pt": 192.3421,
+            "font_size_pt": 8.4
+          }
+        }
+      ],
+      "font_size_pt": 6.5,
+      "title_size_pt": 8,
+      "label_size_pt": 8,
+      "tick_size_pt": 7,
+      "annotation_size_pt": 4,
+      "marker_area_scale": 2.5,
+      "line_scale": 0.65
+    },
+    "panel_C_heldout_manual_peyer_label": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            413.3439636,
+            354.57548579999997,
+            132.45119690000007,
+            132.4511969
+          ],
+          "title": "Held-out manual Peyer label",
+          "anchor": true,
+          "source_anchor": "page//Im5",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title_anchor": {
+            "x_pt": 429.7324,
+            "y_pt": 345.5161,
+            "font_size_pt": 8.4
+          }
+        }
+      ],
+      "font_size_pt": 6.5,
+      "title_size_pt": 8,
+      "label_size_pt": 8,
+      "tick_size_pt": 7,
+      "annotation_size_pt": 4,
+      "marker_area_scale": 2.5,
+      "line_scale": 0.65
+    },
+    "panel_C_heldout_gat_peyer_probability": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            413.2031555,
+            514.1676184,
+            132.687498,
+            133.1304196
+          ],
+          "title": "Held-out GAT\nPeyer\u2019s patch probability",
+          "anchor": true,
+          "source_anchor": "page//Im7",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title_anchor": {
+            "x_pt": 479.5469045,
+            "y_pt": 510.9818,
+            "font_size_pt": 8.4,
+            "align": "center"
+          }
+        },
+        {
+          "rect_pt": [
+            553.3607788,
+            502.18318239999996,
+            9.11999979999996,
+            183.36000730000004
+          ],
+          "ylabel": "Peyer\u2019s patch probability",
+          "source_anchor": "page//Im8",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true
+        }
+      ],
+      "font_size_pt": 6.5,
+      "title_size_pt": 8,
+      "label_size_pt": 8,
+      "tick_size_pt": 7,
+      "annotation_size_pt": 4,
+      "marker_area_scale": 2.5,
+      "line_scale": 0.65
+    },
+    "panel_C_heldout_gat_peyer_class": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            413.0623474,
+            671.8354651,
+            132.4511969,
+            132.4511969
+          ],
+          "title": "Held-out GAT Peyer class prediction",
+          "anchor": true,
+          "source_anchor": "page//Im6",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title_anchor": {
+            "x_pt": 409.1692,
+            "y_pt": 665.6569,
+            "font_size_pt": 8.4
+          }
+        }
+      ],
+      "font_size_pt": 6.5,
+      "title_size_pt": 8,
+      "label_size_pt": 8,
+      "tick_size_pt": 7,
+      "annotation_size_pt": 4,
+      "marker_area_scale": 2.5,
+      "line_scale": 0.65
+    },
+    "panel_D_peyer_gat_heldout_performance": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            55.874,
+            505.7703,
+            267.791,
+            126.969
+          ],
+          "ylim": [
+            0,
+            1.16
+          ],
+          "source_anchor": "path_spines:39",
+          "anchor": true
+        }
+      ],
+      "title_size_pt": 8,
+      "label_size_pt": 8,
+      "tick_size_pt": 8,
+      "annotation_size_pt": 8
+    }
+  },
+  "anchors": [
+    {
+      "id": "panel_A_peyer_training_seeds.axis0",
+      "rect_pt": [
+        9.3463573,
+        40.55937259999996,
+        126.1679871,
+        123.81600930000002
+      ]
+    },
+    {
+      "id": "panel_A_peyer_training_seeds.axis1",
+      "rect_pt": [
+        156.5143585,
+        41.73533689999999,
+        134.2319982,
+        121.63199840000004
+      ]
+    },
+    {
+      "id": "panel_A_peyer_training_seeds.axis2",
+      "rect_pt": [
+        310.0663452,
+        40.559372600000074,
+        129.69599830000004,
+        123.98399829999994
+      ]
+    },
+    {
+      "id": "panel_A_peyer_training_seeds.axis3",
+      "rect_pt": [
+        468.9943542,
+        40.72734129999992,
+        114.0720086,
+        123.81600930000002
+      ]
+    },
+    {
+      "id": "panel_B_peyer_gat_training_history.axis0",
+      "rect_pt": [
+        34.1461,
+        198.5846,
+        158.561,
+        101.95
+      ]
+    },
+    {
+      "id": "panel_B_peyer_gat_training_history.axis1",
+      "rect_pt": [
+        224.3989,
+        198.5846,
+        158.561,
+        101.95
+      ]
+    },
+    {
+      "id": "panel_B_peyer_gat_training_history.axis2",
+      "rect_pt": [
+        34.1461,
+        348.367,
+        158.561,
+        101.95
+      ]
+    },
+    {
+      "id": "panel_B_peyer_gat_training_history.axis3",
+      "rect_pt": [
+        224.3989,
+        347.367,
+        158.561,
+        101.95
+      ]
+    },
+    {
+      "id": "panel_C_heldout_xenium_morphology.axis0",
+      "rect_pt": [
+        413.138092,
+        197.7297216999999,
+        132.29999689999994,
+        132.29999690000005
+      ]
+    },
+    {
+      "id": "panel_C_heldout_manual_peyer_label.axis0",
+      "rect_pt": [
+        413.3439636,
+        354.57548579999997,
+        132.45119690000007,
+        132.4511969
+      ]
+    },
+    {
+      "id": "panel_C_heldout_gat_peyer_probability.axis0",
+      "rect_pt": [
+        413.2031555,
+        514.1676184,
+        132.687498,
+        133.1304196
+      ]
+    },
+    {
+      "id": "panel_C_heldout_gat_peyer_probability.axis1",
+      "rect_pt": [
+        553.3607788,
+        502.18318239999996,
+        9.11999979999996,
+        183.36000730000004
+      ]
+    },
+    {
+      "id": "panel_C_heldout_gat_peyer_class.axis0",
+      "rect_pt": [
+        413.0623474,
+        671.8354651,
+        132.4511969,
+        132.4511969
+      ]
+    },
+    {
+      "id": "panel_D_peyer_gat_heldout_performance.axis0",
+      "rect_pt": [
+        55.874,
+        505.7703,
+        267.791,
+        126.969
+      ]
+    }
+  ],
+  "expected_text": [
+    "Day 6 SI rep1",
+    "Day 8 SI rep1",
+    "Day 30 SI rep1",
+    "Day 90 SI rep1",
+    "Average precision",
+    "GAT test-section classification performance",
+    "Test sections",
+    "Peyer\u2019s patch probability"
+  ],
+  "forbidden_text": [
+    "all heldout",
+    "acc 0.996",
+    "Peyer probability"
+  ],
+  "intentional_differences": [
+    "All generated and manual text is embedded Arial; original non-Arial glyph metrics require reviewed label positioning.",
+    "All classifier maps, histories and metrics use the corrected-polygon-label release; history has 22 completed epochs and validation-selected epoch 10.",
+    "Panel D displays the two test sections and test pool, replacing the old mixture of validation and test bars. Threshold is validation-selected 0.95.",
+    "The classifier bar-axis headroom is extended to 1.16 so two-line metric annotations remain inside the plot.",
+    "Source registration uses measured original image CTMs and vector spine coordinates, rather than a nominal grid. Artist-scaled source footprints are reproduced in the fresh rendering; all scientific rows are preserved.",
+    "User-requested panel letters without trailing periods; preserve letter case, font, size, and anchors.",
+    "User-requested wording-only revision, 7 September 2026. Longer labels may wrap or use text-specific fit adjustments; scientific inputs, values, gates, colors, markers and axes remain unchanged.",
+    "September 7 follow-up: the two-line held-out GAT probability title is centered over its map."
+  ],
+  "warnings": [],
+  "package": "Figure_2_Extended_2",
+  "title": "Figure 2 Extended 2",
+  "panels": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "png_dpi": 300,
+  "source_anchors": [
+    {
+      "id": "panel_A_peyer_training_seeds.axis0",
+      "rect_pt": [
+        9.3463573,
+        40.55937259999996,
+        126.1679871,
+        123.81600930000002
+      ],
+      "source": "page//Im0"
+    },
+    {
+      "id": "panel_A_peyer_training_seeds.axis1",
+      "rect_pt": [
+        156.5143585,
+        41.73533689999999,
+        134.2319982,
+        121.63199840000004
+      ],
+      "source": "page//Im1"
+    },
+    {
+      "id": "panel_A_peyer_training_seeds.axis2",
+      "rect_pt": [
+        310.0663452,
+        40.559372600000074,
+        129.69599830000004,
+        123.98399829999994
+      ],
+      "source": "page//Im2"
+    },
+    {
+      "id": "panel_A_peyer_training_seeds.axis3",
+      "rect_pt": [
+        468.9943542,
+        40.72734129999992,
+        114.0720086,
+        123.81600930000002
+      ],
+      "source": "page//Im3"
+    },
+    {
+      "id": "panel_B_peyer_gat_training_history.axis0",
+      "rect_pt": [
+        34.1461,
+        198.5846,
+        158.561,
+        101.95
+      ],
+      "source": "path_spines:113"
+    },
+    {
+      "id": "panel_B_peyer_gat_training_history.axis1",
+      "rect_pt": [
+        224.3989,
+        198.5846,
+        158.561,
+        101.95
+      ],
+      "source": "path_spines:149"
+    },
+    {
+      "id": "panel_B_peyer_gat_training_history.axis2",
+      "rect_pt": [
+        34.1461,
+        348.367,
+        158.561,
+        101.95
+      ],
+      "source": "path_spines:183"
+    },
+    {
+      "id": "panel_B_peyer_gat_training_history.axis3",
+      "rect_pt": [
+        224.3989,
+        347.367,
+        158.561,
+        101.95
+      ],
+      "source": "path_spines:217"
+    },
+    {
+      "id": "panel_C_heldout_xenium_morphology.axis0",
+      "rect_pt": [
+        413.138092,
+        197.7297216999999,
+        132.29999689999994,
+        132.29999690000005
+      ],
+      "source": "page//Im4"
+    },
+    {
+      "id": "panel_C_heldout_manual_peyer_label.axis0",
+      "rect_pt": [
+        413.3439636,
+        354.57548579999997,
+        132.45119690000007,
+        132.4511969
+      ],
+      "source": "page//Im5"
+    },
+    {
+      "id": "panel_C_heldout_gat_peyer_probability.axis0",
+      "rect_pt": [
+        413.2031555,
+        514.1676184,
+        132.687498,
+        133.1304196
+      ],
+      "source": "page//Im7"
+    },
+    {
+      "id": "panel_C_heldout_gat_peyer_probability.axis1",
+      "rect_pt": [
+        553.3607788,
+        502.18318239999996,
+        9.11999979999996,
+        183.36000730000004
+      ],
+      "source": "page//Im8"
+    },
+    {
+      "id": "panel_C_heldout_gat_peyer_class.axis0",
+      "rect_pt": [
+        413.0623474,
+        671.8354651,
+        132.4511969,
+        132.4511969
+      ],
+      "source": "page//Im6"
+    },
+    {
+      "id": "panel_D_peyer_gat_heldout_performance.axis0",
+      "rect_pt": [
+        55.874,
+        505.7703,
+        267.791,
+        126.969
+      ],
+      "source": "path_spines:39"
+    }
+  ],
+  "source_registration": "source_registration.json",
+  "panel_letter_punctuation": "none"
+}

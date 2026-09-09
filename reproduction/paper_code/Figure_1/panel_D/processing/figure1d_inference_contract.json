@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "release": "figure1d_training_input_parity_v1",
+  "checkpoint_sha256": "d0e02005b18a670c77c7956d5500d8c599879e183def79badae7fbb526aaf137",
+  "reference_pixel_size_um": 0.325,
+  "source_pixel_size_um": 0.2125,
+  "source_id": "sample_010",
+  "h5ad_identity": {
+    "path": "/mnt/synology/Naive/Spatial_Paper/Xenium_outputs_and_Alex_analysis_Spatial_Paper/timecourse_replicates/analysis/cleaned/full_xenium_replicates_and_reference_no_peyers.h5ad",
+    "bytes": 17074721022,
+    "mtime_ns": 1702682610680326800,
+    "note": "Large immutable index source; original manifest order reconstructed and all4854coordinates independently verified to2.73e-12micrometers."
+  },
+  "anonymous_manifest_generator": {
+    "path": "/home/amonell/Desktop/crypt-villus-vit/src/crypt_villus_vit/xenium_manifest.py",
+    "sha256": "e7c2a73ff89876a9308f8d81753070d69b2cfdd7ed5cca19a3eea8f3a8dc6b04"
+  },
+  "anonymous_manifest_summary": {
+    "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/derived/manifests/manifest_summary.json",
+    "sha256": "cd9fd98ee8c90d5914349c0aa50f6034e3897b2bdde99bb4d6ce2ec140c91611"
+  },
+  "raw_dapi": {
+    "path": "/mnt/synology/Naive/Spatial_Paper/Xenium_outputs_and_Alex_analysis_Spatial_Paper/timecourse_replicates/day90_SI_r2/xenium_output/morphology_mip.ome.tif",
+    "sha256": "1be53f9fe3ec395b03e787f324d90ad2fce6d9dbd4d4e1818e8ddfb541508970"
+  },
+  "native_crop_sizes_px": {"local": 783, "context": 3132, "fine": 196},
+  "nominal_crop_sizes_px": {"local": 512, "context": 2048, "fine": 128},
+  "pixel_protocol": "Original supervised DapiCropManager: choose TIFF pyramid for output256(local/context) or128(fine); centered crop at native783/3132/196; original grayscale normalization and bilinear resize directly to model resolution; round normalized pixels to uint8, then float32/255. No512-pixel intermediate and no augmentation.",
+  "prepared_manifest": {
+    "path": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_prepared_sharded_v1_manifest.csv",
+    "sha256": "5fc2db0a172955a0f67438dc236e3db8ffda380726bc3d34211e27ae1cce887e"
+  },
+  "golden_shards": [
+    {"path": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/local_shard_00004.npy", "sha256": "84d46ca81277ebc5171737a81a2c3d99d4d86a0a4f8dcc146ce5d9004d31d31c"},
+    {"path": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/context_shard_00004.npy", "sha256": "c63d8c9cc7103640d528b33c230f30b4bcc7bf287b13a361c9c7dcbe56d3da1f"},
+    {"path": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/fine_shard_00004.npy", "sha256": "069fb87f43d7226e7b193a6498b7bd5a0bf313adf96508351baa1a7ff52c51cd"}
+  ],
+  "development_predictions": {
+    "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/development_test/predictions.csv",
+    "sha256": "96f4ab4ca9f6b318052d9f6e7a8e41e97c08be056b21f1c51152b7260b52d33c"
+  },
+  "prepared_pipeline_source": {
+    "path": "/home/amonell/Desktop/Goldrath_Collaborations/giovanni/2026_04_07_IF_Processing_Pipeline/src/if_processing_pipeline/spatial_if_multiscale_dapi.py",
+    "sha256": "f58e912c693106ed4b28c7e0143d36e311b1d00a69855d2baa170e4ba6e7da15"
+  },
+  "prepared_generator_source": {
+    "path": "/home/amonell/Desktop/Goldrath_Collaborations/giovanni/2026_04_07_IF_Processing_Pipeline/processing_pipelines/20_export_if_xenium_multiscale_vit_dataset/prepare_supervised_shards_256_16_10x.py",
+    "sha256": "667db5a4d8f78de9ed7cf9e7ad5b8913a4965c167a0e0d236bfa5621faaa37f0"
+  },
+  "supervised_manifest": {
+    "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/label_efficiency_ablation/manifests/fraction_100_supervised_manifest.csv",
+    "sha256": "3829e959b82089ced57377f0303399cdfd51017a1a5d3436b4833ef27faf9dc2"
+  },
+  "prepared_metadata": {
+    "path": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_prepared_sharded_v1_metadata.json",
+    "sha256": "d6c1580d3d015dc182445a45399a3af52b2e1374c5dbd8938f2d4844c5e4c58c"
+  },
+  "derivation": "The released checkpoint was fine-tuned on prepared Xenium crops whose recorded local/context native widths are783/3132pixels at0.2125micrometers per pixel. Nominal512/2048/128widths refer to0.325-micrometer reference pixels; rounded physical scaling gives fine196. Independent golden checks at prepared rows4489/4492/4502 reproduce all9supervised tensors exactly with direct256/128 preparation;512-intermediate alternatives fail all6local/context checks. Pretraining and supervised-cache pixel protocols differ.",
+  "scope": "Correction of inference preprocessing on the same 4854 locked cells and same Day90 window, with unchanged checkpoint; no fitting, selection, or crop-window optimization."
+}

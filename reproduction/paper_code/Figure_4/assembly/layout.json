@@ -1,0 +1,455 @@
+{
+  "schema_version": "assembled-figure-layout/v1",
+  "figure": "Figure_4",
+  "package": "Figure_4",
+  "panels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "page_size_pt": [
+    595.276,
+    841.89
+  ],
+  "reference": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure4.pdf",
+  "reference_sha256": "e4ae363565e2231c7e36f475d5dadc2c973dd951e95d8ae599faba40ffae1697",
+  "dpi": 600,
+  "png_dpi": 600,
+  "elements": [],
+  "anchors": [
+    {
+      "id": "A_DMSO_image",
+      "rect_pt": [
+        28.15,
+        36.48,
+        146.49,
+        141.44
+      ]
+    },
+    {
+      "id": "A_RARi_image",
+      "rect_pt": [
+        176.18,
+        36.89,
+        146.33,
+        140.62
+      ]
+    },
+    {
+      "id": "A_shared_footer",
+      "rect_pt": [
+        28.15,
+        177.92,
+        294.36,
+        17.76
+      ]
+    },
+    {
+      "id": "B_image",
+      "rect_pt": [
+        378.5,
+        35.21,
+        153.13,
+        111.67567903
+      ]
+    },
+    {
+      "id": "B_reference_bar",
+      "rect_pt": [
+        534.25,
+        47.21,
+        5.62,
+        87.67567903
+      ]
+    },
+    {
+      "id": "C_crypt_villus",
+      "rect_pt": [
+        54.721,
+        233.018,
+        152.063,
+        152.064
+      ]
+    },
+    {
+      "id": "C_crypt_villus_bar",
+      "rect_pt": [
+        213.48,
+        232.87,
+        7.5,
+        152.16
+      ]
+    },
+    {
+      "id": "C_epithelial_distance",
+      "rect_pt": [
+        312.121,
+        233.018,
+        152.064,
+        152.064
+      ]
+    },
+    {
+      "id": "C_epithelial_distance_bar",
+      "rect_pt": [
+        470.92,
+        232.87,
+        7.5,
+        152.16
+      ]
+    },
+    {
+      "id": "D_whole_frame_0",
+      "rect_pt": [
+        20.37,
+        445.78,
+        74.5,
+        87.56
+      ]
+    },
+    {
+      "id": "D_whole_0",
+      "rect_pt": [
+        20.40789299,
+        445.78,
+        74.42421403,
+        87.56
+      ]
+    },
+    {
+      "id": "D_zoom_frame_0",
+      "rect_pt": [
+        16.578,
+        535.401,
+        82.115,
+        61.586
+      ]
+    },
+    {
+      "id": "D_zoom_content_0",
+      "rect_pt": [
+        16.57816667,
+        535.401,
+        82.11466667,
+        61.586
+      ]
+    },
+    {
+      "id": "D_colorbar_0",
+      "rect_pt": [
+        21.29,
+        603.59,
+        69.6,
+        3.57
+      ]
+    },
+    {
+      "id": "D_whole_frame_1",
+      "rect_pt": [
+        108.54,
+        445.04,
+        76.24,
+        87.51
+      ]
+    },
+    {
+      "id": "D_whole_1",
+      "rect_pt": [
+        109.46914248,
+        445.04,
+        74.38171505,
+        87.51
+      ]
+    },
+    {
+      "id": "D_zoom_frame_1",
+      "rect_pt": [
+        104.64,
+        534.855,
+        84.045,
+        61.553
+      ]
+    },
+    {
+      "id": "D_zoom_content_1",
+      "rect_pt": [
+        105.62716667,
+        534.855,
+        82.07066667,
+        61.553
+      ]
+    },
+    {
+      "id": "D_colorbar_1",
+      "rect_pt": [
+        113.68,
+        602.56,
+        69.59,
+        3.57
+      ]
+    },
+    {
+      "id": "D_whole_frame_2",
+      "rect_pt": [
+        206.52,
+        461.18,
+        69.1,
+        72.73
+      ]
+    },
+    {
+      "id": "D_whole_2",
+      "rect_pt": [
+        210.16049174,
+        461.18,
+        61.81901652,
+        72.73
+      ]
+    },
+    {
+      "id": "D_zoom_frame_2",
+      "rect_pt": [
+        201.165,
+        535.294,
+        79.834,
+        59.875
+      ]
+    },
+    {
+      "id": "D_zoom_content_2",
+      "rect_pt": [
+        201.16533333,
+        535.294,
+        79.83333333,
+        59.875
+      ]
+    },
+    {
+      "id": "D_colorbar_2",
+      "rect_pt": [
+        208.53,
+        601.84,
+        69.6,
+        3.57
+      ]
+    },
+    {
+      "id": "D_whole_frame_3",
+      "rect_pt": [
+        292.16,
+        460.87,
+        69.1,
+        72.73
+      ]
+    },
+    {
+      "id": "D_whole_3",
+      "rect_pt": [
+        295.80049174,
+        460.87,
+        61.81901652,
+        72.73
+      ]
+    },
+    {
+      "id": "D_zoom_frame_3",
+      "rect_pt": [
+        286.781,
+        535.606,
+        79.834,
+        59.875
+      ]
+    },
+    {
+      "id": "D_zoom_content_3",
+      "rect_pt": [
+        286.78133333,
+        535.606,
+        79.83333333,
+        59.875
+      ]
+    },
+    {
+      "id": "D_colorbar_3",
+      "rect_pt": [
+        292.68,
+        601.16,
+        69.6,
+        3.57
+      ]
+    },
+    {
+      "id": "E_abundance",
+      "rect_pt": [
+        49.495,
+        669.367,
+        148.248,
+        132.912
+      ]
+    },
+    {
+      "id": "E_composition",
+      "rect_pt": [
+        206.117,
+        669.366,
+        148.248,
+        132.912
+      ]
+    },
+    {
+      "id": "F_DMSO",
+      "rect_pt": [
+        407.315,
+        463.505,
+        173.601,
+        111.996
+      ]
+    },
+    {
+      "id": "F_RARi",
+      "rect_pt": [
+        406.794,
+        597.404,
+        173.601,
+        111.996
+      ]
+    },
+    {
+      "id": "F_shared_density_bar",
+      "rect_pt": [
+        447.572,
+        743.835,
+        98.556,
+        4.928
+      ]
+    },
+    {
+      "id": "F_DMSO_label_Top_IE",
+      "rect_pt": [
+        409.0232,
+        494.7586,
+        23.223,
+        17.275
+      ]
+    },
+    {
+      "id": "F_DMSO_label_Top_LP",
+      "rect_pt": [
+        518.6485,
+        483.2767,
+        44.642,
+        8.57
+      ]
+    },
+    {
+      "id": "F_DMSO_label_Crypt_IE",
+      "rect_pt": [
+        409.315,
+        557.7038,
+        29.284,
+        15.946
+      ]
+    },
+    {
+      "id": "F_DMSO_label_Crypt_LP",
+      "rect_pt": [
+        515.836,
+        535.3699,
+        50.267,
+        8.572
+      ]
+    },
+    {
+      "id": "F_DMSO_label_Muscularis",
+      "rect_pt": [
+        557.0409,
+        552.2427,
+        22.424,
+        16.554
+      ]
+    },
+    {
+      "id": "F_RARi_label_Top_IE",
+      "rect_pt": [
+        408.502,
+        639.3198,
+        23.223,
+        17.275
+      ]
+    },
+    {
+      "id": "F_RARi_label_Top_LP",
+      "rect_pt": [
+        523.3539,
+        625.6403,
+        44.642,
+        8.57
+      ]
+    },
+    {
+      "id": "F_RARi_label_Crypt_IE",
+      "rect_pt": [
+        408.5018,
+        690.7289,
+        27.786,
+        16.506
+      ]
+    },
+    {
+      "id": "F_RARi_label_Crypt_LP",
+      "rect_pt": [
+        525.5891,
+        667.519,
+        50.267,
+        8.572
+      ]
+    },
+    {
+      "id": "F_RARi_label_Muscularis",
+      "rect_pt": [
+        555.3211,
+        688.6372,
+        22.424,
+        16.554
+      ]
+    }
+  ],
+  "expected_text": [
+    "Pearson r = 0.931",
+    "Pearson r = 0.727",
+    "Sparse IF reference",
+    "P14 per 10,000 non-P14 cells",
+    "Probability density",
+    "200 \u00b5m",
+    "Example IF training annotations",
+    "Musc",
+    "Muscularis"
+  ],
+  "forbidden_text": [
+    "Pearson r = 0.927",
+    "Pearson r = 0.761",
+    "P14 cells per mm",
+    "Kernel density estimate",
+    "Sparse IF manual labels",
+    "Sparse IF SFT labels"
+  ],
+  "intentional_differences": [
+    "Figure4B keeps original top-left and width; height follows the authorized new frozen field aspect ratio, with a newly calibrated external200\u00b5m scale bar.",
+    "Current verified IF predictions, shared density scale, same-gate abundance denominator, gate percentages, and metrics replace historical science.",
+    "Original Figure4D frames contain unchanged physical fields with small internal margins where imported artwork aspect ratios differ.",
+    "User requested original IMAP label boxes, baselines, abbreviations, and line breaks; current frozen percentages replace historical numbers in those original locations.",
+    "User-requested panel letters without trailing periods; preserve letter case, font, size, and anchors.",
+    "User-requested wording-only revision, 7 September 2026. Longer labels may wrap or use text-specific fit adjustments; scientific inputs, values, gates, colors, markers and axes remain unchanged.",
+    "September 7 follow-up: Musc uses the original IMAP label box and baselines; non-IMAP displays use Muscularis. Gate assignments and percentages are unchanged."
+  ],
+  "raster_contracts": [
+    {
+      "component": "panel_F_P14_IMAPs.pdf",
+      "vector_only": true
+    }
+  ],
+  "panel_letter_punctuation": "none"
+}

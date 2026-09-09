@@ -1,0 +1,163 @@
+{
+  "reference_sha256": "af288a503dd65070919e1638b36bd4e153ce72ffd70125c576d8b703a98217b5",
+  "ordered_path_groups": [
+    {
+      "id": "upper_transformer_stack",
+      "panel": "A",
+      "paint_indices": [3974, 3975, 3976, 3977, 3978, 3979, 3980, 3981, 3982, 3983, 3984, 3985, 3986, 3987],
+      "expected_ops": ["f", "S", "f", "S", "f", "S", "f", "S", "f", "S", "f", "S", "B", "B"],
+      "bounds_pt": [404.6344, 50.9516, 71.6415, 45.7157]
+    },
+    {
+      "id": "lower_transformer_stack",
+      "panel": "A",
+      "paint_indices": [4323, 4324, 4325, 4326, 4327, 4328, 4329, 4330, 4331, 4332, 4333, 4334, 4335, 4336],
+      "expected_ops": ["f", "S", "f", "S", "f", "S", "f", "S", "f", "S", "f", "S", "B", "B"],
+      "bounds_pt": [404.6344, 98.4083, 71.6415, 45.7157]
+    }
+  ],
+  "required_paths": [
+    {
+      "index": 5147,
+      "role": "UMAP1 vertical arrow head",
+      "bbox_pt": [
+        10.9544,
+        473.881,
+        6.518,
+        5.143
+      ]
+    },
+    {
+      "index": 5148,
+      "role": "UMAP1 vertical shaft",
+      "bbox_pt": [
+        14.2133,
+        476.2413,
+        0.062,
+        27.949
+      ]
+    },
+    {
+      "index": 5149,
+      "role": "UMAP1 horizontal arrow head",
+      "bbox_pt": [
+        38.6322,
+        499.8519,
+        5.143,
+        6.518
+      ]
+    },
+    {
+      "index": 5150,
+      "role": "UMAP1 horizontal shaft",
+      "bbox_pt": [
+        13.4659,
+        503.1107,
+        27.949,
+        0.062
+      ]
+    },
+    {
+      "index": 5151,
+      "role": "UMAP2 vertical arrow head",
+      "bbox_pt": [
+        125.5632,
+        473.6813,
+        6.518,
+        5.143
+      ]
+    },
+    {
+      "index": 5152,
+      "role": "UMAP2 vertical shaft",
+      "bbox_pt": [
+        128.822,
+        476.0416,
+        0.062,
+        27.949
+      ]
+    },
+    {
+      "index": 5153,
+      "role": "UMAP2 horizontal arrow head",
+      "bbox_pt": [
+        153.241,
+        499.6523,
+        5.143,
+        6.518
+      ]
+    },
+    {
+      "index": 5154,
+      "role": "UMAP2 horizontal shaft",
+      "bbox_pt": [
+        128.0746,
+        502.9111,
+        27.949,
+        0.062
+      ]
+    },
+    {
+      "index": 5228,
+      "role": "crypt-villus metric backing",
+      "bbox_pt": [
+        271.5641,
+        408.0859,
+        65.811,
+        22.908
+      ]
+    },
+    {
+      "index": 5246,
+      "role": "epithelial-distance metric backing",
+      "bbox_pt": [
+        450.6892,
+        408.0855,
+        67.313,
+        22.908
+      ]
+    }
+  ],
+  "header_palette": {
+    "Xenium-aligned training data preparation": {
+      "source_cmyk_stroke": [
+        1,
+        0.9,
+        0,
+        0
+      ],
+      "rgb_8bit": [
+        41,
+        61,
+        155
+      ]
+    },
+    "ViT Pretraining": {
+      "source_cmyk_stroke": [
+        0.38,
+        0,
+        0.604,
+        0.73
+      ],
+      "rgb_8bit": [
+        57,
+        76,
+        41
+      ]
+    },
+    "Supervised multitask fine tuning": {
+      "source_cmyk_stroke": [
+        0,
+        0.165,
+        0.588,
+        0.48
+      ],
+      "rgb_8bit": [
+        146,
+        120,
+        58
+      ]
+    }
+  },
+  "palette_measurement": "Dominant fully covered colored header glyph pixels in the Poppler-rendered hash-locked original; original text uses colored stroke with black fill."
+}

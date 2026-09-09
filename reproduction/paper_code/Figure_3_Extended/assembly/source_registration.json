@@ -1,0 +1,1752 @@
+{
+  "reference_pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure3_Extended.pdf",
+  "reference_sha256": "c124a3765ac89e71439d705e7af72b422074e0d157153f7e76e66fb09f0a3e6f",
+  "method": "Original image unit-square transformed by recursive PDF CTMs; original path paint bounds; direct text-paint baselines.",
+  "images": [
+    {
+      "id": "page//Im0",
+      "rect_pt": [
+        26.4961948,
+        31.839638400000013,
+        97.7484818,
+        97.74848180000004
+      ],
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "id": "page//Im1",
+      "rect_pt": [
+        144.4527588,
+        31.839638400000013,
+        97.74848180000001,
+        97.74848180000004
+      ],
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "id": "page//Im2",
+      "rect_pt": [
+        265.0254517,
+        31.294594399999937,
+        97.74848179999998,
+        97.74848180000004
+      ],
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "id": "page//Im3",
+      "rect_pt": [
+        382.9819946,
+        31.294594399999937,
+        97.74848179999998,
+        97.74848180000004
+      ],
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "id": "page//Im4",
+      "rect_pt": [
+        31.6233006,
+        591.9986884,
+        106.86815380000002,
+        106.86815379999999
+      ],
+      "pixels": [
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page//Im5",
+      "rect_pt": [
+        173.4795532,
+        591.4546057,
+        107.29907380000003,
+        107.2990738
+      ],
+      "pixels": [
+        249,
+        249
+      ]
+    },
+    {
+      "id": "page//Im6",
+      "rect_pt": [
+        28.1759415,
+        711.7500769,
+        106.86815380000002,
+        106.8681538
+      ],
+      "pixels": [
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page//Im7",
+      "rect_pt": [
+        173.4795532,
+        711.2503515,
+        107.29907380000003,
+        107.29907379999999
+      ],
+      "pixels": [
+        249,
+        249
+      ]
+    },
+    {
+      "id": "page//Im8",
+      "rect_pt": [
+        137.6296234,
+        712.1810004,
+        5.171040099999999,
+        106.4372559
+      ],
+      "pixels": [
+        12,
+        247
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "index": 29,
+      "rect_pt": [
+        151.2596,
+        165.0756,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 30,
+      "rect_pt": [
+        40.3199,
+        165.0756,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 31,
+      "rect_pt": [
+        40.3199,
+        262.4016,
+        123.12,
+        0
+      ]
+    },
+    {
+      "index": 47,
+      "rect_pt": [
+        317.4716,
+        165.0756,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 48,
+      "rect_pt": [
+        206.5319,
+        165.0756,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 49,
+      "rect_pt": [
+        206.5319,
+        262.4016,
+        123.12,
+        0
+      ]
+    },
+    {
+      "index": 65,
+      "rect_pt": [
+        483.6836,
+        165.0756,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 66,
+      "rect_pt": [
+        372.7439,
+        165.0756,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 67,
+      "rect_pt": [
+        372.7439,
+        262.4016,
+        123.12,
+        0
+      ]
+    },
+    {
+      "index": 162,
+      "rect_pt": [
+        101.533,
+        325.9969,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 163,
+      "rect_pt": [
+        48.8094,
+        325.9969,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 164,
+      "rect_pt": [
+        48.8094,
+        423.3229,
+        123.12,
+        0
+      ]
+    },
+    {
+      "index": 265,
+      "rect_pt": [
+        267.745,
+        325.9969,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 266,
+      "rect_pt": [
+        215.0214,
+        325.9969,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 267,
+      "rect_pt": [
+        215.0214,
+        423.3229,
+        123.12,
+        0
+      ]
+    },
+    {
+      "index": 361,
+      "rect_pt": [
+        433.957,
+        325.9969,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 362,
+      "rect_pt": [
+        381.2334,
+        325.9969,
+        0,
+        97.326
+      ]
+    },
+    {
+      "index": 363,
+      "rect_pt": [
+        381.2334,
+        423.3229,
+        123.12,
+        0
+      ]
+    },
+    {
+      "index": 379,
+      "rect_pt": [
+        38.513,
+        477.0358,
+        0,
+        71.41
+      ]
+    },
+    {
+      "index": 380,
+      "rect_pt": [
+        38.513,
+        548.4458,
+        133.025,
+        0
+      ]
+    },
+    {
+      "index": 415,
+      "rect_pt": [
+        190.5436,
+        477.0358,
+        0,
+        71.41
+      ]
+    },
+    {
+      "index": 416,
+      "rect_pt": [
+        190.5436,
+        548.4458,
+        133.025,
+        0
+      ]
+    },
+    {
+      "index": 447,
+      "rect_pt": [
+        364.0986,
+        558.919,
+        130.649,
+        0
+      ]
+    },
+    {
+      "index": 448,
+      "rect_pt": [
+        364.0986,
+        479.5242,
+        0,
+        82.22
+      ]
+    },
+    {
+      "index": 449,
+      "rect_pt": [
+        364.0986,
+        561.7442,
+        130.649,
+        0
+      ]
+    },
+    {
+      "index": 491,
+      "rect_pt": [
+        364.4982,
+        677.8868,
+        130.649,
+        0
+      ]
+    },
+    {
+      "index": 492,
+      "rect_pt": [
+        364.4982,
+        599.404,
+        0,
+        82.22
+      ]
+    },
+    {
+      "index": 493,
+      "rect_pt": [
+        364.4982,
+        681.624,
+        130.649,
+        0
+      ]
+    },
+    {
+      "index": 561,
+      "rect_pt": [
+        352.7483,
+        722.2385,
+        0,
+        99.611
+      ]
+    },
+    {
+      "index": 563,
+      "rect_pt": [
+        379.4041,
+        722.2385,
+        0,
+        99.611
+      ]
+    },
+    {
+      "index": 565,
+      "rect_pt": [
+        406.0599,
+        722.2385,
+        0,
+        99.611
+      ]
+    },
+    {
+      "index": 567,
+      "rect_pt": [
+        432.7157,
+        722.2385,
+        0,
+        99.611
+      ]
+    },
+    {
+      "index": 569,
+      "rect_pt": [
+        459.3715,
+        722.2385,
+        0,
+        99.611
+      ]
+    },
+    {
+      "index": 571,
+      "rect_pt": [
+        486.0273,
+        722.2385,
+        0,
+        99.611
+      ]
+    },
+    {
+      "index": 573,
+      "rect_pt": [
+        352.7483,
+        821.8495,
+        133.279,
+        0
+      ]
+    },
+    {
+      "index": 575,
+      "rect_pt": [
+        352.7483,
+        802.1246,
+        133.279,
+        0
+      ]
+    },
+    {
+      "index": 577,
+      "rect_pt": [
+        352.7483,
+        782.3998,
+        133.279,
+        0
+      ]
+    },
+    {
+      "index": 579,
+      "rect_pt": [
+        352.7483,
+        762.6749,
+        133.279,
+        0
+      ]
+    },
+    {
+      "index": 581,
+      "rect_pt": [
+        352.7483,
+        742.95,
+        133.279,
+        0
+      ]
+    },
+    {
+      "index": 583,
+      "rect_pt": [
+        352.7483,
+        723.2252,
+        133.279,
+        0
+      ]
+    },
+    {
+      "index": 587,
+      "rect_pt": [
+        352.7483,
+        722.2385,
+        0,
+        99.611
+      ]
+    },
+    {
+      "index": 588,
+      "rect_pt": [
+        352.7483,
+        821.8495,
+        133.279,
+        0
+      ]
+    }
+  ],
+  "texts": [
+    {
+      "text": "a.",
+      "x_pt": 14.2568,
+      "y_pt": 14.397299999999973,
+      "font_size_pt": 8.721,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "c.",
+      "x_pt": 15.163784,
+      "y_pt": 296.07687899999996,
+      "font_size_pt": 8.721,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "d.",
+      "x_pt": 15.495182,
+      "y_pt": 452.854296,
+      "font_size_pt": 8.721,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "b.",
+      "x_pt": 14.562035,
+      "y_pt": 139.526208,
+      "font_size_pt": 8.721,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "e.",
+      "x_pt": 326.59069400000004,
+      "y_pt": 456.831072,
+      "font_size_pt": 8.721,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Masked student local view",
+      "x_pt": 34.0537,
+      "y_pt": 26.662900000000036,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "EMA-teacher local target",
+      "x_pt": 156.7241,
+      "y_pt": 26.662900000000036,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Masked student context view",
+      "x_pt": 271.0659,
+      "y_pt": 26.73810000000003,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "EMA-teacher context target",
+      "x_pt": 386.9336,
+      "y_pt": 26.662900000000036,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 40.7202,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 71.7363,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 104.6563,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30",
+      "x_pt": 137.5762,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Completed epoch",
+      "x_pt": 75.05176,
+      "y_pt": 283.20885999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.50",
+      "x_pt": 21.0151,
+      "y_pt": 260.347,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.75",
+      "x_pt": 21.0151,
+      "y_pt": 244.8397,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "2.00",
+      "x_pt": 21.0151,
+      "y_pt": 229.3324,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "2.25",
+      "x_pt": 21.0151,
+      "y_pt": 213.82460000000003,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "2.50",
+      "x_pt": 21.0151,
+      "y_pt": 198.31769999999995,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "2.75",
+      "x_pt": 21.0151,
+      "y_pt": 182.80989999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Composite representation loss",
+      "x_pt": 52.7642,
+      "y_pt": 159.9452,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "T",
+      "x_pt": 97.3335,
+      "y_pt": 174.81920000000002,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "raining",
+      "x_pt": 101.25966,
+      "y_pt": 174.81920000000002,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "V",
+      "x_pt": 97.3335,
+      "y_pt": 183.42809999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "alidation",
+      "x_pt": 101.39646,
+      "y_pt": 183.42809999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 206.9321,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 237.9482,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 270.8687,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30",
+      "x_pt": 303.7881,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Completed epoch",
+      "x_pt": 241.26366,
+      "y_pt": 283.20885999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.40",
+      "x_pt": 187.2275,
+      "y_pt": 247.04279999999994,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.45",
+      "x_pt": 187.2275,
+      "y_pt": 224.36360000000002,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.50",
+      "x_pt": 187.2275,
+      "y_pt": 201.68439999999998,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.55",
+      "x_pt": 187.2275,
+      "y_pt": 179.00569999999993,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Alignment loss",
+      "x_pt": 244.4458,
+      "y_pt": 159.9452,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0",
+      "x_pt": 373.1445,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 404.1602,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 437.0801,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "30",
+      "x_pt": 470,
+      "y_pt": 273.36609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Completed epoch",
+      "x_pt": 407.47556,
+      "y_pt": 283.20885999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.65",
+      "x_pt": 353.4395,
+      "y_pt": 259.37289999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.70",
+      "x_pt": 353.4395,
+      "y_pt": 242.93690000000004,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.75",
+      "x_pt": 353.4395,
+      "y_pt": 226.5018,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.80",
+      "x_pt": 353.4395,
+      "y_pt": 210.06679999999994,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.85",
+      "x_pt": 353.4395,
+      "y_pt": 193.63069999999993,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.90",
+      "x_pt": 353.4395,
+      "y_pt": 177.1957,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Feature standard deviation",
+      "x_pt": 391.04,
+      "y_pt": 159.9452,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Paired representation pretraining",
+      "x_pt": 214.5762,
+      "y_pt": 147.38459999999998,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "5",
+      "x_pt": 76.0659,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 103.6167,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "15",
+      "x_pt": 133.0713,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 162.5259,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Completed epoch",
+      "x_pt": 83.54442,
+      "y_pt": 444.13025999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.005",
+      "x_pt": 25.6978,
+      "y_pt": 424.4711,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.010",
+      "x_pt": 25.6978,
+      "y_pt": 404.4457,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.015",
+      "x_pt": 25.6978,
+      "y_pt": 384.4222,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.020",
+      "x_pt": 25.6978,
+      "y_pt": 364.3968,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.025",
+      "x_pt": 25.6978,
+      "y_pt": 344.37239999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Smooth L1 objective",
+      "x_pt": 77.4185,
+      "y_pt": 320.86609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "T",
+      "x_pt": 140.6924,
+      "y_pt": 335.7401,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "raining",
+      "x_pt": 144.61856,
+      "y_pt": 335.7401,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "V",
+      "x_pt": 140.6924,
+      "y_pt": 344.3495,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "alidation",
+      "x_pt": 144.75536,
+      "y_pt": 344.3495,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "5",
+      "x_pt": 242.2778,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 269.8286,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "15",
+      "x_pt": 299.2832,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 328.7373,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Completed epoch",
+      "x_pt": 249.75582,
+      "y_pt": 444.13025999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.04",
+      "x_pt": 195.7168,
+      "y_pt": 422.8265,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.06",
+      "x_pt": 195.7168,
+      "y_pt": 402.0648,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.08",
+      "x_pt": 195.7168,
+      "y_pt": 381.3031,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.10",
+      "x_pt": 195.7168,
+      "y_pt": 360.54089999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.12",
+      "x_pt": 195.7168,
+      "y_pt": 339.77869999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Crypt-villus MAE",
+      "x_pt": 249.7222,
+      "y_pt": 320.86609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "5",
+      "x_pt": 408.4893,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "10",
+      "x_pt": 436.04,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "15",
+      "x_pt": 465.4951,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "20",
+      "x_pt": 494.9492,
+      "y_pt": 434.28749999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Completed epoch",
+      "x_pt": 415.96772,
+      "y_pt": 444.13025999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.06",
+      "x_pt": 361.9287,
+      "y_pt": 422.84119999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.08",
+      "x_pt": 361.9287,
+      "y_pt": 395.06579999999997,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.10",
+      "x_pt": 361.9287,
+      "y_pt": 367.2904,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.12",
+      "x_pt": 361.9287,
+      "y_pt": 339.5155,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Epithelial-distance MAE",
+      "x_pt": 404.3916,
+      "y_pt": 320.86609999999996,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Released model supervised fine-tuning",
+      "x_pt": 215.103,
+      "y_pt": 306.9213,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "No pretraining",
+      "x_pt": 19.8732,
+      "y_pt": 567.6171999999999,
+      "font_size_pt": 5.472036059822706,
+      "rotation_degrees": 18.00052695570648
+    },
+    {
+      "text": "Masked-pixel",
+      "x_pt": 72.2603,
+      "y_pt": 566.9568999999999,
+      "font_size_pt": 5.472036059822706,
+      "rotation_degrees": 18.00052695570648
+    },
+    {
+      "text": "reconstruction",
+      "x_pt": 72.0266352,
+      "y_pt": 573.1259468,
+      "font_size_pt": 5.472036059822706,
+      "rotation_degrees": 18.00052695570648
+    },
+    {
+      "text": "Paired representation",
+      "x_pt": 105.2676,
+      "y_pt": 573.1686,
+      "font_size_pt": 5.472036059822706,
+      "rotation_degrees": 18.00052695570648
+    },
+    {
+      "text": "prediction",
+      "x_pt": 134.278026,
+      "y_pt": 569.841122,
+      "font_size_pt": 5.472036059822706,
+      "rotation_degrees": 18.00052695570648
+    },
+    {
+      "text": "0.65",
+      "x_pt": 23.0698,
+      "y_pt": 550.4076,
+      "font_size_pt": 5.472,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.70",
+      "x_pt": 23.0698,
+      "y_pt": 536.4056,
+      "font_size_pt": 5.472,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.75",
+      "x_pt": 23.0698,
+      "y_pt": 522.4027,
+      "font_size_pt": 5.472,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.80",
+      "x_pt": 23.0698,
+      "y_pt": 508.4017,
+      "font_size_pt": 5.472,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.85",
+      "x_pt": 23.0698,
+      "y_pt": 494.3988,
+      "font_size_pt": 5.472,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.90",
+      "x_pt": 23.0698,
+      "y_pt": 480.3968,
+      "font_size_pt": 5.472,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Pearson r",
+      "x_pt": 19.2437,
+      "y_pt": 524.6135999999999,
+      "font_size_pt": 5.472,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Crypt-villus coordinate",
+      "x_pt": 76.25,
+      "y_pt": 472.93199999999996,
+      "font_size_pt": 5.814,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "mean = 0.860",
+      "x_pt": 37.3921,
+      "y_pt": 485.34209999999996,
+      "font_size_pt": 4.9248,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "mean = 0.864",
+      "x_pt": 89.5161832,
+      "y_pt": 484.73142479999996,
+      "font_size_pt": 4.9248,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "mean = 0.875",
+      "x_pt": 141.6402664,
+      "y_pt": 481.53030479999995,
+      "font_size_pt": 4.9248,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "No pretraining",
+      "x_pt": 171.9043,
+      "y_pt": 567.6175000000001,
+      "font_size_pt": 5.472036059822706,
+      "rotation_degrees": 18.00052695570648
+    },
+    {
+      "text": "Masked-pixel",
+      "x_pt": 224.2918,
+      "y_pt": 566.957,
+      "font_size_pt": 5.472036059822706,
+      "rotation_degrees": 18.00052695570648
+    },
+    {
+      "text": "reconstruction",
+      "x_pt": 224.0598262,
+      "y_pt": 573.131251,
+      "font_size_pt": 5.472036059822706,
+      "rotation_degrees": 18.00052695570648
+    },
+    {
+      "text": "Paired representation",
+      "x_pt": 257.2982,
+      "y_pt": 573.169,
+      "font_size_pt": 5.472036059822706,
+      "rotation_degrees": 18.00052695570648
+    },
+    {
+      "text": "prediction",
+      "x_pt": 286.306935,
+      "y_pt": 569.8363178,
+      "font_size_pt": 5.472036059822706,
+      "rotation_degrees": 18.00052695570648
+    },
+    {
+      "text": "Epithelial-distance coordinate",
+      "x_pt": 219.0464,
+      "y_pt": 472.93199999999996,
+      "font_size_pt": 5.814,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "mean = 0.692",
+      "x_pt": 189.4229,
+      "y_pt": 527.3129,
+      "font_size_pt": 4.9248,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "mean = 0.704",
+      "x_pt": 241.5469832,
+      "y_pt": 525.2346344,
+      "font_size_pt": 4.9248,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "mean = 0.718",
+      "x_pt": 293.6710664,
+      "y_pt": 522.3191528,
+      "font_size_pt": 4.9248,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Pretraining objective comparison",
+      "x_pt": 134.229,
+      "y_pt": 462.1449,
+      "font_size_pt": 6.498,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Local branch",
+      "x_pt": 344.8468,
+      "y_pt": 581.1287,
+      "font_size_pt": 6.15596755108407,
+      "rotation_degrees": 15.99985845951522
+    },
+    {
+      "text": "Context branch",
+      "x_pt": 388.9337,
+      "y_pt": 582.922,
+      "font_size_pt": 6.15596755108407,
+      "rotation_degrees": 15.99985845951522
+    },
+    {
+      "text": "Fine branch",
+      "x_pt": 448.137,
+      "y_pt": 580.3736,
+      "font_size_pt": 6.15596755108407,
+      "rotation_degrees": 15.99985845951522
+    },
+    {
+      "text": "0.0",
+      "x_pt": 350.1514,
+      "y_pt": 561.1586,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.1",
+      "x_pt": 350.1514,
+      "y_pt": 544.0501999999999,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 350.1514,
+      "y_pt": 526.9418000000001,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.3",
+      "x_pt": 350.1514,
+      "y_pt": 509.8324,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 350.1514,
+      "y_pt": 492.724,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Pearson r reduction",
+      "x_pt": 345.7764,
+      "y_pt": 547.5179,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Crypt-villus coordinate",
+      "x_pt": 397.0498,
+      "y_pt": 474.90659999999997,
+      "font_size_pt": 6.5408,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Local branch",
+      "x_pt": 345.2469,
+      "y_pt": 701.0087,
+      "font_size_pt": 6.15596755108407,
+      "rotation_degrees": 15.99985845951522
+    },
+    {
+      "text": "Context branch",
+      "x_pt": 389.3329,
+      "y_pt": 702.8023,
+      "font_size_pt": 6.15596755108407,
+      "rotation_degrees": 15.99985845951522
+    },
+    {
+      "text": "Fine branch",
+      "x_pt": 448.5359,
+      "y_pt": 700.2529999999999,
+      "font_size_pt": 6.15596755108407,
+      "rotation_degrees": 15.99985845951522
+    },
+    {
+      "text": "0.0",
+      "x_pt": 350.5508,
+      "y_pt": 680.1263,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 350.5508,
+      "y_pt": 655.0754999999999,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 350.5508,
+      "y_pt": 630.0237999999999,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.6",
+      "x_pt": 350.5508,
+      "y_pt": 604.9739999999999,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Pearson r reduction",
+      "x_pt": 346.1768,
+      "y_pt": 667.3987999999999,
+      "font_size_pt": 6.156,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Epithelial-distance coordinate",
+      "x_pt": 387.0605,
+      "y_pt": 594.7875,
+      "font_size_pt": 6.5408,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Branch-input shu",
+      "x_pt": 397.377,
+      "y_pt": 462.1449,
+      "font_size_pt": 7.3102,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "f",
+      "x_pt": 452.6348018,
+      "y_pt": 462.1449,
+      "font_size_pt": 7.3102,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "fling",
+      "x_pt": 454.5500742,
+      "y_pt": 462.1449,
+      "font_size_pt": 7.3102,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Xenium DAPI morphology",
+      "x_pt": 49.5269,
+      "y_pt": 588.3324,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Manual Peyer's patch label",
+      "x_pt": 187.0581,
+      "y_pt": 588.3334,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Image-classifier probability",
+      "x_pt": 48.8906,
+      "y_pt": 708.8489999999999,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Predicted class",
+      "x_pt": 208.2095,
+      "y_pt": 709.6068,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 147.002,
+      "y_pt": 820.2406,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 147.002,
+      "y_pt": 798.9466,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 147.002,
+      "y_pt": 777.6517,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.6",
+      "x_pt": 147.002,
+      "y_pt": 756.3558,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.8",
+      "x_pt": 147.002,
+      "y_pt": 735.0618999999999,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 147.002,
+      "y_pt": 713.767,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Peyer",
+      "x_pt": 163.4404,
+      "y_pt": 797.2025,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "'",
+      "x_pt": 163.4404,
+      "y_pt": 779.33642,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "s patch probability",
+      "x_pt": 163.4404,
+      "y_pt": 778.02314,
+      "font_size_pt": 6.84,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "f.",
+      "x_pt": 15.3257,
+      "y_pt": 586.2386,
+      "font_size_pt": 8.721,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "g.",
+      "x_pt": 322.897928,
+      "y_pt": 713.765783,
+      "font_size_pt": 8.721,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 349.2432,
+      "y_pt": 829.8724,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 375.8994,
+      "y_pt": 829.8724,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 402.5557,
+      "y_pt": 829.8724,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.6",
+      "x_pt": 429.2109,
+      "y_pt": 829.8724,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.8",
+      "x_pt": 455.8672,
+      "y_pt": 829.8724,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 482.5225,
+      "y_pt": 829.8724,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "False-positive rate",
+      "x_pt": 398.7829,
+      "y_pt": 837.00904,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.0",
+      "x_pt": 341.3291,
+      "y_pt": 823.6566,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.2",
+      "x_pt": 341.3291,
+      "y_pt": 803.931,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.4",
+      "x_pt": 341.3291,
+      "y_pt": 784.2064,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.6",
+      "x_pt": 341.3291,
+      "y_pt": 764.4818,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "0.8",
+      "x_pt": 341.3291,
+      "y_pt": 744.7572,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "1.0",
+      "x_pt": 341.3291,
+      "y_pt": 725.0316,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "T",
+      "x_pt": 337.8047,
+      "y_pt": 791.5892,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "rue-positive rate",
+      "x_pt": 337.8047,
+      "y_pt": 788.6912,
+      "font_size_pt": 5.04,
+      "rotation_degrees": 90
+    },
+    {
+      "text": "Peyer's patch classifier strategy",
+      "x_pt": 377.3994,
+      "y_pt": 718.4593,
+      "font_size_pt": 5.985,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Manual · head only ",
+      "x_pt": 418.6172,
+      "y_pt": 789.0862999999999,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "AUROC = 0.74",
+      "x_pt": 454.0822625,
+      "y_pt": 789.0862999999999,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "Manual · last block ",
+      "x_pt": 418.6172,
+      "y_pt": 794.6097,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "AUROC = 0.79",
+      "x_pt": 453.4207625,
+      "y_pt": 794.6097,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "G",
+      "x_pt": 418.6172,
+      "y_pt": 800.0824,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "A",
+      "x_pt": 421.68057500000003,
+      "y_pt": 800.0824,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "T",
+      "x_pt": 424.0233875,
+      "y_pt": 800.0824,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": " soft · head only ",
+      "x_pt": 426.3622625,
+      "y_pt": 800.0824,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "AUROC = 0.75",
+      "x_pt": 456.3542,
+      "y_pt": 800.0824,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "G",
+      "x_pt": 418.6172,
+      "y_pt": 805.6048,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "A",
+      "x_pt": 421.68057500000003,
+      "y_pt": 805.6048,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "T",
+      "x_pt": 424.0233875,
+      "y_pt": 805.6048,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": " soft · last block ",
+      "x_pt": 426.3622625,
+      "y_pt": 805.6048,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    },
+    {
+      "text": "AUROC = 0.83",
+      "x_pt": 455.6887625,
+      "y_pt": 805.6048,
+      "font_size_pt": 3.9375,
+      "rotation_degrees": 0
+    }
+  ]
+}

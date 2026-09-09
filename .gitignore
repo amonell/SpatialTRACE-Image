@@ -1,0 +1,41 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+build/
+dist/
+site/
+*.egg-info/
+
+# Local demo/test run outputs.
+outputs/
+runs/
+weights/*
+*.pt
+*.pth
+*.ckpt
+!weights/
+
+# Generated figures and raster previews.
+figures/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Large image and array artifacts.
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.h5ad
+*.parquet
+*.zarr/
+*.vsi
+*.tif
+*.tiff
+*.ome.tif
+*.ome.tiff

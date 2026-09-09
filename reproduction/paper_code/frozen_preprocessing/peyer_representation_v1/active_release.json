@@ -1,0 +1,7 @@
+{
+  "status": "FROZEN_AND_VERIFIED",
+  "required_version": "paired-representation-shared-scale-peyer-v1",
+  "release_path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/release_manifest.json",
+  "release_sha256": "e2eb84f803316473212b2bd857dc6df9b21fc3d9ba256ef887607522b212f8e1",
+  "authorization": "User requested replacement of reconstruction-pretrained separate encoders with representation pretraining and the axis-model architecture, followed by all affected final figure layouts."
+}

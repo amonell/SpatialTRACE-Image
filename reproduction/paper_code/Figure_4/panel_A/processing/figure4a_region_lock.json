@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "locked_date": "2026-09-04",
+  "artwork": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure4.png",
+  "artwork_sha256": "2f18c07127cddb4641b42f5fc1690eb3a52ea62debaf9c15027d8bb3034ba858",
+  "coordinate_system": "original snapshot pixels; xyxy, right and bottom excluded",
+  "method": "SIFT and similarity-transform RANSAC (seed 0), followed by integer snapshot crop and original 180-degree DMSO orientation. Not selected by model error.",
+  "regions": {
+    "DMSO": {
+      "source": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Data/Histology/histology_snapshots/DMSO.png",
+      "source_sha256": "284b4661d6c1448b8a4ce01bc4a90dfdc49974cf05cee0ea8164c2f87744acca",
+      "source_size_px": [2171, 1290],
+      "source_crop_xyxy": [539, 242, 1407, 1080],
+      "rotation_degrees": 180,
+      "artwork_roi_xyxy": [96, 100, 704, 687],
+      "registration_inliers": 751,
+      "registration_median_residual_source_px": 0.8477064280974599,
+      "target_to_source_matrix": [[-1.4272914358837376, 0.0012892954930006995, 1406.057547311452], [-0.0012892954930006986, -1.4272914358837376, 1080.0122555921625], [0, 0, 1]]
+    },
+    "RARi": {
+      "source": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Data/Histology/histology_snapshots/RAR.png",
+      "source_sha256": "951188d7134fbc709576859bac86033ea2924d793d1f6d5f7e92eb139902d06e",
+      "source_size_px": [2171, 1290],
+      "source_crop_xyxy": [481, 144, 1350, 981],
+      "rotation_degrees": 0,
+      "artwork_roi_xyxy": [714, 101, 1322, 687],
+      "registration_inliers": 280,
+      "registration_median_residual_source_px": 0.9176874717338341,
+      "target_to_source_matrix": [[1.4279136215484576, -0.0000843493589658482, 481.0098452671003], [0.00008434935896584261, 1.4279136215484582, 144.4416023532997], [0, 0, 1]]
+    }
+  },
+  "color_policy": "Preserve original RGB snapshots without recoloring. Subsequent artwork color-conversion profile unavailable. No fitted color transform is used.",
+  "raw_vsi_region_status": "NOT_VERIFIED: snapshot coordinates are not raw slide coordinates"
+}

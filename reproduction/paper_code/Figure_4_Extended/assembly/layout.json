@@ -1,0 +1,534 @@
+{
+  "schema_version": "assembled-figure-layout/v1",
+  "figure": "Figure_4_Extended",
+  "package": "Figure_4_Extended",
+  "panels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "page_size_pt": [
+    595.276,
+    841.89
+  ],
+  "reference": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure4_extended.pdf",
+  "reference_sha256": "917587bf3b208a67256fca7da475bead1d79be0e56f6698d22e96b3e73d7abfd",
+  "dpi": 600,
+  "png_dpi": 600,
+  "elements": [],
+  "manual_path_indices": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "anchors": [
+    {
+      "id": "A_original_path_6",
+      "rect_pt": [
+        155.9504,
+        42.3444,
+        79.66,
+        41.321
+      ]
+    },
+    {
+      "id": "A_original_path_7",
+      "rect_pt": [
+        155.9504,
+        42.3444,
+        79.66,
+        41.321
+      ]
+    },
+    {
+      "id": "A_original_path_8",
+      "rect_pt": [
+        138.7699,
+        63.6511,
+        14.392,
+        0
+      ]
+    },
+    {
+      "id": "A_original_path_9",
+      "rect_pt": [
+        150.7468,
+        61.0445,
+        4.464,
+        5.214
+      ]
+    },
+    {
+      "id": "A_original_path_10",
+      "rect_pt": [
+        7.8263,
+        44.0045,
+        131,
+        42.043
+      ]
+    },
+    {
+      "id": "A_original_path_11",
+      "rect_pt": [
+        7.8263,
+        44.0045,
+        131,
+        42.043
+      ]
+    },
+    {
+      "id": "A_original_path_12",
+      "rect_pt": [
+        236.3509,
+        63.6511,
+        14.441,
+        0
+      ]
+    },
+    {
+      "id": "A_original_path_13",
+      "rect_pt": [
+        248.3769,
+        61.0445,
+        4.464,
+        5.214
+      ]
+    },
+    {
+      "id": "A_original_path_14",
+      "rect_pt": [
+        252.9896,
+        47.4933,
+        104.761,
+        31.024
+      ]
+    },
+    {
+      "id": "A_original_path_15",
+      "rect_pt": [
+        252.9896,
+        47.4933,
+        104.761,
+        31.024
+      ]
+    },
+    {
+      "id": "B_transfer_tiles",
+      "rect_pt": [
+        423.714,
+        34.577,
+        141.102,
+        61.916
+      ]
+    },
+    {
+      "id": "C_objective",
+      "rect_pt": [
+        42.847,
+        138.073,
+        138.449,
+        98.832
+      ]
+    },
+    {
+      "id": "C_crypt_villus",
+      "rect_pt": [
+        228.368,
+        138.073,
+        138.448,
+        98.832
+      ]
+    },
+    {
+      "id": "C_epithelial",
+      "rect_pt": [
+        413.889,
+        138.073,
+        138.448,
+        98.832
+      ]
+    },
+    {
+      "id": "E_DMSO",
+      "rect_pt": [
+        44.887,
+        495.236,
+        173.601,
+        111.996
+      ]
+    },
+    {
+      "id": "E_RARi",
+      "rect_pt": [
+        287.556,
+        495.236,
+        173.601,
+        111.996
+      ]
+    },
+    {
+      "id": "E_DMSO_density_bar",
+      "rect_pt": [
+        223.21,
+        501.96,
+        4.92,
+        98.52
+      ]
+    },
+    {
+      "id": "E_RARi_density_bar",
+      "rect_pt": [
+        465.85,
+        501.96,
+        4.92,
+        98.52
+      ]
+    },
+    {
+      "id": "F_DMSO_image",
+      "rect_pt": [
+        9.2493,
+        663.7792,
+        139.9806,
+        139.9806
+      ]
+    },
+    {
+      "id": "F_DMSO_probability",
+      "rect_pt": [
+        157.6289,
+        663.5424,
+        139.98066,
+        140.45396
+      ]
+    },
+    {
+      "id": "F_RARi_image",
+      "rect_pt": [
+        301.7755,
+        662.2391,
+        139.9806,
+        139.9806
+      ]
+    },
+    {
+      "id": "F_RARi_probability",
+      "rect_pt": [
+        450.15504,
+        662.00233,
+        139.98062,
+        140.45393
+      ]
+    },
+    {
+      "id": "F_shared_probability_bar",
+      "rect_pt": [
+        236.5045,
+        808.9741,
+        149.352,
+        7.392
+      ]
+    },
+    {
+      "id": "E_DMSO_label_Top_IE",
+      "rect_pt": [
+        47.9098,
+        483.9344,
+        42.564,
+        8.57
+      ]
+    },
+    {
+      "id": "E_DMSO_label_Top_LP",
+      "rect_pt": [
+        178.6542,
+        501.675,
+        29.485,
+        16.691
+      ]
+    },
+    {
+      "id": "E_DMSO_label_Crypt_IE",
+      "rect_pt": [
+        47.9097,
+        589.5694,
+        27.662,
+        16.319
+      ]
+    },
+    {
+      "id": "E_DMSO_label_Crypt_LP",
+      "rect_pt": [
+        165.6759,
+        565.4413,
+        46.595,
+        8.572
+      ]
+    },
+    {
+      "id": "E_DMSO_label_Muscularis",
+      "rect_pt": [
+        193.3968,
+        588.4357,
+        21.77,
+        15.291
+      ]
+    },
+    {
+      "id": "E_RARi_label_Top_IE",
+      "rect_pt": [
+        290.578,
+        483.9344,
+        42.563,
+        8.57
+      ]
+    },
+    {
+      "id": "E_RARi_label_Top_LP",
+      "rect_pt": [
+        416.8987,
+        501.675,
+        29.485,
+        16.691
+      ]
+    },
+    {
+      "id": "E_RARi_label_Crypt_IE",
+      "rect_pt": [
+        289.8403,
+        588.2582,
+        27.662,
+        16.319
+      ]
+    },
+    {
+      "id": "E_RARi_label_Crypt_LP",
+      "rect_pt": [
+        409.5863,
+        566.7318,
+        50.267,
+        8.572
+      ]
+    },
+    {
+      "id": "E_RARi_label_Muscularis",
+      "rect_pt": [
+        434.7195,
+        588.4357,
+        21.77,
+        15.291
+      ]
+    },
+    {
+      "id": "D_DMSO_image",
+      "rect_pt": [
+        15,
+        289,
+        127,
+        137.58333333333334
+      ]
+    },
+    {
+      "id": "D_DMSO_gates",
+      "rect_pt": [
+        161,
+        289,
+        127,
+        137.58333333333334
+      ]
+    },
+    {
+      "id": "D_RARi_image",
+      "rect_pt": [
+        307,
+        289,
+        127,
+        137.58333333333334
+      ]
+    },
+    {
+      "id": "D_RARi_gates",
+      "rect_pt": [
+        453,
+        289,
+        127,
+        137.58333333333334
+      ]
+    }
+  ],
+  "expected_text": [
+    "5,822 labeled cells",
+    "20 villi",
+    "0.94",
+    "0.67",
+    "Probability density",
+    "Peyer\u2019s patch probability",
+    "DAPI / E-cadherin",
+    "Cells by IMAP gate",
+    "Muscularis",
+    "200 \u00b5m",
+    "IF-only fine-tuning",
+    "Xenium-fine-tuned checkpoint",
+    "IF-fine-tuned checkpoint",
+    "Musc"
+  ],
+  "forbidden_text": [
+    "8,575",
+    "27 villi",
+    "0.93",
+    "0.70",
+    "Kernel density estimate",
+    "P14 (outlined)",
+    "IF-only SFT",
+    "Xenium-only SFT checkpoint",
+    "Post-IF SFT checkpoint",
+    "Peyer probability",
+    "P14 (larger)"
+  ],
+  "intentional_differences": [
+    "Original vector IF workflow frames and arrows retained; original text removed structurally and replaced with Arial and the verified retained-training count.",
+    "Current verified IF transfer, training history, normalized density, and separately repaired Peyer classifier replace historical results.",
+    "The original shared bottom probability bar uses the full linear 0\u20131 range for both new classifier windows, with unchanged bar geometry and fixed 0.5 classification threshold.",
+    "User requested original IMAP label boxes, baselines, abbreviations, and line breaks; current frozen percentages replace historical numbers in those original locations.",
+    "Both fixed Peyer windows use the representation-pretrained axis-architecture classifier. Their 4,781 cells, markers and microscopy are unchanged; probabilities are newly inferred and shown on the shared full 0\u20131 scale.",
+    "RARi non-P14 Crypt LP changes from historical7.6% to current10.5%; this label box alone widens from46.595 to50.267pt about its unchanged center, with original baseline, Arial-Bold6.6pt font, and padding retained.",
+    "September 6 user-approved panel addition and layout reflow; original artwork hashes and source geometry remain recorded. All existing panels and scientific rows are retained.",
+    "New F uses a four-across DMSO original/overlay, RARi original/overlay strip. The registered non-P14 IMAPs and Peyer windows move upward together by 30 pt, preserving their internal label positions. History axes are 15 pt shorter.",
+    "User-requested reorder: gate backprojection is D, non-P14 IMAPs E, and Peyer windows F. The three intact data panels are translated without scaling or scientific changes.",
+    "User-requested panel letters without trailing periods; preserve letter case, font, size, and anchors.",
+    "User-requested Extended Figure 4D styling: remove P14 outlines; increase colored marker areas by 2.25-fold (50% larger diameter). P14 remains identifiable by larger filled markers; all frozen cells, gate colors, assignments, microscopy, and windows remain unchanged.",
+    "User-requested wording-only revision, 7 September 2026. Longer labels may wrap or use text-specific fit adjustments; scientific inputs, values, gates, colors, markers and axes remain unchanged.",
+    "September 7 follow-up: Musc uses the original IMAP label box and baselines; non-IMAP displays use Muscularis. Gate assignments and percentages are unchanged.",
+    "September 7 user request: remove only the P14 (larger) legend entry from D; retain all gate-colored cells and existing marker sizes."
+  ],
+  "raster_contracts": [
+    {
+      "component": "panel_A_original_vector_paths.pdf",
+      "vector_only": true
+    },
+    {
+      "component": "panel_B_transfer.pdf",
+      "vector_only": true
+    },
+    {
+      "component": "panel_E_non_P14_IMAPs.pdf",
+      "image_count": 2,
+      "minimum_ppi": 600
+    },
+    {
+      "component": "panel_F_Peyer_windows.pdf",
+      "image_count": 2,
+      "minimum_ppi": 600
+    },
+    {
+      "component": "panel_D_gate_backprojection.pdf",
+      "image_count": 4,
+      "minimum_ppi": 600
+    }
+  ],
+  "authorized_reflow": {
+    "date": "2026-09-06",
+    "user_request": "Remove the two evaluation footers and add these panels into the figures; adjust spacing or orientation as needed so they fit cleanly.",
+    "reference_panels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "added_panels": [
+      "F"
+    ],
+    "source_artwork_modified": false,
+    "scientific_values_modified": false,
+    "subsequent_reorder": {
+      "date": "2026-09-06",
+      "user_request": "Move Extended Figure 4F to D and shift the former D/E down one letter.",
+      "old_to_new": {
+        "D": "E",
+        "E": "F",
+        "F": "D"
+      },
+      "new_order_from_previous_letters": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "D",
+        "E"
+      ],
+      "unchanged_scientific_values_and_styles": true
+    }
+  },
+  "gate_projection_layout": {
+    "page_size_pt": [
+      595.276,
+      841.89
+    ],
+    "axes_rect_pt": [
+      [
+        15,
+        289,
+        127,
+        137.58333333333334
+      ],
+      [
+        161,
+        289,
+        127,
+        137.58333333333334
+      ],
+      [
+        307,
+        289,
+        127,
+        137.58333333333334
+      ],
+      [
+        453,
+        289,
+        127,
+        137.58333333333334
+      ]
+    ],
+    "legend_anchor_pt": [
+      297.638,
+      458
+    ],
+    "title_size_pt": 7,
+    "legend_size_pt": 6.5,
+    "scale_label_size_pt": 6,
+    "cell_marker_area_pt2": 1.8,
+    "P14_marker_area_pt2": 9,
+    "cell_marker_outlines": false
+  },
+  "panel_reorder": {
+    "date": "2026-09-06",
+    "user_request": "Move Extended Figure 4F to D and shift the former D/E down one letter.",
+    "old_to_new": {
+      "D": "E",
+      "E": "F",
+      "F": "D"
+    },
+    "new_order_from_previous_letters": [
+      "A",
+      "B",
+      "C",
+      "F",
+      "D",
+      "E"
+    ],
+    "unchanged_scientific_values_and_styles": true
+  },
+  "panel_letter_punctuation": "none"
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "artwork": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure1.pdf",
+    "sha256": "407668aa19bda1eba81242503eacad33beda282d6683941d78633b91dea240fd"
+  },
+  "source_assets": [
+    {
+      "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure1/panel_a/figure1a_day90_gray_zoom.png",
+      "sha256": "97a9467e2a1fd81ec1f24f73e836c310b596fb7b6a7ff9835507c756ef351e3c"
+    },
+    {
+      "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure1/panel_a/figure1a_day90_gray_zoom.pdf",
+      "sha256": "52248dc39a38cb66e06d84ae230a9001d860a9523460c9ca6e8fb494c787a879"
+    },
+    {
+      "path": "/home/amonell/Desktop/spatial_axes_manuscript/lineage_archive/final_figure_organization_2026-09-04/legacy_plotting_code/Figure1/panel_a/make_panel_a.py",
+      "sha256": "357b9ba9d8a9fc8608752c3bb5f47ed133a8301b3a23b56cc1cc1a9dde83c2b3"
+    },
+    {
+      "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_1/panel_D/processing/figure1d_region_lock.json",
+      "sha256": "43768fa10e004114ce14ebfc41ebe1e0ad29cdb18b1641b4b9c2f6b9842e4646"
+    }
+  ],
+  "source_axes": {
+    "full_limits_um": {
+      "x_min": 3419.4002887817232,
+      "x_max": 4761.136235066432,
+      "y_min": 1892.7577790457126,
+      "y_max": 2718.7577790457126
+    },
+    "source_png_canvas_pixels": [
+      990,
+      692
+    ],
+    "source_png_axes_left_px": 30,
+    "source_png_axes_top_px": 89.44010416657761,
+    "um_per_source_png_pixel": 1.4427268239620525,
+    "numeric_rerender_equals_legacy_pdf_data_image": true
+  },
+  "original_image_streams": {
+    "/Im1": {
+      "decoded_image_sha256": "720aeb7b2e301652ee4adbcc4103163618fe53890629586ff619d4150e6f9a6d",
+      "alpha_sha256": "55d5f711b770c90bc461ee7ea6f4413bfd13af6096bd746d40c6905bfc53dbfc"
+    },
+    "/Im2": {
+      "decoded_image_sha256": "e86631f6dec6fdd5fef6b43b6c6a075c0d629241da39e593a2cd2f0f073f8ff0",
+      "alpha_sha256": "c98bf1e7728254eb46cdd3c3d2acc7d43136cde76c4bf8535985fe09b224fbce"
+    },
+    "/Im5": {
+      "decoded_image_sha256": "fd3438c0d25a400d88cb280048f21b8c7eb12a061268423e817046f87014da1f",
+      "alpha_sha256": "9ee12b3a0c12d8ada5203722e4e437a7f5099d316fd3de390deda93a9a41f6ea"
+    },
+    "/Im6": {
+      "decoded_image_sha256": "fd3438c0d25a400d88cb280048f21b8c7eb12a061268423e817046f87014da1f",
+      "alpha_sha256": "9ee12b3a0c12d8ada5203722e4e437a7f5099d316fd3de390deda93a9a41f6ea"
+    }
+  },
+  "regions": {
+    "villus_zoom": {
+      "source_png_box_xyxy": [
+        410.37587201186244,
+        192.7315284272245,
+        965.3051642057089,
+        666.6935786911088
+      ],
+      "limits_um_xyxy": [
+        3968.1787625211937,
+        4768.790137771532,
+        2041.7790875117926,
+        2725.576850967549
+      ],
+      "registration_pearson_r": 0.9738826655526386,
+      "method": "Affine registration of original imported alpha to legacy gray PNG occupancy; same physical axes and source cells validated by exact numeric re-render of legacy PDF image"
+    },
+    "sparse_axis": {
+      "source_png_box_xyxy": [
+        417.2573734940478,
+        193.13233631694652,
+        962.3165984074628,
+        516.450738520999
+      ],
+      "limits_um_xyxy": [
+        3978.1068892986773,
+        4764.478453729226,
+        2042.35734380555,
+        2508.8174753458884
+      ],
+      "registration_pearson_r": 0.8841582333538764,
+      "method": "Affine registration of unannotated left140pixel columns to legacy gray PNG, excluding colored annotation from geometry fit",
+      "visible_villus_ids": [
+        "day90_SI_r2__villus_004"
+      ]
+    }
+  },
+  "dense_axis": {
+    "identical_original_image_streams": [
+      "/Im5",
+      "/Im6"
+    ],
+    "coordinate_region_from": "panel_D/processing/figure1d_region_lock.json:regions.paired_training_example",
+    "same_cells_as_training_axis": true
+  },
+  "selection_scope": "Artwork/source-image geometry registration only; no predicted values, errors, fitting, or model selection used to choose regions."
+}

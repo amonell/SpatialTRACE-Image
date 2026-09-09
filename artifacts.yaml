@@ -1,0 +1,7 @@
+# Descriptive pointer only. Download code reads the packaged JSON authority.
+release: 1.0.0rc1
+registry: src/crypt_villus_vit/artifacts.json
+publication_status: pending_author_upload
+code_license: GPL-3.0-only
+weights_license: GPL-3.0-only
+data_license: pending_author_confirmation

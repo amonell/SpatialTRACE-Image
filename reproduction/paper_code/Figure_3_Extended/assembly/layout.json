@@ -1,0 +1,1240 @@
+{
+  "schema_version": 1,
+  "figure": "Figure_3_Extended",
+  "page_size_pt": [
+    595.276,
+    841.89
+  ],
+  "reference_pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure3_Extended.pdf",
+  "reference_sha256": "c124a3765ac89e71439d705e7af72b422074e0d157153f7e76e66fb09f0a3e6f",
+  "dpi": 300,
+  "coordinate_system": "top-left PDF points",
+  "elements": [
+    {
+      "kind": "pdf",
+      "path": "panel_A/panel_A_paired_pretraining_views.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_A_panel_A_paired_pretraining_views",
+      "panel": "A"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_B/panel_B_paired_representation_pretraining_history.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_B_panel_B_paired_representation_pretraining_history",
+      "panel": "B"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_C/panel_C_released_supervised_training_history.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_C_panel_C_released_supervised_training_history",
+      "panel": "C"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_D/panel_D_pretraining_objective_ablation.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_D_panel_D_pretraining_objective_ablation",
+      "panel": "D"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_E/panel_E_branch_input_shuffling.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_E_panel_E_branch_input_shuffling",
+      "panel": "E"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_G/panel_G_heldout_peyer_prediction.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_G_panel_G_heldout_peyer_prediction",
+      "panel": "G"
+    },
+    {
+      "kind": "pdf",
+      "path": "panel_H/panel_H_peyer_classifier_strategy.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact",
+      "id": "panel_H_panel_H_peyer_classifier_strategy",
+      "panel": "H"
+    },
+    {
+      "id": "letter_A",
+      "panel": "A",
+      "kind": "text",
+      "text": "a.",
+      "x_pt": 14,
+      "y_pt": 15,
+      "font_size_pt": 8.721,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_B",
+      "panel": "B",
+      "kind": "text",
+      "text": "b.",
+      "x_pt": 14,
+      "y_pt": 138,
+      "font_size_pt": 8.721,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_C",
+      "panel": "C",
+      "kind": "text",
+      "text": "c.",
+      "x_pt": 14,
+      "y_pt": 250,
+      "font_size_pt": 8.721,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_D",
+      "panel": "D",
+      "kind": "text",
+      "text": "d.",
+      "x_pt": 14,
+      "y_pt": 360,
+      "font_size_pt": 8.721,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_E",
+      "panel": "E",
+      "kind": "text",
+      "text": "e.",
+      "x_pt": 326,
+      "y_pt": 360,
+      "font_size_pt": 8.721,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_G",
+      "panel": "G",
+      "kind": "text",
+      "text": "g",
+      "x_pt": 14,
+      "y_pt": 594,
+      "font_size_pt": 8.721,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_H",
+      "panel": "H",
+      "kind": "text",
+      "text": "h",
+      "x_pt": 340,
+      "y_pt": 647,
+      "font_size_pt": 8.721,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "letter_F",
+      "panel": "F",
+      "kind": "text",
+      "text": "f",
+      "x_pt": 14,
+      "y_pt": 489,
+      "font_size_pt": 8.721,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "left"
+    },
+    {
+      "id": "B_title",
+      "panel": "B",
+      "kind": "text",
+      "text": "Paired representation pretraining",
+      "x_pt": 298,
+      "y_pt": 136,
+      "font_size_pt": 7.5,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "C_title",
+      "panel": "C",
+      "kind": "text",
+      "text": "Coordinate-model fine-tuning",
+      "x_pt": 298,
+      "y_pt": 248,
+      "font_size_pt": 7.5,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "D_title",
+      "panel": "D",
+      "kind": "text",
+      "text": "Pretraining initialization comparison \u00b7 5% labeled cells",
+      "x_pt": 176,
+      "y_pt": 360,
+      "font_size_pt": 6.5,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "E_title",
+      "panel": "E",
+      "kind": "text",
+      "text": "Branch-input shuffling",
+      "x_pt": 459,
+      "y_pt": 360,
+      "font_size_pt": 7,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "F_title",
+      "panel": "F",
+      "kind": "text",
+      "text": "Matched branch retraining",
+      "x_pt": 298,
+      "y_pt": 487,
+      "font_size_pt": 8,
+      "font": "Arial",
+      "color": "#222222",
+      "align": "center"
+    },
+    {
+      "id": "panel_F_panel_F_matched_branch_retraining",
+      "panel": "F",
+      "kind": "pdf",
+      "path": "panel_F/panel_F_matched_branch_retraining.pdf",
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "fit": "exact"
+    }
+  ],
+  "render_specs": {
+    "panel_A_paired_pretraining_views": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            39,
+            30,
+            98,
+            98
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im0",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title": "Masked student local view"
+        },
+        {
+          "rect_pt": [
+            177,
+            30,
+            98,
+            98
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im1",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title": "EMA-teacher local target"
+        },
+        {
+          "rect_pt": [
+            315,
+            30,
+            98,
+            98
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im2",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title": "Masked student context view"
+        },
+        {
+          "rect_pt": [
+            453,
+            30,
+            98,
+            98
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im3",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title": "EMA-teacher context target"
+        }
+      ],
+      "font_size_pt": 6.5,
+      "title_size_pt": 6.5
+    },
+    "panel_B_paired_representation_pretraining_history": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            43,
+            153,
+            145,
+            64
+          ],
+          "source_anchor": "path_spines:30",
+          "anchor": true,
+          "title": "Composite representation loss"
+        },
+        {
+          "rect_pt": [
+            233,
+            153,
+            145,
+            64
+          ],
+          "source_anchor": "path_spines:48",
+          "anchor": true,
+          "title": "Alignment loss"
+        },
+        {
+          "rect_pt": [
+            423,
+            153,
+            145,
+            64
+          ],
+          "source_anchor": "path_spines:66",
+          "anchor": true,
+          "title": "Feature standard deviation"
+        }
+      ],
+      "font_size_pt": 6.5,
+      "title_size_pt": 6.8,
+      "label_size_pt": 6.5,
+      "tick_size_pt": 6.5,
+      "legend_size_pt": 6.5,
+      "line_scale": 0.75
+    },
+    "panel_C_released_supervised_training_history": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            43,
+            267,
+            145,
+            64
+          ],
+          "source_anchor": "path_spines:163",
+          "anchor": true,
+          "title": "Smooth L1 objective"
+        },
+        {
+          "rect_pt": [
+            233,
+            267,
+            145,
+            64
+          ],
+          "source_anchor": "path_spines:266",
+          "anchor": true,
+          "title": "Crypt-villus MAE"
+        },
+        {
+          "rect_pt": [
+            423,
+            267,
+            145,
+            64
+          ],
+          "source_anchor": "path_spines:362",
+          "anchor": true,
+          "title": "Epithelial-distance MAE"
+        }
+      ],
+      "font_size_pt": 6.5,
+      "title_size_pt": 6.8,
+      "label_size_pt": 6.5,
+      "tick_size_pt": 6.5,
+      "legend_size_pt": 6.5,
+      "line_scale": 0.7
+    },
+    "panel_D_pretraining_objective_ablation": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            42,
+            377,
+            123,
+            68
+          ],
+          "source_anchor": "path_spines:379",
+          "anchor": true,
+          "title": "Crypt-villus coordinate"
+        },
+        {
+          "rect_pt": [
+            187,
+            377,
+            123,
+            68
+          ],
+          "source_anchor": "path_spines:415",
+          "anchor": true,
+          "title": "Epithelial-distance coordinate"
+        }
+      ],
+      "font_size_pt": 5.7,
+      "title_size_pt": 6.2,
+      "label_size_pt": 6,
+      "tick_size_pt": 5.7,
+      "annotation_size_pt": 5.2,
+      "marker_area_scale": 0.45,
+      "line_scale": 0.65
+    },
+    "panel_E_branch_input_shuffling": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            351,
+            377,
+            104,
+            68
+          ],
+          "source_anchor": "path_spines:448",
+          "anchor": true,
+          "title": "Crypt-villus coordinate"
+        },
+        {
+          "rect_pt": [
+            478,
+            377,
+            104,
+            68
+          ],
+          "source_anchor": "path_spines:492",
+          "anchor": true,
+          "title": "Epithelial-distance coordinate"
+        }
+      ],
+      "font_size_pt": 6,
+      "title_size_pt": 6,
+      "label_size_pt": 6,
+      "tick_size_pt": 6,
+      "marker_area_scale": 0.6,
+      "line_scale": 0.65
+    },
+    "panel_G_heldout_peyer_prediction": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            42,
+            609,
+            95,
+            95
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im4",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title": "Xenium DAPI morphology"
+        },
+        {
+          "rect_pt": [
+            194,
+            609,
+            95,
+            95
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im5",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title": "Manual Peyer's patch label"
+        },
+        {
+          "rect_pt": [
+            42,
+            728,
+            95,
+            95
+          ],
+          "anchor": true,
+          "source_anchor": "page//Im6",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "title": "Image-classifier probability"
+        },
+        {
+          "rect_pt": [
+            194,
+            728,
+            95,
+            95
+          ],
+          "title": "Predicted class",
+          "anchor": true,
+          "source_anchor": "page//Im7",
+          "match_source_image_footprint": true,
+          "preserve_limits": true
+        },
+        {
+          "rect_pt": [
+            143,
+            728,
+            4.8,
+            95
+          ],
+          "source_anchor": "page//Im8",
+          "match_source_image_footprint": true,
+          "preserve_limits": true,
+          "anchor": true
+        }
+      ],
+      "font_size_pt": 6,
+      "title_size_pt": 6.5,
+      "label_size_pt": 5.5,
+      "tick_size_pt": 5.5,
+      "annotation_size_pt": 4,
+      "marker_area_scale": 0.32,
+      "line_scale": 0.5
+    },
+    "panel_H_peyer_classifier_strategy": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            370,
+            663,
+            197,
+            155
+          ],
+          "source_anchor": "path_spines:587",
+          "anchor": true,
+          "title": "Peyer's patch classifier strategy"
+        }
+      ],
+      "font_size_pt": 6.5,
+      "title_size_pt": 7,
+      "label_size_pt": 6.5,
+      "tick_size_pt": 6.5,
+      "legend_size_pt": 6,
+      "line_scale": 0.65
+    },
+    "panel_F_matched_branch_retraining": {
+      "size_pt": [
+        595.276,
+        841.89
+      ],
+      "placement_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "axes": [
+        {
+          "rect_pt": [
+            48,
+            508,
+            105,
+            53
+          ],
+          "anchor": true,
+          "xticklabels": [
+            "Full",
+            "Without\nlocal",
+            "Without\ncontext",
+            "Without\nfine"
+          ],
+          "title": "Crypt-villus coordinate"
+        },
+        {
+          "rect_pt": [
+            328,
+            508,
+            105,
+            53
+          ],
+          "anchor": true,
+          "xticklabels": [
+            "Full",
+            "Without\nlocal",
+            "Without\ncontext",
+            "Without\nfine"
+          ],
+          "title": "Epithelial-distance coordinate"
+        },
+        {
+          "rect_pt": [
+            188,
+            508,
+            105,
+            53
+          ],
+          "anchor": true,
+          "xticklabels": [
+            "Full",
+            "Without\nlocal",
+            "Without\ncontext",
+            "Without\nfine"
+          ],
+          "title": "Crypt-villus coordinate"
+        },
+        {
+          "rect_pt": [
+            468,
+            508,
+            105,
+            53
+          ],
+          "anchor": true,
+          "xticklabels": [
+            "Full",
+            "Without\nlocal",
+            "Without\ncontext",
+            "Without\nfine"
+          ],
+          "title": "Epithelial-distance coordinate"
+        }
+      ],
+      "font_size_pt": 6,
+      "title_size_pt": 6.2,
+      "label_size_pt": 6.2,
+      "tick_size_pt": 5.7,
+      "annotation_size_pt": 5.5,
+      "marker_area_scale": 0.45,
+      "line_scale": 0.7
+    }
+  },
+  "anchors": [
+    {
+      "id": "panel_A_paired_pretraining_views.axis0",
+      "rect_pt": [
+        39,
+        30,
+        98,
+        98
+      ]
+    },
+    {
+      "id": "panel_A_paired_pretraining_views.axis1",
+      "rect_pt": [
+        177,
+        30,
+        98,
+        98
+      ]
+    },
+    {
+      "id": "panel_A_paired_pretraining_views.axis2",
+      "rect_pt": [
+        315,
+        30,
+        98,
+        98
+      ]
+    },
+    {
+      "id": "panel_A_paired_pretraining_views.axis3",
+      "rect_pt": [
+        453,
+        30,
+        98,
+        98
+      ]
+    },
+    {
+      "id": "panel_B_paired_representation_pretraining_history.axis0",
+      "rect_pt": [
+        43,
+        153,
+        145,
+        64
+      ]
+    },
+    {
+      "id": "panel_B_paired_representation_pretraining_history.axis1",
+      "rect_pt": [
+        233,
+        153,
+        145,
+        64
+      ]
+    },
+    {
+      "id": "panel_B_paired_representation_pretraining_history.axis2",
+      "rect_pt": [
+        423,
+        153,
+        145,
+        64
+      ]
+    },
+    {
+      "id": "panel_C_released_supervised_training_history.axis0",
+      "rect_pt": [
+        43,
+        267,
+        145,
+        64
+      ]
+    },
+    {
+      "id": "panel_C_released_supervised_training_history.axis1",
+      "rect_pt": [
+        233,
+        267,
+        145,
+        64
+      ]
+    },
+    {
+      "id": "panel_C_released_supervised_training_history.axis2",
+      "rect_pt": [
+        423,
+        267,
+        145,
+        64
+      ]
+    },
+    {
+      "id": "panel_D_pretraining_objective_ablation.axis0",
+      "rect_pt": [
+        42,
+        377,
+        123,
+        68
+      ]
+    },
+    {
+      "id": "panel_D_pretraining_objective_ablation.axis1",
+      "rect_pt": [
+        187,
+        377,
+        123,
+        68
+      ]
+    },
+    {
+      "id": "panel_E_branch_input_shuffling.axis0",
+      "rect_pt": [
+        351,
+        377,
+        104,
+        68
+      ]
+    },
+    {
+      "id": "panel_E_branch_input_shuffling.axis1",
+      "rect_pt": [
+        478,
+        377,
+        104,
+        68
+      ]
+    },
+    {
+      "id": "panel_G_heldout_peyer_prediction.axis0",
+      "rect_pt": [
+        42,
+        609,
+        95,
+        95
+      ]
+    },
+    {
+      "id": "panel_G_heldout_peyer_prediction.axis1",
+      "rect_pt": [
+        194,
+        609,
+        95,
+        95
+      ]
+    },
+    {
+      "id": "panel_G_heldout_peyer_prediction.axis2",
+      "rect_pt": [
+        42,
+        728,
+        95,
+        95
+      ]
+    },
+    {
+      "id": "panel_G_heldout_peyer_prediction.axis3",
+      "rect_pt": [
+        194,
+        728,
+        95,
+        95
+      ]
+    },
+    {
+      "id": "panel_G_heldout_peyer_prediction.axis4",
+      "rect_pt": [
+        143,
+        728,
+        4.8,
+        95
+      ]
+    },
+    {
+      "id": "panel_H_peyer_classifier_strategy.axis0",
+      "rect_pt": [
+        370,
+        663,
+        197,
+        155
+      ]
+    },
+    {
+      "id": "panel_F_matched_branch_retraining.axis0",
+      "rect_pt": [
+        48,
+        508,
+        105,
+        53
+      ]
+    },
+    {
+      "id": "panel_F_matched_branch_retraining.axis1",
+      "rect_pt": [
+        328,
+        508,
+        105,
+        53
+      ]
+    },
+    {
+      "id": "panel_F_matched_branch_retraining.axis2",
+      "rect_pt": [
+        188,
+        508,
+        105,
+        53
+      ]
+    },
+    {
+      "id": "panel_F_matched_branch_retraining.axis3",
+      "rect_pt": [
+        468,
+        508,
+        105,
+        53
+      ]
+    }
+  ],
+  "expected_text": [
+    "Masked student local view",
+    "EMA-teacher context target",
+    "Pretraining initialization comparison",
+    "5% labeled cells",
+    "Branch-input shuffling",
+    "Peyer's patch classifier strategy",
+    "Matched branch retraining",
+    "Without local",
+    "Without context",
+    "Without fine",
+    "Coordinate-model fine-tuning",
+    "Manual \u00b7 full fine-tuning",
+    "GAT soft \u00b7 full fine-tuning"
+  ],
+  "forbidden_text": [
+    "threshold 0.56",
+    "Pretraining objective comparison",
+    "Same 5,107 evaluation cells \u00b7 independently fitted models",
+    "Released model supervised fine-tuning",
+    "full SFT"
+  ],
+  "intentional_differences": [
+    "All generated and manual text is embedded Arial; original non-Arial glyph metrics require reviewed label positioning.",
+    "Paired views use the repaired shared-augmentation frozen inputs; pretraining history uses the complete released history.",
+    "Panel D names an initialization comparison at 5% labels; the saved pretraining recipes differ beyond their losses.",
+    "Peyer maps and all four ROC curves use the representation-pretrained axis architecture, with frozen-encoder versus full-model SFT and fixed 0.5 hard calls.",
+    "Source registration uses measured original image CTMs and vector spine coordinates, rather than a nominal grid. Artist-scaled source footprints are reproduced in the fresh rendering; all scientific rows are preserved.",
+    "September 6 user-approved panel addition and layout reflow; original artwork hashes and source geometry remain recorded. All existing panels and scientific rows are retained.",
+    "User-requested panel letters without trailing periods; preserve letter case, font, size, and anchors.",
+    "User-requested wording-only revision, 7 September 2026. Longer labels may wrap or use text-specific fit adjustments; scientific inputs, values, gates, colors, markers and axes remain unchanged.",
+    "September 7: former H is now F above former F/G (now G/H); plot dimensions and frozen scientific inputs are unchanged."
+  ],
+  "warnings": [],
+  "package": "Figure_3_Extended",
+  "title": "Figure 3 Extended",
+  "panels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "png_dpi": 300,
+  "source_anchors": [
+    {
+      "id": "panel_A_paired_pretraining_views.axis0",
+      "rect_pt": [
+        26.4961948,
+        31.839638400000013,
+        97.7484818,
+        97.74848180000004
+      ],
+      "source": "page//Im0"
+    },
+    {
+      "id": "panel_A_paired_pretraining_views.axis1",
+      "rect_pt": [
+        144.4527588,
+        31.839638400000013,
+        97.74848180000001,
+        97.74848180000004
+      ],
+      "source": "page//Im1"
+    },
+    {
+      "id": "panel_A_paired_pretraining_views.axis2",
+      "rect_pt": [
+        265.0254517,
+        31.294594399999937,
+        97.74848179999998,
+        97.74848180000004
+      ],
+      "source": "page//Im2"
+    },
+    {
+      "id": "panel_A_paired_pretraining_views.axis3",
+      "rect_pt": [
+        382.9819946,
+        31.294594399999937,
+        97.74848179999998,
+        97.74848180000004
+      ],
+      "source": "page//Im3"
+    },
+    {
+      "id": "panel_B_paired_representation_pretraining_history.axis0",
+      "rect_pt": [
+        40.3199,
+        165.0756,
+        123.12,
+        97.326
+      ],
+      "source": "path_spines:30"
+    },
+    {
+      "id": "panel_B_paired_representation_pretraining_history.axis1",
+      "rect_pt": [
+        206.5319,
+        165.0756,
+        123.12,
+        97.326
+      ],
+      "source": "path_spines:48"
+    },
+    {
+      "id": "panel_B_paired_representation_pretraining_history.axis2",
+      "rect_pt": [
+        372.7439,
+        165.0756,
+        123.12,
+        97.326
+      ],
+      "source": "path_spines:66"
+    },
+    {
+      "id": "panel_C_released_supervised_training_history.axis0",
+      "rect_pt": [
+        48.8094,
+        325.9969,
+        123.12,
+        97.326
+      ],
+      "source": "path_spines:163"
+    },
+    {
+      "id": "panel_C_released_supervised_training_history.axis1",
+      "rect_pt": [
+        215.0214,
+        325.9969,
+        123.12,
+        97.326
+      ],
+      "source": "path_spines:266"
+    },
+    {
+      "id": "panel_C_released_supervised_training_history.axis2",
+      "rect_pt": [
+        381.2334,
+        325.9969,
+        123.12,
+        97.326
+      ],
+      "source": "path_spines:362"
+    },
+    {
+      "id": "panel_D_pretraining_objective_ablation.axis0",
+      "rect_pt": [
+        38.513,
+        477.0358,
+        133.025,
+        71.41
+      ],
+      "source": "path_spines:379"
+    },
+    {
+      "id": "panel_D_pretraining_objective_ablation.axis1",
+      "rect_pt": [
+        190.5436,
+        477.0358,
+        133.025,
+        71.41
+      ],
+      "source": "path_spines:415"
+    },
+    {
+      "id": "panel_E_branch_input_shuffling.axis0",
+      "rect_pt": [
+        364.0986,
+        479.5242,
+        130.649,
+        82.22
+      ],
+      "source": "path_spines:448"
+    },
+    {
+      "id": "panel_E_branch_input_shuffling.axis1",
+      "rect_pt": [
+        364.4982,
+        599.404,
+        130.649,
+        82.22
+      ],
+      "source": "path_spines:492"
+    },
+    {
+      "id": "panel_G_heldout_peyer_prediction.axis0",
+      "rect_pt": [
+        31.6233006,
+        591.9986884,
+        106.86815380000002,
+        106.86815379999999
+      ],
+      "source": "page//Im4"
+    },
+    {
+      "id": "panel_G_heldout_peyer_prediction.axis1",
+      "rect_pt": [
+        173.4795532,
+        591.4546057,
+        107.29907380000003,
+        107.2990738
+      ],
+      "source": "page//Im5"
+    },
+    {
+      "id": "panel_G_heldout_peyer_prediction.axis2",
+      "rect_pt": [
+        28.1759415,
+        711.7500769,
+        106.86815380000002,
+        106.8681538
+      ],
+      "source": "page//Im6"
+    },
+    {
+      "id": "panel_G_heldout_peyer_prediction.axis3",
+      "rect_pt": [
+        173.4795532,
+        711.2503515,
+        107.29907380000003,
+        107.29907379999999
+      ],
+      "source": "page//Im7"
+    },
+    {
+      "id": "panel_G_heldout_peyer_prediction.axis4",
+      "rect_pt": [
+        137.6296234,
+        712.1810004,
+        5.171040099999999,
+        106.4372559
+      ],
+      "source": "page//Im8"
+    },
+    {
+      "id": "panel_H_peyer_classifier_strategy.axis0",
+      "rect_pt": [
+        352.7483,
+        722.2385,
+        133.279,
+        99.611
+      ],
+      "source": "path_spines:587"
+    }
+  ],
+  "source_registration": "source_registration.json",
+  "authorized_reflow": {
+    "date": "2026-09-06",
+    "user_request": "Remove the two evaluation footers and add these panels into the figures; adjust spacing or orientation as needed so they fit cleanly.",
+    "reference_panels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "added_panels": [
+      "H"
+    ],
+    "source_artwork_modified": false,
+    "scientific_values_modified": false,
+    "subsequent_requests": [
+      {
+        "date": "2026-09-07",
+        "user_request": "Move Extended Figure 3 H before F and G in the same figure.",
+        "old_to_new": {
+          "F": "G",
+          "G": "H",
+          "H": "F"
+        },
+        "translation_y_pt_by_previous_panel": {
+          "F": 105,
+          "G": 105,
+          "H": -251
+        },
+        "scientific_values_modified": false
+      }
+    ]
+  },
+  "panel_letter_punctuation": "none"
+}

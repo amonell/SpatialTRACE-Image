@@ -1,0 +1,15 @@
+name: tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked --extra cpu --extra dev
+      - run: uv run --locked --extra cpu --extra dev pytest -q
+      - run: uv build --wheel
+      - run: uv pip install --python .venv/bin/python --no-deps dist/*.whl
+      - run: .venv/bin/python scripts/smoke_test.py --work-dir /tmp/tissuemapper-image-smoke

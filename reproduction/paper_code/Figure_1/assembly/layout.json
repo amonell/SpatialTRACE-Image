@@ -1,0 +1,424 @@
+{
+  "schema_version": 1,
+  "figure": "Figure 1",
+  "package": "Figure_1",
+  "panels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "page_size_pt": [
+    595.276,
+    841.89
+  ],
+  "reference": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure1.pdf",
+  "reference_sha256": "407668aa19bda1eba81242503eacad33beda282d6683941d78633b91dea240fd",
+  "manual_vector_policy": "Reviewed original conceptual paths only; all text and original images are removed structurally. Conceptual neighbor and expression diagrams retain their original vectors.",
+  "drop_manual_regions_pt": [],
+  "image_slots": {
+    "whole_tissue": {
+      "source_image_event": 0,
+      "rect_pt": [
+        22.928,
+        37.381,
+        90.317,
+        104.026
+      ]
+    },
+    "villus_zoom": {
+      "source_image_event": 1,
+      "rect_pt": [
+        129.998,
+        49.068,
+        83.543,
+        71.35
+      ]
+    },
+    "sparse_axis": {
+      "source_image_event": 2,
+      "rect_pt": [
+        297.784,
+        62.781,
+        83.248,
+        48.561
+      ]
+    },
+    "sparse_graph": {
+      "source_image_event": 4,
+      "rect_pt": [
+        59.087,
+        187.61,
+        48.182,
+        195.754
+      ]
+    },
+    "dense_axis": {
+      "source_image_event": 5,
+      "rect_pt": [
+        434.503,
+        210.546,
+        94.504,
+        60.787
+      ]
+    },
+    "training_axis": {
+      "source_image_event": 6,
+      "rect_pt": [
+        49.643,
+        439.717,
+        94.504,
+        60.787
+      ]
+    },
+    "training_dapi": {
+      "source_image_event": 7,
+      "rect_pt": [
+        49.34,
+        530.41,
+        94.814,
+        65.496
+      ]
+    },
+    "image_prediction": {
+      "source_image_event": 8,
+      "rect_pt": [
+        446.966,
+        509.272,
+        133.753,
+        77.519
+      ]
+    },
+    "unseen_dapi": {
+      "source_image_event": 9,
+      "rect_pt": [
+        444.925,
+        409.032,
+        133.816,
+        75.946
+      ]
+    },
+    "if_prediction": {
+      "source_image_event": 10,
+      "rect_pt": [
+        63.02,
+        745.531,
+        124.736,
+        90.262
+      ]
+    },
+    "if_image": {
+      "source_image_event": 11,
+      "rect_pt": [
+        61.302,
+        623.713,
+        128.172,
+        92.478
+      ]
+    },
+    "peyer_probability": {
+      "source_image_event": 13,
+      "rect_pt": [
+        439.959,
+        297.115,
+        83.593,
+        83.872
+      ]
+    },
+    "peyer_dapi": {
+      "source_image_event": 15,
+      "rect_pt": [
+        129.823,
+        99.67,
+        83.721,
+        59.8
+      ]
+    },
+    "peyer_labels": {
+      "source_image_event": 16,
+      "rect_pt": [
+        456.823,
+        56.811,
+        80.292,
+        55.746
+      ]
+    }
+  },
+  "numeric_slots": {
+    "axis_colorbar": [
+      388.051,
+      63.103,
+      5.528,
+      47.747
+    ],
+    "dense_colorbar": [
+      535.742,
+      213.764,
+      5.528,
+      47.747
+    ],
+    "peyer_colorbar": [
+      535.21,
+      310.807,
+      5.622,
+      47.744
+    ]
+  },
+  "elements": [],
+  "model_name_labels": [
+    {
+      "id": "tissueframe_graph_name",
+      "panel": "C",
+      "kind": "text",
+      "text": "TissueMapper-Graph",
+      "x_pt": 354.5961,
+      "y_pt": 265.3,
+      "font_size_pt": 9.6,
+      "font": "Arial-Bold",
+      "align": "center",
+      "color": "#000000",
+      "z": 3,
+      "block_rect_pt": [
+        314.1821,
+        249.9358,
+        80.828,
+        72.019
+      ],
+      "lines": [
+        {
+          "text": "TissueMapper-",
+          "y_pt": 262
+        },
+        {
+          "text": "Graph",
+          "y_pt": 273.52
+        }
+      ],
+      "module_lines": {
+        "Graph": 289,
+        "Attention": 300.52,
+        "Network": 312.04
+      }
+    },
+    {
+      "id": "tissueframe_image_name",
+      "panel": "D",
+      "kind": "text",
+      "text": "TissueMapper-Image",
+      "x_pt": 263.6555,
+      "y_pt": 480.160994,
+      "font_size_pt": 9.6,
+      "font": "Arial-Bold",
+      "align": "center",
+      "color": "#000000",
+      "z": 3,
+      "block_rect_pt": [
+        214.4905,
+        435.5379,
+        98.33,
+        134.817
+      ],
+      "lines": [
+        {
+          "text": "TissueMapper-",
+          "y_pt": 468.660994
+        },
+        {
+          "text": "Image",
+          "y_pt": 480.180994
+        }
+      ],
+      "module_lines": {
+        "Multiscale": 497.906494,
+        "Vision": 509.425994,
+        "transformer": 520.946494,
+        "+": 532.465994,
+        "CNN": 543.986494
+      }
+    }
+  ],
+  "expected_text": [
+    "TissueMapper-Graph",
+    "TissueMapper-Image",
+    "Graph",
+    "Attention",
+    "Network",
+    "pix2pix Histology",
+    "Non-Peyer",
+    "DAPI input"
+  ],
+  "forbidden_text": [
+    "TissueFrame",
+    "Normal tissue",
+    "Prep for model inference"
+  ],
+  "intentional_differences": [
+    "The Graph Attention Network and Multiscale Vision transformer + CNN blocks retain their architecture descriptions and original geometry, with centered TissueMapper-Graph and TissueMapper-Image names in Arial Bold, renamed at the user's request on 9 September 2026.",
+    "Figure1D uses the same4854cells,window and released checkpoint with golden-verified supervised input preprocessing: physical783/3132/196fields, original pyramid256/256/128resizing and uint8 quantization. Only the image-prediction tile changes; the DAPI is unchanged.",
+    "Current corrected-label Peyer and repaired IF outputs replace historical images.",
+    "All live text is retypeset in Arial at measured original baselines.",
+    "The corrected classifier negative class is labeled Non-Peyer.",
+    "Raster point footprints are calibrated at final page size; conceptual graph and expression diagrams remain original manual vectors.",
+    "User-requested panel letters without trailing periods; preserve letter case, font, size, and anchors.",
+    "User-requested wording-only revision, 7 September 2026. Longer labels may wrap or use text-specific fit adjustments; scientific inputs, values, gates, colors, markers and axes remain unchanged.",
+    "September 7 follow-up: model names and their module descriptions all use centered 9.6-point Arial Bold. Names wrap at the hyphen to fit the original module boxes without smaller type.",
+    "September 9 follow-up: vertically center the entire Figure 1d image-model text group in its original green box. All seven lines move together, preserving their font, size, horizontal center and line spacing; manual box paths and every scientific layer remain unchanged."
+  ],
+  "anchors": [
+    {
+      "id": "whole_tissue",
+      "rect_pt": [
+        22.928,
+        37.381,
+        90.317,
+        104.026
+      ]
+    },
+    {
+      "id": "villus_zoom",
+      "rect_pt": [
+        129.998,
+        49.068,
+        83.543,
+        71.35
+      ]
+    },
+    {
+      "id": "sparse_axis",
+      "rect_pt": [
+        297.784,
+        62.781,
+        83.248,
+        48.561
+      ]
+    },
+    {
+      "id": "sparse_graph",
+      "rect_pt": [
+        59.087,
+        187.61,
+        48.182,
+        195.754
+      ]
+    },
+    {
+      "id": "dense_axis",
+      "rect_pt": [
+        434.503,
+        210.546,
+        94.504,
+        60.787
+      ]
+    },
+    {
+      "id": "training_axis",
+      "rect_pt": [
+        49.643,
+        439.717,
+        94.504,
+        60.787
+      ]
+    },
+    {
+      "id": "training_dapi",
+      "rect_pt": [
+        49.34,
+        530.41,
+        94.814,
+        65.496
+      ]
+    },
+    {
+      "id": "image_prediction",
+      "rect_pt": [
+        446.966,
+        509.272,
+        133.753,
+        77.519
+      ]
+    },
+    {
+      "id": "unseen_dapi",
+      "rect_pt": [
+        444.925,
+        409.032,
+        133.816,
+        75.946
+      ]
+    },
+    {
+      "id": "if_prediction",
+      "rect_pt": [
+        63.02,
+        745.531,
+        124.736,
+        90.262
+      ]
+    },
+    {
+      "id": "if_image",
+      "rect_pt": [
+        61.302,
+        623.713,
+        128.172,
+        92.478
+      ]
+    },
+    {
+      "id": "peyer_probability",
+      "rect_pt": [
+        439.959,
+        297.115,
+        83.593,
+        83.872
+      ]
+    },
+    {
+      "id": "peyer_dapi",
+      "rect_pt": [
+        129.823,
+        99.67,
+        83.721,
+        59.8
+      ]
+    },
+    {
+      "id": "peyer_labels",
+      "rect_pt": [
+        456.823,
+        56.811,
+        80.292,
+        55.746
+      ]
+    },
+    {
+      "id": "axis_colorbar",
+      "rect_pt": [
+        388.051,
+        63.103,
+        5.528,
+        47.747
+      ]
+    },
+    {
+      "id": "dense_colorbar",
+      "rect_pt": [
+        535.742,
+        213.764,
+        5.528,
+        47.747
+      ]
+    },
+    {
+      "id": "peyer_colorbar",
+      "rect_pt": [
+        535.21,
+        310.807,
+        5.622,
+        47.744
+      ]
+    }
+  ],
+  "panel_letter_punctuation": "none"
+}

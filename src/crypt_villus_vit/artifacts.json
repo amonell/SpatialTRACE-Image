@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "release": "1.0.0rc1",
+  "publication_status": "pending_author_upload",
+  "artifacts": {
+    "xenium": {
+      "description": "Frozen shared-scale xenium image model",
+      "filename": "tissuemapper-image-xenium-v1.pt",
+      "sha256": "dc9f2313487516364bca723d65e94ba9dd9733e9f9c56b94b63051fb5f04a740",
+      "bytes": 20888563,
+      "url": null,
+      "source_checkpoint_sha256": "d0e02005b18a670c77c7956d5500d8c599879e183def79badae7fbb526aaf137",
+      "tensors_unchanged": true,
+      "license": "GPL-3.0-only"
+    },
+    "if": {
+      "description": "Frozen shared-scale if image model",
+      "filename": "tissuemapper-image-if-v1.pt",
+      "sha256": "f683fac085c4c459c63ae6c69ab383a0e5cac385b1987c9aff799fc4ef5b4023",
+      "bytes": 20888151,
+      "url": null,
+      "source_checkpoint_sha256": "b512cb49918a77602575a6768ee6ccc1b5fcda04d3fdd10221510aafec0fc7b2",
+      "tensors_unchanged": true,
+      "license": "GPL-3.0-only"
+    },
+    "peyer": {
+      "description": "Frozen shared-scale peyer image model",
+      "filename": "tissuemapper-image-peyer-v1.pt",
+      "sha256": "754d8d92d09c485964f6468903c83f1f1c2e6c231be955165bc23cd671efd898",
+      "bytes": 20882090,
+      "url": null,
+      "source_checkpoint_sha256": "78f5e785bb72814aadd583436ee8991052244ba05474f4e04b918b218926b1c9",
+      "tensors_unchanged": true,
+      "license": "GPL-3.0-only"
+    },
+    "representation": {
+      "description": "Representation-pretrained EMA teacher used by both image tasks",
+      "filename": "tissuemapper-image-representation-v1.pt",
+      "sha256": "05466e79c469e4f444deb32f26547079c0ba688f6d8f221014bd42135b0faab0",
+      "bytes": 19516503,
+      "url": null,
+      "source_checkpoint_sha256": "d4698fe67251bb56b805624a1e810cacc86f1a553b969ae4b23d54ba5ff3c23a",
+      "tensors_unchanged": true,
+      "license": "GPL-3.0-only"
+    }
+  },
+  "license": "GPL-3.0-only"
+}

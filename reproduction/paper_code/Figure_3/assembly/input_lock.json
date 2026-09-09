@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-05",
+  "policy": "Reviewed frozen input snapshots; stop on any mismatch. Updating this lock requires scientific-lineage and visible-layout review.",
+  "inputs": {
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/panel_A/supervised_xenium_v1/manifest.json": {
+      "sha256": "ca1eac49e2f9d0aefa2b290aa56c62a82efd06ade925923577b3b5836f836f7e",
+      "role": "approved_Xenium_supervised_example"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/panel_A/supervised_xenium_v1/images.npz": {
+      "sha256": "1489ff8f6eb24cb22ec7db2e431d1bd011882573daec4bd14b3eb1e146d0e858",
+      "role": "exact_supervised_inputs_and_native_DAPI_field"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/panel_A/supervised_xenium_v1/predictions.csv": {
+      "sha256": "9759db8a50d033d6b3c242d25154c5f00225df12889b2a97db8b4b07a4258034",
+      "role": "frozen_Xenium_regional_predictions"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/complete_figure_bounded_inference_sft_u8_v2/provenance.json": {
+      "sha256": "4277a168c6bd27a57c8ae4b27b164f943c1826de1221cd1f46bff416bc75fb74",
+      "role": "bounded_context_inference_provenance"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/complete_figure_bounded_inference_sft_u8_v2/predictions.csv": {
+      "sha256": "00d66ccca3ff8a4034f437df836e91cc99c1cfe5e815cde17d85b401708d2c26",
+      "role": "bounded_coordinate_predictions"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/complete_figure_bounded_inference_sft_u8_v2/region_labels.npz": {
+      "sha256": "6d1856bba22a50cbd895afb2b4bbd29bc013368354ea02994c69a592f97cdf1a",
+      "role": "original_segmentation_crop"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/complete_figure_bounded_inference_sft_u8_v2/illustrated_sft_inputs.npz": {
+      "sha256": "1ea003e4076174dfd6e1bb375a2cb041311e11fc3e9cb0cc7b8300c797eda445",
+      "role": "illustrated_supervised_model_inputs"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/complete_figure_bounded_inference_sft_u8_v2/sft_input_parity.json": {
+      "sha256": "9cb795ad7a80ff26d8a0e09bf795060ba9f70a198ed20e079423a0502920d01a",
+      "role": "released_supervised_golden_crop_evidence"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/complete_figure_bounded_inference_sft_u8_v2/pretraining_input_parity.json": {
+      "sha256": "3f102be2f03fc4667152f10121b6acefa354b7c19134adff0bc5884a70c83c13",
+      "role": "separate_pretraining_crop_evidence"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/stored_outputs/paired_view_repair_v1/manifest.json": {
+      "sha256": "22c7cede602b605e8b3eed02aa0f4579988427b674bd5ccf8f1c1896758f2e7d",
+      "role": "actual_dataset_paired_view_manifest"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/stored_outputs/paired_view_repair_v1/paired_views.npz": {
+      "sha256": "e5982d9a7f2fc4e6a8320a1d2515f9c48a84d203305315c78b50fb7b4787ba2d",
+      "role": "actual_dataset_paired_views"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/reference_repair_v1/manifest.json": {
+      "sha256": "cab5a3f912367de55b8cb72f35dccbe93006fe576f4899b7419610cbd84311c9",
+      "role": "current_graph_reference_manifest"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/reference_repair_v1/predictions_current_references.parquet": {
+      "sha256": "e3948aae9c0bbe45a901f6739620c84bd2d82ade6129dbc6ae9233276ac6388e",
+      "role": "current_graph_reference_predictions_current_references.parquet"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/reference_repair_v1/embedding_metadata_current_references.csv": {
+      "sha256": "54e5da8255bca9a0d0138e79a45d106347588554cf2b5d7a15dd0ac8c6e89832",
+      "role": "current_graph_reference_embedding_metadata_current_references.csv"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/reference_repair_v1/metrics.json": {
+      "sha256": "b196a58188f317f34c2ba3bee3a91ee521c457efcc72fb7a48a30b4a9c6f6844",
+      "role": "current_graph_reference_metrics.json"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure3/production_sample_008_v2/embeddings/figure3f_umap.csv": {
+      "sha256": "befa3ede7a05f709ec4ccef34e8686efea95c89029357ab1db2e982b0f94075f",
+      "role": "frozen_UMAP_geometry"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure3/production_sample_008_v2/split_manifest.json": {
+      "sha256": "f707d0598722c0381c552ad9f4803174de8652e56d8adf99d64cf8bed61994e2",
+      "role": "locked_cell_split"
+    },
+    "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/best_crypt_villus_vit_model.pt": {
+      "sha256": "d0e02005b18a670c77c7956d5500d8c599879e183def79badae7fbb526aaf137",
+      "role": "released_coordinate_checkpoint"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/complete_figure_bounded_inference_v1/provenance.json": {
+      "sha256": "5e1d9822992cd05944fe24717922587dc728d57b871122d32d6233c6f3d4ae3e",
+      "role": "bounded_context_inference_provenance"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/complete_figure_bounded_inference_v1/predictions.csv": {
+      "sha256": "99a46ac50e8569c3cb49ff4b6c2c4c2acfa77c98027e3649dca039453a0fd644",
+      "role": "bounded_coordinate_predictions"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/complete_figure_bounded_inference_v1/region_labels.npz": {
+      "sha256": "6d1856bba22a50cbd895afb2b4bbd29bc013368354ea02994c69a592f97cdf1a",
+      "role": "original_segmentation_crop"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/panel_A/panel_A_exact_historical_region_provenance.json": {
+      "sha256": "c510e8c8830cff257d5e1a5a8f7e932a5aa4c8d2f3ccb0a1baa62d7c41f47df6",
+      "role": "original_prepared_crop_provenance"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/panel_A/panel_A_exact_historical_region.npz": {
+      "sha256": "1b58cdfe13909c7da88c225e9f98250b6bbf4bb485e05c7fdaeaa3900e77bbaa",
+      "role": "exact_original_DAPI_crops"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/panel_A/panel_A_exact_historical_region.json": {
+      "sha256": "55e893e1c53a07e9ac74a9f7e05c3617887e59edfe2cec10d2d1579f216d86d5",
+      "role": "exact_original_crop_metadata"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/panel_D/panel_D_provenance.json": {
+      "sha256": "0b512753db7b979e02e690df6998be3de94aa8baec872a55acb99b142ea16017",
+      "role": "locked_artist_selected_zoom"
+    },
+    "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/paired_representation_pretraining/pretraining/pretrain_summary.json": {
+      "sha256": "daecdd0e75be017a65bd231a062d2a7ca77960cf237a169ab4dca552ae023f1f",
+      "role": "assembly_source_or_frozen_summary"
+    },
+    "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/training_summary.json": {
+      "sha256": "57294451cb293ba39274300d878e58d28218eb7126dcdda990a9f32072f3e80f",
+      "role": "assembly_source_or_frozen_summary"
+    },
+    "/home/amonell/Desktop/spatial_axes_manuscript/Figure3/train_model/outputs/production_representation_model_v2/production_selection.json": {
+      "sha256": "e89cba4983d95acbe8ab981c7502dd19e54abcf0acee8fd04b5191630d4fe4aa",
+      "role": "assembly_source_or_frozen_summary"
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/manifest.json": {
+      "sha256": "562da00d1fa80b2e6bbcd27d1a15fc09c27226688ab16ee6808ae350e25015b3",
+      "bytes": 22816
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/predictions_current_references.parquet": {
+      "sha256": "40c339827c18129a86bd4462614c0a7d35ccb6e5bd6a59f7a155bb68cf6c9ade",
+      "bytes": 4311765
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/embedding_metadata_current_references.csv": {
+      "sha256": "4aca7f5308025a1408a65e39e8fdd84a79a01093508526ccaa84c91cf3ffdc55",
+      "bytes": 6607291
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/figure3f_embeddings.npz": {
+      "sha256": "6743fc4a3425efcfd18ff5fbeb4a74c631e9414da64f02a55a430f6d21c9929a",
+      "bytes": 28309490
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/metrics.json": {
+      "sha256": "299f71bb47b02ffd04152447b152685ee55892e53992c221414e462bf17008d6",
+      "bytes": 369
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/comparison.json": {
+      "sha256": "647f750eccaaecc4a0000d9331d196e5cb05f701e7aa7df3cad40ac3c06e2837",
+      "bytes": 1901
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/figure3f_umap.csv": {
+      "sha256": "46cec4c0277721a717be1dc2a1ea74d0dd85077a257c4741a4f3d39ddec2b6ff",
+      "bytes": 602647
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/umap_provenance.json": {
+      "sha256": "f57a4497a2f87c0a0839ee5f12a300aea0f1f760d6e6034534659c705df5e76f",
+      "bytes": 2167
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/crop_parity.json": {
+      "sha256": "6d2eac5af64da6c53690f288bfec92fbbc2caa903c1174ee9133cd6cf955143a",
+      "bytes": 216082
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/prepared_manifest.json": {
+      "sha256": "4999e8093ba678c2636e12d527332c8a9985705566e4a483a84d90b8e3bf9c38",
+      "bytes": 2698
+    },
+    "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/stored_outputs/training_matched_inputs_v1/inference_manifest.json": {
+      "sha256": "3647dcddead54c5c2d8a6778a6b852981713a11518e7c8518b58687495d35bf1",
+      "bytes": 3513
+    }
+  }
+}

@@ -1,0 +1,2 @@
+source_id,image_path,section_id,pixel_size_um,channel_index
+my_section,my_dapi.ome.tif,my_section,0.2125,0

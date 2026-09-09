@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "source_id": "sample_008",
+  "cells_per_full_map": 50000,
+  "zoom_limits_fullres_px": [12577.508856109605, 19377.81787081844, 4194.409173331034, 10888.386891712418],
+  "source_record": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3/panel_D/panel_D_provenance.json",
+    "sha256_at_registration": "0b512753db7b979e02e690df6998be3de94aa8baec872a55acb99b142ea16017"
+  },
+  "policy": "Unchanged accepted artwork region transcribed from the verified original panel provenance. Rendering reads these bounds without selecting a region. The historical provenance is evidence, not a mutable runtime input. Updating this lock requires explicit region approval."
+}

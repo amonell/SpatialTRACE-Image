@@ -1,0 +1,11 @@
+TissueMapper-Image
+Copyright (c) 2026 Goldrath / Monell Lab collaborators
+
+This release and its four designated pretrained Image checkpoints are
+distributed under the GNU General Public License, version 3 only
+(SPDX-License-Identifier: GPL-3.0-only). See LICENSE.
+
+The prior MIT copyright and permission notice is retained in
+LICENSES/MIT-legacy.txt for code incorporated from the earlier version.
+Third-party dependencies and separately distributed microscopy/figure data
+retain their own applicable terms. No proprietary font files are included.

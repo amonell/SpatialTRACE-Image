@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "locked_at": "2026-09-03",
+  "source_artwork": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure1.png",
+    "sha256": "396d41c4da89c951535a118b995fc02309bbb2ed1d50ef8ad16fccc5cb126bb3"
+  },
+  "source_section": {
+    "batch": "day90_SI_r2",
+    "vit_source_id": "sample_010",
+    "pixel_size_um": 0.2125,
+    "dapi_path": "/mnt/synology/Naive/Spatial_Paper/Xenium_outputs_and_Alex_analysis_Spatial_Paper/timecourse_replicates/day90_SI_r2/xenium_output/morphology_mip.ome.tif"
+  },
+  "regions": {
+    "paired_training_example": {
+      "pixel_window_xyxy": [18616, 22406, 9364, 11768],
+      "limits_um_xyxy": [3955.9, 4761.275, 1989.85, 2500.7],
+      "role": "paired dense graph-derived coordinate reference and DAPI input",
+      "derivation": "Registered the five-villus DAPI rectangle embedded in the supplied Figure1 artwork to the original Day90 DAPI crop; integer bounds are in the level-0 image.",
+      "registration_pearson_r": 0.9472482800483704,
+      "registration_source": "/home/amonell/Desktop/spatial_axes_manuscript/Figure1/panel_d/figure1d_day90_dapi_zoom_raw.tif",
+      "registration_source_pixel_window_xyxy": [16091, 22406, 8907, 12795]
+    },
+    "unseen_image_example": {
+      "pixel_window_xyxy": [17548, 23863, 35764, 39652],
+      "limits_um_xyxy": [3729.1320268576455, 5070.8679731423545, 7600.0, 8426.0],
+      "role": "unseen DAPI input and frozen image-model coordinate output",
+      "derivation": "Exact alternate-lower-middle Day90 region recorded by the historical Figure 1d generation code and visually matched to the right-hand DAPI/output pair in the supplied artwork.",
+      "historical_metadata": "/home/amonell/Desktop/spatial_axes_manuscript/Figure1/panel_d/figure1d_day90_alt_dapi_zoom_metadata.json"
+    }
+  },
+  "expected_components": [
+    "paired training DAPI",
+    "paired dense graph-derived crypt-villus coordinate",
+    "unseen DAPI",
+    "frozen released image-model crypt-villus prediction"
+  ],
+  "notes": [
+    "The right-hand artwork region is not the automatically selected SI2 window used by the superseded exporter.",
+    "The two examples are distinct regions from the same Day90 replicate section.",
+    "Region membership is fixed spatially and is not selected using image-model prediction error."
+  ]
+}
