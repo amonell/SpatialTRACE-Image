@@ -1,5 +1,5 @@
 site_name: TissueMapper-Image
-site_description: Research software for intestinal anatomical mapping.
+site_description: Learn anatomical coordinates and tissue regions from microscopy images.
 nav:
   - Home: index.md
   - Installation: installation.md

@@ -1,6 +1,6 @@
 # TissueMapper-Image
 
-Map crypt–villus position and epithelial distance from DAPI images. A separate model predicts Peyer’s patch probability.
+Map tissue organization from microscopy images. Pretrain on unlabeled images, then fine-tune with your own annotations to learn anatomical coordinates or identify tissue regions.
 
 ## Install
 
@@ -14,9 +14,13 @@ uv sync --locked --extra cpu
 
 For an NVIDIA GPU on Linux, use `--extra cu126` instead of `--extra cpu`.
 
-## Use a pretrained model
+## Train on your tissue
 
-Download the Xenium coordinate model:
+Define the coordinates or regions you want to map, then [pretrain and fine-tune](docs/training.md) on your images.
+
+## Try the paper model
+
+The paper uses intestinal tissue as an example. These pretrained weights predict crypt–villus position and epithelial distance from Xenium DAPI images:
 
 ```bash
 gh release download v1.0.0rc1 --repo amonell/TissueMapper-Image \

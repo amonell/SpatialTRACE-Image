@@ -1,5 +1,7 @@
 # Pretrained models
 
+These weights were developed using intestinal tissue. Train or fine-tune with your own annotations to map other tissues.
+
 | Model ID | Use |
 | --- | --- |
 | `xenium` | Coordinates in Xenium DAPI images |

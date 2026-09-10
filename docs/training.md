@@ -4,6 +4,10 @@ The image model uses local, context, and fine crops. Local and context crops sha
 
 ## Fine-tune a pretrained model
 
+Define the coordinates you want to learn for your tissue and scale their annotations from 0 to 1. The default column names below come from the intestinal example. Use `--target-axis-column` and `--target-epithelial-column` to select your own coordinate columns.
+
+For new coordinates, define gates for your tissue. The built-in gate labels follow the intestinal example.
+
 Prepare a label CSV with the cell columns from the [input guide](apply_to_own_data.md), plus:
 
 - `target_axis`: crypt–villus position from 0 to 1.
@@ -57,4 +61,4 @@ The teacher initializes the local and context branches for fine-tuning. The fine
 
 Use `pretrain-representation` for this workflow. The older `pretrain` command runs a reconstruction baseline.
 
-See [Peyer’s patch classification](peyer_patch_workflow.md) for training the binary model.
+For region classification, use `--task-type binary_classification` and set `--target-column` to your region labels. The [Peyer’s patch example](peyer_patch_workflow.md) shows this workflow.

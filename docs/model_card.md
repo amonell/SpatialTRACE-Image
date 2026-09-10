@@ -2,11 +2,11 @@
 
 ## Model
 
-Local and context DAPI crops share a vision transformer. A separate CNN processes the fine crop. Their features are combined to predict crypt–villus position and epithelial distance, each from 0 to 1.
+Local and context image crops share a vision transformer. A separate CNN processes the fine crop. Their features are combined to learn anatomical coordinates from annotations, with outputs from 0 to 1. A binary head can instead learn region labels.
 
 The transformer uses 16-pixel patches, 256-dimensional embeddings, six blocks, eight attention heads, and an MLP expansion factor of four. Positional and scale embeddings are retained during fine-tuning. Each scale averages the central 4 × 4 token features.
 
-The Peyer’s patch classifier uses the same encoder with a binary head and a threshold of 0.5.
+The paper developed and evaluated the models using intestinal tissue. The pretrained coordinate models predict crypt–villus position and epithelial distance from DAPI images. The Peyer’s patch classifier uses a binary head and a threshold of 0.5.
 
 ## Pretraining
 

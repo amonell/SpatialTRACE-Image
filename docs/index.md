@@ -1,6 +1,8 @@
 # TissueMapper-Image
 
-Map intestinal anatomy from DAPI images using pretrained models or models fine-tuned on your data.
+Map tissue organization from microscopy images. Pretrain on your images and fine-tune with annotations for the coordinates or regions you want to map.
+
+The paper and pretrained models use intestinal tissue as an example.
 
 - [Install](installation.md)
 - [Prepare your images](apply_to_own_data.md)

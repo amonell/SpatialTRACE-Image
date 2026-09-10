@@ -1,7 +1,7 @@
 [project]
 name = "tissuemapper-image"
 version = "1.0.0rc1"
-description = "Shared-scale representation-pretrained image models for intestinal anatomy."
+description = "Learn anatomical coordinates and tissue regions from microscopy images."
 readme = "README.md"
 requires-python = ">=3.11,<3.14"
 license = "GPL-3.0-only"
