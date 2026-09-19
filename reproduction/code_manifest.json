@@ -8,8 +8,8 @@
     },
     {
       "path": "Figure_1/assembly/layout.json",
-      "sha256": "7b163b85e1593b279abe8f06887d713a43e5c8889d0adeb70f119dfebb21aaad",
-      "bytes": 8845
+      "sha256": "5c054b31cca16dd73c49705a3372bfdd1c4042c9a534ca1efc4e14c99bb97edd",
+      "bytes": 8887
     },
     {
       "path": "Figure_1/assembly/prepare.py",
@@ -118,8 +118,8 @@
     },
     {
       "path": "Figure_2_Extended/assembly/layout.json",
-      "sha256": "1ad935a300cf41dd2ec62d63550bf774e27160f7aaf8201cbef5283c3db295f4",
-      "bytes": 38138
+      "sha256": "12a19dd15de3d9e47c5100ca232a4b74cb81c0cbcd669a41a9f32661740ce526",
+      "bytes": 38158
     },
     {
       "path": "Figure_2_Extended/assembly/prepare.py",
@@ -223,7 +223,7 @@
     },
     {
       "path": "Figure_2_Extended_3/common.py",
-      "sha256": "eff94129251f232c9a0696828c93e9319272cd9d2e296878d6db6bcd891a3f55",
+      "sha256": "ebf3bd5d024058279fdda25ff37a2e80cc2f380a57578ef955c68ae8e3860061",
       "bytes": 2519
     },
     {

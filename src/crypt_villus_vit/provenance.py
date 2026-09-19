@@ -42,11 +42,11 @@ def record_cli(args, argv=None):
                                channel_index=source.channel_index))
     outputs = [file_record(p) for p in sorted(output.iterdir()) if p.is_file() and p != destination]
     record = dict(timestamp_utc=datetime.now(timezone.utc).isoformat(),
-                  command=sys.argv if argv is None else ['tissuemapper-image', *argv],
+                  command=sys.argv if argv is None else ['spatialtrace-image', *argv],
                   configuration={k: v for k, v in vars(args).items() if k != 'func'},
                   python=platform.python_version(),
                   packages={name: importlib.metadata.version(name) for name in
-                            ['tissuemapper-image', 'torch', 'numpy', 'tifffile', 'imagecodecs', 'zarr']},
+                            ['spatialtrace-image', 'torch', 'numpy', 'tifffile', 'imagecodecs', 'zarr']},
                   inputs=inputs, source_images=images, outputs=outputs,
                   image_identity_scope='Image paths, size and mtime are recorded, not content hashes. '
                   'Archive image hashes separately for immutable scientific reproduction.')

@@ -1,4 +1,4 @@
-# TissueMapper-Image
+# SpatialTRACE-Image
 
 ## Model
 

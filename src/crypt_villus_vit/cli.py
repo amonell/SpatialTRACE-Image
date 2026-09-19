@@ -298,7 +298,7 @@ def command_create_demo_checkpoint(args: argparse.Namespace) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="tissuemapper-image")
+    parser = argparse.ArgumentParser(prog="spatialtrace-image")
     parser.add_argument('--threads', type=int, default=4, help='CPU threads per process.')
     sub = parser.add_subparsers(dest="command", required=True)
 

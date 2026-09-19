@@ -9,7 +9,7 @@ import pandas as pd
 REPO=Path(__file__).resolve().parents[1];sys.path.insert(0,str(REPO))
 from Figure_4.common import configure_figure_fonts,require_file,protect_outputs,save_pair,file_record,write_provenance
 
-NAMES={'full':'TissueMapper-Graph','cell_only':'Cell only','uniform':'Uniform neighbors','randomized':'Randomized connections'}
+NAMES={'full':'SpatialTRACE-Graph','cell_only':'Cell only','uniform':'Uniform neighbors','randomized':'Randomized connections'}
 COLORS={'full':'#202020','cell_only':'#3d79a6','uniform':'#bb7438','randomized':'#836797'}
 AXES=[('crypt_villus','Crypt–villus coordinate'),('epithelial_distance','Epithelial-distance coordinate')]
 

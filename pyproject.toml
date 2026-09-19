@@ -1,6 +1,6 @@
 [project]
-name = "tissuemapper-image"
-version = "1.0.0rc1"
+name = "spatialtrace-image"
+version = "1.0.0rc2"
 description = "Learn anatomical coordinates and tissue regions from microscopy images."
 readme = "README.md"
 requires-python = ">=3.11,<3.14"
@@ -32,6 +32,7 @@ figures = ["pypdf>=6", "reportlab>=4", "pymupdf>=1.26", "seaborn>=0.13", "statsm
 embedding = ["umap-learn>=0.5", "numba>=0.61", "llvmlite>=0.44"]
 
 [project.scripts]
+spatialtrace-image = "crypt_villus_vit.cli:main"
 tissuemapper-image = "crypt_villus_vit.cli:main"
 crypt-villus-vit = "crypt_villus_vit.cli:main"
 

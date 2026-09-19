@@ -1,4 +1,6 @@
-# TissueMapper-Image
+# SpatialTRACE-Image
+
+TRACE stands for Tissue Region and Axis Coordinate Estimation.
 
 Map tissue organization from microscopy images. Pretrain on your images and fine-tune with annotations for the coordinates or regions you want to map.
 

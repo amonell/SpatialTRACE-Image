@@ -1,4 +1,4 @@
-site_name: TissueMapper-Image
+site_name: SpatialTRACE-Image
 site_description: Learn anatomical coordinates and tissue regions from microscopy images.
 nav:
   - Home: index.md

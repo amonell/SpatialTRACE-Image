@@ -12,7 +12,7 @@ These weights were developed using intestinal tissue. Train or fine-tune with yo
 Download the weights:
 
 ```bash
-gh release download v1.0.0rc1 --repo amonell/TissueMapper-Image \
+gh release download v1.0.0rc2 --repo amonell/SpatialTRACE-Image \
   --pattern '*.pt' --pattern checksums.json --pattern LICENSE \
   --dir release-weights
 ```
@@ -20,7 +20,7 @@ gh release download v1.0.0rc1 --repo amonell/TissueMapper-Image \
 Install the model you need:
 
 ```bash
-uv run --locked --extra cpu tissuemapper-image download \
+uv run --locked --extra cpu spatialtrace-image download \
   --model xenium --from-dir release-weights --output-dir weights
 ```
 

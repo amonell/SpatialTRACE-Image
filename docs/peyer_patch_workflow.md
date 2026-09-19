@@ -7,9 +7,9 @@ The classifier uses the same pretrained image encoder as the coordinate model, w
 [Download the Peyer’s patch weights](artifacts.md), then run:
 
 ```bash
-uv run --locked --extra cpu tissuemapper-image predict-cells \
+uv run --locked --extra cpu spatialtrace-image predict-cells \
   --source-manifest sources.csv --cells-csv cells.csv \
-  --checkpoint weights/tissuemapper-image-peyer-v1.pt \
+  --checkpoint weights/spatialtrace-image-peyer-v1.pt \
   --output-dir runs/peyer --device cpu
 ```
 
@@ -26,10 +26,10 @@ Check probability calibration on new tissue types or imaging conditions.
 Add `peyer_label` and `split` columns to your cell table. Labels must be between 0 and 1, with both classes represented in training.
 
 ```bash
-uv run --locked --extra cpu tissuemapper-image train \
+uv run --locked --extra cpu spatialtrace-image train \
   --source-manifest sources.csv --supervised-manifest labels.csv \
   --task-type binary_classification --target-column peyer_label \
-  --pretrained-checkpoint weights/tissuemapper-image-representation-v1.pt \
+  --pretrained-checkpoint weights/spatialtrace-image-representation-v1.pt \
   --output-dir runs/peyer_training --epochs 20 --device cpu
 ```
 

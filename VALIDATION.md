@@ -31,4 +31,4 @@ On three reference cells, all six local and context crops matched the saved inpu
 
 All eight figures matched the current page layouts pixel-for-pixel at 150 dpi. Figure checks also covered fonts, text, panel placement, and image resolution.
 
-The machine-readable test record is in `validation/acceptance.json`.
+The SpatialTRACE release checks are in `validation/spatialtrace_rename.json`. The original implementation comparison is in `validation/acceptance.json`.

@@ -19,13 +19,13 @@ Hold out complete sections where possible. Training and validation rows are requ
 [Download the representation weights](artifacts.md), then run:
 
 ```bash
-uv run --locked --extra cpu tissuemapper-image train \
+uv run --locked --extra cpu spatialtrace-image train \
   --source-manifest sources.csv --supervised-manifest labels.csv \
-  --pretrained-checkpoint weights/tissuemapper-image-representation-v1.pt \
+  --pretrained-checkpoint weights/spatialtrace-image-representation-v1.pt \
   --output-dir runs/fine_tuning --epochs 20 --device cpu
 ```
 
-To adapt the trained coordinate model instead, replace `--pretrained-checkpoint` with `--initial-checkpoint weights/tissuemapper-image-xenium-v1.pt`.
+To adapt the trained coordinate model instead, replace `--pretrained-checkpoint` with `--initial-checkpoint weights/spatialtrace-image-xenium-v1.pt`.
 
 The architecture must match the checkpoint. Scale embeddings are retained during fine-tuning.
 
@@ -46,11 +46,11 @@ Cell-level validation is available through `--validation-fraction`. Nearby cells
 Choose cell centers from the pretraining sections, excluding downstream test sections. At least two sections are needed for pretraining and validation.
 
 ```bash
-uv run --locked --extra cpu tissuemapper-image prepare-pretraining \
+uv run --locked --extra cpu spatialtrace-image prepare-pretraining \
   --source-manifest sources.csv --cells-csv pretraining_centers.csv \
   --output-dir runs/prepared
 
-uv run --locked --extra cpu tissuemapper-image pretrain-representation \
+uv run --locked --extra cpu spatialtrace-image pretrain-representation \
   --prepared-metadata runs/prepared/metadata.json \
   --output-dir runs/representation --epochs 35 --device cpu
 ```

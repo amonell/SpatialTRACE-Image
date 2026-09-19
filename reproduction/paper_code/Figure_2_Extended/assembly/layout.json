@@ -1460,12 +1460,13 @@
     "Randomized",
     "Matched annotation requirements",
     "Annotated training villi",
-    "TissueMapper-Graph",
+    "SpatialTRACE-Graph",
     "Uniform neighbors",
     "200 \u00b5m"
   ],
   "forbidden_text": [
     "TissueFrame",
+    "TissueMapper",
     "Held-out-villus MAE",
     "Held-out-villus R\u00b2",
     "Paired points: held-out sections (n = 8) \u00b7 bars: section means"

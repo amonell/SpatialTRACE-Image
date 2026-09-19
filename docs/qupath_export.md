@@ -7,12 +7,12 @@ The importer accepts pixel or micrometer centroids. For micrometer coordinates, 
 ## Predict and export
 
 ```bash
-uv run --locked --extra cpu tissuemapper-image predict-qupath \
+uv run --locked --extra cpu spatialtrace-image predict-qupath \
   --source-manifest sources.csv --qupath-csv detections.csv \
-  --checkpoint weights/tissuemapper-image-if-v1.pt \
+  --checkpoint weights/spatialtrace-image-if-v1.pt \
   --output-dir runs/qupath --device cpu
 
-uv run --locked --extra cpu tissuemapper-image export-qupath \
+uv run --locked --extra cpu spatialtrace-image export-qupath \
   --predictions runs/qupath/predictions.csv \
   --output runs/qupath/predictions.geojson
 ```

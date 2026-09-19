@@ -31,9 +31,9 @@ Export one timepoint and scene per image. Convert VSI files to calibrated DAPI O
 For an IF image:
 
 ```bash
-uv run --locked --extra cpu tissuemapper-image predict-cells \
+uv run --locked --extra cpu spatialtrace-image predict-cells \
   --source-manifest sources.csv --cells-csv cells.csv \
-  --checkpoint weights/tissuemapper-image-if-v1.pt \
+  --checkpoint weights/spatialtrace-image-if-v1.pt \
   --output-dir runs/if_predictions --device cpu
 ```
 

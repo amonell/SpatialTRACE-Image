@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "release": "1.0.0rc1",
+  "release": "1.0.0rc2",
   "publication_status": "private_github_prerelease",
-  "private_release": "https://github.com/amonell/TissueMapper-Image/releases/tag/v1.0.0rc1",
+  "private_release": "https://github.com/amonell/SpatialTRACE-Image/releases/tag/v1.0.0rc2",
   "artifacts": {
     "xenium": {
       "description": "Frozen shared-scale xenium image model",
-      "filename": "tissuemapper-image-xenium-v1.pt",
+      "filename": "spatialtrace-image-xenium-v1.pt",
       "sha256": "dc9f2313487516364bca723d65e94ba9dd9733e9f9c56b94b63051fb5f04a740",
       "bytes": 20888563,
       "url": null,
@@ -16,7 +16,7 @@
     },
     "if": {
       "description": "Frozen shared-scale if image model",
-      "filename": "tissuemapper-image-if-v1.pt",
+      "filename": "spatialtrace-image-if-v1.pt",
       "sha256": "f683fac085c4c459c63ae6c69ab383a0e5cac385b1987c9aff799fc4ef5b4023",
       "bytes": 20888151,
       "url": null,
@@ -26,7 +26,7 @@
     },
     "peyer": {
       "description": "Frozen shared-scale peyer image model",
-      "filename": "tissuemapper-image-peyer-v1.pt",
+      "filename": "spatialtrace-image-peyer-v1.pt",
       "sha256": "754d8d92d09c485964f6468903c83f1f1c2e6c231be955165bc23cd671efd898",
       "bytes": 20882090,
       "url": null,
@@ -36,7 +36,7 @@
     },
     "representation": {
       "description": "Representation-pretrained EMA teacher used by both image tasks",
-      "filename": "tissuemapper-image-representation-v1.pt",
+      "filename": "spatialtrace-image-representation-v1.pt",
       "sha256": "05466e79c469e4f444deb32f26547079c0ba688f6d8f221014bd42135b0faab0",
       "bytes": 19516503,
       "url": null,
