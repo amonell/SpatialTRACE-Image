@@ -4,6 +4,7 @@ nav:
   - Home: index.md
   - Installation: installation.md
   - Inputs: apply_to_own_data.md
+  - Fast inference: fast_inference.md
   - Training: training.md
   - Artifacts: artifacts.md
   - Peyer classifier: peyer_patch_workflow.md

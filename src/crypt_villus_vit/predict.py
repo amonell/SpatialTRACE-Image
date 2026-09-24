@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import time
 from dataclasses import asdict
 from dataclasses import replace
 from pathlib import Path
@@ -36,11 +37,25 @@ class CellCropDataset(Dataset):
         reference_pixel_size_um: float | None = None,
         intensity_augmentation: IntensityAugmentationConfig | None = None,
         input_protocol: str = "legacy_float_v1",
+        crop_backend: str = "reference",
+        tile_cache_mib: int = 256,
     ):
         self.rows = rows.reset_index(drop=True).copy()
+        if crop_backend not in {"reference", "cached", "rust"}:
+            raise ValueError("crop_backend must be reference, cached, or rust")
+        if tile_cache_mib < 0:
+            raise ValueError("tile_cache_mib must be nonnegative")
+        if crop_backend != "reference" and input_protocol != "direct_pyramid_crop_normalize_resize_uint8_v1":
+            raise ValueError("Optimized crop backends require the production input protocol")
         if input_protocol == "direct_pyramid_crop_normalize_resize_uint8_v1":
-            from .production_crops import ProductionCropExtractor
-            self.extractor = ProductionCropExtractor(sources)
+            if crop_backend == "reference":
+                from .production_crops import ProductionCropExtractor
+                self.extractor = ProductionCropExtractor(sources)
+            else:
+                from .fast_crops import CachedCropExtractor
+                self.extractor = CachedCropExtractor(
+                    sources, backend=crop_backend, cache_bytes=int(tile_cache_mib) * 1024**2
+                )
         elif input_protocol == "legacy_float_v1":
             self.extractor = CropExtractor(sources)
         else:
@@ -51,8 +66,24 @@ class CellCropDataset(Dataset):
         )
         self.intensity_augmentation = intensity_augmentation
         self.epoch = 0
+        self.fast_rows = None
+        self.crop_sizes = {}
+        if crop_backend != "reference":
+            self.fast_rows = (
+                self.rows.source_id.astype(str).to_numpy(),
+                self.rows.centroid_x_fullres_px.to_numpy(dtype=float),
+                self.rows.centroid_y_fullres_px.to_numpy(dtype=float),
+            )
+            for source_id in pd.unique(self.fast_rows[0]):
+                for branch in ("local", "context", "fine"):
+                    if getattr(config, f"use_{branch}_branch"):
+                        width = getattr(config, f"{branch}_crop_px")
+                        self.crop_sizes[(source_id, width)] = self.crop_size_for_source(source_id, width)
 
     def crop_size_for_source(self, source_id: str, reference_crop_px: int) -> int:
+        cached = getattr(self, "crop_sizes", {}).get((source_id, reference_crop_px))
+        if cached is not None:
+            return cached
         if self.reference_pixel_size_um is None:
             return int(reference_crop_px)
         source = self.extractor.sources[str(source_id)]
@@ -73,10 +104,14 @@ class CellCropDataset(Dataset):
         self.epoch = int(epoch)
 
     def __getitem__(self, index: int) -> dict[str, Any]:
-        row = self.rows.iloc[int(index)]
-        source_id = str(row["source_id"])
-        x = float(row["centroid_x_fullres_px"])
-        y = float(row["centroid_y_fullres_px"])
+        if self.fast_rows is None:
+            row = self.rows.iloc[int(index)]
+            source_id = str(row["source_id"])
+            x = float(row["centroid_x_fullres_px"])
+            y = float(row["centroid_y_fullres_px"])
+        else:
+            source_id = self.fast_rows[0][int(index)]
+            x, y = float(self.fast_rows[1][int(index)]), float(self.fast_rows[2][int(index)])
         item: dict[str, Any] = {"index": int(index)}
         if self.config.use_local_branch:
             item["local_image"] = self.extractor.crop_for_source(
@@ -130,6 +165,7 @@ class SourceGroupedBatchSampler(Sampler[list[int]]):
         batch_size: int,
         shuffle: bool,
         seed: int = 0,
+        spatial_order: bool = False,
     ):
         if "source_id" not in rows.columns:
             raise ValueError("SourceGroupedBatchSampler requires a `source_id` column.")
@@ -140,9 +176,19 @@ class SourceGroupedBatchSampler(Sampler[list[int]]):
         self.seed = int(seed)
         self.epoch = 0
         source_ids = rows["source_id"].astype(str).to_numpy()
+        if spatial_order:
+            all_x = rows.centroid_x_fullres_px.to_numpy(dtype=float)
+            all_y = rows.centroid_y_fullres_px.to_numpy(dtype=float)
+            if not np.isfinite(all_x).all() or not np.isfinite(all_y).all():
+                raise ValueError("Cell centroids must be finite")
         self.source_to_indices: dict[str, np.ndarray] = {}
         for source_id in pd.unique(source_ids):
-            self.source_to_indices[str(source_id)] = np.flatnonzero(source_ids == str(source_id)).astype(np.int64)
+            indices = np.flatnonzero(source_ids == str(source_id)).astype(np.int64)
+            if spatial_order:
+                x = all_x[indices]
+                y = all_y[indices]
+                indices = indices[np.lexsort((x, y, np.floor(x / 1024), np.floor(y / 1024)))]
+            self.source_to_indices[str(source_id)] = indices
         self.source_order = sorted(self.source_to_indices)
         self.batch_count = int(sum((len(indices) + self.batch_size - 1) // self.batch_size for indices in self.source_to_indices.values()))
 
@@ -167,7 +213,7 @@ def _collate(batch: list[dict[str, Any]]) -> dict[str, torch.Tensor]:
     keys = [key for key in batch[0] if key != "index"]
     out = {"index": torch.tensor([item["index"] for item in batch], dtype=torch.long)}
     for key in keys:
-        out[key] = torch.from_numpy(np.stack([item[key] for item in batch]).astype(np.float32))
+        out[key] = torch.from_numpy(np.stack([item[key] for item in batch]).astype(np.float32, copy=False))
     return out
 
 
@@ -189,7 +235,15 @@ def predict_cells(
     context_crop_px: int | None = None,
     fine_crop_px: int | None = None,
     reference_pixel_size_um: float | None = None,
+    crop_backend: str = "reference",
+    tile_cache_mib: int = 256,
+    spatial_order: bool | None = None,
 ) -> dict[str, object]:
+    started = time.perf_counter()
+    if num_workers < 0:
+        raise ValueError("num_workers must be nonnegative")
+    if spatial_order is None:
+        spatial_order = crop_backend != "reference"
     output_dir = Path(output_dir)
     if output_dir.exists() and any(output_dir.iterdir()):
         raise FileExistsError(f"Output directory is not empty: {output_dir}")
@@ -246,15 +300,23 @@ def predict_cells(
         config,
         reference_pixel_size_um=reference_pixel_size_um,
         input_protocol=input_protocol,
+        crop_backend=crop_backend,
+        tile_cache_mib=tile_cache_mib,
     )
     loader_kwargs = {
-        "batch_sampler": SourceGroupedBatchSampler(rows, batch_size=int(batch_size), shuffle=False),
+        "batch_sampler": SourceGroupedBatchSampler(rows, batch_size=int(batch_size), shuffle=False,
+                                                   spatial_order=spatial_order),
         "collate_fn": _collate,
         "num_workers": int(num_workers),
     }
     if int(num_workers) > 0 and prefetch_factor is not None:
         loader_kwargs["prefetch_factor"] = int(prefetch_factor)
         loader_kwargs["persistent_workers"] = True
+    if crop_backend != "reference":
+        loader_kwargs["pin_memory"] = resolved_device.startswith("cuda")
+        if num_workers > 0:
+            # TIFF/Zarr and CUDA initialize threads; do not inherit them via fork.
+            loader_kwargs["multiprocessing_context"] = "spawn"
     loader = DataLoader(dataset, **loader_kwargs)
     axis_predictions = np.empty(len(rows), dtype=np.float32)
     epithelial_predictions = np.empty(len(rows), dtype=np.float32)
@@ -269,10 +331,18 @@ def predict_cells(
         flush=True,
     )
     model.eval()
+    startup_seconds = time.perf_counter() - started
+    loop_started = time.perf_counter()
+    wait_seconds = 0.0
+    model_seconds = 0.0
     with torch.inference_mode():
+        waited_from = time.perf_counter()
         for batch in tqdm(loader, desc="predict", unit="batch"):
+            wait_seconds += time.perf_counter() - waited_from
+            model_started = time.perf_counter()
             indices = batch.pop("index").numpy()
-            batch = {key: value.to(resolved_device) for key, value in batch.items()}
+            batch = {key: value.to(resolved_device, non_blocking=crop_backend != "reference")
+                     for key, value in batch.items()}
             output = model(batch)
             if resolved_task_type == "axis_regression":
                 axis_predictions[indices] = output["predicted_axis_coordinate"].detach().cpu().numpy()
@@ -285,6 +355,13 @@ def predict_cells(
                     probabilities = torch.clamp(output["predicted_axis_coordinate"], 1e-6, 1.0 - 1e-6)
                     axis_logit = torch.logit(probabilities)
                 binary_logits[indices] = axis_logit.detach().cpu().numpy()
+            model_seconds += time.perf_counter() - model_started
+            waited_from = time.perf_counter()
+    loop_seconds = time.perf_counter() - loop_started
+    # Drop worker processes and close the single-process reader before export.
+    del loader
+    for backend in getattr(dataset.extractor, "backends", {}).values():
+        backend.close()
     export = rows.reset_index(drop=True).copy()
     if resolved_task_type == "binary_classification":
         class_column = (
@@ -329,6 +406,9 @@ def predict_cells(
         "device": resolved_device,
         "batch_size": int(batch_size),
         "num_workers": int(num_workers),
+        "crop_backend": crop_backend,
+        "tile_cache_mib_per_worker": tile_cache_mib if crop_backend != "reference" else 0,
+        "spatial_order": bool(spatial_order),
         "prefetch_factor": None if int(num_workers) <= 0 else int(prefetch_factor or 0),
         "model_config": asdict(model.config),
         "inference_config": asdict(config),
@@ -355,5 +435,13 @@ def predict_cells(
     else:
         summary["axis_prediction_mean"] = float(export["predicted_axis_coordinate"].mean())
         summary["epithelial_prediction_mean"] = float(export["predicted_epithelial_distance_clipped_1p0"].mean())
+    summary["timing"] = {
+        "startup_seconds": startup_seconds,
+        "inference_loop_seconds": loop_seconds,
+        "batch_wait_seconds": wait_seconds,
+        "transfer_model_and_result_seconds": model_seconds,
+        "total_seconds": time.perf_counter() - started,
+        "cells_per_second_inference_loop": len(rows) / loop_seconds,
+    }
     summary_json.write_text(json.dumps(summary, indent=2))
     return summary

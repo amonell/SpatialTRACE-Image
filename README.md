@@ -50,6 +50,7 @@ See [pretrained models](docs/artifacts.md) for the IF, Peyer’s patch, and pret
 - [Installation](docs/installation.md)
 - [Pretraining and fine-tuning](docs/training.md)
 - [QuPath](docs/qupath_export.md)
+- [Faster raw-image inference](docs/fast_inference.md)
 - [Model details](MODEL_CARD.md)
 - [Reproduce the figures](reproduction/README.md)
 - [Tests](VALIDATION.md)

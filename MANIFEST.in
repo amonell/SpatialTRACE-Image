@@ -1,0 +1,2 @@
+include rust_preprocess/Cargo.toml rust_preprocess/Cargo.lock rust_preprocess/pyproject.toml rust_preprocess/LICENSE
+recursive-include rust_preprocess/src *.rs

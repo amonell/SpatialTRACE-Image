@@ -127,7 +127,10 @@ class ImagePyramid:
         result = np.zeros((ch, cw), dtype=np.float32)
         if b > a and d > c:
             result[a - top:b - top, c - left:d - left] = self.read(level, a, b, c, d)
-        return normalize_resize_quantize(result, output)
+        return self.normalize_crop(result, output)
+
+    def normalize_crop(self, crop, output):
+        return normalize_resize_quantize(crop, output)
 
 
 class ProductionCropExtractor:

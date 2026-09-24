@@ -1,0 +1,18 @@
+[package]
+name = "spatialtrace-image-rust"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.79"
+license = "GPL-3.0-only"
+
+[lib]
+name = "spatialtrace_image_rust"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.23.5"
+numpy = "0.23.0"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

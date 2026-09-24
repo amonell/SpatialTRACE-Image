@@ -1,0 +1,193 @@
+{
+  "date": "2026-09-24",
+  "branch": "rust_optimization",
+  "gpu": "NVIDIA RTX A6000 48 GB",
+  "cpu": "AMD Ryzen Threadripper PRO 5995WX, 64 cores",
+  "image": {
+    "source_id": "sample_008",
+    "shape_yx": [
+      34063,
+      34137
+    ],
+    "format": "JPEG2000-compressed pyramidal OME-TIFF",
+    "prepared_crops_used": false
+  },
+  "timing_scope": "Fresh process; raw crops, inference, CSV export and provenance. OS file cache uncontrolled. Excludes segmentation, image format conversion and optional scatter. Individual runs on a shared workstation.",
+  "checkpoint_sha256": "dc9f2313487516364bca723d65e94ba9dd9733e9f9c56b94b63051fb5f04a740",
+  "model_changed": false,
+  "comparison_baselines": {
+    "1024": "Original backend, zero loader workers, batch 64",
+    "50000": "Cached backend, four loader workers, batch 64. Original backend not timed at this size."
+  },
+  "runs": [
+    {
+      "local_report": "runs/rust_optimization/raw_1024_v1/benchmark.json",
+      "cells": 1024,
+      "backend": "reference",
+      "workers": 0,
+      "batch_size": 64,
+      "tile_cache_mib_per_worker": 0,
+      "wall_seconds": 319.94405226875097,
+      "cells_per_second": 3.20055957514674,
+      "max_abs_coordinate_difference": {
+        "predicted_axis_coordinate": 0,
+        "predicted_epithelial_distance_clipped_1p0": 0
+      },
+      "gate_disagreements": 0,
+      "row_identity_preserved": true
+    },
+    {
+      "local_report": "runs/rust_optimization/raw_1024_v1/benchmark.json",
+      "cells": 1024,
+      "backend": "cached",
+      "workers": 4,
+      "batch_size": 64,
+      "tile_cache_mib_per_worker": 256,
+      "wall_seconds": 34.43035383243114,
+      "cells_per_second": 29.741198855628927,
+      "max_abs_coordinate_difference": {
+        "predicted_axis_coordinate": 0,
+        "predicted_epithelial_distance_clipped_1p0": 0
+      },
+      "gate_disagreements": 0,
+      "row_identity_preserved": true
+    },
+    {
+      "local_report": "runs/rust_optimization/raw_1024_v1/benchmark.json",
+      "cells": 1024,
+      "backend": "rust",
+      "workers": 4,
+      "batch_size": 64,
+      "tile_cache_mib_per_worker": 256,
+      "wall_seconds": 34.131151338107884,
+      "cells_per_second": 30.001917891843583,
+      "max_abs_coordinate_difference": {
+        "predicted_axis_coordinate": 0,
+        "predicted_epithelial_distance_clipped_1p0": 0
+      },
+      "gate_disagreements": 0,
+      "row_identity_preserved": true
+    },
+    {
+      "local_report": "runs/rust_optimization/raw_1024_matched4/benchmark.json",
+      "cells": 1024,
+      "backend": "reference",
+      "workers": 4,
+      "batch_size": 64,
+      "tile_cache_mib_per_worker": 0,
+      "wall_seconds": 83.21959075797349,
+      "cells_per_second": 12.304794948801018,
+      "max_abs_coordinate_difference": {
+        "predicted_axis_coordinate": 0,
+        "predicted_epithelial_distance_clipped_1p0": 0
+      },
+      "gate_disagreements": 0,
+      "row_identity_preserved": true
+    },
+    {
+      "local_report": "runs/rust_optimization/raw_1024_matched4/benchmark.json",
+      "cells": 1024,
+      "backend": "rust",
+      "workers": 4,
+      "batch_size": 64,
+      "tile_cache_mib_per_worker": 256,
+      "wall_seconds": 34.76826712116599,
+      "cells_per_second": 29.45214371574522,
+      "max_abs_coordinate_difference": {
+        "predicted_axis_coordinate": 0,
+        "predicted_epithelial_distance_clipped_1p0": 0
+      },
+      "gate_disagreements": 0,
+      "row_identity_preserved": true
+    },
+    {
+      "local_report": "runs/rust_optimization/raw_50000_v1/benchmark.json",
+      "cells": 50000,
+      "backend": "cached",
+      "workers": 4,
+      "batch_size": 64,
+      "tile_cache_mib_per_worker": 256,
+      "wall_seconds": 140.48102710489184,
+      "cells_per_second": 355.9199489812023,
+      "max_abs_coordinate_difference": {
+        "predicted_axis_coordinate": 0,
+        "predicted_epithelial_distance_clipped_1p0": 0
+      },
+      "gate_disagreements": 0,
+      "row_identity_preserved": true
+    },
+    {
+      "local_report": "runs/rust_optimization/raw_50000_v1/benchmark.json",
+      "cells": 50000,
+      "backend": "rust",
+      "workers": 4,
+      "batch_size": 64,
+      "tile_cache_mib_per_worker": 256,
+      "wall_seconds": 140.1103601437062,
+      "cells_per_second": 356.8615479163481,
+      "max_abs_coordinate_difference": {
+        "predicted_axis_coordinate": 0,
+        "predicted_epithelial_distance_clipped_1p0": 0
+      },
+      "gate_disagreements": 0,
+      "row_identity_preserved": true
+    },
+    {
+      "local_report": "runs/rust_optimization/raw_50000_workers8/benchmark.json",
+      "cells": 50000,
+      "backend": "rust",
+      "workers": 8,
+      "batch_size": 64,
+      "tile_cache_mib_per_worker": 256,
+      "wall_seconds": 106.40166981425136,
+      "cells_per_second": 469.9174372666005,
+      "max_abs_coordinate_difference": {
+        "predicted_axis_coordinate": 0,
+        "predicted_epithelial_distance_clipped_1p0": 0
+      },
+      "gate_disagreements": 0,
+      "row_identity_preserved": true
+    },
+    {
+      "local_report": "runs/rust_optimization/raw_50000_workers16/benchmark.json",
+      "cells": 50000,
+      "backend": "rust",
+      "workers": 16,
+      "batch_size": 64,
+      "tile_cache_mib_per_worker": 256,
+      "wall_seconds": 92.98907095286995,
+      "cells_per_second": 537.6975970148333,
+      "max_abs_coordinate_difference": {
+        "predicted_axis_coordinate": 0,
+        "predicted_epithelial_distance_clipped_1p0": 0
+      },
+      "gate_disagreements": 0,
+      "row_identity_preserved": true
+    },
+    {
+      "local_report": "runs/rust_optimization/raw_50000_workers8_batch256/benchmark.json",
+      "cells": 50000,
+      "backend": "rust",
+      "workers": 8,
+      "batch_size": 256,
+      "tile_cache_mib_per_worker": 256,
+      "wall_seconds": 83.22811172064394,
+      "cells_per_second": 600.7585534059158,
+      "max_abs_coordinate_difference": {
+        "predicted_axis_coordinate": 1.5000000008758008e-7,
+        "predicted_epithelial_distance_clipped_1p0": 1.5000000008758008e-7
+      },
+      "gate_disagreements": 0,
+      "row_identity_preserved": true
+    }
+  ],
+  "validation": {
+    "python_tests_with_rust": 66,
+    "rust_unit_tests": 1,
+    "standard_cpu_tests_passed": 57,
+    "standard_cpu_optional_rust_tests_skipped": 9,
+    "installed_wheel_crop_and_prediction_tests": 24,
+    "installed_wheel_tutorial_steps_passed": 11,
+    "strict_docs_build": "passed"
+  }
+}

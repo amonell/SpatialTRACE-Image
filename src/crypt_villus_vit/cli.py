@@ -39,6 +39,13 @@ def _add_common_prediction_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--context-crop-px", type=int, default=None)
     parser.add_argument("--fine-crop-px", type=int, default=None)
     parser.add_argument("--reference-pixel-size-um", type=float, default=None)
+    parser.add_argument("--crop-backend", choices=("reference", "cached", "rust"), default="reference",
+                        help="cached reuses decoded TIFF tiles; rust also uses native normalization.")
+    parser.add_argument("--tile-cache-mib", type=int, default=256,
+                        help="Decoded tile cache limit per worker for cached/rust backends.")
+    parser.add_argument("--spatial-order", action=argparse.BooleanOptionalAction, default=None,
+                        help="Group nearby cells for I/O; defaults on for cached/rust. Output order is unchanged.")
+    parser.add_argument("--no-scatter", action="store_true", help="Skip the optional output scatter image.")
 
 
 def command_predict_qupath(args: argparse.Namespace) -> None:
@@ -73,8 +80,11 @@ def command_predict_qupath(args: argparse.Namespace) -> None:
         context_crop_px=args.context_crop_px,
         fine_crop_px=args.fine_crop_px,
         reference_pixel_size_um=args.reference_pixel_size_um,
+        crop_backend=args.crop_backend,
+        tile_cache_mib=args.tile_cache_mib,
+        spatial_order=args.spatial_order,
     )
-    if summary["task_type"] == "axis_regression":
+    if summary["task_type"] == "axis_regression" and not args.no_scatter:
         plot_prediction_scatter(Path(summary["prediction_csv"]), args.output_dir / "prediction_scatter.png")
     (args.output_dir / "qupath_import_summary.json").write_text(
         __import__("json").dumps(import_summary.to_dict(), indent=2)
@@ -101,8 +111,11 @@ def command_predict_cells(args: argparse.Namespace) -> None:
         context_crop_px=args.context_crop_px,
         fine_crop_px=args.fine_crop_px,
         reference_pixel_size_um=args.reference_pixel_size_um,
+        crop_backend=args.crop_backend,
+        tile_cache_mib=args.tile_cache_mib,
+        spatial_order=args.spatial_order,
     )
-    if summary["task_type"] == "axis_regression":
+    if summary["task_type"] == "axis_regression" and not args.no_scatter:
         plot_prediction_scatter(Path(summary["prediction_csv"]), args.output_dir / "prediction_scatter.png")
     print(summary["prediction_csv"])
 

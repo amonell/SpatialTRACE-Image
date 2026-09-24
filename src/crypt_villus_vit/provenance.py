@@ -41,12 +41,14 @@ def record_cli(args, argv=None):
                                mtime_ns=stat.st_mtime_ns, pixel_size_um=source.pixel_size_um,
                                channel_index=source.channel_index))
     outputs = [file_record(p) for p in sorted(output.iterdir()) if p.is_file() and p != destination]
+    packages = ['spatialtrace-image', 'torch', 'numpy', 'tifffile', 'imagecodecs', 'zarr']
+    if getattr(args, 'crop_backend', None) == 'rust':
+        packages.append('spatialtrace-image-rust')
     record = dict(timestamp_utc=datetime.now(timezone.utc).isoformat(),
                   command=sys.argv if argv is None else ['spatialtrace-image', *argv],
                   configuration={k: v for k, v in vars(args).items() if k != 'func'},
                   python=platform.python_version(),
-                  packages={name: importlib.metadata.version(name) for name in
-                            ['spatialtrace-image', 'torch', 'numpy', 'tifffile', 'imagecodecs', 'zarr']},
+                  packages={name: importlib.metadata.version(name) for name in packages},
                   inputs=inputs, source_images=images, outputs=outputs,
                   image_identity_scope='Image paths, size and mtime are recorded, not content hashes. '
                   'Archive image hashes separately for immutable scientific reproduction.')

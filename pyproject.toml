@@ -30,6 +30,7 @@ dev = ["pytest>=8", "build>=1", "ruff>=0.12"]
 docs = ["mkdocs>=1.6"]
 figures = ["pypdf>=6", "reportlab>=4", "pymupdf>=1.26", "seaborn>=0.13", "statsmodels>=0.14", "pyarrow>=16", "pillow>=10"]
 embedding = ["umap-learn>=0.5", "numba>=0.61", "llvmlite>=0.44"]
+rust = ["spatialtrace-image-rust==0.1.0"]
 
 [project.scripts]
 spatialtrace-image = "crypt_villus_vit.cli:main"
@@ -57,6 +58,7 @@ pythonpath = ["src"]
 conflicts = [[{ extra = "cpu" }, { extra = "cu126" }]]
 
 [tool.uv.sources]
+spatialtrace-image-rust = { path = "rust_preprocess" }
 torch = [
     { index = "pytorch-cpu", extra = "cpu" },
     { index = "pytorch-cu126", extra = "cu126", marker = "sys_platform != 'darwin'" },

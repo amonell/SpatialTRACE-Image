@@ -1,0 +1,15 @@
+[build-system]
+requires = ["maturin>=1.7,<2"]
+build-backend = "maturin"
+
+[project]
+name = "spatialtrace-image-rust"
+version = "0.1.0"
+description = "Optional native crop normalization for SpatialTRACE-Image"
+requires-python = ">=3.11,<3.14"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.26,<3"]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]

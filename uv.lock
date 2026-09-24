@@ -1933,6 +1933,119 @@ wheels = [
 ]
 
 [[package]]
+name = "spatialtrace-image"
+version = "1.0.0rc2"
+source = { editable = "." }
+dependencies = [
+    { name = "h5py" },
+    { name = "imagecodecs", version = "2026.3.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "imagecodecs", version = "2026.6.26", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "matplotlib" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "numpy", version = "2.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "pandas" },
+    { name = "pillow" },
+    { name = "pyarrow" },
+    { name = "pyyaml" },
+    { name = "scikit-learn" },
+    { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "scipy", version = "1.18.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "tifffile", version = "2026.3.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "tifffile", version = "2026.6.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "torch", version = "2.12.1", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform == 'darwin' and extra == 'extra-18-spatialtrace-image-cpu') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "torch", version = "2.12.1", source = { registry = "https://pypi.org/simple" }, marker = "(sys_platform == 'darwin' and extra != 'extra-18-spatialtrace-image-cpu') or (extra != 'extra-18-spatialtrace-image-cpu' and extra != 'extra-18-spatialtrace-image-cu126') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "torch", version = "2.12.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform != 'darwin' and extra == 'extra-18-spatialtrace-image-cpu') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "torch", version = "2.12.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "(sys_platform != 'darwin' and extra == 'extra-18-spatialtrace-image-cu126') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "tqdm" },
+    { name = "zarr", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "zarr", version = "3.3.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+]
+
+[package.optional-dependencies]
+cpu = [
+    { name = "torch", version = "2.12.1", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform == 'darwin' and extra == 'extra-18-spatialtrace-image-cpu') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "torch", version = "2.12.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform != 'darwin' and extra == 'extra-18-spatialtrace-image-cpu') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+]
+cu126 = [
+    { name = "torch", version = "2.12.1", source = { registry = "https://pypi.org/simple" }, marker = "(sys_platform == 'darwin' and extra == 'extra-18-spatialtrace-image-cu126') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "torch", version = "2.12.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "(sys_platform != 'darwin' and extra == 'extra-18-spatialtrace-image-cu126') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+]
+dev = [
+    { name = "build" },
+    { name = "pytest" },
+    { name = "ruff" },
+]
+docs = [
+    { name = "mkdocs" },
+]
+embedding = [
+    { name = "llvmlite" },
+    { name = "numba" },
+    { name = "umap-learn" },
+]
+figures = [
+    { name = "pillow" },
+    { name = "pyarrow" },
+    { name = "pymupdf" },
+    { name = "pypdf" },
+    { name = "reportlab" },
+    { name = "seaborn" },
+    { name = "statsmodels" },
+]
+rust = [
+    { name = "spatialtrace-image-rust" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "build", marker = "extra == 'dev'", specifier = ">=1" },
+    { name = "h5py", specifier = ">=3.8" },
+    { name = "imagecodecs", specifier = ">=2024.1.1" },
+    { name = "llvmlite", marker = "extra == 'embedding'", specifier = ">=0.44" },
+    { name = "matplotlib", specifier = ">=3.7,<4" },
+    { name = "mkdocs", marker = "extra == 'docs'", specifier = ">=1.6" },
+    { name = "numba", marker = "extra == 'embedding'", specifier = ">=0.61" },
+    { name = "numpy", specifier = ">=1.26,<3" },
+    { name = "pandas", specifier = ">=2.0,<3" },
+    { name = "pillow", specifier = ">=10" },
+    { name = "pillow", marker = "extra == 'figures'", specifier = ">=10" },
+    { name = "pyarrow", specifier = ">=16" },
+    { name = "pyarrow", marker = "extra == 'figures'", specifier = ">=16" },
+    { name = "pymupdf", marker = "extra == 'figures'", specifier = ">=1.26" },
+    { name = "pypdf", marker = "extra == 'figures'", specifier = ">=6" },
+    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8" },
+    { name = "pyyaml", specifier = ">=6" },
+    { name = "reportlab", marker = "extra == 'figures'", specifier = ">=4" },
+    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.12" },
+    { name = "scikit-learn", specifier = ">=1.4,<2" },
+    { name = "scipy", specifier = ">=1.11" },
+    { name = "seaborn", marker = "extra == 'figures'", specifier = ">=0.13" },
+    { name = "spatialtrace-image-rust", marker = "extra == 'rust'", directory = "rust_preprocess" },
+    { name = "statsmodels", marker = "extra == 'figures'", specifier = ">=0.14" },
+    { name = "tifffile", specifier = ">=2024.1" },
+    { name = "torch", specifier = "==2.12.1" },
+    { name = "torch", marker = "sys_platform == 'darwin' and extra == 'cu126'", specifier = "==2.12.1" },
+    { name = "torch", marker = "sys_platform != 'darwin' and extra == 'cu126'", specifier = "==2.12.1", index = "https://download.pytorch.org/whl/cu126", conflict = { package = "spatialtrace-image", extra = "cu126" } },
+    { name = "torch", marker = "extra == 'cpu'", specifier = "==2.12.1", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "spatialtrace-image", extra = "cpu" } },
+    { name = "tqdm", specifier = ">=4.66" },
+    { name = "umap-learn", marker = "extra == 'embedding'", specifier = ">=0.5" },
+    { name = "zarr", specifier = ">=3,<4" },
+]
+provides-extras = ["cpu", "cu126", "dev", "docs", "figures", "embedding", "rust"]
+
+[[package]]
+name = "spatialtrace-image-rust"
+version = "0.1.0"
+source = { directory = "rust_preprocess" }
+dependencies = [
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+    { name = "numpy", version = "2.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "numpy", specifier = ">=1.26,<3" }]
+
+[[package]]
 name = "statsmodels"
 version = "0.15.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2033,103 +2146,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/b7/38/5e2ecef5af2f4fd4a
 wheels = [
     { url = "https://files.pythonhosted.org/packages/81/59/208f71d70ddc6184f79b8c6d87d46eb7d7b12c19186a817dec9c9c3f3693/tifffile-2026.6.1-py3-none-any.whl", hash = "sha256:0d7382d2769b855b81ce358528e2b40c16d48aa39031746efa81215205332a8d", size = 267108, upload-time = "2026-05-31T23:57:10.597Z" },
 ]
-
-[[package]]
-name = "spatialtrace-image"
-version = "1.0.0rc2"
-source = { editable = "." }
-dependencies = [
-    { name = "h5py" },
-    { name = "imagecodecs", version = "2026.3.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "imagecodecs", version = "2026.6.26", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "matplotlib" },
-    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "numpy", version = "2.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "pandas" },
-    { name = "pillow" },
-    { name = "pyarrow" },
-    { name = "pyyaml" },
-    { name = "scikit-learn" },
-    { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "scipy", version = "1.18.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "tifffile", version = "2026.3.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "tifffile", version = "2026.6.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "torch", version = "2.12.1", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform == 'darwin' and extra == 'extra-18-spatialtrace-image-cpu') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "torch", version = "2.12.1", source = { registry = "https://pypi.org/simple" }, marker = "(sys_platform == 'darwin' and extra != 'extra-18-spatialtrace-image-cpu') or (extra != 'extra-18-spatialtrace-image-cpu' and extra != 'extra-18-spatialtrace-image-cu126') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "torch", version = "2.12.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform != 'darwin' and extra == 'extra-18-spatialtrace-image-cpu') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "torch", version = "2.12.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "(sys_platform != 'darwin' and extra == 'extra-18-spatialtrace-image-cu126') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "tqdm" },
-    { name = "zarr", version = "3.1.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "zarr", version = "3.3.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12' or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-]
-
-[package.optional-dependencies]
-cpu = [
-    { name = "torch", version = "2.12.1", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform == 'darwin' and extra == 'extra-18-spatialtrace-image-cpu') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "torch", version = "2.12.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform != 'darwin' and extra == 'extra-18-spatialtrace-image-cpu') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-]
-cu126 = [
-    { name = "torch", version = "2.12.1", source = { registry = "https://pypi.org/simple" }, marker = "(sys_platform == 'darwin' and extra == 'extra-18-spatialtrace-image-cu126') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-    { name = "torch", version = "2.12.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "(sys_platform != 'darwin' and extra == 'extra-18-spatialtrace-image-cu126') or (extra == 'extra-18-spatialtrace-image-cpu' and extra == 'extra-18-spatialtrace-image-cu126')" },
-]
-dev = [
-    { name = "build" },
-    { name = "pytest" },
-    { name = "ruff" },
-]
-docs = [
-    { name = "mkdocs" },
-]
-embedding = [
-    { name = "llvmlite" },
-    { name = "numba" },
-    { name = "umap-learn" },
-]
-figures = [
-    { name = "pillow" },
-    { name = "pyarrow" },
-    { name = "pymupdf" },
-    { name = "pypdf" },
-    { name = "reportlab" },
-    { name = "seaborn" },
-    { name = "statsmodels" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "build", marker = "extra == 'dev'", specifier = ">=1" },
-    { name = "h5py", specifier = ">=3.8" },
-    { name = "imagecodecs", specifier = ">=2024.1.1" },
-    { name = "llvmlite", marker = "extra == 'embedding'", specifier = ">=0.44" },
-    { name = "matplotlib", specifier = ">=3.7,<4" },
-    { name = "mkdocs", marker = "extra == 'docs'", specifier = ">=1.6" },
-    { name = "numba", marker = "extra == 'embedding'", specifier = ">=0.61" },
-    { name = "numpy", specifier = ">=1.26,<3" },
-    { name = "pandas", specifier = ">=2.0,<3" },
-    { name = "pillow", specifier = ">=10" },
-    { name = "pillow", marker = "extra == 'figures'", specifier = ">=10" },
-    { name = "pyarrow", specifier = ">=16" },
-    { name = "pyarrow", marker = "extra == 'figures'", specifier = ">=16" },
-    { name = "pymupdf", marker = "extra == 'figures'", specifier = ">=1.26" },
-    { name = "pypdf", marker = "extra == 'figures'", specifier = ">=6" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8" },
-    { name = "pyyaml", specifier = ">=6" },
-    { name = "reportlab", marker = "extra == 'figures'", specifier = ">=4" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.12" },
-    { name = "scikit-learn", specifier = ">=1.4,<2" },
-    { name = "scipy", specifier = ">=1.11" },
-    { name = "seaborn", marker = "extra == 'figures'", specifier = ">=0.13" },
-    { name = "statsmodels", marker = "extra == 'figures'", specifier = ">=0.14" },
-    { name = "tifffile", specifier = ">=2024.1" },
-    { name = "torch", specifier = "==2.12.1" },
-    { name = "torch", marker = "sys_platform == 'darwin' and extra == 'cu126'", specifier = "==2.12.1" },
-    { name = "torch", marker = "sys_platform != 'darwin' and extra == 'cu126'", specifier = "==2.12.1", index = "https://download.pytorch.org/whl/cu126", conflict = { package = "spatialtrace-image", extra = "cu126" } },
-    { name = "torch", marker = "extra == 'cpu'", specifier = "==2.12.1", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "spatialtrace-image", extra = "cpu" } },
-    { name = "tqdm", specifier = ">=4.66" },
-    { name = "umap-learn", marker = "extra == 'embedding'", specifier = ">=0.5" },
-    { name = "zarr", specifier = ">=3,<4" },
-]
-provides-extras = ["cpu", "cu126", "dev", "docs", "figures", "embedding"]
 
 [[package]]
 name = "torch"
