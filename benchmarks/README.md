@@ -112,3 +112,32 @@ is used only when filling RAM slots; optimizer batches keep the original order.
 The default comparison uses zero reference workers and four optimized workers.
 Add `--reference-workers 4` for a worker-matched comparison. Each mode runs in a
 fresh process; the OS file cache is uncontrolled.
+
+### Measured raw-training times
+
+September 24, 2026: 512 cells from the same compressed DAPI image used above,
+with 448 training cells and 64 validation cells. All modes used three epochs,
+batch size 32, the released coordinate-model initialization, and full-parameter
+training on an RTX A6000. Targets were synthetic. The workstation CPU was a
+Threadripper PRO 5995WX.
+
+| Loader | Workers | Total, three epochs | Third training epoch |
+| --- | ---: | ---: | ---: |
+| Original | 0 | 476.5 s | 132.9 s |
+| Original | 4 | 151.0 s | 38.8 s |
+| Cached tiles, persistent workers | 4 | 114.8 s | 31.0 s |
+| Cached tiles + shared RAM crops | 4 | 33.1 s | 1.18 s |
+
+The RAM-cached total includes 20.0 seconds to fill the cache. All 512 rows fit
+in about 72 MiB; the configured 8 GiB ceiling did not allocate unused space.
+The result was 14.4× faster than the serial loader and 4.6× faster than the
+original four-worker loader. These measurements apply to this small test on
+one shared workstation. Larger runs depend on cache capacity and model time.
+
+All modes selected epoch 3. GPU loss differences were at most 7.5 × 10⁻⁹ and
+metric differences at most 3.8 × 10⁻⁸. Selected GPU weights differed by up to
+2.3 × 10⁻⁵, so this is numerical agreement, not bitwise identity. Separate CPU
+tests matched batches, augmented crops, losses, and selected weights exactly.
+
+Measurements and checks are recorded in
+[`raw_training_results_2026_09_24.json`](raw_training_results_2026_09_24.json).

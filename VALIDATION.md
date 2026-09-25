@@ -13,12 +13,13 @@ The `rust_optimization` branch was checked on September 24, 2026:
 - New preparation metadata rejects mismatched crop sizes or pixel calibration before supervised training. Existing prepared datasets remain supported.
 - Cached raw-image training matched the original batches, augmented crops, loss histories, selected epochs, and selected weights in three-epoch CPU tests, including dropout. Persistent workers receive the correct augmentation epoch.
 - Tests cover partial RAM caches, insufficient shared memory, excluded test rows, and worker cleanup after a training failure.
-- Both [GitHub test jobs](https://github.com/amonell/SpatialTRACE-Image/actions/runs/36076899229) passed for implementation commit `29b2719`.
+- Both [GitHub test jobs](https://github.com/amonell/SpatialTRACE-Image/actions/runs/36084984087) passed for implementation commit `be9ed3f`.
+- A three-epoch GPU benchmark used 512 raw-image cells and synthetic targets. All loaders selected the same epoch; maximum metric differences were below 4 × 10⁻⁸. GPU weights were not bitwise identical. Full timings and differences are in `benchmarks/raw_training_results_2026_09_24.json`.
 
 These are software checks. The small synthetic training runs do not measure
 anatomical accuracy. Raw-image timings are documented in `benchmarks/README.md`.
 
-## Software checks
+## Original release checks
 
 - 46 unit tests passed.
 - The 19-command workflow passed on CPU and GPU. It covered pretraining, fine-tuning, prediction, QuPath export, and all four pretrained models.

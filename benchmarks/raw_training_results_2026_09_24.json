@@ -1,0 +1,173 @@
+{
+  "date": "2026-09-24",
+  "branch": "rust_optimization",
+  "implementation_commit": "be9ed3f4450836a1e23125e57f8027c9bc984b86",
+  "cpu": "AMD Ryzen Threadripper PRO 5995WX, 64 cores",
+  "gpu": "NVIDIA RTX A6000 48 GB",
+  "image": {
+    "source_id": "sample_008",
+    "shape_yx": [
+      34063,
+      34137
+    ],
+    "format": "JPEG2000-compressed pyramidal OME-TIFF"
+  },
+  "cells": 512,
+  "train_cells": 448,
+  "validation_cells": 64,
+  "epochs": 3,
+  "batch_size": 32,
+  "targets": "Synthetic normalized x/y coordinates for throughput only; no biological accuracy claim.",
+  "initialization_sha256": "dc9f2313487516364bca723d65e94ba9dd9733e9f9c56b94b63051fb5f04a740",
+  "timing_scope": "CLI startup, optional RAM warmup, all training/validation epochs, checkpoints and provenance.",
+  "cache_scope": "Fresh process for each mode; no prepared shards. OS file cache uncontrolled.",
+  "conditions": "Individual measurements on a shared workstation. Same rows, splits, initialization and SGD batch order.",
+  "prepared_shards_read_or_written": false,
+  "original_released_weights_modified": false,
+  "unit_tests_passed": 102,
+  "standard_cpu_tests_passed": 87,
+  "standard_cpu_optional_tests_skipped": 15,
+  "installed_wheel_cpu_workflow_steps_passed": 16,
+  "github_actions_run": 36084984087,
+  "github_cpu_job": "success",
+  "github_rust_job": "success",
+  "runs": [
+    {
+      "mode": "reference",
+      "workers": 0,
+      "wall_seconds": 476.48700404074043,
+      "cache_warmup_seconds": 0.0000022351741790771484,
+      "data_loading": {
+        "crop_backend": "reference",
+        "num_workers": 0,
+        "tile_cache_mib_per_worker": 0,
+        "ram_crop_cache_budget_mib": 0,
+        "ram_crop_cache_bytes": 0,
+        "ram_crop_cache_rows": 0,
+        "warm_crop_cache": false,
+        "persistent_workers": false,
+        "training_order_changed": false
+      },
+      "best_epoch": 3,
+      "train_epoch_seconds": [
+        141.07539390493184,
+        140.61893565393984,
+        132.89383753575385
+      ],
+      "validation_epoch_seconds": [
+        20.20007225405425,
+        19.05336756724864,
+        18.82701139803976
+      ],
+      "max_abs_metric_difference": 0,
+      "max_abs_loss_difference": 0,
+      "max_abs_selected_weight_difference": 0,
+      "local_report": "runs/rust_optimization/raw_training_512/benchmark.json",
+      "report_sha256": "2b85a6a74b89b02d3914c5f1bfa6b10b3af44bd74ee40c2a821c2f363da9b440"
+    },
+    {
+      "mode": "cached",
+      "workers": 4,
+      "wall_seconds": 114.76300586014986,
+      "cache_warmup_seconds": 0.000001955777406692505,
+      "data_loading": {
+        "crop_backend": "cached",
+        "num_workers": 4,
+        "tile_cache_mib_per_worker": 256,
+        "ram_crop_cache_budget_mib": 0,
+        "ram_crop_cache_bytes": 0,
+        "ram_crop_cache_rows": 0,
+        "warm_crop_cache": false,
+        "persistent_workers": true,
+        "training_order_changed": false
+      },
+      "best_epoch": 3,
+      "train_epoch_seconds": [
+        37.72877034172416,
+        29.434742147102952,
+        31.025060361251235
+      ],
+      "validation_epoch_seconds": [
+        11.206504705362022,
+        0.2272040257230401,
+        0.2244868800044059
+      ],
+      "max_abs_metric_difference": 3.725290298461914e-8,
+      "max_abs_loss_difference": 5.5879354962651284e-9,
+      "max_abs_selected_weight_difference": 0.00001090456498786807,
+      "local_report": "runs/rust_optimization/raw_training_512/benchmark.json",
+      "report_sha256": "2b85a6a74b89b02d3914c5f1bfa6b10b3af44bd74ee40c2a821c2f363da9b440"
+    },
+    {
+      "mode": "cached_ram",
+      "workers": 4,
+      "wall_seconds": 33.080712374299765,
+      "cache_warmup_seconds": 20.04540739580989,
+      "data_loading": {
+        "crop_backend": "cached",
+        "num_workers": 4,
+        "tile_cache_mib_per_worker": 256,
+        "ram_crop_cache_budget_mib": 8192,
+        "ram_crop_cache_bytes": 75497984,
+        "ram_crop_cache_rows": 512,
+        "warm_crop_cache": true,
+        "persistent_workers": true,
+        "training_order_changed": false
+      },
+      "best_epoch": 3,
+      "train_epoch_seconds": [
+        3.752935603260994,
+        1.152570185251534,
+        1.1808249969035387
+      ],
+      "validation_epoch_seconds": [
+        2.027836850844324,
+        0.0927496356889605,
+        0.0907331509515643
+      ],
+      "max_abs_metric_difference": 3.725290298461914e-8,
+      "max_abs_loss_difference": 7.450580596923828e-9,
+      "max_abs_selected_weight_difference": 0.000022557214833796024,
+      "local_report": "runs/rust_optimization/raw_training_512/benchmark.json",
+      "report_sha256": "2b85a6a74b89b02d3914c5f1bfa6b10b3af44bd74ee40c2a821c2f363da9b440"
+    },
+    {
+      "mode": "reference",
+      "workers": 4,
+      "wall_seconds": 151.01072058733553,
+      "cache_warmup_seconds": 0.000001955777406692505,
+      "data_loading": {
+        "crop_backend": "reference",
+        "num_workers": 4,
+        "tile_cache_mib_per_worker": 0,
+        "ram_crop_cache_budget_mib": 0,
+        "ram_crop_cache_bytes": 0,
+        "ram_crop_cache_rows": 0,
+        "warm_crop_cache": false,
+        "persistent_workers": false,
+        "training_order_changed": false
+      },
+      "best_epoch": 3,
+      "train_epoch_seconds": [
+        38.88442203402519,
+        39.445380927063525,
+        38.84963397309184
+      ],
+      "validation_epoch_seconds": [
+        10.02355813793838,
+        10.012611733749509,
+        10.098490690812469
+      ],
+      "max_abs_metric_difference": 2.9802322387695312e-8,
+      "max_abs_loss_difference": 7.450580596923828e-9,
+      "max_abs_selected_weight_difference": 0.000009008508641272783,
+      "local_report": "runs/rust_optimization/raw_training_512_reference4/benchmark.json",
+      "report_sha256": "61932c4d0bde898d63ca72f6cd0dc78b01a2d261d36c382964360fe2dcb4381f"
+    }
+  ],
+  "speedups": {
+    "cached_vs_serial": 4.151921609838167,
+    "ram_vs_serial": 14.403770954186607,
+    "ram_vs_reference_four_workers": 4.564917432209077
+  }
+}
