@@ -2,7 +2,19 @@
 
 Tested on Linux with Python 3.12, PyTorch 2.12.1, CPU, and an NVIDIA RTX A6000 with CUDA 12.6. Packages were installed as wheels in separate uv environments.
 
-## Optimization branch
+## Release 1.0.0rc3
+
+Checked on September 25, 2026:
+
+- 104 tests passed with the optional Rust extension; 89 passed without it, with 15 Rust-specific tests skipped.
+- Fresh uv environments installed the release wheel on CPU and CUDA. Both passed the 24-command workflow, including raw-image training, shard preparation, pretraining, prediction, and all four downloaded paper models.
+- The README's cached-inference command matched the reference predictions on the example cells.
+- The strict documentation build passed.
+- The paper release cloned and installed separately using its original lockfile. All 152 frozen figure inputs and 100 figure-code files passed checksum checks. The published input archive and four downloaded model files also matched their checksums.
+
+The paper renderers and weight registry are unchanged from `v1.0.0rc2`. This check verified their inputs and code; it did not regenerate figures or rerun the manuscript analyses. The release check record is in `validation/optimization_release.json`.
+
+## Optimization checks
 
 The `rust_optimization` branch was checked on September 24, 2026:
 
@@ -46,6 +58,6 @@ Add `--weights release-weights` to test the downloaded models. Use a new work di
 
 On three reference cells, all six local and context crops matched the saved inputs exactly. A few fine-crop pixels differed by one uint8 level between JPEG2000 decoders. Maximum coordinate differences were below 4.5 × 10⁻⁵ on CPU and 1.1 × 10⁻⁵ on GPU. This checks implementation agreement rather than biological accuracy.
 
-All eight figures matched the current page layouts pixel-for-pixel at 150 dpi. Figure checks also covered fonts, text, panel placement, and image resolution.
+For `v1.0.0rc2`, all eight figures matched the then-current page layouts pixel-for-pixel at 150 dpi. Figure checks also covered fonts, text, panel placement, and image resolution.
 
 The SpatialTRACE release checks are in `validation/spatialtrace_rename.json`. The original implementation comparison is in `validation/acceptance.json`.

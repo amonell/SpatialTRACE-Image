@@ -1,6 +1,6 @@
 [project]
 name = "spatialtrace-image"
-version = "1.0.0rc2"
+version = "1.0.0rc3"
 description = "Learn anatomical coordinates and tissue regions from microscopy images."
 readme = "README.md"
 requires-python = ">=3.11,<3.14"

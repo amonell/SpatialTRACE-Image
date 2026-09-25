@@ -1,0 +1,47 @@
+{
+  "validated_at": "2026-09-25T07:08:33Z",
+  "version": "1.0.0rc3",
+  "implementation_commit": "41f8ae5b2f0055a02c15ffb37597b207105a352d",
+  "scope": "Performance implementation plus versioning, documentation, citation metadata, and paper-preservation tests. No changes to scientific results.",
+  "installation": "Locked uv environments; release wheel installed non-editably on CPU and CUDA",
+  "wheel": {
+    "filename": "spatialtrace_image-1.0.0rc3-py3-none-any.whl",
+    "sha256": "bcd50a340addd76f6b159be1d019beaf48ae3f9abf74ffbabd4a9a844b4b5f11"
+  },
+  "unit_tests": {
+    "with_rust": {"passed": 104, "skipped": 0},
+    "without_rust": {"passed": 89, "skipped": 15},
+    "skip_reason": "Optional Rust extension not installed"
+  },
+  "installed_wheel_workflows": {
+    "command": "python scripts/smoke_test.py --work-dir NEW_DIRECTORY --weights DOWNLOADED_RC2_WEIGHTS --device cpu|cuda",
+    "cpu": {
+      "commands_passed": 24,
+      "acceptance_log_sha256": "0a7fb775be84a0d63683057378d94da78870a83412d7d4d7e73369c724b8ba67"
+    },
+    "cuda": {
+      "commands_passed": 24,
+      "acceptance_log_sha256": "42889d513831d092fca280ebec4254397b0ec525cb6ac84097a73b83e6e2aee1"
+    },
+    "coverage": ["raw-image training", "cached raw-image training", "supervised shard preparation", "training from shards", "pretraining preparation", "representation pretraining", "coordinate and classifier fine-tuning", "prediction", "QuPath export", "all four released model downloads"]
+  },
+  "readme_cached_inference": {
+    "example_cells": 8,
+    "agrees_with_reference": true,
+    "atol": 0.000001,
+    "rtol": 0.00001
+  },
+  "strict_docs_build": "passed",
+  "paper_preservation": {
+    "record": "reproduction/paper_release.json",
+    "separate_tag_clone_and_locked_install": "passed",
+    "published_archive_checksum": "matched",
+    "frozen_input_files_verified": 152,
+    "frozen_code_files_verified": 100,
+    "downloaded_model_files_verified": 4,
+    "renderers_and_model_registry": "unchanged from v1.0.0rc2",
+    "figures_rerendered": false,
+    "manuscript_analyses_rerun": false
+  },
+  "limitations": ["Workflow checks use small synthetic examples and do not measure anatomical accuracy.", "Prior matched GPU training benchmarks showed small numerical differences; GPU training is not claimed to be bitwise identical."]
+}

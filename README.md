@@ -4,6 +4,8 @@ TRACE stands for Tissue Region and Axis Coordinate Estimation.
 
 Map tissue organization from microscopy images. Pretrain on unlabeled images, then fine-tune with your own annotations to learn anatomical coordinates or identify tissue regions.
 
+Use [v1.0.0rc3](https://github.com/amonell/SpatialTRACE-Image/releases/tag/v1.0.0rc3) for new work. To reproduce the paper figures, use [v1.0.0rc2 and the archived inputs](reproduction/README.md).
+
 ## Install
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
@@ -41,7 +43,8 @@ Prepare a [source table and cell-centroid table](docs/apply_to_own_data.md), the
 uv run --locked --extra cpu spatialtrace-image predict-cells \
   --source-manifest sources.csv --cells-csv cells.csv \
   --checkpoint weights/spatialtrace-image-xenium-v1.pt \
-  --output-dir runs/predictions --device cpu
+  --output-dir runs/predictions --device cpu \
+  --crop-backend cached --num-workers 4
 ```
 
 Predictions are saved in `runs/predictions/predictions.csv`.
@@ -57,5 +60,6 @@ See [pretrained models](docs/artifacts.md) for the IF, Peyer’s patch, and pret
 - [Model details](MODEL_CARD.md)
 - [Reproduce the figures](reproduction/README.md)
 - [Tests](VALIDATION.md)
+- [Release notes](CHANGELOG.md)
 
 Code and pretrained models: [GPL-3.0-only](LICENSE).

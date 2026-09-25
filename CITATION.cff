@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Cite this version when using the optimized tool. For paper figures, use v1.0.0rc2 and the input-bundle DOI listed in reproduction/README.md."
+type: software
+title: SpatialTRACE-Image
+version: 1.0.0rc3
+date-released: 2026-09-25
+license: GPL-3.0-only
+repository-code: "https://github.com/amonell/SpatialTRACE-Image"
+url: "https://github.com/amonell/SpatialTRACE-Image/releases/tag/v1.0.0rc3"
+authors:
+  - family-names: Monell
+    given-names: Alexander
+  - family-names: Gogate
+    given-names: Aishwarya A.
+  - family-names: Patravali
+    given-names: Dhruv
+  - family-names: Abadie
+    given-names: Kathleen
+  - family-names: Yeo
+    given-names: Gene W.
+  - family-names: Goldrath
+    given-names: Ananda W.
+  - family-names: Heeg
+    given-names: Maximilian

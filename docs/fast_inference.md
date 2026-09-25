@@ -1,20 +1,18 @@
 # Faster inference from raw images
 
-The `rust_optimization` branch adds decoded-tile caching, spatially ordered
-processing, and optional Rust normalization. No saved crops are needed.
+Use decoded-tile caching and spatially ordered processing to predict directly
+from raw images. No saved crops are needed.
 The trained model and its preprocessing settings stay the same.
 
 ## Install
 
-From this repository, with [Rust](https://rustup.rs/) installed:
+From this repository:
 
 ```bash
-git switch rust_optimization
-uv sync --locked --extra cu126 --extra rust
+uv sync --locked --extra cu126
 ```
 
-Use `--extra cpu` instead of `--extra cu126` for CPU inference. Rust is only
-needed to build the optional extension; the regular installation is unchanged.
+Use `--extra cpu` instead of `--extra cu126` for CPU inference.
 
 ## Predict
 
@@ -22,11 +20,11 @@ Supply the original calibrated image and cell centroids, as described in
 [Prepare your images](apply_to_own_data.md):
 
 ```bash
-uv run --locked --extra cu126 --extra rust spatialtrace-image predict-cells \
+uv run --locked --extra cu126 spatialtrace-image predict-cells \
   --source-manifest sources.csv --cells-csv cells.csv \
   --checkpoint weights/spatialtrace-image-xenium-v1.pt \
   --output-dir runs/fast_predictions --device cuda \
-  --crop-backend rust --num-workers 4 --batch-size 64 --no-scatter
+  --crop-backend cached --num-workers 4 --batch-size 64 --no-scatter
 ```
 
 Use the checkpoint appropriate for your task. The IF and region-classification
@@ -34,6 +32,8 @@ models use the same crop pipeline. Input conversion from VSI and cell detection
 are separate steps; their time is not included in inference benchmarks.
 
 `--crop-backend cached` enables the tile cache without installing Rust.
+For optional Rust normalization, install [Rust](https://rustup.rs/), add
+`--extra rust` to both uv commands, and choose `--crop-backend rust`.
 `--crop-backend reference` retains the original preprocessing path and is still
 the default. Optimized backends require checkpoints with the production input
 protocol; they reject older checkpoints with different normalization rules.

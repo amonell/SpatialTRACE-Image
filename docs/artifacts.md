@@ -9,6 +9,8 @@ These weights were developed using intestinal tissue. Train or fine-tune with yo
 | `peyer` | Peyer’s patch probability |
 | `representation` | Pretrained encoder for fine-tuning |
 
+The optimized tool uses the same paper weights, preserved in `v1.0.0rc2`.
+
 Download the weights:
 
 ```bash

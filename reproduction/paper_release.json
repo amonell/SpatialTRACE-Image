@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "purpose": "Reproduce the submitted paper figures from frozen scientific outputs; no model retraining.",
+  "repository": "https://github.com/amonell/SpatialTRACE-Image",
+  "tag": "v1.0.0rc2",
+  "commit": "bbd1103b6d9aec7561c92d1240aeaf850774cd39",
+  "input_bundle": {
+    "doi": "10.5281/zenodo.22850752",
+    "record": "https://zenodo.org/records/22850752",
+    "version": "2026-09-19",
+    "filename": "SpatialTRACE-paper-figure-inputs-v1.zip",
+    "bytes": 6334074450,
+    "sha256": "df52743d632952ed36b9b451b214381122ef4e5050391b8a378d9d53fd32ec13",
+    "data_manifest_sha256": "ccf00d30cdcddaa6c2c3c4c997e3aa41fd5e68465eccc55e78ded43afc0d945c",
+    "frozen_input_count": 152
+  },
+  "environment_at_paper_commit": {
+    "pyproject.toml": "27c3537990f235008c81594e2786cb1f8c7d25add1acb662e77a252f055963b8",
+    "uv.lock": "0beb1ee4fd63ede076037663450a44a3769e44834a06ec7f2e73c6d4f2863861"
+  },
+  "preserved_files": {
+    "reproduction/code_manifest.json": "298159c57ac5ad50bc94a0f0097f44f0d75ebd15735713ac5a81f2fc2a637a2b",
+    "reproduction/render.py": "834344e639906c3db507e986d1a1dc9d59e0d30becb51f26359d364de8a387b4",
+    "reproduction/paper_paths.py": "11d87c0213f2fbeed0838c4ed73bf8de1150b004ebd32c2f1e71d80c0dfcfb1a",
+    "src/crypt_villus_vit/artifacts.json": "9b56fb6322590e58d53f2ae24f5976d7eed72a716ef3cc8d6b7f232b29e3b684",
+    "validation/spatialtrace_rename.json": "de29aac64d6a49a7e838adef0cfd9df5d71e3d8f6a1c4a481d065919bddc0e7b"
+  }
+}
