@@ -22,12 +22,56 @@ Hold out complete sections where possible. Training and validation rows are requ
 uv run --locked --extra cpu spatialtrace-image train \
   --source-manifest sources.csv --supervised-manifest labels.csv \
   --pretrained-checkpoint weights/spatialtrace-image-representation-v1.pt \
-  --output-dir runs/fine_tuning --epochs 20 --device cpu
+  --output-dir runs/fine_tuning --epochs 20 --device cpu \
+  --crop-backend cached --num-workers 4
 ```
 
 To adapt the trained coordinate model instead, replace `--pretrained-checkpoint` with `--initial-checkpoint weights/spatialtrace-image-xenium-v1.pt`.
 
 The architecture must match the checkpoint. Scale embeddings are retained during fine-tuning.
+
+## Train without shards
+
+`train` can read raw images directly. No preparation command is needed.
+`--crop-backend cached` reuses decoded image tiles and keeps loader workers alive
+between epochs. The original shuffled batches, labels, and splits stay unchanged.
+
+For larger runs, add a shared RAM crop cache:
+
+```bash
+uv run --locked --extra cu126 spatialtrace-image train \
+  --source-manifest sources.csv --supervised-manifest labels.csv \
+  --pretrained-checkpoint weights/spatialtrace-image-representation-v1.pt \
+  --output-dir runs/raw_fine_tuning --epochs 20 --batch-size 32 --device cuda \
+  --crop-backend cached --num-workers 4 --ram-crop-cache-mib 8192
+```
+
+This allows up to 8 GiB for cached crops, shared across training and validation
+workers. It allocates only what the selected rows need. At the default crop
+sizes, 50,000 cells use about 7.4 GB. No crop shards are written to disk.
+
+The command fills the RAM cache before the first epoch, reading nearby cells
+together. Training then uses its original shuffle order. Cached crops are
+unaugmented; brightness, contrast, and blur augmentation still change by epoch.
+The model architecture, losses, precision, and checkpoint selection are unchanged.
+
+If the cache cannot hold every row, it stores the first rows that fit, with
+training rows before validation rows. Remaining crops are read on demand.
+Use `--no-warm-crop-cache` to fill the cache during training instead; this avoids
+the initial warmup but can make the first epoch slower. Omit
+`--ram-crop-cache-mib` for tile caching alone.
+
+The tile cache is separate: 256 MiB per worker by default. Training and
+validation have separate worker pools, so four workers for each can use up to
+2 GiB for tiles, plus the shared crop cache, queued batches, and model memory.
+Linux RAM caching uses `/dev/shm`; containers must have sufficient shared memory.
+
+Rust is optional. After installing the `rust` extra, choose `--crop-backend rust`.
+The unchanged default, `--crop-backend reference`, uses the original raw-image
+loader. Raw-image cache flags cannot be combined with prepared-shard input.
+
+`history.csv` records training and validation seconds for each epoch.
+`training_summary.json` records cache warmup time and the loading settings.
 
 ## Prepare crops once
 

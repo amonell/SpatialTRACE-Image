@@ -46,6 +46,11 @@ def main():
     run(['predict-cells', '--source-manifest', 'demo/sources.csv', '--cells-csv', 'demo/cells.csv',
          '--checkpoint', 'prepared_axis/crypt_villus_vit_model.pt',
          '--output-dir', 'prepared_predictions', '--device', args.device])
+    run(['train', *common, '--output-dir', 'raw_cached_axis', *tiny,
+         '--crop-backend', 'cached', '--num-workers', '2', '--ram-crop-cache-mib', '8'])
+    run(['predict-cells', '--source-manifest', 'demo/sources.csv', '--cells-csv', 'demo/cells.csv',
+         '--checkpoint', 'raw_cached_axis/crypt_villus_vit_model.pt',
+         '--output-dir', 'raw_cached_predictions', '--device', args.device])
     run(['prepare-pretraining', '--source-manifest', 'demo/sources.csv', '--cells-csv', 'demo/pretraining_centers.csv',
          '--output-dir', 'paired', '--input-size-px', '64', '--local-crop-px', '64', '--context-crop-px', '128'])
     run(['pretrain-representation', '--prepared-metadata', 'paired/metadata.json', '--output-dir', 'pretrain',

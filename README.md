@@ -20,6 +20,9 @@ For an NVIDIA GPU on Linux, use `--extra cu126` instead of `--extra cpu`.
 
 Define the coordinates or regions you want to map, then [pretrain and fine-tune](docs/training.md) on your images.
 
+To train directly from images without saved shards, add `--crop-backend cached --num-workers 4` to `train`.
+An optional RAM cache reuses crops across epochs. See [training without shards](docs/training.md#train-without-shards).
+
 ## Try the paper model
 
 The paper uses intestinal tissue as an example. These pretrained weights predict crypt–villus position and epithelial distance from Xenium DAPI images:

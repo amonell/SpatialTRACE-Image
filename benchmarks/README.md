@@ -88,3 +88,27 @@ spatial read ordering. Rust normalization added little on this image.
 
 Exact measurements and check results are in
 [`preparation_results_2026_09_24.json`](preparation_results_2026_09_24.json).
+
+## Training directly from raw images
+
+```bash
+uv run --locked --extra cu126 python benchmarks/benchmark_raw_training.py \
+  --source-manifest sources.csv --cells-csv cells.csv \
+  --checkpoint weights/spatialtrace-image-xenium-v1.pt \
+  --output-dir runs/raw_training_benchmark --max-cells 512 --epochs 3
+```
+
+This runs real optimizer steps and validation, starting each mode from the same
+checkpoint. It compares the original loader with cached loading and an optional
+shared RAM crop cache. No prepared shards are read or written. Targets are
+synthetic coordinates derived from cell positions; fitted benchmark models are
+for timing checks, not biological use.
+
+Total time includes startup, RAM warmup, training, validation, checkpoint export,
+and provenance. The report also separates warmup and individual epoch times.
+It compares loss histories, selected epochs, and saved weights. Spatial ordering
+is used only when filling RAM slots; optimizer batches keep the original order.
+
+The default comparison uses zero reference workers and four optimized workers.
+Add `--reference-workers 4` for a worker-matched comparison. Each mode runs in a
+fresh process; the OS file cache is uncontrolled.

@@ -6,11 +6,13 @@ Tested on Linux with Python 3.12, PyTorch 2.12.1, CPU, and an NVIDIA RTX A6000 w
 
 The `rust_optimization` branch was checked on September 24, 2026:
 
-- 87 tests passed with the optional Rust extension installed.
-- The standard CPU installation passed 74 tests; 13 Rust-specific tests were skipped.
-- An installed wheel passed the 14-command CPU workflow, including crop preparation, pretraining, supervised training from shards, and prediction.
+- 102 tests passed with the optional Rust extension installed.
+- The standard CPU installation passed 87 tests; 15 Rust-specific tests were skipped.
+- An installed wheel passed the 16-command CPU workflow, including crop preparation, pretraining, training from shards, cached raw-image training, and prediction.
 - Cached and Rust preparation produced byte-identical `.npy` shards to the original crop routine. Tests cover mixed sources, pixel calibrations, image borders, reordered reads, and partial final shards.
 - New preparation metadata rejects mismatched crop sizes or pixel calibration before supervised training. Existing prepared datasets remain supported.
+- Cached raw-image training matched the original batches, augmented crops, loss histories, selected epochs, and selected weights in three-epoch CPU tests, including dropout. Persistent workers receive the correct augmentation epoch.
+- Tests cover partial RAM caches, insufficient shared memory, excluded test rows, and worker cleanup after a training failure.
 - Both [GitHub test jobs](https://github.com/amonell/SpatialTRACE-Image/actions/runs/36076899229) passed for implementation commit `29b2719`.
 
 These are software checks. The small synthetic training runs do not measure

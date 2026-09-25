@@ -169,6 +169,11 @@ def command_train(args: argparse.Namespace) -> None:
         gradient_clip_norm=args.gradient_clip_norm,
         reference_pixel_size_um=args.reference_pixel_size_um,
         freeze_mode=args.freeze_mode,
+        crop_backend=args.crop_backend,
+        tile_cache_mib=args.tile_cache_mib,
+        ram_crop_cache_mib=args.ram_crop_cache_mib,
+        warm_crop_cache=args.warm_crop_cache,
+        persistent_workers=args.persistent_workers,
     )
     print(summary["checkpoint_path"])
 
@@ -341,6 +346,14 @@ def build_parser() -> argparse.ArgumentParser:
     train.add_argument("--validation-fraction", type=float, default=0.0)
     train.add_argument("--seed", type=int, default=0)
     train.add_argument("--num-workers", type=int, default=0)
+    train.add_argument("--crop-backend", choices=("reference", "cached", "rust"), default="reference")
+    train.add_argument("--tile-cache-mib", type=int, default=256, help="Decoded image tile cache per worker.")
+    train.add_argument("--ram-crop-cache-mib", type=int, default=0,
+                       help="Shared RAM crop cache budget across all train/validation workers; no saved shards.")
+    train.add_argument("--warm-crop-cache", action=argparse.BooleanOptionalAction, default=True,
+                       help="Fill the optional RAM cache in spatial order before training; SGD order is unchanged.")
+    train.add_argument("--persistent-workers", action=argparse.BooleanOptionalAction, default=None,
+                       help="Keep raw-image worker caches between epochs; defaults on for cached/rust.")
     train.add_argument("--task-type", choices=("axis_regression", "binary_classification"), default="axis_regression")
     train.add_argument("--target-column", type=str, default=None)
     train.add_argument("--prediction-column", type=str, default=None)

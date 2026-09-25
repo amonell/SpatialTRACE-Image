@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import asdict
 import json
+import time
 import warnings
 from pathlib import Path
 
@@ -23,6 +24,9 @@ from crypt_villus_vit.predict import CellCropDataset
 from crypt_villus_vit.predict import SourceGroupedBatchSampler
 from crypt_villus_vit.predict import _collate
 from crypt_villus_vit.sources import SourceSpec
+from crypt_villus_vit.raw_training import (
+    RamCropCache, close_training_loader, make_raw_training_loader, warm_ram_cache,
+)
 
 
 _REQUIRED_CELL_COLUMNS = ("source_id", "centroid_x_fullres_px", "centroid_y_fullres_px")
@@ -219,6 +223,9 @@ def _set_dataset_epoch(loader: DataLoader, epoch: int) -> None:
     set_epoch = getattr(dataset, "set_epoch", None)
     if callable(set_epoch):
         set_epoch(int(epoch))
+    sampler_set_epoch = getattr(loader.batch_sampler, "set_epoch", None)
+    if callable(sampler_set_epoch):
+        sampler_set_epoch(int(epoch))
 
 
 def _run_epoch(
@@ -255,7 +262,7 @@ def _run_epoch(
         batches = tqdm(loader, desc=desc, unit="batch") if desc else loader
         for batch in batches:
             indices = batch.pop("index")
-            batch = {key: value.to(device) for key, value in batch.items()}
+            batch = {key: value.to(device, non_blocking=loader.pin_memory) for key, value in batch.items()}
             y_axis = target_axis[indices].to(device)
             y_epi = target_epi[indices].to(device)
             y_epi_mask = target_epi_mask[indices].to(device)
@@ -413,12 +420,30 @@ def train_model(
     reference_pixel_size_um: float | None = None,
     freeze_mode: str = "none",
     input_protocol: str = "direct_pyramid_crop_normalize_resize_uint8_v1",
+    crop_backend: str = "reference",
+    tile_cache_mib: int = 256,
+    ram_crop_cache_mib: int = 0,
+    warm_crop_cache: bool = True,
+    persistent_workers: bool | None = None,
 ) -> dict[str, object]:
+    started = time.perf_counter()
     output_dir = Path(output_dir)
     if output_dir.exists() and any(output_dir.iterdir()):
         raise FileExistsError(f"Output directory must be empty: {output_dir}")
     if epochs < 1 or batch_size < 1:
         raise ValueError("epochs and batch_size must be positive")
+    if num_workers < 0 or tile_cache_mib < 0 or ram_crop_cache_mib < 0:
+        raise ValueError("Worker and cache sizes must be nonnegative")
+    if crop_backend not in {"reference", "cached", "rust"}:
+        raise ValueError("crop_backend must be reference, cached, or rust")
+    fast_raw = crop_backend != "reference"
+    if prepared_supervised_metadata is not None and (fast_raw or ram_crop_cache_mib or persistent_workers):
+        raise ValueError("Raw-image cache options cannot be combined with prepared-supervised-metadata")
+    if not fast_raw and (ram_crop_cache_mib or persistent_workers):
+        raise ValueError("RAM caching and persistent workers require crop-backend cached or rust")
+    if fast_raw and input_protocol != "direct_pyramid_crop_normalize_resize_uint8_v1":
+        raise ValueError("Optimized raw training requires the production input protocol")
+    resolved_persistent = bool(num_workers and fast_raw and persistent_workers is not False)
     if initial_checkpoint is not None and pretrained_checkpoint is not None:
         raise ValueError("Use either `initial_checkpoint` or `pretrained_checkpoint`, not both.")
     if gradient_clip_norm is not None and float(gradient_clip_norm) <= 0.0:
@@ -468,7 +493,24 @@ def train_model(
         seed=int(seed),
     )
     intensity_augmentation_summary = None if intensity_augmentation is None else intensity_augmentation.to_dict()
-    if prepared_supervised_metadata is None:
+    ram_cache = (RamCropCache(len(train_rows) + (0 if val_rows is None else len(val_rows)), config,
+                             ram_crop_cache_mib) if ram_crop_cache_mib else None)
+    raw_options = dict(batch_size=int(batch_size), seed=int(seed), num_workers=int(num_workers),
+                       device=resolved_device, crop_backend=crop_backend, tile_cache_mib=tile_cache_mib,
+                       reference_pixel_size_um=reference_pixel_size_um, input_protocol=input_protocol,
+                       cache=ram_cache, persistent_workers=resolved_persistent)
+    loading_settings = dict(crop_backend="prepared" if prepared_supervised_metadata else crop_backend,
+                            num_workers=int(num_workers), tile_cache_mib_per_worker=tile_cache_mib if fast_raw else 0,
+                            ram_crop_cache_budget_mib=ram_crop_cache_mib,
+                            ram_crop_cache_bytes=0 if ram_cache is None else ram_cache.allocated_bytes,
+                            ram_crop_cache_rows=0 if ram_cache is None else ram_cache.capacity,
+                            warm_crop_cache=bool(ram_cache is not None and warm_crop_cache),
+                            persistent_workers=resolved_persistent, training_order_changed=False)
+    if fast_raw:
+        batching_strategy = "source_grouped"
+        loader = make_raw_training_loader(train_rows, sources, config, shuffle=True,
+                                         intensity_augmentation=intensity_augmentation, **raw_options)
+    elif prepared_supervised_metadata is None:
         dataset = CellCropDataset(
             train_rows,
             sources,
@@ -484,7 +526,7 @@ def train_model(
             config,
             intensity_augmentation=intensity_augmentation,
         )
-    if prepared_supervised_metadata is None:
+    if not fast_raw and prepared_supervised_metadata is None:
         batching_strategy = "source_grouped"
         loader = DataLoader(
             dataset,
@@ -497,7 +539,7 @@ def train_model(
             collate_fn=_collate,
             num_workers=int(num_workers),
         )
-    else:
+    elif not fast_raw:
         batching_strategy = "global_shuffle"
         generator = torch.Generator()
         generator.manual_seed(int(seed))
@@ -511,7 +553,10 @@ def train_model(
         )
     val_loader = None
     if val_rows is not None and not val_rows.empty:
-        if prepared_supervised_metadata is None:
+        if fast_raw:
+            val_loader = make_raw_training_loader(val_rows, sources, config, shuffle=False,
+                                                 cache_offset=len(train_rows), **raw_options)
+        elif prepared_supervised_metadata is None:
             val_dataset = CellCropDataset(
                 val_rows,
                 sources,
@@ -618,175 +663,193 @@ def train_model(
         best_metric_value = float("inf")
     best_epoch = None
     best_checkpoint_path = output_dir / "best_crypt_villus_vit_model.pt"
-    for epoch in range(int(epochs)):
-        print(f"Epoch {epoch + 1}/{int(epochs)} started.", flush=True)
-        _set_dataset_epoch(loader, epoch)
-        train_metrics = _run_epoch(
-            model,
-            loader,
-            target_axis=target_axis,
-            target_epi=target_epi,
-            target_epi_mask=target_epi_mask,
-            device=resolved_device,
-            task_type=task_type,
-            binary_positive_class_weight=resolved_positive_class_weight,
-            classification_threshold=float(classification_threshold),
-            optimizer=optimizer,
-            gradient_clip_norm=gradient_clip_norm,
-            desc=f"train epoch {epoch + 1}",
-        )
-        row = {"epoch": float(epoch + 1)}
-        row.update({f"train_{key}" if key != "loss" else "train_loss": value for key, value in train_metrics.items()})
-        if (
-            val_loader is not None
-            and val_target_axis is not None
-            and val_target_epi is not None
-            and val_target_epi_mask is not None
-        ):
-            _set_dataset_epoch(val_loader, epoch)
-            val_metrics = _run_epoch(
+    try:
+        warmup_started = time.perf_counter()
+        if ram_cache is not None and warm_crop_cache:
+            warm_ram_cache(ram_cache, train_rows, val_rows, sources, config, num_workers=int(num_workers),
+                           crop_backend=crop_backend, tile_cache_mib=tile_cache_mib,
+                           reference_pixel_size_um=reference_pixel_size_um, input_protocol=input_protocol)
+        cache_warmup_seconds = time.perf_counter() - warmup_started
+        for epoch in range(int(epochs)):
+            print(f"Epoch {epoch + 1}/{int(epochs)} started.", flush=True)
+            _set_dataset_epoch(loader, epoch)
+            train_started = time.perf_counter()
+            train_metrics = _run_epoch(
                 model,
-                val_loader,
-                target_axis=val_target_axis,
-                target_epi=val_target_epi,
-                target_epi_mask=val_target_epi_mask,
+                loader,
+                target_axis=target_axis,
+                target_epi=target_epi,
+                target_epi_mask=target_epi_mask,
                 device=resolved_device,
                 task_type=task_type,
                 binary_positive_class_weight=resolved_positive_class_weight,
                 classification_threshold=float(classification_threshold),
-                desc=f"validation epoch {epoch + 1}",
+                optimizer=optimizer,
+                gradient_clip_norm=gradient_clip_norm,
+                desc=f"train epoch {epoch + 1}",
             )
-            row.update(
-                {f"validation_{key}" if key != "loss" else "validation_loss": value for key, value in val_metrics.items()}
-            )
-        history.append(row)
-        print("Epoch metrics: " + json.dumps(row, sort_keys=True), flush=True)
-        pd.DataFrame(history).to_csv(output_dir / "history.partial.csv", index=False)
-        selection_value = float(row[best_metric_name])
-        improved = selection_value > best_metric_value if best_metric_mode == "max" else selection_value < best_metric_value
-        if improved:
-            best_metric_value = selection_value
-            best_epoch = int(epoch + 1)
-            save_model_checkpoint(
-                model,
-                best_checkpoint_path,
-                metadata={
-                    "input_protocol": input_protocol,
-                    "epochs_completed": int(epoch + 1),
-                    "best_epoch": int(best_epoch),
-                    "selection_metric": best_metric_name,
-                    "selection_mode": best_metric_mode,
-                    "selection_value": float(best_metric_value),
-                    "task_type": task_type,
-                    "row_count": int(len(rows)),
-                    "train_row_count": int(len(train_rows)),
-                    "validation_row_count": int(0 if val_rows is None else len(val_rows)),
-                    "target_column": str(target_axis_column),
-                    "prediction_column": str(prediction_column),
-                    "positive_class_weight": resolved_positive_class_weight,
-                    "classification_threshold": float(classification_threshold),
-                    "target_axis_column": str(target_axis_column),
-                    "target_epithelial_column": str(target_epithelial_column),
-                    "initial_checkpoint": None if initial_checkpoint is None else str(initial_checkpoint),
-                    "initial_checkpoint_loaded": initial_checkpoint_loaded,
-                    "pretrained_checkpoint": None if pretrained_checkpoint is None else str(pretrained_checkpoint),
-                    "pretrained_loaded": pretrained_loaded,
-                    "prepared_supervised_metadata": (
-                        None if prepared_supervised_metadata is None else str(prepared_supervised_metadata)
-                    ),
-                    "reference_pixel_size_um": (
-                        None if reference_pixel_size_um is None else float(reference_pixel_size_um)
-                    ),
-                    "batching_strategy": batching_strategy,
-                    "freeze_summary": freeze_summary,
-                    "intensity_augmentation": intensity_augmentation_summary,
-                    "gradient_clip_norm": (
-                        None if gradient_clip_norm is None else float(gradient_clip_norm)
-                    ),
-                    "model_config": asdict(config),
-                    "seed": int(seed),
-                },
-            )
-    checkpoint_path = output_dir / "crypt_villus_vit_model.pt"
-    if best_epoch is None:
-        raise RuntimeError("No finite checkpoint-selection metric was produced; no final model exported.")
-    model.load_state_dict(torch.load(best_checkpoint_path, map_location=resolved_device, weights_only=True)['model_state_dict'], strict=True)
-    metadata = {
-        "input_protocol": input_protocol,
-        "exported_weights": "best_selection_metric",
-        "task_type": task_type,
-        "epochs": int(epochs),
-        "row_count": int(len(rows)),
-        "train_row_count": int(len(train_rows)),
-        "validation_row_count": int(0 if val_rows is None else len(val_rows)),
-        "target_column": str(target_axis_column),
-        "prediction_column": str(prediction_column),
-        "positive_class_weight": resolved_positive_class_weight,
-        "classification_threshold": float(classification_threshold),
-        "target_axis_column": str(target_axis_column),
-        "target_epithelial_column": str(target_epithelial_column),
-        "initial_checkpoint": None if initial_checkpoint is None else str(initial_checkpoint),
-        "initial_checkpoint_loaded": initial_checkpoint_loaded,
-        "pretrained_checkpoint": None if pretrained_checkpoint is None else str(pretrained_checkpoint),
-        "pretrained_loaded": pretrained_loaded,
-        "prepared_supervised_metadata": (
-            None if prepared_supervised_metadata is None else str(prepared_supervised_metadata)
-        ),
-        "reference_pixel_size_um": None if reference_pixel_size_um is None else float(reference_pixel_size_um),
-        "batching_strategy": batching_strategy,
-        "freeze_summary": freeze_summary,
-        "prepared_supervised_summary": (
-            None if prepared_supervised_metadata is None else prepared_summary(prepared_supervised_metadata)
-        ),
-        "intensity_augmentation": intensity_augmentation_summary,
-        "gradient_clip_norm": None if gradient_clip_norm is None else float(gradient_clip_norm),
-        "seed": int(seed),
-        "best_checkpoint_path": str(best_checkpoint_path),
-        "best_epoch": None if best_epoch is None else int(best_epoch),
-        "selection_metric": best_metric_name,
-        "selection_mode": best_metric_mode,
-        "selection_value": None if best_epoch is None else float(best_metric_value),
-    }
-    save_model_checkpoint(model, checkpoint_path, metadata=metadata)
-    history_csv = output_dir / "history.csv"
-    pd.DataFrame(history).to_csv(history_csv, index=False)
-    summary = {
-        "task_type": task_type,
-        "checkpoint_path": str(checkpoint_path),
-        "history_csv": str(history_csv),
-        "row_count": int(len(rows)),
-        "train_row_count": int(len(train_rows)),
-        "validation_row_count": int(0 if val_rows is None else len(val_rows)),
-        "target_column": str(target_axis_column),
-        "prediction_column": str(prediction_column),
-        "positive_class_weight": resolved_positive_class_weight,
-        "classification_threshold": float(classification_threshold),
-        "epochs": int(epochs),
-        "batch_size": int(batch_size),
-        "device": resolved_device,
-        "model_config": asdict(config),
-        "initial_checkpoint": None if initial_checkpoint is None else str(initial_checkpoint),
-        "initial_checkpoint_loaded": initial_checkpoint_loaded,
-        "pretrained_checkpoint": None if pretrained_checkpoint is None else str(pretrained_checkpoint),
-        "pretrained_loaded": pretrained_loaded,
-        "prepared_supervised_metadata": (
-            None if prepared_supervised_metadata is None else str(prepared_supervised_metadata)
-        ),
-        "reference_pixel_size_um": None if reference_pixel_size_um is None else float(reference_pixel_size_um),
-        "batching_strategy": batching_strategy,
-        "freeze_summary": freeze_summary,
-        "prepared_supervised_summary": (
-            None if prepared_supervised_metadata is None else prepared_summary(prepared_supervised_metadata)
-        ),
-        "intensity_augmentation": intensity_augmentation_summary,
-        "gradient_clip_norm": None if gradient_clip_norm is None else float(gradient_clip_norm),
-        "best_checkpoint_path": str(best_checkpoint_path),
-        "best_epoch": None if best_epoch is None else int(best_epoch),
-        "selection_metric": best_metric_name,
-        "selection_mode": best_metric_mode,
-        "selection_value": None if best_epoch is None else float(best_metric_value),
-        "final_train_loss": history[-1]["train_loss"] if history else None,
-        "final_validation_loss": history[-1].get("validation_loss") if history else None,
-    }
-    (output_dir / "training_summary.json").write_text(json.dumps(summary, indent=2))
-    return summary
+            row = {"epoch": float(epoch + 1), "train_seconds": time.perf_counter() - train_started}
+            row.update({f"train_{key}" if key != "loss" else "train_loss": value for key, value in train_metrics.items()})
+            if (
+                val_loader is not None
+                and val_target_axis is not None
+                and val_target_epi is not None
+                and val_target_epi_mask is not None
+            ):
+                _set_dataset_epoch(val_loader, epoch)
+                validation_started = time.perf_counter()
+                val_metrics = _run_epoch(
+                    model,
+                    val_loader,
+                    target_axis=val_target_axis,
+                    target_epi=val_target_epi,
+                    target_epi_mask=val_target_epi_mask,
+                    device=resolved_device,
+                    task_type=task_type,
+                    binary_positive_class_weight=resolved_positive_class_weight,
+                    classification_threshold=float(classification_threshold),
+                    desc=f"validation epoch {epoch + 1}",
+                )
+                row.update(
+                    {f"validation_{key}" if key != "loss" else "validation_loss": value for key, value in val_metrics.items()}
+                )
+                row["validation_seconds"] = time.perf_counter() - validation_started
+            history.append(row)
+            print("Epoch metrics: " + json.dumps(row, sort_keys=True), flush=True)
+            pd.DataFrame(history).to_csv(output_dir / "history.partial.csv", index=False)
+            selection_value = float(row[best_metric_name])
+            improved = selection_value > best_metric_value if best_metric_mode == "max" else selection_value < best_metric_value
+            if improved:
+                best_metric_value = selection_value
+                best_epoch = int(epoch + 1)
+                save_model_checkpoint(
+                    model,
+                    best_checkpoint_path,
+                    metadata={
+                        "input_protocol": input_protocol,
+                        "epochs_completed": int(epoch + 1),
+                        "best_epoch": int(best_epoch),
+                        "selection_metric": best_metric_name,
+                        "selection_mode": best_metric_mode,
+                        "selection_value": float(best_metric_value),
+                        "task_type": task_type,
+                        "row_count": int(len(rows)),
+                        "train_row_count": int(len(train_rows)),
+                        "validation_row_count": int(0 if val_rows is None else len(val_rows)),
+                        "target_column": str(target_axis_column),
+                        "prediction_column": str(prediction_column),
+                        "positive_class_weight": resolved_positive_class_weight,
+                        "classification_threshold": float(classification_threshold),
+                        "target_axis_column": str(target_axis_column),
+                        "target_epithelial_column": str(target_epithelial_column),
+                        "initial_checkpoint": None if initial_checkpoint is None else str(initial_checkpoint),
+                        "initial_checkpoint_loaded": initial_checkpoint_loaded,
+                        "pretrained_checkpoint": None if pretrained_checkpoint is None else str(pretrained_checkpoint),
+                        "pretrained_loaded": pretrained_loaded,
+                        "prepared_supervised_metadata": (
+                            None if prepared_supervised_metadata is None else str(prepared_supervised_metadata)
+                        ),
+                        "reference_pixel_size_um": (
+                            None if reference_pixel_size_um is None else float(reference_pixel_size_um)
+                        ),
+                        "batching_strategy": batching_strategy,
+                        "data_loading": loading_settings,
+                        "freeze_summary": freeze_summary,
+                        "intensity_augmentation": intensity_augmentation_summary,
+                        "gradient_clip_norm": (
+                            None if gradient_clip_norm is None else float(gradient_clip_norm)
+                        ),
+                        "model_config": asdict(config),
+                        "seed": int(seed),
+                    },
+                )
+        checkpoint_path = output_dir / "crypt_villus_vit_model.pt"
+        if best_epoch is None:
+            raise RuntimeError("No finite checkpoint-selection metric was produced; no final model exported.")
+        model.load_state_dict(torch.load(best_checkpoint_path, map_location=resolved_device, weights_only=True)['model_state_dict'], strict=True)
+        metadata = {
+            "input_protocol": input_protocol,
+            "exported_weights": "best_selection_metric",
+            "task_type": task_type,
+            "epochs": int(epochs),
+            "row_count": int(len(rows)),
+            "train_row_count": int(len(train_rows)),
+            "validation_row_count": int(0 if val_rows is None else len(val_rows)),
+            "target_column": str(target_axis_column),
+            "prediction_column": str(prediction_column),
+            "positive_class_weight": resolved_positive_class_weight,
+            "classification_threshold": float(classification_threshold),
+            "target_axis_column": str(target_axis_column),
+            "target_epithelial_column": str(target_epithelial_column),
+            "initial_checkpoint": None if initial_checkpoint is None else str(initial_checkpoint),
+            "initial_checkpoint_loaded": initial_checkpoint_loaded,
+            "pretrained_checkpoint": None if pretrained_checkpoint is None else str(pretrained_checkpoint),
+            "pretrained_loaded": pretrained_loaded,
+            "prepared_supervised_metadata": (
+                None if prepared_supervised_metadata is None else str(prepared_supervised_metadata)
+            ),
+            "reference_pixel_size_um": None if reference_pixel_size_um is None else float(reference_pixel_size_um),
+            "batching_strategy": batching_strategy,
+            "data_loading": loading_settings,
+            "freeze_summary": freeze_summary,
+            "prepared_supervised_summary": (
+                None if prepared_supervised_metadata is None else prepared_summary(prepared_supervised_metadata)
+            ),
+            "intensity_augmentation": intensity_augmentation_summary,
+            "gradient_clip_norm": None if gradient_clip_norm is None else float(gradient_clip_norm),
+            "seed": int(seed),
+            "best_checkpoint_path": str(best_checkpoint_path),
+            "best_epoch": None if best_epoch is None else int(best_epoch),
+            "selection_metric": best_metric_name,
+            "selection_mode": best_metric_mode,
+            "selection_value": None if best_epoch is None else float(best_metric_value),
+        }
+        save_model_checkpoint(model, checkpoint_path, metadata=metadata)
+        history_csv = output_dir / "history.csv"
+        pd.DataFrame(history).to_csv(history_csv, index=False)
+        summary = {
+            "task_type": task_type,
+            "checkpoint_path": str(checkpoint_path),
+            "history_csv": str(history_csv),
+            "row_count": int(len(rows)),
+            "train_row_count": int(len(train_rows)),
+            "validation_row_count": int(0 if val_rows is None else len(val_rows)),
+            "target_column": str(target_axis_column),
+            "prediction_column": str(prediction_column),
+            "positive_class_weight": resolved_positive_class_weight,
+            "classification_threshold": float(classification_threshold),
+            "epochs": int(epochs),
+            "batch_size": int(batch_size),
+            "device": resolved_device,
+            "model_config": asdict(config),
+            "initial_checkpoint": None if initial_checkpoint is None else str(initial_checkpoint),
+            "initial_checkpoint_loaded": initial_checkpoint_loaded,
+            "pretrained_checkpoint": None if pretrained_checkpoint is None else str(pretrained_checkpoint),
+            "pretrained_loaded": pretrained_loaded,
+            "prepared_supervised_metadata": (
+                None if prepared_supervised_metadata is None else str(prepared_supervised_metadata)
+            ),
+            "reference_pixel_size_um": None if reference_pixel_size_um is None else float(reference_pixel_size_um),
+            "batching_strategy": batching_strategy,
+            "data_loading": loading_settings,
+            "cache_warmup_seconds": cache_warmup_seconds,
+            "training_wall_seconds": time.perf_counter() - started,
+            "freeze_summary": freeze_summary,
+            "prepared_supervised_summary": (
+                None if prepared_supervised_metadata is None else prepared_summary(prepared_supervised_metadata)
+            ),
+            "intensity_augmentation": intensity_augmentation_summary,
+            "gradient_clip_norm": None if gradient_clip_norm is None else float(gradient_clip_norm),
+            "best_checkpoint_path": str(best_checkpoint_path),
+            "best_epoch": None if best_epoch is None else int(best_epoch),
+            "selection_metric": best_metric_name,
+            "selection_mode": best_metric_mode,
+            "selection_value": None if best_epoch is None else float(best_metric_value),
+            "final_train_loss": history[-1]["train_loss"] if history else None,
+            "final_validation_loss": history[-1].get("validation_loss") if history else None,
+        }
+        (output_dir / "training_summary.json").write_text(json.dumps(summary, indent=2))
+        return summary
+    finally:
+        close_training_loader(loader)
+        close_training_loader(val_loader)
