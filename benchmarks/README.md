@@ -52,3 +52,39 @@ to repeat in reversed backend order.
 Each backend starts a fresh process and an empty decoded-tile cache. The OS
 file cache is not cleared. Large runs create a separate shard copy for every
 backend and repeat; check disk space first.
+
+### Measured preparation times
+
+September 24, 2026: one 34,063 × 34,137-pixel JPEG2000-compressed Xenium
+DAPI image, Threadripper PRO 5995WX, no GPU. Preparation batches contained
+128 cells; tile caches were 256 MiB per worker. Outputs were written to NVMe.
+
+| Crops | Cells | Backend | Workers | Total time |
+| --- | ---: | --- | ---: | ---: |
+| Supervised | 1,024 | Reference | 0 | 320.5 s |
+| Supervised | 1,024 | Cached | 8 | 20.8 s |
+| Supervised | 1,024 | Cached + Rust | 8 | 19.3 s |
+| Supervised | 50,000 | Cached | 8 | 96.6 s |
+| Supervised | 50,000 | Cached + Rust | 8 | 98.0 s |
+| Pretraining pairs | 256 | Reference | 0 | 55.7 s |
+| Pretraining pairs | 256 | Cached | 8 | 16.2 s |
+| Pretraining pairs | 256 | Cached + Rust | 8 | 16.2 s |
+| Pretraining pairs | 50,000 | Cached + Rust | 8 | 66.1 s |
+
+The reference uses the original crop routine; all runs use the same new shard
+writer. These are single runs on a shared workstation, not cold-disk timings.
+The small samples span the tissue; the full table has greater tile reuse.
+The full 50,000-cell serial runs were not timed.
+
+On the small comparisons, every shard and manifest matched the reference
+byte-for-byte. All supervised shards also matched between cached and Rust
+backends at 50,000 cells. The full outputs matched the serial reference at
+1,024 supervised cells and 256 pretraining centers checked within those runs.
+
+The large outputs contain 7.4 GB of supervised crops or 6.6 GB of pretraining
+pairs. Their timings include writing and checksumming those files. They do not
+include model training. The gains combine parallel loading, tile caching, and
+spatial read ordering. Rust normalization added little on this image.
+
+Exact measurements and check results are in
+[`preparation_results_2026_09_24.json`](preparation_results_2026_09_24.json).

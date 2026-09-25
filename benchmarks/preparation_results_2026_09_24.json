@@ -1,0 +1,165 @@
+{
+  "date": "2026-09-24",
+  "branch": "rust_optimization",
+  "implementation_commit": "29b27191519a9cba374bd44dddd2c23cb80a7aac",
+  "cpu": "AMD Ryzen Threadripper PRO 5995WX, 64 cores",
+  "gpu_used": false,
+  "image": {
+    "source_id": "sample_008",
+    "shape_yx": [
+      34063,
+      34137
+    ],
+    "format": "JPEG2000-compressed pyramidal OME-TIFF"
+  },
+  "timing_scope": "Fresh process, raw cropping, shard writes and fsync, manifest and provenance checksums. OS file cache uncontrolled. Single runs on a shared workstation.",
+  "reference_scope": "Original crop routine with the new shard writer. Full 50,000-cell serial runs were not timed.",
+  "batch_size": 128,
+  "rows_per_shard": 1024,
+  "reference_pixel_size_um": 0.325,
+  "local_and_context_output_shape": [
+    1,
+    256,
+    256
+  ],
+  "fine_output_shape": [
+    1,
+    128,
+    128
+  ],
+  "image_dtype": "uint8",
+  "checks": {
+    "supervised_1024_all_shards_and_manifest_byte_identical": true,
+    "supervised_50000_cached_and_rust_all_shards_and_manifest_byte_identical": true,
+    "supervised_50000_exact_serial_reference_subset_cells": 1024,
+    "pretraining_256_all_shards_and_manifest_byte_identical": true,
+    "pretraining_50000_exact_serial_reference_subset_cells": 256,
+    "unit_tests_with_rust_passed": 87,
+    "standard_cpu_tests_passed": 74,
+    "optional_rust_tests_skipped_on_standard_cpu": 13,
+    "installed_wheel_cpu_workflow_steps_passed": 14,
+    "github_actions_run": 36076899229,
+    "github_cpu_job": "success",
+    "github_rust_job": "success"
+  },
+  "runs": [
+    {
+      "backend": "reference",
+      "workers": 0,
+      "wall_seconds": 320.50255561619997,
+      "cells_per_second": 3.194982324029373,
+      "crop_and_write_seconds": 318.12446969840676,
+      "shard_bytes": 150995328,
+      "kind": "supervised",
+      "cells": 1024,
+      "tile_cache_mib_per_worker": 0,
+      "local_report": "runs/rust_optimization/preparation_supervised_1024/benchmark.json",
+      "report_sha256": "f59852ff4aef035f5a42771745b795f8a8a8a270f3d88738b5e41265948298a5"
+    },
+    {
+      "backend": "cached",
+      "workers": 8,
+      "wall_seconds": 20.762847939506173,
+      "cells_per_second": 49.31886044648049,
+      "crop_and_write_seconds": 18.352965019643307,
+      "shard_bytes": 150995328,
+      "kind": "supervised",
+      "cells": 1024,
+      "tile_cache_mib_per_worker": 256,
+      "local_report": "runs/rust_optimization/preparation_supervised_1024/benchmark.json",
+      "report_sha256": "f59852ff4aef035f5a42771745b795f8a8a8a270f3d88738b5e41265948298a5"
+    },
+    {
+      "backend": "rust",
+      "workers": 8,
+      "wall_seconds": 19.340764611028135,
+      "cells_per_second": 52.9451663672135,
+      "crop_and_write_seconds": 16.940295628271997,
+      "shard_bytes": 150995328,
+      "kind": "supervised",
+      "cells": 1024,
+      "tile_cache_mib_per_worker": 256,
+      "local_report": "runs/rust_optimization/preparation_supervised_1024/benchmark.json",
+      "report_sha256": "f59852ff4aef035f5a42771745b795f8a8a8a270f3d88738b5e41265948298a5"
+    },
+    {
+      "backend": "cached",
+      "workers": 8,
+      "wall_seconds": 96.635229899548,
+      "cells_per_second": 517.4096450329226,
+      "crop_and_write_seconds": 88.25008154287934,
+      "shard_bytes": 7372818816,
+      "kind": "supervised",
+      "cells": 50000,
+      "tile_cache_mib_per_worker": 256,
+      "local_report": "runs/rust_optimization/preparation_supervised_50000/benchmark.json",
+      "report_sha256": "d4398c5f1eaccce9585b98514519ffe93c2dc70dc163e16c5c16349e00052b0a"
+    },
+    {
+      "backend": "rust",
+      "workers": 8,
+      "wall_seconds": 98.02553593926132,
+      "cells_per_second": 510.07117197483166,
+      "crop_and_write_seconds": 89.68517789058387,
+      "shard_bytes": 7372818816,
+      "kind": "supervised",
+      "cells": 50000,
+      "tile_cache_mib_per_worker": 256,
+      "local_report": "runs/rust_optimization/preparation_supervised_50000/benchmark.json",
+      "report_sha256": "d4398c5f1eaccce9585b98514519ffe93c2dc70dc163e16c5c16349e00052b0a"
+    },
+    {
+      "backend": "reference",
+      "workers": 0,
+      "wall_seconds": 55.723700150847435,
+      "cells_per_second": 4.594095498091342,
+      "crop_and_write_seconds": 53.20726142451167,
+      "shard_bytes": 33554560,
+      "kind": "pretraining",
+      "cells": 256,
+      "tile_cache_mib_per_worker": 0,
+      "local_report": "runs/rust_optimization/preparation_pretraining_256/benchmark.json",
+      "report_sha256": "86ab6384e8fdd03da818cfdbc8048b906cf75b9e7f38fec97f0bc035a977c6c1"
+    },
+    {
+      "backend": "cached",
+      "workers": 8,
+      "wall_seconds": 16.171857642941177,
+      "cells_per_second": 15.829968680916565,
+      "crop_and_write_seconds": 13.783133251592517,
+      "shard_bytes": 33554560,
+      "kind": "pretraining",
+      "cells": 256,
+      "tile_cache_mib_per_worker": 256,
+      "local_report": "runs/rust_optimization/preparation_pretraining_256/benchmark.json",
+      "report_sha256": "86ab6384e8fdd03da818cfdbc8048b906cf75b9e7f38fec97f0bc035a977c6c1"
+    },
+    {
+      "backend": "rust",
+      "workers": 8,
+      "wall_seconds": 16.207167502492666,
+      "cells_per_second": 15.79548060823257,
+      "crop_and_write_seconds": 13.849838313646615,
+      "shard_bytes": 33554560,
+      "kind": "pretraining",
+      "cells": 256,
+      "tile_cache_mib_per_worker": 256,
+      "local_report": "runs/rust_optimization/preparation_pretraining_256/benchmark.json",
+      "report_sha256": "86ab6384e8fdd03da818cfdbc8048b906cf75b9e7f38fec97f0bc035a977c6c1"
+    },
+    {
+      "backend": "rust",
+      "workers": 8,
+      "wall_seconds": 66.13447144441307,
+      "cells_per_second": 756.0353762262346,
+      "crop_and_write_seconds": 58.47202670015395,
+      "shard_bytes": 6553612544,
+      "kind": "pretraining",
+      "cells": 50000,
+      "tile_cache_mib_per_worker": 256,
+      "local_report": "runs/rust_optimization/preparation_pretraining_50000/benchmark.json",
+      "report_sha256": "479d22e03eb245010f015ac1ab7ecf22dfe9f8fd2e3ab65c6f8a4c2053d5bd2f"
+    }
+  ],
+  "training_objective_or_released_weights_changed": false
+}

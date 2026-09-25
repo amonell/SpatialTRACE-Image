@@ -11,6 +11,7 @@ The `rust_optimization` branch was checked on September 24, 2026:
 - An installed wheel passed the 14-command CPU workflow, including crop preparation, pretraining, supervised training from shards, and prediction.
 - Cached and Rust preparation produced byte-identical `.npy` shards to the original crop routine. Tests cover mixed sources, pixel calibrations, image borders, reordered reads, and partial final shards.
 - New preparation metadata rejects mismatched crop sizes or pixel calibration before supervised training. Existing prepared datasets remain supported.
+- Both [GitHub test jobs](https://github.com/amonell/SpatialTRACE-Image/actions/runs/36076899229) passed for implementation commit `29b2719`.
 
 These are software checks. The small synthetic training runs do not measure
 anatomical accuracy. Raw-image timings are documented in `benchmarks/README.md`.
