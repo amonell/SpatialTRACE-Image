@@ -29,6 +29,50 @@ To adapt the trained coordinate model instead, replace `--pretrained-checkpoint`
 
 The architecture must match the checkpoint. Scale embeddings are retained during fine-tuning.
 
+## Prepare crops once
+
+For repeated training runs, save the crops first. Training then reads these
+shards without decoding the original microscopy images each epoch.
+
+```bash
+uv run --locked --extra cpu spatialtrace-image prepare-supervised \
+  --source-manifest sources.csv --cells-csv labels.csv \
+  --output-dir runs/supervised_crops --num-workers 4
+
+uv run --locked --extra cpu spatialtrace-image train \
+  --source-manifest sources.csv \
+  --supervised-manifest runs/supervised_crops/manifest.csv \
+  --prepared-supervised-metadata runs/supervised_crops/metadata.json \
+  --pretrained-checkpoint weights/spatialtrace-image-representation-v1.pt \
+  --output-dir runs/fine_tuning_prepared --epochs 20 --device cpu
+```
+
+Preparation keeps all input rows, labels, and split assignments. Use the generated
+`manifest.csv` for training: its `prepared_index` links each cell to its crops.
+Test rows remain test rows; preparing their crops does not fit a model.
+
+Both preparation commands use cached image tiles and four CPU workers by default.
+They read nearby cells together, then save them in the original input order.
+Crop normalization, resizing, and rounding are unchanged. The optional Rust
+backend uses `--crop-backend rust` after installing the `rust` extra.
+
+Preparation needs no GPU. Each worker has a 256 MiB tile cache, plus decoding and
+batch memory. Set `--num-workers 0` for serial preparation or
+`--tile-cache-mib 64` for a smaller cache. Large machines can try eight workers.
+`--batch-size` here controls preparation batches, not training batches.
+
+At the default crop sizes, 50,000 cells need about 7.4 GB for supervised shards,
+or 6.6 GB for pretraining pairs. Allow additional free space for training outputs.
+The output directory must be empty; interrupted preparation leaves partial files
+and must be restarted in a new directory. `metadata.json` is written only after
+all shards are complete. The adjacent provenance file records their checksums.
+
+Keep crop dimensions and `--reference-pixel-size-um` matched between preparation
+and training. New shard metadata is checked before supervised training starts.
+Physical pixel size for each source image belongs in `sources.csv`.
+
+Timing commands and measured results are in `benchmarks/README.md` in the repository.
+
 ## Training settings
 
 Training uses AdamW and Smooth L1 coordinate losses. Validation loss selects the saved model. Both the best and final checkpoint files contain those selected weights.
@@ -48,7 +92,7 @@ Choose cell centers from the pretraining sections, excluding downstream test sec
 ```bash
 uv run --locked --extra cpu spatialtrace-image prepare-pretraining \
   --source-manifest sources.csv --cells-csv pretraining_centers.csv \
-  --output-dir runs/prepared
+  --output-dir runs/prepared --num-workers 4
 
 uv run --locked --extra cpu spatialtrace-image pretrain-representation \
   --prepared-metadata runs/prepared/metadata.json \

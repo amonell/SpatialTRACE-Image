@@ -47,6 +47,31 @@ def _paths_from_metadata(values: list[str], *, base_dir: Path) -> tuple[Path, ..
     return tuple(paths)
 
 
+def validate_prepared_crop_configuration(metadata_path, config, *, input_protocol, reference_pixel_size_um):
+    """Check new preparation records; retain compatibility with historical arrays."""
+    payload = json.loads(Path(metadata_path).read_text())
+    saved = payload.get("crop_configuration")
+    if saved is None:
+        return reference_pixel_size_um
+    if payload.get("input_protocol") != input_protocol:
+        raise ValueError("Prepared crops and training input protocols differ")
+    required = {"input_size_px"}
+    for branch in ("local", "context", "fine"):
+        if getattr(config, f"use_{branch}_branch"):
+            required.add(f"{branch}_crop_px")
+    if config.use_fine_branch:
+        required.add("fine_input_size_px")
+        if not saved.get("use_fine_branch"):
+            raise ValueError("Prepared crops have no fine branch")
+    for key in sorted(required):
+        if saved.get(key) != getattr(config, key):
+            raise ValueError(f"Prepared {key}={saved.get(key)} differs from training {getattr(config, key)}")
+    calibration = payload["reference_pixel_size_um"]
+    if reference_pixel_size_um is not None and reference_pixel_size_um != calibration:
+        raise ValueError("Prepared and training reference_pixel_size_um differ")
+    return calibration
+
+
 def load_prepared_supervised_arrays(metadata_path: Path) -> PreparedSupervisedArrays:
     path = Path(metadata_path)
     payload = json.loads(path.read_text())

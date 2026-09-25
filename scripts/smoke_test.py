@@ -36,6 +36,16 @@ def main():
     run(['predict-cells', '--source-manifest', 'demo/sources.csv', '--cells-csv', 'demo/cells.csv',
          '--checkpoint', 'axis/crypt_villus_vit_model.pt', '--output-dir', 'predictions', '--device', args.device])
     run(['export-qupath', '--predictions', 'predictions/predictions.csv', '--output', 'predictions/cells.geojson'])
+    run(['prepare-supervised', '--source-manifest', 'demo/sources.csv', '--cells-csv', 'demo/labels.csv',
+         '--output-dir', 'supervised_crops', '--input-size-px', '64', '--local-crop-px', '64',
+         '--context-crop-px', '128', '--fine-crop-px', '32', '--fine-input-size-px', '32', '--num-workers', '2'])
+    run(['train', '--source-manifest', 'demo/sources.csv',
+         '--supervised-manifest', 'supervised_crops/manifest.csv',
+         '--prepared-supervised-metadata', 'supervised_crops/metadata.json',
+         '--epochs', '1', '--device', args.device, '--output-dir', 'prepared_axis', *tiny])
+    run(['predict-cells', '--source-manifest', 'demo/sources.csv', '--cells-csv', 'demo/cells.csv',
+         '--checkpoint', 'prepared_axis/crypt_villus_vit_model.pt',
+         '--output-dir', 'prepared_predictions', '--device', args.device])
     run(['prepare-pretraining', '--source-manifest', 'demo/sources.csv', '--cells-csv', 'demo/pretraining_centers.csv',
          '--output-dir', 'paired', '--input-size-px', '64', '--local-crop-px', '64', '--context-crop-px', '128'])
     run(['pretrain-representation', '--prepared-metadata', 'paired/metadata.json', '--output-dir', 'pretrain',

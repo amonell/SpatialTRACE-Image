@@ -20,7 +20,8 @@ def file_record(path):
 def record_cli(args, argv=None):
     output = getattr(args, 'output_dir', None)
     if output is None or getattr(args, 'command', None) not in {
-            'train', 'predict-cells', 'predict-qupath', 'pretrain-representation', 'prepare-pretraining'}:
+            'train', 'predict-cells', 'predict-qupath', 'pretrain-representation', 'prepare-pretraining',
+            'prepare-supervised'}:
         return
     output = Path(output)
     destination = output/'run_provenance.json'

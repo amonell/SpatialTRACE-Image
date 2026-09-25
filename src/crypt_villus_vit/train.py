@@ -18,6 +18,7 @@ from crypt_villus_vit.model import MultitaskDapiVit
 from crypt_villus_vit.model import save_model_checkpoint
 from crypt_villus_vit.prepared import PreparedCellCropDataset
 from crypt_villus_vit.prepared import prepared_summary
+from crypt_villus_vit.prepared import validate_prepared_crop_configuration
 from crypt_villus_vit.predict import CellCropDataset
 from crypt_villus_vit.predict import SourceGroupedBatchSampler
 from crypt_villus_vit.predict import _collate
@@ -430,6 +431,10 @@ def train_model(
     if not 0.0 <= float(classification_threshold) <= 1.0:
         raise ValueError("classification_threshold must be between 0 and 1.")
     config = config or ModelConfig()
+    if prepared_supervised_metadata is not None:
+        reference_pixel_size_um = validate_prepared_crop_configuration(
+            prepared_supervised_metadata, config, input_protocol=input_protocol,
+            reference_pixel_size_um=reference_pixel_size_um)
     rows = prepare_supervised_manifest(
         rows,
         target_axis_column=target_axis_column,

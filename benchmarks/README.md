@@ -27,3 +27,28 @@ reversed on alternating repeats.
 
 The benchmark table and cell-level outputs stay in the ignored `runs/` folder.
 Do not commit microscopy data or per-cell results.
+
+## Training-shard preparation
+
+Run from the repository root:
+
+```bash
+uv run --locked --extra cpu --extra rust python benchmarks/benchmark_preparation.py \
+  --source-manifest sources.csv --cells-csv cells.csv \
+  --output-dir runs/preparation_benchmark --max-cells 1024
+```
+
+This compares serial reference cropping with eight-worker cached and Rust
+cropping. It includes CLI startup, crop extraction, completed shard writes,
+and provenance checksums. Every shard and the cell manifest must match the
+first run byte-for-byte. It does not train a model.
+
+Use `--kind pretraining` for local/context pairs; the default is supervised
+local/context/fine crops. Without Rust installed, add
+`--backends reference cached` and omit `--extra rust`.
+Add `--reference-workers 8` for a worker-matched comparison or `--repeats 2`
+to repeat in reversed backend order.
+
+Each backend starts a fresh process and an empty decoded-tile cache. The OS
+file cache is not cleared. Large runs create a separate shard copy for every
+backend and repeat; check disk space first.

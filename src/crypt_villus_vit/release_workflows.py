@@ -7,8 +7,6 @@ import torch
 from .artifacts import registry
 from .model import ModelConfig
 from .prepared import load_prepared_pretraining_arrays
-from .sources import load_source_manifest
-from .predict import CellCropDataset
 
 
 def empty_directory(path):
@@ -47,37 +45,31 @@ def create_demo(args):
 
 
 def prepare_pairs(args):
-    root = empty_directory(args.output_dir)
-    sources = load_source_manifest(args.source_manifest)
-    rows = pd.read_csv(args.cells_csv)
-    if 'split' in rows and rows['split'].astype(str).str.lower().eq('test').any():
-        raise ValueError('Pretraining input includes test rows. Supply only prespecified pretraining sections.')
-    config = ModelConfig(local_crop_px=args.local_crop_px, context_crop_px=args.context_crop_px,
-                         input_size_px=args.input_size_px, use_fine_branch=False)
-    dataset = CellCropDataset(rows, sources, config, reference_pixel_size_um=args.reference_pixel_size_um,
-                              input_protocol='direct_pyramid_crop_normalize_resize_uint8_v1')
-    manifest, images, shards = [], [], []
-    for i in range(len(dataset)):
-        item = dataset[i]
-        source_id = str(rows.iloc[i].source_id)
-        for scale, branch in enumerate(('local', 'context')):
-            manifest.append(dict(prepared_index=len(manifest), source_id=source_id,
-                                 source_group='user', section_id=sources[source_id].section_id or source_id,
-                                 center_id=f'{source_id}:{i}', scale_id=scale))
-            images.append(np.rint(item[branch+'_image'] * 255).astype(np.uint8))
-            if len(images) == args.rows_per_shard:
-                filename = f'shard_{len(shards):05d}.npy'
-                np.save(root/filename, np.stack(images)); shards.append(filename); images = []
-    if images:
-        filename = f'shard_{len(shards):05d}.npy'
-        np.save(root/filename, np.stack(images)); shards.append(filename)
-    pd.DataFrame(manifest).to_csv(root/'manifest.csv', index=False)
-    (root/'metadata.json').write_text(json.dumps(dict(manifest_path='manifest.csv',
-        completed_row_count=len(manifest), rows_per_shard=args.rows_per_shard,
-        variant_count=1, image_dtype='uint8', shard_paths=shards,
-        input_protocol='direct_pyramid_crop_normalize_resize_uint8_v1',
-        description='Own-data preparation; paper reproduction uses its frozen pretraining arrays.'), indent=2))
-    print(root/'metadata.json')
+    from .prepare_crops import prepare_crops
+    return prepare_crops(args)
+
+
+def prepare_supervised(args):
+    from .prepare_crops import prepare_crops
+    return prepare_crops(args, supervised=True)
+
+
+def add_preparation_arguments(parser):
+    from argparse import BooleanOptionalAction
+    parser.add_argument('--source-manifest', required=True, type=Path)
+    parser.add_argument('--cells-csv', required=True, type=Path)
+    parser.add_argument('--output-dir', required=True, type=Path)
+    parser.add_argument('--local-crop-px', default=512, type=int)
+    parser.add_argument('--context-crop-px', default=2048, type=int)
+    parser.add_argument('--input-size-px', default=256, type=int)
+    parser.add_argument('--reference-pixel-size-um', default=.325, type=float)
+    parser.add_argument('--rows-per-shard', default=1024, type=int)
+    parser.add_argument('--crop-backend', choices=('reference', 'cached', 'rust'), default='cached')
+    parser.add_argument('--num-workers', default=4, type=int)
+    parser.add_argument('--batch-size', default=128, type=int, help='Cells per preparation batch, not training batch.')
+    parser.add_argument('--tile-cache-mib', default=256, type=int, help='Decoded tile cache per worker.')
+    parser.add_argument('--spatial-order', action=BooleanOptionalAction, default=None,
+                        help='Read nearby cells together; saved row order remains unchanged.')
 
 
 def representation_pretrain(args):
@@ -86,7 +78,12 @@ def representation_pretrain(args):
     if args.device.startswith('cuda') and not torch.cuda.is_available():
         raise RuntimeError('CUDA unavailable; install cu126 or use --device cpu')
     metadata = load_prepared_pretraining_arrays(args.prepared_metadata)
-    config = ModelConfig(input_size_px=args.input_size_px, patch_size_px=args.patch_size_px,
+    crop_settings = json.loads(args.prepared_metadata.read_text()).get('crop_configuration', {})
+    if crop_settings and crop_settings['input_size_px'] != args.input_size_px:
+        raise ValueError('Prepared input_size_px differs from pretraining input_size_px')
+    config = ModelConfig(local_crop_px=crop_settings.get('local_crop_px', 512),
+                         context_crop_px=crop_settings.get('context_crop_px', 2048),
+                         input_size_px=args.input_size_px, patch_size_px=args.patch_size_px,
                          embed_dim=args.embed_dim, depth=args.depth, num_heads=args.num_heads,
                          use_fine_branch=False, encoder_architecture='shared_scale_aware',
                          retain_scale_embeddings=True, local_readout='center_4x', context_readout='center_4x')
@@ -107,15 +104,15 @@ def add_commands(sub):
     demo.add_argument('--output-dir', required=True, type=Path)
     demo.set_defaults(func=create_demo)
     prepare = sub.add_parser('prepare-pretraining', help='Prepare matched local/context crops from own images.')
-    prepare.add_argument('--source-manifest', required=True, type=Path)
-    prepare.add_argument('--cells-csv', required=True, type=Path)
-    prepare.add_argument('--output-dir', required=True, type=Path)
-    prepare.add_argument('--local-crop-px', default=512, type=int)
-    prepare.add_argument('--context-crop-px', default=2048, type=int)
-    prepare.add_argument('--input-size-px', default=256, type=int)
-    prepare.add_argument('--reference-pixel-size-um', default=.325, type=float)
-    prepare.add_argument('--rows-per-shard', default=1024, type=int)
+    add_preparation_arguments(prepare)
     prepare.set_defaults(func=prepare_pairs)
+    supervised = sub.add_parser('prepare-supervised', help='Prepare reusable local/context/fine training crops.')
+    add_preparation_arguments(supervised)
+    supervised.add_argument('--fine-crop-px', default=128, type=int)
+    supervised.add_argument('--fine-input-size-px', default=128, type=int)
+    from argparse import BooleanOptionalAction
+    supervised.add_argument('--fine-branch', action=BooleanOptionalAction, default=True)
+    supervised.set_defaults(func=prepare_supervised)
     pretrain = sub.add_parser('pretrain-representation', help='Train the paired-scale masked EMA representation model.')
     pretrain.add_argument('--prepared-metadata', required=True, type=Path)
     pretrain.add_argument('--output-dir', required=True, type=Path)
