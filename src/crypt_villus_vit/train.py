@@ -474,8 +474,8 @@ def train_model(
         if bool(((targets < 0.0) | (targets > 1.0)).any()):
             raise ValueError("Binary classification targets must be in [0, 1].")
     train_rows, val_rows = split_supervised_manifest(rows, validation_fraction=validation_fraction, seed=seed)
-    if task_type == _AXIS_REGRESSION_TASK and not np.isfinite(train_rows['epithelial_distance_clipped_1p0']).any():
-        raise ValueError("Coordinate training needs epithelial-distance labels as well as target_axis; missing labels cannot be replaced by the other coordinate.")
+    # _run_epoch masks the auxiliary epithelial loss when its labels are absent.
+    # A tissue with only an axis annotation can therefore train that axis alone.
     resolved_positive_class_weight = (
         _resolve_positive_class_weight(train_rows["target_axis"], positive_class_weight)
         if task_type == _BINARY_CLASSIFICATION_TASK

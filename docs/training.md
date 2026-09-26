@@ -11,10 +11,12 @@ For new coordinates, define gates for your tissue. The built-in gate labels foll
 Prepare a label CSV with the cell columns from the [input guide](apply_to_own_data.md), plus:
 
 - `target_axis`: crypt–villus position from 0 to 1.
-- `epithelial_distance_clipped_1p0`: epithelial distance from 0 to 1.
+- `epithelial_distance_clipped_1p0`: optional epithelial distance from 0 to 1.
 - `split`: `train`, `validation`, or `test`.
 
 Hold out complete sections where possible. Training and validation rows are required; test rows are reserved for evaluation.
+When epithelial labels are absent, the model trains only the axis coordinate.
+Its epithelial output remains untrained and should not be interpreted.
 
 [Download the representation weights](artifacts.md), then run:
 
