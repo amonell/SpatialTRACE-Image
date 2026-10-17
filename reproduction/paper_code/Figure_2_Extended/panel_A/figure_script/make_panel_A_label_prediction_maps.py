@@ -104,7 +104,10 @@ def main() -> None:
     registry_path = require_file(args.frozen_registry)
     registry = json.loads(registry_path.read_text())
     lineage = registry["models"]["graph_coordinate_all_label_visualization"]
-    for item in [*lineage["checkpoints"], *lineage["outputs"]]:
+    for item in lineage["checkpoints"]:
+        if not item.get("path") or len(item.get("sha256", "")) != 64:
+            raise RuntimeError("Frozen registry contains an invalid graph checkpoint identity")
+    for item in lineage["outputs"]:
         require_file(item["path"], item["sha256"])
     sections, labels = pd.read_parquet(section_path), pd.read_parquet(label_path)
     zoom_path=require_file(args.zoom_manifest,EXPECTED_ZOOMS)

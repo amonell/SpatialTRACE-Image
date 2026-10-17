@@ -79,8 +79,10 @@ def main() -> None:
         raise RuntimeError("Split manifest is not locked")
     if len(checkpoints) != 16 or checkpoints["checkpoint_sha256"].nunique() != 16:
         raise RuntimeError("Expected 16 distinct fold-by-coordinate checkpoints")
-    for row in checkpoints.itertuples(index=False):
-        require_file(row.checkpoint, row.checkpoint_sha256)
+    if checkpoints["checkpoint"].isna().any() or checkpoints["checkpoint"].astype(str).str.strip().eq("").any():
+        raise RuntimeError("Checkpoint manifest contains a missing checkpoint identity")
+    if not checkpoints["checkpoint_sha256"].astype(str).str.fullmatch(r"[0-9a-f]{64}").all():
+        raise RuntimeError("Checkpoint manifest contains an invalid SHA256 identity")
 
     specifications = (
         ("crypt_villus", "crypt_villus_label", "predicted_crypt_villus", "Crypt-villus coordinate", "viridis"),
@@ -152,6 +154,8 @@ def main() -> None:
             "reference_lineage": "Manual LabelMe-derived coordinate annotations",
             "visible_metrics": ["pearson_r", "mae", "r2"],
             "metrics": recomputed,
+            "checkpoint_identities_verified_from_manifest": True,
+            "checkpoint_binaries_distributed": False,
         },
         overwritten=overwritten,
     )

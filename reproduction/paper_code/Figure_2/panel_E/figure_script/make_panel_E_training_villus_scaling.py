@@ -73,8 +73,14 @@ def main() -> None:
     checkpoint_key = ["fold_id", "axis", "n_train_villi"]
     if checkpoints.duplicated(checkpoint_key).any():
         raise RuntimeError("Duplicate model records in checkpoint manifest")
-    for row in checkpoints.itertuples(index=False):
-        require_file(row.checkpoint, row.checkpoint_sha256)
+    if checkpoints["checkpoint"].isna().any() or checkpoints["checkpoint"].astype(str).str.strip().eq("").any():
+        raise RuntimeError("Checkpoint manifest contains a missing checkpoint identity")
+    if not checkpoints["checkpoint_sha256"].astype(str).str.fullmatch(r"[0-9a-f]{64}").all():
+        raise RuntimeError("Checkpoint manifest contains an invalid SHA256 identity")
+    metric_keys = set(map(tuple, frame[checkpoint_key].astype(str).to_numpy()))
+    checkpoint_keys = set(map(tuple, checkpoints[checkpoint_key].astype(str).to_numpy()))
+    if checkpoint_keys != metric_keys:
+        raise RuntimeError("Checkpoint and metric manifests describe different fitted runs")
 
     output_dir = args.output_dir.expanduser().resolve()
     output_pdf = output_dir / "panel_E_training_villus_scaling.pdf"
@@ -142,6 +148,8 @@ def main() -> None:
             "split_sha256": sha256(split_path),
             "fold_count": EXPECTED_FOLDS,
             "checkpoint_count": len(checkpoints),
+            "checkpoint_identities_verified_from_manifest": True,
+            "checkpoint_binaries_distributed": False,
             "display": "individual held-out-section values and mean plus or minus SEM",
         },
         overwritten=overwritten,

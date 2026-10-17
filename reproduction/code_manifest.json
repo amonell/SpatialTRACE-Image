@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "source_bundle_manifest_sha256": "6d3f6cfeafb4e03a5f75855b38b5ae8207e2d1bc351a4e6fdb30a12fb8a0c95c",
+  "source_bundle_manifest_sha256": "b0f66646ece7e508b7b21cf5b5906cd16b205e3bf5fed0d43717fad22481816a",
   "files": [
     {
       "path": "Figure_1/README.md",
@@ -49,8 +49,8 @@
     },
     {
       "path": "Figure_1/common.py",
-      "sha256": "aea9af413afe984fff2fc7c9467d8df836401f498a337532248a5d63bbe399e8",
-      "bytes": 6849
+      "sha256": "fbe45b114d5292bf4722bbb35058c976662808bb097ec8c9144c20413fc5de88",
+      "bytes": 7030
     },
     {
       "path": "Figure_1/dataset_processing/README.md",
@@ -274,8 +274,8 @@
     },
     {
       "path": "Figure_2/panel_D/figure_script/make_panel_D_section_disjoint_scatter.py",
-      "sha256": "87615a6486921ac04a1bcf8503aedb5995b6ceea1370f7ebfbfb4ba2138e3609",
-      "bytes": 7568
+      "sha256": "bf4f5108392b06d50c611934ff3b92f68dde0a8f4afe2363d3416abdae100104",
+      "bytes": 7958
     },
     {
       "path": "Figure_2/panel_D/processing/README.md",
@@ -284,8 +284,8 @@
     },
     {
       "path": "Figure_2/panel_E/figure_script/make_panel_E_training_villus_scaling.py",
-      "sha256": "d91c506708f8b4b73a2c9e835a3f5ff37cc168473aafe9f85122e7cd7e91abc8",
-      "bytes": 8123
+      "sha256": "9d0ad568e49f5390f0396b778cdb007556c70102a39106353e1248707a52aef9",
+      "bytes": 8815
     },
     {
       "path": "Figure_2/panel_E/processing/README.md",
@@ -344,8 +344,8 @@
     },
     {
       "path": "Figure_2_Extended/panel_A/figure_script/make_panel_A_label_prediction_maps.py",
-      "sha256": "b946ec6b4426e3505dc9de454fda6945e9979efb7de7dcf7c83dfe75f28d0b34",
-      "bytes": 10351
+      "sha256": "d1d6038bc7b24e6a2aea809f909c450c0a487148acf3c3ac1113a29262d9d5b1",
+      "bytes": 10529
     },
     {
       "path": "Figure_2_Extended/panel_A/processing/README.md",
@@ -1488,6 +1488,11 @@
       "bytes": 1464
     },
     {
+      "path": "Figure_4_Extended/panel_D/figure_script/make_panel_D_gate_backprojection.py",
+      "sha256": "a2fe2be65189b9e8e7c134f35b28ff10839f2fbdbadcc5d22a016cada5816ce8",
+      "bytes": 7590
+    },
+    {
       "path": "Figure_4_Extended/panel_D/figure_script/make_panel_D_if_training_history.py",
       "sha256": "86eec2e36cd92e02bbd6e72efda5abbe6504040cbf5a7b72c1cfbef1e81bf023",
       "bytes": 5006
@@ -1511,6 +1516,11 @@
       "path": "Figure_4_Extended/panel_E/processing/high_resolution_export_qa.md",
       "sha256": "e1dfb6ded814e746173bfd973cd3dc59bed1bf58e2ee94bdb611e29e904e58a1",
       "bytes": 1834
+    },
+    {
+      "path": "Figure_4_Extended/panel_E/processing/probability_display.json",
+      "sha256": "210e9790327814cbf5f22c7cf16931130759913750d55179b7493e7a14dd43cf",
+      "bytes": 550
     },
     {
       "path": "Figure_4_Extended/panel_F/figure_script/make_panel_F_non_p14_imaps.py",

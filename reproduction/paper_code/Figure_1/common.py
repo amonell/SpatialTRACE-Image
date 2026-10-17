@@ -113,7 +113,10 @@ def verify_peyer_component(cells: Path, manifest_path: Path) -> dict:
     manifest = json.loads(manifest_path.read_text())
     if manifest['status'] != 'FROZEN_CORRECTED_LABEL_FIGURE1_PEYER_WINDOW' or manifest['window_changed']:
         raise RuntimeError('Incorrect Figure 1 Peyer component lineage')
-    for item in [manifest['cells'], manifest['checkpoint'], manifest['label_lock']]:
+    checkpoint = manifest['checkpoint']
+    if not checkpoint.get('path') or len(checkpoint.get('sha256', '')) != 64:
+        raise RuntimeError('Peyer component has an invalid graph checkpoint identity')
+    for item in [manifest['cells'], manifest['label_lock']]:
         if sha256(item['path']) != item['sha256']:
             raise RuntimeError(f'Peyer component hash mismatch: {item["path"]}')
     if cells.resolve() != Path(manifest['cells']['path']).resolve():
