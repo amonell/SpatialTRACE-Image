@@ -5,7 +5,7 @@ import json
 import numpy as np
 from matplotlib.colors import Normalize
 
-DISPLAY_CONFIG = Path(__file__).parent / "panel_E/processing/probability_display.json"
+DISPLAY_CONFIG = Path(__file__).parent / "panel_F/processing/probability_display.json"
 
 
 def probability_display():

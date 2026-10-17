@@ -1,0 +1,20 @@
+{
+  "status": "author_approved_and_integrated_as_Figure4_E_F",
+  "selected_panels": ["P14 positioning A", "P14 positioning B"],
+  "intended_destination": "Figure 4E: abundance; Figure 4F: enrichment; former IMAP F relabeled G",
+  "current_figure": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Regenerated_Figures/Current/Figure4.pdf",
+  "integration_report": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261015_approved_efg_v1/visual_qa_and_publication.json",
+  "pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261014/figure4e_ab_candidate_v3/Figure4e_candidate_AB.pdf",
+  "pdf_sha256": "c917fb9a5c11ddb67aa1e338337f286493391ce1f81e4d1cf235584460d53918",
+  "png": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261014/figure4e_ab_candidate_v3/Figure4e_candidate_AB.png",
+  "provenance": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261014/figure4e_ab_candidate_v3/provenance.json",
+    "sha256": "4e21bfd1c402c18c56989171ddabf3b066a66275f52aca2160de9a5b6e48fcc8"
+  },
+  "renderer": "Figure_4/replicate_revision_20261014/figure_script/render_figure4e_ab_candidate.py",
+  "condition_palette": {"DMSO": "#4F7F8A", "RARi": "#A55D54"},
+  "canvas_pt": [360, 190],
+  "review": "A/B-only layout visually inspected; exact frozen mouse values, current Figure 4e palette, embedded Arial, and PDF text bounds checked. Every replicate uses a circle; experiment legend entries removed. Only significant comparisons show asterisks and P/q values.",
+  "statistics": "Unchanged uploaded analysis: experiment-adjusted OLS; BH-adjusted q across five gate comparisons.",
+  "paper_figures_modified": true
+}

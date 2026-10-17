@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "artwork_reference": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure1.pdf",
+  "component_path_rule": "panel_<letter>/<component>.pdf",
+  "panels": [
+    {"letter": "A", "title": "Identify tissue axis and region", "render_scripts": ["panel_A/figure_script/make_panel_A_components.py"], "components": ["panel_A_day90_whole_tissue", "panel_A_day90_gray_villus_zoom", "panel_A_day90_peyer_dapi"]},
+    {"letter": "B", "title": "Manual sparse annotations", "render_scripts": ["panel_B/figure_script/make_panel_B_components.py"], "components": ["panel_B_continuous_sparse_label", "panel_B_peyer_region_label"]},
+    {"letter": "C", "title": "Graph inputs and dense predictions", "render_scripts": ["panel_C/figure_script/make_panel_C_components.py"], "components": ["panel_C_sparse_axis_graph", "panel_C_coordinate_output", "panel_C_peyer_probability_output"], "manual_artwork": "Original conceptual spatial-neighbor and gene-expression diagrams, arrows, graph-attention box, and diagram assembly", "historical_inactive_stems": ["panel_C_spatial_neighbors", "panel_C_focus_gene_expression"]},
+    {"letter": "D", "title": "Paired training inputs and image-model inference", "render_scripts": ["panel_D/figure_script/make_panel_D_components.py"], "components": ["panel_D_paired_training_graph_coordinate", "panel_D_paired_training_dapi", "panel_D_unseen_day90_dapi", "panel_D_released_image_model_coordinate_prediction"], "display_layout": "left top-to-bottom training coordinate,DAPI; right top-to-bottom unseen DAPI,prediction", "manual_artwork": "Model and modality boxes, arrows, and layout"},
+    {"letter": "E", "title": "IF image and crypt-villus predictions", "render_scripts": ["panel_E/figure_script/make_panel_E_components.py"], "components": ["panel_E_if_image", "panel_E_production_v2_if_crypt_villus_prediction"], "manual_artwork": "Continuous/discrete immunofluorescence quantification diagrams"}
+  ]
+}

@@ -1,0 +1,1 @@
+LabelMe parsing is part of the frozen graph preprocessing lineage. `Figure_2/dataset_processing/build_graph_component_tables.py` joins those hash-locked labels to spatial coordinates and fixes the Day 90 zoom before this panel is plotted.

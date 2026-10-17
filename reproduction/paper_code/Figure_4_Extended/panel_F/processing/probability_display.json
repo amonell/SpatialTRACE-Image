@@ -1,0 +1,11 @@
+{
+  "schema": "fixed-window-probability-display-v1",
+  "colormap": "magma",
+  "limits": [0.0, 1.0],
+  "ticks": [0.0, 0.5, 1.0],
+  "ticklabels": ["0", "0.5", "1"],
+  "clip_colors_only": true,
+  "classifier_threshold": 0.5,
+  "marker_area_pt2": 5.5,
+  "reason": "The representation-pretrained classifier spans almost 0–1 in both fixed windows. A common full probability scale preserves variation above 0.5, where the former display would saturate 165 DMSO and 252 RARi cells. Predictions are not transformed; the classifier threshold remains 0.5."
+}

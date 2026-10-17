@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "authoritative_artwork": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure3_Extended.pdf",
+    "sha256": "608dc385ddc4a3af5d09f4ef330e9184f9809a0555f204c87d8d35508ab3bd09",
+    "inspected_at": "2026-09-04",
+    "manually_assembled": true,
+    "modified_by_this_task": false
+  },
+  "code_root": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_3_Extended",
+  "output_root": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended",
+  "reading_order": "A,B,C across full rows; D left/E right; F lower-left/G lower-right",
+  "active_panels": [
+    {
+      "panel": "A",
+      "content": "paired pretraining views",
+      "script": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_3_Extended/panel_A/figure_script/make_panel_A_paired_pretraining_views.py",
+      "output_dir": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_A",
+      "pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_A/panel_A_paired_pretraining_views.pdf",
+      "png": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_A/panel_A_paired_pretraining_views.png",
+      "provenance": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_A/panel_A_provenance.json",
+      "layout": "1x4",
+      "components": [
+        "masked student local",
+        "EMA teacher local",
+        "masked student context",
+        "EMA teacher context"
+      ],
+      "former_panel": "A"
+    },
+    {
+      "panel": "B",
+      "content": "paired-representation pretraining history",
+      "script": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_3_Extended/panel_B/figure_script/make_panel_B_pretraining_history.py",
+      "output_dir": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_B",
+      "pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_B/panel_B_paired_representation_pretraining_history.pdf",
+      "png": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_B/panel_B_paired_representation_pretraining_history.png",
+      "provenance": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_B/panel_B_provenance.json",
+      "layout": "1x3",
+      "components": [
+        "composite representation loss",
+        "alignment loss",
+        "feature standard deviation"
+      ],
+      "former_panel": "B"
+    },
+    {
+      "panel": "C",
+      "content": "released supervised fine-tuning history",
+      "script": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_3_Extended/panel_C/figure_script/make_panel_C_supervised_history.py",
+      "output_dir": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_C",
+      "pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_C/panel_C_released_supervised_training_history.pdf",
+      "png": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_C/panel_C_released_supervised_training_history.png",
+      "provenance": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_C/panel_C_provenance.json",
+      "layout": "1x3",
+      "components": [
+        "Smooth L1 objective",
+        "crypt-villus MAE",
+        "epithelial-distance MAE"
+      ],
+      "former_panel": "C"
+    },
+    {
+      "panel": "D",
+      "content": "pretraining objective comparison",
+      "script": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_3_Extended/panel_D/figure_script/make_panel_D_pretraining_ablation.py",
+      "output_dir": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_D",
+      "pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_D/panel_D_pretraining_objective_ablation.pdf",
+      "png": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_D/panel_D_pretraining_objective_ablation.png",
+      "provenance": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_D/panel_D_provenance.json",
+      "layout": "1x2",
+      "components": [
+        "crypt-villus coordinate",
+        "epithelial-distance coordinate"
+      ],
+      "former_panel": "D"
+    },
+    {
+      "panel": "E",
+      "content": "branch-input shuffling",
+      "script": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_3_Extended/panel_E/figure_script/make_panel_E_branch_input_shuffling.py",
+      "output_dir": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_E",
+      "pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_E/panel_E_branch_input_shuffling.pdf",
+      "png": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_E/panel_E_branch_input_shuffling.png",
+      "provenance": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_E/panel_E_provenance.json",
+      "layout": "2x1",
+      "components": [
+        "crypt-villus coordinate (top)",
+        "epithelial-distance coordinate (bottom)"
+      ],
+      "former_panel": "F"
+    },
+    {
+      "panel": "F",
+      "content": "held-out Peyer image-classifier window",
+      "script": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_3_Extended/panel_F/figure_script/make_panel_F_peyer_prediction.py",
+      "output_dir": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_F",
+      "pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_F/panel_F_heldout_peyer_prediction.pdf",
+      "png": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_F/panel_F_heldout_peyer_prediction.png",
+      "provenance": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_F/panel_F_provenance.json",
+      "layout": "2x2",
+      "components": [
+        "DAPI (top left)",
+        "manual Peyer label (top right)",
+        "classifier probability (bottom left)",
+        "predicted class (bottom right)"
+      ],
+      "former_panel": "H"
+    },
+    {
+      "panel": "G",
+      "content": "Peyer classifier ROC strategy comparison",
+      "script": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_3_Extended/panel_G/figure_script/make_panel_G_peyer_classifier_strategy.py",
+      "output_dir": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_G",
+      "pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_G/panel_G_peyer_classifier_strategy.pdf",
+      "png": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_G/panel_G_peyer_classifier_strategy.png",
+      "provenance": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_3_Extended/panel_G/panel_G_provenance.json",
+      "layout": "1x1",
+      "components": [
+        "manual frozen-ViT",
+        "manual full-model SFT",
+        "GAT-soft frozen-ViT",
+        "GAT-soft full-model SFT"
+      ],
+      "former_panel": "G"
+    }
+  ],
+  "inactive": {
+    "former_panel_E": "Retrained branch-ablation delta lollipops: absent from active PDF, code archived, analysis retained",
+    "former_panel_H": "Renumbered to F; no active H"
+  },
+  "archive_code_root": "/home/amonell/Desktop/spatial_axes_manuscript/lineage_archive/final_figure_organization_2026-09-04/Figure_3_Extended"
+}

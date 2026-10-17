@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+"""Audit a display-only Figure 4 revision, then publish a reviewed page."""
+from __future__ import annotations
+import argparse
+from datetime import datetime, timezone
+import json
+from paper_paths import Path, lock_record, rendering_script
+import subprocess
+import sys
+import numpy as np
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+from figure_assembly.compositor import file_sha256
+from figure_assembly.current_figures import refresh_current_figures
+from figure_assembly.publish import publish_panels
+from figure_organization import load_catalog
+
+
+def equal(left, right):
+    assert json.dumps(left, sort_keys=True) == json.dumps(right, sort_keys=True)
+
+
+def audit_science(old, new):
+    a, b = old['preparation'], new['preparation']
+    assert not any(b[k] for k in ('model_inference_run', 'model_fitting_run', 'metric_tables_created'))
+    for key in ('approved_EF', 'replicate_cohort', 'strict_test'):
+        equal(a['details'][key], b['details'][key])
+    before = {v['path']: v['sha256'] for v in a['inputs'] if v['path'].startswith('/mnt/sata1/')}
+    after = {v['path']: v['sha256'] for v in b['inputs'] if v['path'].startswith('/mnt/sata1/')}
+    equal(before, after)
+    aa = {r['id']: np.asarray(r['rect_pt']) for r in a['rendered_anchors']}
+    bb = {r['id']: np.asarray(r['rect_pt']) for r in b['rendered_anchors']}
+    for condition in ('DMSO', 'RARi'):
+        old_image, new_image = a['details']['microscopy_'+condition], b['details']['microscopy_'+condition]
+        for key in old_image:
+            if key != 'bar_length_pt':
+                equal(old_image[key], new_image[key])
+        np.testing.assert_allclose(old_image['bar_length_pt']/aa[f'A_{condition}_image'][2],
+                                   new_image['bar_length_pt']/bb[f'A_{condition}_image'][2], atol=1e-12)
+        key = f'replicate_{condition}_p14_imap'
+        for name in a['details'][key]:
+            if name != 'gate_labels':
+                equal(a['details'][key][name], b['details'][key][name])
+        old_labels = a['details'][key]['gate_labels']
+        new_labels = b['details'][key]['gate_labels']
+        equal(old_labels['source'], new_labels['source'])
+        np.testing.assert_allclose(old_labels['font_size_pt'], new_labels['font_size_pt'], atol=1e-10)
+        delta = bb[f'E_{condition}'][:2] - aa[f'G_{condition}'][:2]
+        for x, y in zip(old_labels['boxes'], new_labels['boxes']):
+            assert x['gate'] == y['gate']
+            np.testing.assert_allclose(np.asarray(y['rect_pt'])-np.asarray(x['rect_pt']),
+                                       [*delta, 0, 0], atol=1e-8)
+        for x, y in zip(old_labels['text_baselines'], new_labels['text_baselines']):
+            assert x['text'] == y['text']
+            np.testing.assert_allclose([y['x_pt']-x['x_pt'], y['y_pt']-x['y_pt']], delta, atol=1e-8)
+    for key in a['details']['sparse_example']:
+        if key not in ('authorized_image_height_pt', 'bar_length_pt'):
+            equal(a['details']['sparse_example'][key], b['details']['sparse_example'][key])
+    np.testing.assert_allclose(a['details']['sparse_example']['bar_length_pt']/aa['B_image'][2],
+                               b['details']['sparse_example']['bar_length_pt']/bb['B_image'][2], atol=1e-12)
+    for i in range(4):
+        key = f'whole_map_{i}'
+        for field in a['details'][key]:
+            if field not in ('frame_rect_pt', 'contained_image_rect_pt'):
+                equal(a['details'][key][field], b['details'][key][field])
+    return {'frozen_SATA_inputs': len(before), 'all_mouse_values_tests_and_gate_percentages': 'IDENTICAL',
+            'images_and_magnified_fields': 'IDENTICAL', 'physical_scale_calibrations': 'IDENTICAL',
+            'IMAP_labels': 'IDENTICAL within each translated axis; no scaling',
+            'sparse_image_linear_scale_factor': float(bb['B_image'][2]/aa['B_image'][2])}
+
+
+def audit_alignment(prep):
+    a = {v['id']: np.asarray(v['rect_pt']) for v in prep['rendered_anchors']}
+    def same(names, fields):
+        values = np.stack([a[n][fields] for n in names])
+        np.testing.assert_allclose(values, np.broadcast_to(values[0], values.shape), atol=1e-7)
+    same(['A_DMSO_image', 'A_RARi_image', 'B_image'], [1, 3])
+    same(['C_crypt_villus', 'C_epithelial_distance', 'C_crypt_villus_bar', 'C_epithelial_distance_bar'], [1, 3])
+    same([f'D_zoom_frame_{i}' for i in range(4)], [1, 2, 3])
+    same([f'D_colorbar_{i}' for i in range(4)], [1, 2, 3])
+    same(['E_DMSO', 'E_RARi'], [0, 2, 3])
+    same(['G_abundance', 'F_enrichment'], [1, 3])
+    for i in range(4):
+        zoom, bar = a[f'D_zoom_frame_{i}'], a[f'D_colorbar_{i}']
+        np.testing.assert_allclose(zoom[0]+zoom[2]/2, bar[0]+bar[2]/2, atol=1e-7)
+    axis, bar = a['E_DMSO'], a['E_shared_density_bar']
+    np.testing.assert_allclose(axis[0]+axis[2]/2, bar[0]+bar[2]/2, atol=1e-7)
+    letters = {e['panel']: e for e in prep['elements'] if e['kind'] == 'text'}
+    for left, right in (('A', 'B'), ('D', 'E'), ('F', 'G')):
+        assert letters[left]['y_pt'] == letters[right]['y_pt']
+    return {'tolerance_pt': 1e-7, 'status': 'ALIGNED',
+            'checked': ['image tops/bottoms', 'scatter axes/colorbars', 'zoom frames/colorbars',
+                        'IMAP axes/bar center', 'statistics baselines', 'panel-letter row baselines']}
+
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--run', type=Path, required=True)
+    p.add_argument('--previous-run', type=Path, required=True)
+    p.add_argument('--publish-visually-reviewed', action='store_true')
+    args = p.parse_args()
+    target = args.run / ('visual_qa_and_publication.json' if args.publish_visually_reviewed else 'scoped_render_audit.json')
+    if target.exists():
+        raise FileExistsError(target)
+    state = json.loads((args.run/'complete_figure_run.json').read_text())
+    assert state['status'] == 'AUTOMATED_CHECKS_PASSED_VISUAL_REVIEW_REQUIRED'
+    assert [f['package'] for f in state['figures']] == ['Figure_4']
+    assert [p['panel'] for p in state['figures'][0]['final_panels']] == list('ABCDEFG')
+    assert not json.loads((args.run/'QA/Figure_4/qa.json').read_text())['errors']
+    new = json.loads((args.run/'Figure4_provenance.json').read_text())
+    old = json.loads((args.previous_run/'Figure4_provenance.json').read_text())
+    assert new['panel_recomposition']['status'] == 'PIXEL_IDENTICAL'
+    science = audit_science(old, new)
+    alignment = audit_alignment(new['preparation'])
+    for item in new['preparation']['inputs'] + new['outputs']:
+        assert file_sha256(item['path']) == item['sha256'], item['path']
+    text = subprocess.run(['pdftotext', '-raw', str(args.run/'Figure4.pdf'), '-'],
+                          capture_output=True, text=True, check=True).stdout
+    for phrase in ('P = 0.004', 'q = 0.046', 'q = 0.016', 'DMSO P14', 'RARi P14', 'Probability density'):
+        assert phrase in text, phrase
+    report = {'status': 'DISPLAY_ONLY_CHECKS_PASSED', 'created_at_utc': datetime.now(timezone.utc).isoformat(),
+              'command': [sys.executable, *sys.argv], 'code_sha256': file_sha256(__file__),
+              'science': science, 'alignment': alignment, 'documents_modified': False,
+              'panel_reorder': {'previous_G_IMAP': 'E', 'previous_E_abundance': 'G', 'F': 'F'}}
+    if args.publish_visually_reviewed:
+        catalog = load_catalog()
+        root = Path(catalog['output_root'])
+        current = root/'Regenerated_Figures/Current'
+        before = {p.name: file_sha256(p) for p in current.iterdir()}
+        assert before['Figure4.pdf'] == file_sha256(args.previous_run/'Figure4.pdf')
+        report['visual_review'] = 'Complete PDF and enlarged regions inspected: aligned images, headings, axes, zooms, colorbars and panel letters; no clipped or overlapping labels.'
+        report['panel_publication'] = publish_panels(state, root, overwrite=True)
+        report['current_figures'] = refresh_current_figures(root, catalog['figures'])
+        after = {p.name: file_sha256(p) for p in current.iterdir()}
+        assert set(after) == set(before) and len(after) == 8
+        assert {name for name in before if before[name] != after[name]} == {'Figure4.pdf'}
+        report.update(status='REVIEWED_AND_PUBLISHED', current_hashes_before=before, current_hashes_after=after)
+    target.write_text(json.dumps(report, indent=2)+'\n')
+    print(json.dumps({'status': report['status'], 'report': str(target)}, indent=2))
+
+
+if __name__ == '__main__':
+    main()

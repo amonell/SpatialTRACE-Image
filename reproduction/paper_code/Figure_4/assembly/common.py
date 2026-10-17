@@ -120,7 +120,7 @@ class PageInputs:
                        metadata={"Title": name, "Creator": "Frozen scientific assembly renderer"})
         plt.close(figure)
         panel = name.split("_")[1]
-        if len(panel) != 1 or panel not in "ABCDEF":
+        if len(panel) != 1 or panel not in "ABCDEFG":
             raise RuntimeError(f"Scientific layer has no explicit panel: {name}")
         self.elements.append({"id": name, "panel": panel, "kind": "pdf", "path": path.name,
                               "rect_pt": [0, 0, *PAGE], "fit": "exact"})
@@ -131,7 +131,7 @@ class PageInputs:
                               "font_size_pt": size, "font": "Arial-Bold" if bold else "Arial",
                               "align": align, "color": color})
 
-    def finish(self, layout, script):
+    def finish(self, layout, script, *, command=None, random_seed=None):
         self.read(script, role="assembly_renderer")
         self.read(Path(__file__), role="assembly_helpers")
         self.read(layout, role="exact_layout_manifest")
@@ -139,7 +139,7 @@ class PageInputs:
         if any(element.get("panel") not in allowed_panels for element in self.elements):
             raise RuntimeError("Every regenerated element must belong to one visible panel")
         data = {"elements": self.elements, "inputs": self.inputs,
-                "commands": [[sys.executable, str(script), "--output-dir", str(self.out),
+                "commands": [command or [sys.executable, str(script), "--output-dir", str(self.out),
                               *(["--overwrite"] if self.overwrite else [])]],
                 "warnings": self.warnings, "rendered_anchors": self.anchors,
                 "intentional_differences": json.loads(Path(layout).read_text()).get("intentional_differences", []),
@@ -147,7 +147,7 @@ class PageInputs:
                 "created_utc": datetime.now(timezone.utc).isoformat(),
                 "python": platform.python_version(), "packages": {"numpy": np.__version__,
                     "pandas": pd.__version__, "matplotlib": matplotlib.__version__},
-                "random_seed": None, "model_inference_run": False,
+                "random_seed": random_seed, "model_inference_run": False,
                 "model_fitting_run": False, "metric_tables_created": False,
                 "git_state": "No usable Git history in this workspace"}
         target = self.out / "assembly_inputs_provenance.json"

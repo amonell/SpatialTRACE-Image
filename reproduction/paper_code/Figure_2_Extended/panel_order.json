@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "artwork_reference": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure2_Extended.pdf",
+  "component_path_rule": "panel_<letter>/<component>.pdf",
+  "panels": [
+    {
+      "letter": "A",
+      "title": "Sparse labels and dense graph predictions",
+      "render_scripts": [
+        "panel_A/figure_script/make_panel_A_label_prediction_maps.py"
+      ],
+      "components": [
+        "panel_A_crypt_villus_manual_labels",
+        "panel_A_crypt_villus_dense_predictions",
+        "panel_A_epithelial_distance_manual_labels",
+        "panel_A_epithelial_distance_dense_predictions"
+      ],
+      "display_layout": "Rows Day6/Day8/Day30; columns crypt-villus reference/prediction then epithelial-distance reference/prediction. All four columns contain equally sized whole-tissue maps and matched framed zooms."
+    },
+    {
+      "letter": "B",
+      "title": "Training runtime",
+      "render_scripts": [
+        "panel_B/figure_script/make_panel_B_runtime.py"
+      ],
+      "components": [
+        "panel_B_training_runtime"
+      ]
+    },
+    {
+      "letter": "C",
+      "title": "Held-out-section MAE",
+      "render_scripts": [
+        "panel_C/figure_script/make_panel_C_heldout_mae.py"
+      ],
+      "components": [
+        "panel_C_heldout_villus_mae"
+      ]
+    },
+    {
+      "letter": "D",
+      "title": "Held-out-section R-squared",
+      "render_scripts": [
+        "panel_D/figure_script/make_panel_D_heldout_r2.py"
+      ],
+      "components": [
+        "panel_D_heldout_villus_r2"
+      ]
+    },
+    {
+      "letter": "E",
+      "title": "graph component comparison",
+      "render_scripts": [
+        "panel_E/figure_script/make_panel_E_graph_components.py"
+      ],
+      "components": [
+        "panel_E_graph_component_comparison"
+      ]
+    },
+    {
+      "letter": "F",
+      "title": "Matched annotation requirements",
+      "render_scripts": [
+        "panel_F/figure_script/make_panel_F_annotation_budgets.py"
+      ],
+      "components": [
+        "panel_F_matched_annotation_budgets"
+      ],
+      "display_layout": "Four axes left to right: crypt-villus Pearson r, crypt-villus MAE, epithelial-distance Pearson r, epithelial-distance MAE; shared three-model legend."
+    }
+  ],
+  "notes": "Original reference artwork retained. September 6 user-approved generated panel additions and reflow; all renderers read frozen outputs. September 7 user-approved addition of the completed annotation-budget comparison as F, below E. September 7: six paired prediction zooms fit within the existing panel A rows. Reference zoom follow-up: twelve balanced insets; original sparse labels remain sparse."
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "figure": "Extended Figure 4",
+  "authoritative_artwork": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure4_extended.pdf",
+  "path_base": "figure_code_directory",
+  "panels": [
+    {
+      "letter": "A",
+      "title": "RARi-associated loss of CCR9 expression in IEL donor cells",
+      "render_scripts": [
+        "panel_A/figure_script/make_panel_A_iel_ccr9.py"
+      ],
+      "components": [
+        "panel_A_iel_ccr9"
+      ],
+      "display_order": [
+        "DMSO representative flow",
+        "RARi representative flow",
+        "Mouse-level CCR9+ comparison"
+      ],
+      "frozen_input_lock": "panel_A/processing/iel_ccr9_release.json"
+    },
+    {
+      "title": "IF supervised fine-tuning workflow",
+      "manual_artwork": true,
+      "render_scripts": [],
+      "display_order": [
+        "Xenium coordinate checkpoint",
+        "Sparse IF training labels",
+        "IF-adapted coordinate checkpoint"
+      ],
+      "unused_source_archive": "lineage_archive/final_figure_organization_2026-09-04/Figure_4_Extended/panel_A",
+      "letter": "B",
+      "components": [],
+      "previous_generated_letter": "A"
+    },
+    {
+      "title": "Zero-shot versus IF fine-tuned Spearman comparison",
+      "render_scripts": [
+        "panel_C/figure_script/make_panel_C_final_transfer.py"
+      ],
+      "row_order": [
+        "Zero-shot",
+        "IF fine-tuned"
+      ],
+      "column_order": [
+        "Crypt-villus",
+        "Epithelial distance"
+      ],
+      "letter": "C",
+      "components": [
+        "panel_C_final_lineage_transfer"
+      ],
+      "previous_generated_letter": "B"
+    },
+    {
+      "title": "IF fine-tuning history",
+      "render_scripts": [
+        "panel_D/figure_script/make_panel_D_if_training_history.py"
+      ],
+      "display_order": [
+        "Smooth L1 objective",
+        "Crypt-villus MAE",
+        "Epithelial-distance MAE"
+      ],
+      "letter": "D",
+      "components": [
+        "panel_D_IF_fine_tuning_history"
+      ],
+      "previous_generated_letter": "C"
+    },
+    {
+      "letter": "E",
+      "title": "Anatomical localization of IMAP gates",
+      "render_scripts": [
+        "panel_E/figure_script/make_panel_E_gate_backprojection.py"
+      ],
+      "components": [
+        "panel_E_gate_backprojection"
+      ],
+      "previous_generated_letter": "D"
+    },
+    {
+      "title": "Non-P14 IMAPs",
+      "render_scripts": [
+        "panel_F/figure_script/make_panel_F_non_p14_imaps.py"
+      ],
+      "display_order": [
+        "DMSO",
+        "RARi"
+      ],
+      "letter": "F",
+      "components": [
+        "panel_F_non_P14_IMAPs"
+      ],
+      "previous_generated_letter": "E"
+    },
+    {
+      "title": "Qualitative IF Peyer classifier windows",
+      "render_scripts": [
+        "panel_G/figure_script/make_panel_G_peyer_conditions.py"
+      ],
+      "display_order": [
+        "DMSO image",
+        "DMSO Peyer probability",
+        "RARi image",
+        "RARi Peyer probability"
+      ],
+      "previous_code_panels": [
+        "E",
+        "F"
+      ],
+      "letter": "G",
+      "components": [
+        "panel_G_peyer_classifier_DMSO",
+        "panel_G_peyer_classifier_RARi"
+      ],
+      "previous_generated_letter": "F"
+    }
+  ],
+  "optional_components_not_in_current_artwork": [
+    {
+      "letter": "G",
+      "status": "HISTORICAL_DAPI_ONLY_REVIEW_NOT_IN_CURRENT_ARTWORK",
+      "provenance_archive": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4_Extended/polished_panel_archive/relettered_D_E_F_2026_09_06/panel_F/panel_F_provenance.json",
+      "render_script": "panel_G/figure_script/make_panel_G_spatial_gate_review.py",
+      "components": [
+        "panel_F_DMSO_spatial_gate_review",
+        "panel_F_RARi_spatial_gate_review"
+      ]
+    }
+  ],
+  "notes": "16 October owner request: add the approved IEL CCR9 flow pair and mouse-level comparison as A; shift existing A\u2013F intact to B\u2013G. Prior artwork and scientific inputs remain preserved."
+}

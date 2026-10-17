@@ -1,0 +1,167 @@
+{
+  "analysis": "Display-range audit of representation-pretrained classifier probabilities on unchanged IF windows",
+  "input": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/image_windows/if_predictions/predictions.csv",
+    "sha256": "e8e87a1558575ac2da122249baf1f5f1064f245f46e44e4adc04ea87b0135ce0",
+    "bytes": 833060
+  },
+  "histogram_bin_edges": [
+    0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    1
+  ],
+  "groups": {
+    "DMSO": {
+      "n": 2518,
+      "range": [
+        0.000001117139959205815,
+        0.999891996383667
+      ],
+      "quantiles": {
+        "median": 0.0006148762477096,
+        "p90": 0.11329411789774925,
+        "p95": 0.781417635083199,
+        "p99": 0.9979586809873581,
+        "p99_5": 0.9995758885145188
+      },
+      "histogram_counts": [
+        2202,
+        54,
+        27,
+        12,
+        14,
+        8,
+        9,
+        7,
+        10,
+        10,
+        6,
+        9,
+        7,
+        6,
+        5,
+        10,
+        9,
+        14,
+        23,
+        76
+      ],
+      "above_former_display_maximum_0p5": 165,
+      "above_current_display_maximum": 0
+    },
+    "RARi": {
+      "n": 2263,
+      "range": [
+        0.0000024950497845566133,
+        0.9999566078186036
+      ],
+      "quantiles": {
+        "median": 0.003228273242712,
+        "p90": 0.6977455615997313,
+        "p95": 0.9940604865550995,
+        "p99": 0.9996296668052672,
+        "p99_5": 0.9998698711395263
+      },
+      "histogram_counts": [
+        1802,
+        91,
+        34,
+        17,
+        15,
+        16,
+        15,
+        10,
+        7,
+        4,
+        5,
+        3,
+        7,
+        11,
+        1,
+        9,
+        6,
+        13,
+        16,
+        181
+      ],
+      "above_former_display_maximum_0p5": 252,
+      "above_current_display_maximum": 0
+    },
+    "combined": {
+      "n": 4781,
+      "range": [
+        0.000001117139959205815,
+        0.9999566078186036
+      ],
+      "quantiles": {
+        "median": 0.0015622407663613,
+        "p90": 0.3183601498603821,
+        "p95": 0.9663248658180236,
+        "p99": 0.9993829488754273,
+        "p99_5": 0.9997852921485901
+      },
+      "histogram_counts": [
+        4004,
+        145,
+        61,
+        29,
+        29,
+        24,
+        24,
+        17,
+        17,
+        14,
+        11,
+        12,
+        14,
+        17,
+        6,
+        19,
+        15,
+        27,
+        39,
+        257
+      ],
+      "above_former_display_maximum_0p5": 417,
+      "above_current_display_maximum": 0
+    }
+  },
+  "display_limits": [
+    0,
+    1
+  ],
+  "saturation_label": null,
+  "common_mapping_for_both_conditions": true,
+  "prediction_transformation": null,
+  "marker_area_pt2": 5.5,
+  "smoothing_changed": false,
+  "window_selection_changed": false,
+  "classifier_release": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/peyer_representation_v1/release_manifest.json",
+    "sha256": "e2eb84f803316473212b2bd857dc6df9b21fc3d9ba256ef887607522b212f8e1",
+    "bytes": 19824
+  },
+  "previous_display_limits": [
+    0,
+    0.5
+  ],
+  "display_decision": "Use a shared full 0–1 scale for the new representation-pretrained classifier; 417 cells exceed the former 0.5 display maximum."
+}

@@ -8,7 +8,8 @@
     "C",
     "D",
     "E",
-    "F"
+    "F",
+    "G"
   ],
   "page_size_pt": [
     595.276,
@@ -23,397 +24,397 @@
     {
       "id": "A_DMSO_image",
       "rect_pt": [
-        28.15,
-        36.48,
-        146.49,
-        141.44
+        28,
+        36,
+        146.04773269689738,
+        141
       ]
     },
     {
       "id": "A_RARi_image",
       "rect_pt": [
-        176.18,
-        36.89,
-        146.33,
-        140.62
+        177.04773269689738,
+        36,
+        146.39068100358423,
+        141
       ]
     },
     {
       "id": "A_shared_footer",
       "rect_pt": [
-        28.15,
-        177.92,
-        294.36,
-        17.76
+        28,
+        177,
+        295.43841370048165,
+        19
       ]
     },
     {
       "id": "B_image",
       "rect_pt": [
-        378.5,
-        35.21,
-        153.13,
-        111.67567903
+        350,
+        36,
+        193.3395900222277,
+        141
       ]
     },
     {
       "id": "B_reference_bar",
       "rect_pt": [
-        534.25,
-        47.21,
+        549.3395900222276,
+        36,
         5.62,
-        87.67567903
+        141
       ]
     },
     {
       "id": "C_crypt_villus",
       "rect_pt": [
-        54.721,
-        233.018,
-        152.063,
-        152.064
+        54,
+        234,
+        162,
+        162
       ]
     },
     {
       "id": "C_crypt_villus_bar",
       "rect_pt": [
-        213.48,
-        232.87,
+        224,
+        234,
         7.5,
-        152.16
+        162
       ]
     },
     {
       "id": "C_epithelial_distance",
       "rect_pt": [
-        312.121,
-        233.018,
-        152.064,
-        152.064
+        350,
+        234,
+        162,
+        162
       ]
     },
     {
       "id": "C_epithelial_distance_bar",
       "rect_pt": [
-        470.92,
-        232.87,
+        520,
+        234,
         7.5,
-        152.16
+        162
       ]
     },
     {
       "id": "D_whole_frame_0",
       "rect_pt": [
-        20.37,
-        445.78,
-        74.5,
-        87.56
+        18,
+        453,
+        82,
+        80
       ]
     },
     {
       "id": "D_whole_0",
       "rect_pt": [
-        20.40789299,
-        445.78,
-        74.42421403,
-        87.56
+        25.00081588396528,
+        453,
+        67.99836823206944,
+        80
       ]
     },
     {
       "id": "D_zoom_frame_0",
       "rect_pt": [
-        16.578,
-        535.401,
-        82.115,
-        61.586
+        18,
+        535,
+        82,
+        61.5
       ]
     },
     {
       "id": "D_zoom_content_0",
       "rect_pt": [
-        16.57816667,
-        535.401,
-        82.11466667,
-        61.586
+        18,
+        535,
+        82,
+        61.5
       ]
     },
     {
       "id": "D_colorbar_0",
       "rect_pt": [
-        21.29,
-        603.59,
-        69.6,
-        3.57
+        24,
+        604,
+        70,
+        4
       ]
     },
     {
       "id": "D_whole_frame_1",
       "rect_pt": [
-        108.54,
-        445.04,
-        76.24,
-        87.51
+        110,
+        453,
+        82,
+        80
       ]
     },
     {
       "id": "D_whole_1",
       "rect_pt": [
-        109.46914248,
-        445.04,
-        74.38171505,
-        87.51
+        117.00081588389898,
+        453,
+        67.99836823220203,
+        80
       ]
     },
     {
       "id": "D_zoom_frame_1",
       "rect_pt": [
-        104.64,
-        534.855,
-        84.045,
-        61.553
+        110,
+        535,
+        82,
+        61.5
       ]
     },
     {
       "id": "D_zoom_content_1",
       "rect_pt": [
-        105.62716667,
-        534.855,
-        82.07066667,
-        61.553
+        110,
+        535,
+        82,
+        61.5
       ]
     },
     {
       "id": "D_colorbar_1",
       "rect_pt": [
-        113.68,
-        602.56,
-        69.59,
-        3.57
+        116,
+        604,
+        70,
+        4
       ]
     },
     {
       "id": "D_whole_frame_2",
       "rect_pt": [
-        206.52,
-        461.18,
-        69.1,
-        72.73
+        202,
+        453,
+        82,
+        80
       ]
     },
     {
       "id": "D_whole_2",
       "rect_pt": [
-        210.16049174,
-        461.18,
-        61.81901652,
-        72.73
+        209.00081588340439,
+        453,
+        67.99836823319124,
+        80
       ]
     },
     {
       "id": "D_zoom_frame_2",
       "rect_pt": [
-        201.165,
-        535.294,
-        79.834,
-        59.875
+        202,
+        535,
+        82,
+        61.5
       ]
     },
     {
       "id": "D_zoom_content_2",
       "rect_pt": [
-        201.16533333,
-        535.294,
-        79.83333333,
-        59.875
+        202,
+        535,
+        82,
+        61.5
       ]
     },
     {
       "id": "D_colorbar_2",
       "rect_pt": [
-        208.53,
-        601.84,
-        69.6,
-        3.57
+        208,
+        604,
+        70,
+        4
       ]
     },
     {
       "id": "D_whole_frame_3",
       "rect_pt": [
-        292.16,
-        460.87,
-        69.1,
-        72.73
+        294,
+        453,
+        82,
+        80
       ]
     },
     {
       "id": "D_whole_3",
       "rect_pt": [
-        295.80049174,
-        460.87,
-        61.81901652,
-        72.73
+        301.00081588340436,
+        453,
+        67.99836823319124,
+        80
       ]
     },
     {
       "id": "D_zoom_frame_3",
       "rect_pt": [
-        286.781,
-        535.606,
-        79.834,
-        59.875
+        294,
+        535,
+        82,
+        61.5
       ]
     },
     {
       "id": "D_zoom_content_3",
       "rect_pt": [
-        286.78133333,
-        535.606,
-        79.83333333,
-        59.875
+        294,
+        535,
+        82,
+        61.5
       ]
     },
     {
       "id": "D_colorbar_3",
       "rect_pt": [
-        292.68,
-        601.16,
-        69.6,
-        3.57
+        300,
+        604,
+        70,
+        4
       ]
     },
     {
       "id": "E_abundance",
       "rect_pt": [
-        49.495,
-        669.367,
-        148.248,
-        132.912
+        428,
+        468.25,
+        128,
+        120
       ]
     },
     {
-      "id": "E_composition",
+      "id": "G_enrichment",
       "rect_pt": [
-        206.117,
-        669.366,
-        148.248,
-        132.912
+        404,
+        666,
+        176,
+        103.22152522162891
       ]
     },
     {
       "id": "F_DMSO",
       "rect_pt": [
-        407.315,
-        463.505,
-        173.601,
-        111.996
+        42,
+        666,
+        152,
+        103.22152522162891
       ]
     },
     {
       "id": "F_RARi",
       "rect_pt": [
-        406.794,
-        597.404,
-        173.601,
-        111.996
+        206,
+        666,
+        152,
+        103.22152522162891
       ]
     },
     {
       "id": "F_shared_density_bar",
       "rect_pt": [
-        447.572,
-        743.835,
-        98.556,
-        4.928
+        150,
+        804,
+        100,
+        5
       ]
     },
     {
       "id": "F_DMSO_label_Top_IE",
       "rect_pt": [
-        409.0232,
-        494.7586,
-        23.223,
-        17.275
+        43.495650370677566,
+        694.80499536293,
+        20.33338517635267,
+        15.921567272077924
       ]
     },
     {
       "id": "F_DMSO_label_Top_LP",
       "rect_pt": [
-        518.6485,
-        483.2767,
-        44.642,
-        8.57
+        139.48038317751622,
+        684.2226600077189,
+        39.08724028087396,
+        7.898572012834028
       ]
     },
     {
       "id": "F_DMSO_label_Crypt_IE",
       "rect_pt": [
-        409.315,
-        557.7038,
-        29.284,
-        15.946
+        43.75114198650929,
+        752.818670399364,
+        25.640220966469087,
+        14.69668953519853
       ]
     },
     {
       "id": "F_DMSO_label_Crypt_LP",
       "rect_pt": [
-        515.836,
-        535.3699,
-        50.267,
-        8.572
+        137.01783975898755,
+        732.2345493401536,
+        44.01232711793135,
+        7.900415320188247
       ]
     },
     {
       "id": "F_DMSO_label_Muscularis",
       "rect_pt": [
-        557.0409,
-        552.2427,
-        22.424,
-        16.554
+        173.0956549789459,
+        747.7854275032978,
+        19.633803952742205,
+        15.257054970881503
       ]
     },
     {
       "id": "F_RARi_label_Top_IE",
       "rect_pt": [
-        408.502,
-        639.3198,
-        23.223,
-        17.275
+        207.49547525647895,
+        704.6318511990138,
+        20.33338517635267,
+        15.921567272077924
       ]
     },
     {
       "id": "F_RARi_label_Top_LP",
       "rect_pt": [
-        523.3539,
-        625.6403,
-        44.642,
-        8.57
+        308.0564674166623,
+        692.0240897229855,
+        39.08724028087396,
+        7.898572012834028
       ]
     },
     {
       "id": "F_RARi_label_Crypt_IE",
       "rect_pt": [
-        408.5018,
-        690.7289,
-        27.786,
-        16.506
+        207.4953001422803,
+        752.0132372509374,
+        24.32861561857363,
+        15.212815594380217
       ]
     },
     {
       "id": "F_RARi_label_Crypt_LP",
       "rect_pt": [
-        525.5891,
-        667.519,
-        50.267,
-        8.572
+        310.0135437007852,
+        730.6217475705785,
+        44.01232711793135,
+        7.900415320188247
       ]
     },
     {
       "id": "F_RARi_label_Muscularis",
       "rect_pt": [
-        555.3211,
-        688.6372,
-        22.424,
-        16.554
+        336.0460204722323,
+        750.0854142545262,
+        19.633803952742205,
+        15.257054970881503
       ]
     }
   ],
@@ -421,9 +422,13 @@
     "Pearson r = 0.931",
     "Pearson r = 0.727",
     "Sparse IF reference",
-    "P14 per 10,000 non-P14 cells",
+    "P14 per 10,000",
+    "non-P14 cells",
+    "P = 0.004",
+    "q = 0.046",
+    "q = 0.016",
     "Probability density",
-    "200 \u00b5m",
+    "200 µm",
     "Example IF training annotations",
     "Musc",
     "Muscularis"
@@ -434,16 +439,37 @@
     "P14 cells per mm",
     "Kernel density estimate",
     "Sparse IF manual labels",
-    "Sparse IF SFT labels"
+    "Sparse IF SFT labels",
+    "Observed / expected P14 density",
+    "P14 regional enrichment",
+    "Within-P14 composition shift",
+    "percentage points",
+    "Gate-specific P14 abundance",
+    "Enrichment difference",
+    "Equal mouse weights",
+    "labels show mean %",
+    "Mouse means and differences",
+    "exact permutation",
+    "Expected: background-cell distribution",
+    "P14 abundance",
+    "P14 enrichment by compartment",
+    "n =",
+    "n="
   ],
   "intentional_differences": [
-    "Figure4B keeps original top-left and width; height follows the authorized new frozen field aspect ratio, with a newly calibrated external200\u00b5m scale bar.",
+    "Figure4B keeps original top-left and width; height follows the authorized new frozen field aspect ratio, with a newly calibrated external200µm scale bar.",
     "Current verified IF predictions, shared density scale, same-gate abundance denominator, gate percentages, and metrics replace historical science.",
     "Original Figure4D frames contain unchanged physical fields with small internal margins where imported artwork aspect ratios differ.",
     "User requested original IMAP label boxes, baselines, abbreviations, and line breaks; current frozen percentages replace historical numbers in those original locations.",
     "User-requested panel letters without trailing periods; preserve letter case, font, size, and anchors.",
     "User-requested wording-only revision, 7 September 2026. Longer labels may wrap or use text-specific fit adjustments; scientific inputs, values, gates, colors, markers and axes remain unchanged.",
-    "September 7 follow-up: Musc uses the original IMAP label box and baselines; non-IMAP displays use Muscularis. Gate assignments and percentages are unchanged."
+    "September 7 follow-up: Musc uses the original IMAP label box and baselines; non-IMAP displays use Muscularis. Gate assignments and percentages are unchanged.",
+    "October 15 author-approved replacement: E shows whole-section P14 per 10,000 non-P14 cells and F shows log2 P14 gate enrichment from the approved A/B candidate. Four DMSO and five RARi biological replicates are circles, with mouse means and SEM. Frozen experiment-adjusted OLS P values and five-gate BH q values are displayed only when significant, with matching stars. These replace the previous two-subplot E; no analysis is rerun.",
+    "October 15 author-approved relabeling: the former F IMAP is G. Frozen equal-mouse mean P14 densities, gate percentages, 0-13 shared scale, vector geometry, label boxes and axes retain their values and positions. Explanatory footers are removed from the artwork and described in the figure caption. Main A-D are unchanged.",
+    "October 15 label cleanup: remove sample-size labels from the E/F treatment legend and G condition headings, and remove E/F titles. Sample sizes remain in the caption; all data, axes, statistics and panel anchors are unchanged.",
+    "October 15 alignment revision supersedes earlier fixed display anchors: E is the P14 IMAP and G is whole-section abundance. B is 193.34 pt wide (26.3% larger linearly) with its native field, overlay and 200-µm calibration retained. Top-row image tops, bottoms and scale-bar baselines, scatter axes/colorbars, map zooms/colorbars and paired IMAP axes align on explicit shared baselines. Statistical ticks and annotations are 7 pt and axis labels 7.5 pt. Original data, tests, fields, densities, gates and within-map label geometry remain unchanged.",
+    "Author correction: physically place abundance at upper-right E, IMAPs at lower-left F, and enrichment at lower-right G directly beneath E. The IMAP pair is side by side at the same aspect ratio, with unchanged relative gate-label geometry, source values and density scale; a shared axis label removes repetition. E and G share left/right edges. G category labels wrap to fit. A-D are pixel-identical to the preceding aligned export.",
+    "Author-requested E/F/G size polish: E contracts to 128x120 pt; G widens to 176 pt beneath the same column center. F narrows to two 152-pt-wide maps with unchanged height, relative gate positions and a fixed readable 5.7-pt label font. Replicate dot area in E/G increases from 11.5 to 25 pt² without changing values, jitter, summaries, tests or colors. A-D and Extended Figure 4 remain unchanged."
   ],
   "raster_contracts": [
     {
@@ -451,5 +477,801 @@
       "vector_only": true
     }
   ],
-  "panel_letter_punctuation": "none"
+  "panel_letter_punctuation": "none",
+  "previous_alignment_anchors": [
+    {
+      "id": "A_DMSO_image",
+      "rect_pt": [
+        28,
+        36,
+        146.04773269689738,
+        141
+      ]
+    },
+    {
+      "id": "A_RARi_image",
+      "rect_pt": [
+        177.04773269689738,
+        36,
+        146.39068100358423,
+        141
+      ]
+    },
+    {
+      "id": "A_shared_footer",
+      "rect_pt": [
+        28,
+        177,
+        295.43841370048165,
+        19
+      ]
+    },
+    {
+      "id": "B_image",
+      "rect_pt": [
+        350,
+        36,
+        193.3395900222277,
+        141
+      ]
+    },
+    {
+      "id": "B_reference_bar",
+      "rect_pt": [
+        549.3395900222276,
+        36,
+        5.62,
+        141
+      ]
+    },
+    {
+      "id": "C_crypt_villus",
+      "rect_pt": [
+        54,
+        234,
+        162,
+        162
+      ]
+    },
+    {
+      "id": "C_crypt_villus_bar",
+      "rect_pt": [
+        224,
+        234,
+        7.5,
+        162
+      ]
+    },
+    {
+      "id": "C_epithelial_distance",
+      "rect_pt": [
+        350,
+        234,
+        162,
+        162
+      ]
+    },
+    {
+      "id": "C_epithelial_distance_bar",
+      "rect_pt": [
+        520,
+        234,
+        7.5,
+        162
+      ]
+    },
+    {
+      "id": "D_whole_frame_0",
+      "rect_pt": [
+        18,
+        453,
+        82,
+        80
+      ]
+    },
+    {
+      "id": "D_whole_0",
+      "rect_pt": [
+        25.00081588396528,
+        453,
+        67.99836823206944,
+        80
+      ]
+    },
+    {
+      "id": "D_zoom_frame_0",
+      "rect_pt": [
+        18,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_zoom_content_0",
+      "rect_pt": [
+        18,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_colorbar_0",
+      "rect_pt": [
+        24,
+        604,
+        70,
+        4
+      ]
+    },
+    {
+      "id": "D_whole_frame_1",
+      "rect_pt": [
+        110,
+        453,
+        82,
+        80
+      ]
+    },
+    {
+      "id": "D_whole_1",
+      "rect_pt": [
+        117.00081588389898,
+        453,
+        67.99836823220203,
+        80
+      ]
+    },
+    {
+      "id": "D_zoom_frame_1",
+      "rect_pt": [
+        110,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_zoom_content_1",
+      "rect_pt": [
+        110,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_colorbar_1",
+      "rect_pt": [
+        116,
+        604,
+        70,
+        4
+      ]
+    },
+    {
+      "id": "D_whole_frame_2",
+      "rect_pt": [
+        202,
+        453,
+        82,
+        80
+      ]
+    },
+    {
+      "id": "D_whole_2",
+      "rect_pt": [
+        209.00081588340439,
+        453,
+        67.99836823319124,
+        80
+      ]
+    },
+    {
+      "id": "D_zoom_frame_2",
+      "rect_pt": [
+        202,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_zoom_content_2",
+      "rect_pt": [
+        202,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_colorbar_2",
+      "rect_pt": [
+        208,
+        604,
+        70,
+        4
+      ]
+    },
+    {
+      "id": "D_whole_frame_3",
+      "rect_pt": [
+        294,
+        453,
+        82,
+        80
+      ]
+    },
+    {
+      "id": "D_whole_3",
+      "rect_pt": [
+        301.00081588340436,
+        453,
+        67.99836823319124,
+        80
+      ]
+    },
+    {
+      "id": "D_zoom_frame_3",
+      "rect_pt": [
+        294,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_zoom_content_3",
+      "rect_pt": [
+        294,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_colorbar_3",
+      "rect_pt": [
+        300,
+        604,
+        70,
+        4
+      ]
+    },
+    {
+      "id": "G_abundance",
+      "rect_pt": [
+        54,
+        676,
+        64.8,
+        106.4
+      ]
+    },
+    {
+      "id": "F_enrichment",
+      "rect_pt": [
+        170.64,
+        676,
+        205.36,
+        106.4
+      ]
+    },
+    {
+      "id": "E_DMSO",
+      "rect_pt": [
+        407,
+        460,
+        173.601,
+        111.996
+      ]
+    },
+    {
+      "id": "E_RARi",
+      "rect_pt": [
+        407,
+        594,
+        173.601,
+        111.996
+      ]
+    },
+    {
+      "id": "E_shared_density_bar",
+      "rect_pt": [
+        444.8005,
+        743,
+        98,
+        5
+      ]
+    },
+    {
+      "id": "E_DMSO_label_Top_IE",
+      "rect_pt": [
+        408.7082,
+        491.2536,
+        23.223,
+        17.275
+      ]
+    },
+    {
+      "id": "E_DMSO_label_Top_LP",
+      "rect_pt": [
+        518.3335,
+        479.7717,
+        44.642,
+        8.57
+      ]
+    },
+    {
+      "id": "E_DMSO_label_Crypt_IE",
+      "rect_pt": [
+        409,
+        554.1988,
+        29.284,
+        15.946
+      ]
+    },
+    {
+      "id": "E_DMSO_label_Crypt_LP",
+      "rect_pt": [
+        515.521,
+        531.8649,
+        50.267,
+        8.572
+      ]
+    },
+    {
+      "id": "E_DMSO_label_Muscularis",
+      "rect_pt": [
+        556.7258999999999,
+        548.7377,
+        22.424,
+        16.554
+      ]
+    },
+    {
+      "id": "E_RARi_label_Top_IE",
+      "rect_pt": [
+        408.708,
+        635.9158,
+        23.223,
+        17.275
+      ]
+    },
+    {
+      "id": "E_RARi_label_Top_LP",
+      "rect_pt": [
+        523.5599,
+        622.2363,
+        44.642,
+        8.57
+      ]
+    },
+    {
+      "id": "E_RARi_label_Crypt_IE",
+      "rect_pt": [
+        408.7078,
+        687.3249,
+        27.786,
+        16.506
+      ]
+    },
+    {
+      "id": "E_RARi_label_Crypt_LP",
+      "rect_pt": [
+        525.7951,
+        664.115,
+        50.267,
+        8.572
+      ]
+    },
+    {
+      "id": "E_RARi_label_Muscularis",
+      "rect_pt": [
+        555.5271,
+        685.2332,
+        22.424,
+        16.554
+      ]
+    }
+  ],
+  "previous_size_polish_anchors": [
+    {
+      "id": "A_DMSO_image",
+      "rect_pt": [
+        28,
+        36,
+        146.04773269689738,
+        141
+      ]
+    },
+    {
+      "id": "A_RARi_image",
+      "rect_pt": [
+        177.04773269689738,
+        36,
+        146.39068100358423,
+        141
+      ]
+    },
+    {
+      "id": "A_shared_footer",
+      "rect_pt": [
+        28,
+        177,
+        295.43841370048165,
+        19
+      ]
+    },
+    {
+      "id": "B_image",
+      "rect_pt": [
+        350,
+        36,
+        193.3395900222277,
+        141
+      ]
+    },
+    {
+      "id": "B_reference_bar",
+      "rect_pt": [
+        549.3395900222276,
+        36,
+        5.62,
+        141
+      ]
+    },
+    {
+      "id": "C_crypt_villus",
+      "rect_pt": [
+        54,
+        234,
+        162,
+        162
+      ]
+    },
+    {
+      "id": "C_crypt_villus_bar",
+      "rect_pt": [
+        224,
+        234,
+        7.5,
+        162
+      ]
+    },
+    {
+      "id": "C_epithelial_distance",
+      "rect_pt": [
+        350,
+        234,
+        162,
+        162
+      ]
+    },
+    {
+      "id": "C_epithelial_distance_bar",
+      "rect_pt": [
+        520,
+        234,
+        7.5,
+        162
+      ]
+    },
+    {
+      "id": "D_whole_frame_0",
+      "rect_pt": [
+        18,
+        453,
+        82,
+        80
+      ]
+    },
+    {
+      "id": "D_whole_0",
+      "rect_pt": [
+        25.00081588396528,
+        453,
+        67.99836823206944,
+        80
+      ]
+    },
+    {
+      "id": "D_zoom_frame_0",
+      "rect_pt": [
+        18,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_zoom_content_0",
+      "rect_pt": [
+        18,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_colorbar_0",
+      "rect_pt": [
+        24,
+        604,
+        70,
+        4
+      ]
+    },
+    {
+      "id": "D_whole_frame_1",
+      "rect_pt": [
+        110,
+        453,
+        82,
+        80
+      ]
+    },
+    {
+      "id": "D_whole_1",
+      "rect_pt": [
+        117.00081588389898,
+        453,
+        67.99836823220203,
+        80
+      ]
+    },
+    {
+      "id": "D_zoom_frame_1",
+      "rect_pt": [
+        110,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_zoom_content_1",
+      "rect_pt": [
+        110,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_colorbar_1",
+      "rect_pt": [
+        116,
+        604,
+        70,
+        4
+      ]
+    },
+    {
+      "id": "D_whole_frame_2",
+      "rect_pt": [
+        202,
+        453,
+        82,
+        80
+      ]
+    },
+    {
+      "id": "D_whole_2",
+      "rect_pt": [
+        209.00081588340439,
+        453,
+        67.99836823319124,
+        80
+      ]
+    },
+    {
+      "id": "D_zoom_frame_2",
+      "rect_pt": [
+        202,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_zoom_content_2",
+      "rect_pt": [
+        202,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_colorbar_2",
+      "rect_pt": [
+        208,
+        604,
+        70,
+        4
+      ]
+    },
+    {
+      "id": "D_whole_frame_3",
+      "rect_pt": [
+        294,
+        453,
+        82,
+        80
+      ]
+    },
+    {
+      "id": "D_whole_3",
+      "rect_pt": [
+        301.00081588340436,
+        453,
+        67.99836823319124,
+        80
+      ]
+    },
+    {
+      "id": "D_zoom_frame_3",
+      "rect_pt": [
+        294,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_zoom_content_3",
+      "rect_pt": [
+        294,
+        535,
+        82,
+        61.5
+      ]
+    },
+    {
+      "id": "D_colorbar_3",
+      "rect_pt": [
+        300,
+        604,
+        70,
+        4
+      ]
+    },
+    {
+      "id": "E_abundance",
+      "rect_pt": [
+        424,
+        460,
+        156,
+        136.5
+      ]
+    },
+    {
+      "id": "G_enrichment",
+      "rect_pt": [
+        424,
+        666,
+        156,
+        103.22152522162891
+      ]
+    },
+    {
+      "id": "F_DMSO",
+      "rect_pt": [
+        42,
+        666,
+        160,
+        103.22152522162891
+      ]
+    },
+    {
+      "id": "F_RARi",
+      "rect_pt": [
+        214,
+        666,
+        160,
+        103.22152522162891
+      ]
+    },
+    {
+      "id": "F_shared_density_bar",
+      "rect_pt": [
+        158,
+        804,
+        100,
+        5
+      ]
+    },
+    {
+      "id": "F_DMSO_label_Top_IE",
+      "rect_pt": [
+        43.574368811239545,
+        694.80499536293,
+        21.403563343529125,
+        15.921567272077924
+      ]
+    },
+    {
+      "id": "F_DMSO_label_Top_LP",
+      "rect_pt": [
+        144.61092966054338,
+        684.2226600077189,
+        41.14446345355154,
+        7.898572012834028
+      ]
+    },
+    {
+      "id": "F_DMSO_label_Crypt_IE",
+      "rect_pt": [
+        43.84330735422031,
+        752.818670399364,
+        26.989706280493774,
+        14.69668953519853
+      ]
+    },
+    {
+      "id": "F_DMSO_label_Crypt_LP",
+      "rect_pt": [
+        142.0187786936711,
+        732.2345493401536,
+        46.32876538729616,
+        7.900415320188247
+      ]
+    },
+    {
+      "id": "F_DMSO_label_Muscularis",
+      "rect_pt": [
+        179.99542629362725,
+        747.7854275032978,
+        20.667162055518112,
+        15.257054970881503
+      ]
+    },
+    {
+      "id": "F_RARi_label_Top_IE",
+      "rect_pt": [
+        215.57418448050416,
+        704.6318511990138,
+        21.403563343529125,
+        15.921567272077924
+      ]
+    },
+    {
+      "id": "F_RARi_label_Top_LP",
+      "rect_pt": [
+        321.4278604385919,
+        692.0240897229855,
+        41.14446345355154,
+        7.898572012834028
+      ]
+    },
+    {
+      "id": "F_RARi_label_Crypt_IE",
+      "rect_pt": [
+        215.57400014976875,
+        752.0132372509374,
+        25.609069072182766,
+        15.212815594380217
+      ]
+    },
+    {
+      "id": "F_RARi_label_Crypt_LP",
+      "rect_pt": [
+        323.4879407376686,
+        730.6217475705785,
+        46.32876538729616,
+        7.900415320188247
+      ]
+    },
+    {
+      "id": "F_RARi_label_Muscularis",
+      "rect_pt": [
+        350.8905478655077,
+        750.0854142545262,
+        20.667162055518112,
+        15.257054970881503
+      ]
+    }
+  ]
 }

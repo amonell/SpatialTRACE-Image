@@ -1,0 +1,22 @@
+{
+  "status": "candidate_review_only_user_selection_pending",
+  "purpose": "Offer five DMSO and five RARi fields for matching Figure 4D coordinate maps and Extended Figure 4D gate overlays.",
+  "selection": "Visual review of the original two specimens using microscopy and frozen predictions. Seek intact longitudinal villi, crypts and underlying tissue with less conspicuous muscularis-to-top assignment. These are illustrative candidates, not independent performance tests.",
+  "revision": "Replace the initial R4 tangential/short-villus field and R5 field containing a bright structural artifact with two longitudinal-villus alternatives. Retain the initial review assets, bounds and native pixels in v1.",
+  "candidate_size_px": [6000, 4500],
+  "unchanged": ["coordinate checkpoint", "all saved per-cell values", "gate definitions", "gate assignments", "condition labels", "cohort statistics", "published figures"],
+  "windows": [
+    {"id": "D1", "condition": "DMSO", "bounds_xxyy_px": [47000, 53000, 15000, 19500]},
+    {"id": "D2", "condition": "DMSO", "bounds_xxyy_px": [46000, 52000, 10000, 14500]},
+    {"id": "D3", "condition": "DMSO", "bounds_xxyy_px": [39000, 45000, 21000, 25500]},
+    {"id": "D4", "condition": "DMSO", "bounds_xxyy_px": [55000, 61000, 18000, 22500]},
+    {"id": "D5", "condition": "DMSO", "bounds_xxyy_px": [50000, 56000, 37500, 42000]},
+    {"id": "R1", "condition": "RARi", "bounds_xxyy_px": [18000, 24000, 44000, 48500]},
+    {"id": "R2", "condition": "RARi", "bounds_xxyy_px": [24000, 30000, 49000, 53500]},
+    {"id": "R3", "condition": "RARi", "bounds_xxyy_px": [30000, 36000, 57000, 61500]},
+    {"id": "R4", "condition": "RARi", "bounds_xxyy_px": [11000, 17000, 48500, 53000]},
+    {"id": "R5", "condition": "RARi", "bounds_xxyy_px": [7000, 13000, 53000, 57500]},
+    {"id": "Current_DMSO", "condition": "DMSO", "bounds_xxyy_px": [45000, 51000, 35000, 39500]},
+    {"id": "Current_RARi", "condition": "RARi", "bounds_xxyy_px": [17000, 23000, 48000, 52500]}
+  ]
+}

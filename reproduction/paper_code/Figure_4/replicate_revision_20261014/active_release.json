@@ -1,0 +1,20 @@
+{
+  "status": "active_nine_mouse_post_removal_release",
+  "date": "2026-10-14",
+  "manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/if_replicates_20261014/nine_mouse_removal_release_v1/manifest.json",
+    "sha256": "613bc495ad9fb518e0d47d34f1ed72fd860f002502dd04ba626132bb7879ccc0"
+  },
+  "mice_per_condition": {"DMSO": 4, "RARi": 5},
+  "statistics_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/if_replicates_20261014/density_over_expected_after_removals_v1/manifest.json",
+    "sha256": "03680195a5e1cca0f6475b798b0b6359d396fd430fcc0189509ae08d7b6d346b"
+  },
+  "display_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/if_replicates_20261014/figure_display_after_removals_v1/manifest.json",
+    "sha256": "bb66eb85f1fcf4d1101a6b79116d04eb7e11b7c354596f7f4acf92ab404aac5f"
+  },
+  "excluded_source_id": "nancy_if_20261014_08",
+  "author_authorization": "Remake Figure4 and Extended Figure4 with all completed removal annotations and the requested observed/expected density endpoint; tissue08 remains excluded.",
+  "unchanged_panels": "Main Figure4 A-D retain original model examples/evaluation; Extended Figure4 A-D/F retain the original model workflow, evaluation, original gate-backprojection fields and qualitative Peyer windows."
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "reference": "Figures/Figure3_Extended.pdf",
+  "notes": "Original reference artwork retained. September 6 user-approved generated panel additions and reflow; all renderers read frozen outputs. September 7: branch retraining precedes Peyer maps and ROC (F, G, H).",
+  "panels": [
+    {
+      "letter": "A",
+      "title": "Paired views: local student, local teacher, context student, context teacher",
+      "render_scripts": [
+        "panel_A/figure_script/make_panel_A_paired_pretraining_views.py"
+      ],
+      "components": [
+        "panel_A_paired_pretraining_views"
+      ]
+    },
+    {
+      "letter": "B",
+      "title": "Representation pretraining history",
+      "render_scripts": [
+        "panel_B/figure_script/make_panel_B_pretraining_history.py"
+      ],
+      "components": [
+        "panel_B_paired_representation_pretraining_history"
+      ]
+    },
+    {
+      "letter": "C",
+      "title": "Released supervised training history",
+      "render_scripts": [
+        "panel_C/figure_script/make_panel_C_supervised_history.py"
+      ],
+      "components": [
+        "panel_C_released_supervised_training_history"
+      ]
+    },
+    {
+      "letter": "D",
+      "title": "Frozen pretraining initialization comparison",
+      "render_scripts": [
+        "panel_D/figure_script/make_panel_D_pretraining_ablation.py"
+      ],
+      "components": [
+        "panel_D_pretraining_objective_ablation"
+      ]
+    },
+    {
+      "letter": "E",
+      "title": "Branch shuffles: crypt-villus and epithelial distance side by side",
+      "render_scripts": [
+        "panel_E/figure_script/make_panel_E_branch_input_shuffling.py"
+      ],
+      "components": [
+        "panel_E_branch_input_shuffling"
+      ]
+    },
+    {
+      "letter": "F",
+      "title": "matched branch retraining",
+      "render_scripts": [
+        "panel_F/figure_script/make_panel_F_matched_branch_retraining.py"
+      ],
+      "components": [
+        "panel_F_matched_branch_retraining"
+      ]
+    },
+    {
+      "letter": "G",
+      "title": "Held-out Peyer image-classifier window",
+      "render_scripts": [
+        "panel_G/figure_script/make_panel_G_peyer_prediction.py"
+      ],
+      "components": [
+        "panel_G_heldout_peyer_prediction"
+      ]
+    },
+    {
+      "letter": "H",
+      "title": "Peyer classifier strategy ROC comparison",
+      "render_scripts": [
+        "panel_H/figure_script/make_panel_H_peyer_classifier_strategy.py"
+      ],
+      "components": [
+        "panel_H_peyer_classifier_strategy"
+      ]
+    }
+  ]
+}

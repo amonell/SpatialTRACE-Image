@@ -1,0 +1,16 @@
+{
+  "status": "author_approved_for_main_figure4",
+  "authorization": "Author-corrected physical placement: whole-section abundance is E at upper right; IMAPs are F at lower left; gate enrichment is G directly below E. Frozen results and explanatory-caption scope are unchanged.",
+  "analysis_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/if_replicates_20261014/user_rari_positioning_v1/manifest.json",
+    "sha256": "3fff265a5e93948569c14136b8c15aa49281e30bae178455e9609c89d09d174d"
+  },
+  "approved_candidate_provenance": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261014/figure4e_ab_candidate_v3/provenance.json",
+    "sha256": "4e21bfd1c402c18c56989171ddabf3b066a66275f52aca2160de9a5b6e48fcc8"
+  },
+  "panel_E": "Whole-section P14 per 10,000 non-P14 cells; experiment-adjusted OLS on log2 abundance",
+  "panel_F": "Frozen P14 IMAPs, DMSO left and RARi right; unchanged densities, percentages and gate geometry",
+  "panel_G": "Gate log2 enrichment; experiment-adjusted OLS and BH correction across all five gates",
+  "condition_palette": {"DMSO": "#4F7F8A", "RARi": "#A55D54"}
+}

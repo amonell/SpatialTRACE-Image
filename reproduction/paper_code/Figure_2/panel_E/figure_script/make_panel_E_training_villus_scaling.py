@@ -74,8 +74,7 @@ def main() -> None:
     if checkpoints.duplicated(checkpoint_key).any():
         raise RuntimeError("Duplicate model records in checkpoint manifest")
     for row in checkpoints.itertuples(index=False):
-        from checkpoint_lineage import validate_graph_checkpoint_reference
-        validate_graph_checkpoint_reference(row.checkpoint, row.checkpoint_sha256)
+        require_file(row.checkpoint, row.checkpoint_sha256)
 
     output_dir = args.output_dir.expanduser().resolve()
     output_pdf = output_dir / "panel_E_training_villus_scaling.pdf"

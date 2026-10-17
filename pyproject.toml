@@ -28,7 +28,17 @@ cpu = ["torch==2.12.1"]
 cu126 = ["torch==2.12.1"]
 dev = ["pytest>=8", "build>=1", "ruff>=0.12"]
 docs = ["mkdocs>=1.6"]
-figures = ["pypdf>=6", "reportlab>=4", "pymupdf>=1.26", "seaborn>=0.13", "statsmodels>=0.14", "pyarrow>=16", "pillow>=10"]
+figures = [
+    "pypdf>=6",
+    "reportlab>=4",
+    "pymupdf>=1.26",
+    "seaborn>=0.13",
+    "statsmodels>=0.14",
+    "pyarrow>=16",
+    "pillow>=10",
+    "flowkit==1.3.2",
+    "lxml>=4.9,<7",
+]
 embedding = ["umap-learn>=0.5", "numba>=0.61", "llvmlite>=0.44"]
 rust = ["spatialtrace-image-rust==0.1.0"]
 

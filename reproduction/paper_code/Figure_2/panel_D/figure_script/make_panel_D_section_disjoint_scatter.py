@@ -80,8 +80,7 @@ def main() -> None:
     if len(checkpoints) != 16 or checkpoints["checkpoint_sha256"].nunique() != 16:
         raise RuntimeError("Expected 16 distinct fold-by-coordinate checkpoints")
     for row in checkpoints.itertuples(index=False):
-        from checkpoint_lineage import validate_graph_checkpoint_reference
-        validate_graph_checkpoint_reference(row.checkpoint, row.checkpoint_sha256)
+        require_file(row.checkpoint, row.checkpoint_sha256)
 
     specifications = (
         ("crypt_villus", "crypt_villus_label", "predicted_crypt_villus", "Crypt-villus coordinate", "viridis"),

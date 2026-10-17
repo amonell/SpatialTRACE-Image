@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render frozen IF whole-tissue maps with the original coordinate-locked zooms.
+"""Render frozen IF whole-tissue maps with the author-approved shared fields.
 
 This is rendering only: neither predictions nor zoom selection are recomputed.
 The historical zoom configuration supplies geometric annotations, not its
@@ -22,6 +22,7 @@ sys.path.insert(0, str(REPO))
 from Figure_4.common import file_record, protect_outputs, require_file, save_pair, write_provenance  # noqa: E402
 from Figure_4.release import load_release, release_file
 from Figure_4.spatial import common_tissue_limits  # noqa: E402
+from Figure_4.field_selection import DEFAULT_POINTER, load_fields
 
 EXPECTED_DMSO = "141706c9c6f060ec866f2f1063fc236a19e61b994b29c977e407a07257dd618f"
 EXPECTED_RARI = "8eb47f93a977727694616dfe75f8808a269f4d3fd1127f1445ac491ed1baf60d"
@@ -135,7 +136,8 @@ def main() -> None:
     parser.add_argument("--rari-predictions", type=Path, required=True)
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--release-manifest", type=Path, required=True)
-    parser.add_argument("--zoom-config", type=Path, required=True)
+    parser.add_argument("--zoom-config", type=Path, help="Optional historical geometry record; the approved field pointer controls current views")
+    parser.add_argument("--field-pointer", type=Path, default=DEFAULT_POINTER)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--dpi", type=int, default=300)
     parser.add_argument("--overwrite", action="store_true")
@@ -144,21 +146,28 @@ def main() -> None:
     dmso_path = release_file(args.dmso_predictions, release)
     rari_path = release_file(args.rari_predictions, release)
     checkpoint = release_file(args.checkpoint, release)
-    zoom_config = require_file(args.zoom_config, EXPECTED_ZOOM_CONFIG)
-    pixel_size, zooms = load_zooms(zoom_config)
+    historical_inputs = []
+    if args.zoom_config:
+        zoom_config = require_file(args.zoom_config, EXPECTED_ZOOM_CONFIG)
+        historical_inputs.append(file_record(zoom_config, "historical_zoom_geometry_only"))
+    field_path, fields = load_fields(args.field_pointer)
+    pixel_size = fields["pixel_size_um"]
+    zooms = {c: w["bounds_xxyy_px"] for c,w in fields["windows"].items()}
     frames = {"DMSO": pd.read_parquet(dmso_path), "RARi": pd.read_parquet(rari_path)}
     if {key: len(value) for key, value in frames.items()} != {"DMSO": 163992, "RARi": 136437}:
         raise RuntimeError("Whole-tissue prediction counts do not match the frozen run")
     zoom_frames, region_records = {}, []
     for condition, frame in frames.items():
+        if fields["windows"][condition]["source_predictions"]["sha256"] != release['outputs'][f'whole_tissue/{condition.lower()}_predictions.parquet']['sha256']:
+            raise RuntimeError('Selected field and prediction release differ')
         if frame.duplicated(["source_id", "object_id"]).any():
             raise RuntimeError(f"Duplicated frozen prediction identifiers in {condition}")
         for physical, pixels in (("x_um", "centroid_x_fullres_px"), ("y_um", "centroid_y_fullres_px")):
             if not np.allclose(frame[physical], frame[pixels] * pixel_size, rtol=0, atol=1e-8):
                 raise RuntimeError(f"Physical-coordinate conversion mismatch in {condition}/{physical}")
         xmin, xmax, ymin, ymax = zooms[condition]
-        mask = ((frame.centroid_x_fullres_px >= xmin) & (frame.centroid_x_fullres_px <= xmax)
-                & (frame.centroid_y_fullres_px >= ymin) & (frame.centroid_y_fullres_px <= ymax))
+        mask = ((frame.centroid_x_fullres_px >= xmin) & (frame.centroid_x_fullres_px < xmax)
+                & (frame.centroid_y_fullres_px >= ymin) & (frame.centroid_y_fullres_px < ymax))
         zoom_frames[condition] = frame.loc[mask]
         if zoom_frames[condition].empty:
             raise RuntimeError(f"No cells in the locked {condition} zoom")
@@ -182,7 +191,9 @@ def main() -> None:
         provenance, script=Path(__file__),
         inputs=[file_record(dmso_path, "frozen_DMSO_predictions"), file_record(rari_path, "frozen_RARi_predictions"),
                 file_record(args.release_manifest, "repaired_IF_release"),
-                file_record(checkpoint, "released_IF_checkpoint"), file_record(zoom_config, "original_zoom_geometry_config")],
+                file_record(checkpoint, "released_IF_checkpoint"), file_record(args.field_pointer,"author_approved_field_pointer"),
+                file_record(field_path,"shared_field_release"),file_record(REPO/'Figure_4/field_selection.py','shared_field_helper'),
+                *historical_inputs],
         outputs=[*rendered, regions],
         extra={"panel": "Figure 4d", "display_downsampling": False,
                "counts": {key: len(value) for key, value in frames.items()},
@@ -190,12 +201,12 @@ def main() -> None:
                "color_limits": {"crypt_villus": [0, 1], "epithelial_distance": [0, 0.5]},
                "colormaps": {"crypt_villus": "viridis", "epithelial_distance": "coolwarm"},
                "matched_physical_field_of_view": True, "whole_tissue_bounds_um": limits,
-               "zoom_regions": region_records, "zoom_inclusion_rule": "centroid within inclusive locked full-resolution pixel bounds",
-               "zoom_selection": "pre-existing original figure geometry; no prediction-error selection",
+               "zoom_regions": region_records, "zoom_inclusion_rule": "native centroids: inclusive lower and exclusive upper bounds",
+               "zoom_selection": fields['scope'], "selected_review_ids":fields['selection']['selected'],
                "model_inference_run": False, "seed": None, "warnings": ["Epithelial map colors saturate above 0.5; predictions are not clipped to 0.5."]},
         overwritten=overwritten,
     )
-    print(f"Rendered all frozen cells and original zooms: {out}")
+    print(f"Rendered all frozen cells and author-selected zooms: {out}")
 
 
 if __name__ == "__main__":

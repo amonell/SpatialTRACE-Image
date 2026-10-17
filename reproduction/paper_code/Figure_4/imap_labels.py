@@ -73,7 +73,7 @@ def registered_paths(population):
     return config, paths
 
 
-def draw_registered_gate_labels(axis, percentages, population, condition, gate_colors):
+def draw_registered_gate_labels(axis, percentages, population, condition, gate_colors, *, font_size_pt=None):
     """Use original paths, baselines, and line breaks at the current axes scale.
 
     This deliberately restores user-selected in-plot labels. It does not move
@@ -86,7 +86,11 @@ def draw_registered_gate_labels(axis, percentages, population, condition, gate_c
     transform = Affine2D().translate(-x, -(page_height-y-height)).scale(1/width, 1/height) + axis.transAxes
     figure = axis.figure
     scale = axis.get_position().width * figure.get_figwidth() * 72 / width
-    size = config["font_size_pt"] * scale
+    # A display-only override keeps the narrowed main Figure 4 IMAP readable.
+    # Other panels retain their original scale-dependent typography.
+    size = config["font_size_pt"] * scale if font_size_pt is None else float(font_size_pt)
+    if size <= 0:
+        raise ValueError("Gate label font size must be positive")
     artists, texts = [], []
     for label in record["labels"]:
         gate = label["gate"]

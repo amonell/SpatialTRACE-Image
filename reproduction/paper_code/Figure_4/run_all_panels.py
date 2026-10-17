@@ -24,7 +24,7 @@ def main() -> None:
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument("--dry-run", action="store_true", help="Print explicit plotting commands without running them")
     parser.add_argument("--prepared-only", action="store_true", help="Compatibility flag: every active component already uses frozen inputs")
-    parser.add_argument("--panels", nargs="+", choices=list("ABCDEF"), default=list("ABCDEF"))
+    parser.add_argument("--panels", nargs="+", choices=list("ABCDEFG"), default=list("ABCDEFG"))
     args = parser.parse_args()
     out = args.output_root.expanduser().resolve()
     flag = ["--overwrite"] if args.overwrite else []
@@ -49,9 +49,12 @@ def main() -> None:
     run_if_selected([python, str(HERE / "panel_A/figure_script/make_panel_A_if_images.py"), "--dmso-image", str(snapshots / "DMSO.png"), "--rari-image", str(snapshots / "RAR.png"), "--region-lock", str(HERE / "panel_A/processing/figure4a_region_lock.json"), "--scale-calibration", str(HERE / "panel_A/processing/figure4a_scale_calibration.json"), "--style-reference", str(style), "--output-dir", str(out / "panel_A"), *flag])
     run_if_selected([python, str(HERE / "panel_B/figure_script/make_panel_B_sparse_if_labels.py"), "--manifest", str(manifest), "--image-cache", str(image), "--checkpoint", str(checkpoint), "--calibration-config", str(repair / "config.json"), "--example-manifest", str(repair / "illustration_inputs/manifest.json"), "--output-dir", str(out / "panel_B"), *release_flags, *flag])
     run_if_selected([python, str(HERE / "panel_C/figure_script/make_panel_C_strict_test_scatter.py"), "--predictions", str(source / "strict_test/predictions.parquet"), "--metrics", str(source / "strict_test/metrics.json"), "--split-manifest", str(SATA / "splits/if_final_strict_test_v1.json"), "--checkpoint", str(checkpoint), "--output-dir", str(out / "panel_C"), *release_flags, *flag])
-    run_if_selected([python, str(HERE / "panel_D/figure_script/make_panel_D_whole_tissue_maps.py"), "--dmso-predictions", str(dmso), "--rari-predictions", str(rari), "--checkpoint", str(checkpoint), "--zoom-config", str(HOME / "Figure4/imap_if/config_all_cells_production_v2_if_sft.yaml"), "--output-dir", str(out / "panel_D"), *release_flags, *flag])
-    run_if_selected([python, str(HERE / "panel_E/figure_script/make_panel_E_abundance_composition.py"), "--abundance", str(source / "imap/p14_abundance_by_gate.tsv"), "--composition", str(source / "imap/p14_composition_by_gate.tsv"), "--checkpoint", str(checkpoint), "--output-dir", str(out / "panel_E"), *release_flags, *flag])
-    run_if_selected([python, str(HERE / "panel_F/figure_script/make_panel_F_p14_imaps.py"), "--dmso-predictions", str(dmso), "--rari-predictions", str(rari), "--gate-definitions", str(source / "imap/p14_gate_definitions.json"), "--gate-percentages", str(source / "imap/p14_composition_by_gate.tsv"), "--density-manifest", str(source / "imap/density_manifest.json"), "--checkpoint", str(checkpoint), "--style-reference", str(style), "--output-dir", str(out / "panel_F"), *release_flags, *flag])
+    run_if_selected([python, str(HERE / "panel_D/figure_script/make_panel_D_whole_tissue_maps.py"), "--dmso-predictions", str(dmso), "--rari-predictions", str(rari), "--checkpoint", str(checkpoint), "--field-pointer", str(HERE / "panel_D/processing/active_fields.json"), "--output-dir", str(out / "panel_D"), *release_flags, *flag])
+    analysis_flags = ["--analysis-manifest", str(SATA / "frozen_preprocessing/if_replicates_20261014/user_rari_positioning_v1/manifest.json"),
+                      "--analysis-sha256", "3fff265a5e93948569c14136b8c15aa49281e30bae178455e9609c89d09d174d"]
+    run_if_selected([python, str(HERE / "panel_E/figure_script/make_panel_E_total_p14_abundance.py"), *analysis_flags, "--output-dir", str(out / "panel_E"), *flag])
+    run_if_selected([python, str(HERE / "panel_F/figure_script/make_panel_F_p14_imaps.py"), "--cohort-pointer", str(HERE / "replicate_revision_20261014/active_release.json"), "--output-dir", str(out / "panel_F"), *flag])
+    run_if_selected([python, str(HERE / "panel_G/figure_script/make_panel_G_p14_enrichment.py"), *analysis_flags, "--output-dir", str(out / "panel_G"), *flag])
     print(f"Figure 4 components {'planned' if args.dry_run else 'regenerated'}: {out}")
 
 

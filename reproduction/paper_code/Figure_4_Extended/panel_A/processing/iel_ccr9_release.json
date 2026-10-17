@@ -1,0 +1,81 @@
+{
+  "status": "FROZEN_OWNER_APPROVED_IEL_CCR9",
+  "created_at_utc": "2026-10-17T02:23:56.688175+00:00",
+  "source_analysis": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/outputs/2026-10-16_SpatialTRACE_RARi_IEL_CCR9",
+  "pyflowjo_root": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism",
+  "python": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/.venv/bin/python",
+  "matrix_revision": "e767e763453d9fe4454c9d450214e0af9d598bc358a274223c9eee79872f4cb5",
+  "notebook": "https://docs.google.com/document/d/1M61hiWGfuCZsL4-rX-E1lFJWJ-CcEubAhs9PU2ibH20",
+  "notebook_tab": "t.45dkj752v749",
+  "cloud_folder": "/PhD/Lab Notebook Data/SpatialTRACE/2026-09-26_RAR_inhibitor_validation/Flow/2026-10-16_v2_IEL_CCR9",
+  "owner_instructions": "Use the approved smoothed CCR9 flow pair and Prism comparison; add as the first Extended Figure 4 panel and cite beside main Figure 4A.",
+  "inputs": {
+    "workspace": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/outputs/2026-10-16_SpatialTRACE_RARi/workspace/SpatialTRACE_RARi_source_gates_edited_matrix_v2.wsp",
+      "sha256": "f95e3d7b8f5c74bd016971f0be3f5bccbbfa7a09a034940163202b039db4544a",
+      "role": "workspace"
+    },
+    "measurements": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/outputs/2026-10-16_SpatialTRACE_RARi_IEL_CCR9/tables/all_iel_samples_with_exclusion.csv",
+      "sha256": "fd747fb1ebf0bece974638154f07aba61a823a28c1bbfec93508a163c81d50af",
+      "role": "measurements"
+    },
+    "representatives": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/outputs/2026-10-16_SpatialTRACE_RARi_IEL_CCR9/metadata/representative_selection.json",
+      "sha256": "0e27bd94863bf03267e62bfa4cbeaa491babc227924ad395407a6646178b1595",
+      "role": "representatives"
+    },
+    "statistics": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/outputs/2026-10-16_SpatialTRACE_RARi_IEL_CCR9/statistics/iel_ccr9_statistics.json",
+      "sha256": "8d12f93cf95012c7f848777565bfb9730fd3a3883b6ea9f590bee58273a0f853",
+      "role": "statistics"
+    },
+    "compensation_matrix": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/outputs/2026-10-16_SpatialTRACE_RARi_IEL_CCR9/compensation/edited_matrix.csv",
+      "sha256": "19210a74b5c5517450d47e55c3038a19931f21d390c1396e41d317ec507eadc3",
+      "role": "compensation_matrix"
+    },
+    "experiment_evidence": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/outputs/2026-10-16_SpatialTRACE_RARi_IEL_CCR9/metadata/experiment_evidence.json",
+      "sha256": "32b1f8f9286a2aaa76e38dafb913d5726e314dc078be670c92179829ed974aa4",
+      "role": "experiment_evidence"
+    },
+    "native_workspace_verification": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/outputs/2026-10-16_SpatialTRACE_RARi_IEL_CCR9/metadata/native_workspace_validation.json",
+      "sha256": "1744980e928b3e4b5cc076eee1298c590786bbab7853969e51bf9d7a2a1b5097",
+      "role": "native_workspace_verification"
+    },
+    "approved_contour_settings": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/outputs/2026-10-16_SpatialTRACE_RARi_IEL_CCR9/exports/2026-10-16_FlowJo_reference_PDFs/metadata/contour_settings.json",
+      "sha256": "1fdfb09c7716453a27cdd55374a75a27834e63e1b166f067d1f439d44d9541e9",
+      "role": "approved_contour_settings"
+    },
+    "DMSO_FCS": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/data/2026_09_26_G001_Spatial_Tracer_Replicates/IEL_DMSO_005_022.fcs",
+      "sha256": "756f0666ac42e86373c3be6bdd3b6eff4a08019aaf484a4436b9712d0fbb132b",
+      "role": "DMSO_FCS"
+    },
+    "RARi_FCS": {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/data/2026_09_26_G001_Spatial_Tracer_Replicates/IEL_RARi_001_018.fcs",
+      "sha256": "3fc07fa8e8834c8c8ccb40eee0bada7947e23cea247a11827444949d9c41f90a",
+      "role": "RARi_FCS"
+    }
+  },
+  "renderer_sources": [
+    {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/src/pyflowjo_prism/models.py",
+      "sha256": "03a7ca9c078bc9eb808c1cf21ef0898176b018c90e07e60c5c78bb076ed03253",
+      "role": "approved_flow_renderer"
+    },
+    {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/src/pyflowjo_prism/plotting.py",
+      "sha256": "068909c9add0df073fc086256b983076f058d2a05cfb1552f7d27bc79e3b4ad0",
+      "role": "approved_flow_renderer"
+    },
+    {
+      "path": "/mnt/sata1/Analysis_Alex/Desktop_2/PyFlowjoPrism/src/pyflowjo_prism/history.py",
+      "sha256": "cddf11e4581fee2890ae455f075b54d8152b511726c092b0e07e18d11100e3d5",
+      "role": "approved_flow_renderer"
+    }
+  ]
+}

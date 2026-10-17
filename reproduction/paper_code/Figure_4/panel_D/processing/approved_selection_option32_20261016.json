@@ -1,0 +1,33 @@
+{
+  "status": "AUTHOR_APPROVED",
+  "date": "2026-10-16",
+  "author_request": "lets finalize on number 32",
+  "scope": "Replace only the RARi illustrative field in main Figure 4D and Extended Figure 4E; retain the original DMSO field and all scientific values and statistics.",
+  "previous_fields": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/panel_D/approved_fields_20261016/manifest.json",
+    "sha256": "bacb76a6f641d34a15a721bb10aa7c77bb50df54a96c28fa7ff8000fce8c0707"
+  },
+  "review_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/panel_D/rari_options_31_50/native_v1/manifest.json",
+    "sha256": "3ba85d7e516b75f75e1c93637a63687cd70ff46b7b2b8f378fae9898e5f884f8"
+  },
+  "reviewed_pdf": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/figure4D_RARi_options_31_50/individual_PDFs/Option_32.pdf",
+    "sha256": "2c83d197da42b2218f5741db82c4b9714c0f85018049dbd6e9f6ed91ab71673b"
+  },
+  "reviewed_cells": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/figure4D_RARi_options_31_50/displayed_cells/Option_32.parquet",
+    "sha256": "11e8e4de3dded23c051fd1917d7cba9519c3a6a4c729992cc3c383024be3af35"
+  },
+  "review_audit": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/figure4D_RARi_options_31_50/data_identity_audit.json",
+    "sha256": "4cfd1e1ee15ac1153952a14d8f1f9cf4c9b09fe915a1c31b9a6c67360fbdeca8"
+  },
+  "selected": {"DMSO": "Current_DMSO", "RARi": "RARi32"},
+  "bounds_xxyy_px": {
+    "DMSO": [45000, 51000, 35000, 39500],
+    "RARi": [31000, 37000, 47000, 51500]
+  },
+  "expected_cells": {"DMSO": 3776, "RARi": 2603},
+  "selection_scope": "Author-selected qualitative illustrations after microscopy and prediction review; not an unbiased performance evaluation."
+}

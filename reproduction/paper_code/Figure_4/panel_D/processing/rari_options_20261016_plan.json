@@ -1,0 +1,21 @@
+{
+  "status": "candidate_review_only_user_selection_pending",
+  "purpose": "Ten new RARi alternatives for the shared main and extended Figure 4D field; retain the approved DMSO field.",
+  "selection": "Spatially distributed fields reviewed against native microscopy and unchanged saved predictions. Qualitative author-choice gallery, not an anatomical accuracy measurement.",
+  "candidate_size_px": [6000, 4500],
+  "conditions": ["RARi"],
+  "current_RARi_not_a_candidate": [18000, 24000, 44000, 48500],
+  "unchanged": ["checkpoint", "predictions", "gate definitions", "gate assignments", "channel display settings", "cohort statistics", "published figures", "DMSO field"],
+  "windows": [
+    {"id": "RARi01", "condition": "RARi", "bounds_xxyy_px": [14000, 20000, 42000, 46500]},
+    {"id": "RARi02", "condition": "RARi", "bounds_xxyy_px": [24000, 30000, 44000, 48500]},
+    {"id": "RARi03", "condition": "RARi", "bounds_xxyy_px": [30000, 36000, 51000, 55500]},
+    {"id": "RARi04", "condition": "RARi", "bounds_xxyy_px": [32000, 38000, 61500, 66000]},
+    {"id": "RARi05", "condition": "RARi", "bounds_xxyy_px": [27000, 33000, 66500, 71000]},
+    {"id": "RARi06", "condition": "RARi", "bounds_xxyy_px": [19000, 25000, 69000, 73500]},
+    {"id": "RARi07", "condition": "RARi", "bounds_xxyy_px": [12000, 18000, 67000, 71500]},
+    {"id": "RARi08", "condition": "RARi", "bounds_xxyy_px": [5000, 11000, 60500, 65000]},
+    {"id": "RARi09", "condition": "RARi", "bounds_xxyy_px": [11000, 17000, 57000, 61500]},
+    {"id": "RARi10", "condition": "RARi", "bounds_xxyy_px": [21000, 27000, 61000, 65500]}
+  ]
+}

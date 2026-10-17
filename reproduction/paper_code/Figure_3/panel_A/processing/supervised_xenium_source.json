@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "approved_change": "User approved replacing only Figure 3A's supervised-side inputs and outputs with Xenium on 6 September 2026; Cont1 pretraining and manual geometry remain unchanged.",
+  "source_id": "sample_010",
+  "stable_source_id": "xenium:timecourse_replicates:day90_SI_r2",
+  "illustrated_row_id": "sample_010_cell_0214763",
+  "illustrated_prepared_index": 4540,
+  "selection_rule": "Among the 25 golden prepared cells in the already locked Figure 1D window, choose the cell nearest the window's geometric center. No prediction, target, error or performance column enters this selection.",
+  "native_context_width_px": 3132,
+  "prediction_provenance": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_1/stored_outputs/figure1_inputs/panel_D_training_input_parity_v1/provenance.json",
+    "sha256": "14bf2047ec1cc86a5206c7c1b2c1c33e2ba31d8aa34939872b2df634400e4261"
+  },
+  "training_parity": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_1/stored_outputs/figure1_inputs/panel_D_training_input_parity_v1/training_parity.json",
+    "sha256": "3b5b47d77fad5f2139ebaefda9c23b8044031bff04683b4c3b9b1952b2349f0b"
+  },
+  "crop_contract": {
+    "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_1/panel_D/processing/figure1d_inference_contract.json",
+    "sha256": "5c97a969b385bf538153b8e0cffd4d19033fce9e5d82b833835594a5b7b3d2ff"
+  },
+  "region_lock": {
+    "path": "/home/amonell/Desktop/spatial_axes_manuscript/Figure_1/panel_D/processing/figure1d_region_lock.json",
+    "sha256": "43768fa10e004114ce14ebfc41ebe1e0ad29cdb18b1641b4b9c2f6b9842e4646"
+  },
+  "evaluation_scope": "In-domain qualitative example from the same previously examined Day90 development-test section used for Figure 1D. This section has zero released SFT training/validation rows and 1274 test rows. This is neither a training-member illustration nor a fresh independent performance evaluation. Pretraining exposure is not excluded.",
+  "display": {
+    "coordinate_limits": [0, 1],
+    "colormap": "viridis",
+    "centroid_marker_radius_native_px": 16,
+    "centroid_marker_alpha": 0.8,
+    "marker_semantics": "Fixed-radius cell-centroid markers, not segmented nuclear boundaries. Both coordinates use identical locations, radii and normalization."
+  }
+}

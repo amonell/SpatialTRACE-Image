@@ -1,0 +1,37 @@
+{
+  "status": "current_post_removal_candidate_set",
+  "directory": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261014/potential_plots_post_removals_v6/pdfs",
+  "combined_pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261014/potential_plots_post_removals_v6/All_IF_candidate_plots.pdf",
+  "manifest": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261014/potential_plots_post_removals_v6/plot_set_manifest.json",
+  "qa": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261014/potential_plots_post_removals_v6/visual_qa.json",
+  "new_candidate": "Additional_14_P14_positioning_polished.pdf",
+  "new_candidate_count": 2,
+  "user_rari_positioning_data_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/if_replicates_20261014/user_rari_positioning_v1/manifest.json",
+    "sha256": "3fff265a5e93948569c14136b8c15aa49281e30bae178455e9609c89d09d174d"
+  },
+  "new_candidate_statistics": "Unchanged user-uploaded analysis: experiment-adjusted OLS; gate tests use BH across five gates. Earlier candidate analyses remain unchanged.",
+  "spatial_correlation_data_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/if_replicates_20261014/p14_spatial_correlation_v1/manifest.json",
+    "sha256": "63051d8652df29017a28fe0d229f27cff53347c6792f4c9aa471a4a30adc4ff8"
+  },
+  "twenty_options_pdf": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261014/p14_visualization_options_v2/Twenty_P14_visualization_options.pdf",
+  "twenty_options_pdf_directory": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_Run_Archive/if_replicates_20261014/p14_visualization_options_v2/pdfs",
+  "twenty_options_data_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/if_replicates_20261014/p14_visualization_suite_v1/manifest.json",
+    "sha256": "d0145653b1620a080eb86b3960dbc11553a0916745e6805d199b2186d3e970e4"
+  },
+  "heatmap_data_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/if_replicates_20261014/p14_density_heatmap_after_removals_v1/manifest.json",
+    "sha256": "b44f301f9a17c0cb62331421829d55d6d403c22565349961b4f0bb0cb45d744a"
+  },
+  "statistics_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/if_replicates_20261014/p14_density_fold_change_after_removals_v1/manifest.json",
+    "sha256": "6065e6afffd23fc61f3e2fe67545e702a0798aa7bdda51e213194c826b80ed79"
+  },
+  "composition_statistics_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/frozen_preprocessing/if_replicates_20261014/p14_composition_after_removals_v1/manifest.json",
+    "sha256": "c951835cd8a902c9273ac042b376c103c33e1f47df1f482ed053158e2cff266e"
+  },
+  "paper_figures_modified": false
+}

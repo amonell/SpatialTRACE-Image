@@ -1,0 +1,10 @@
+{
+  "status": "AUTHOR_APPROVED_SHARED_FIELDS",
+  "date": "2026-10-16",
+  "manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/panel_D/approved_fields_option32_20261016/manifest.json",
+    "sha256": "10c30344d79527ab09082734fe69f44af9a63864e1328422d6f9b910ba0868dc"
+  },
+  "selected": {"DMSO": "Original main Figure 4D field", "RARi": "Option 32 from the 16 October field review"},
+  "consumers": ["Figure_4/panel_D", "Figure_4_Extended/panel_E"]
+}

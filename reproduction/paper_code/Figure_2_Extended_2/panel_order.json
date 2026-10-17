@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "artwork_reference": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure2_Extended_2.pdf",
+  "component_path_rule": "panel_<letter>/<component>.pdf",
+  "panels": [
+    {"letter": "A", "title": "Peyer graph classifier training seeds", "render_scripts": ["panel_A/figure_script/make_panel_A_training_seeds.py"], "components": ["panel_A_peyer_training_seeds"], "display_layout": "Day6,Day8,Day30,Day90 replicate1 left-to-right"},
+    {"letter": "B", "title": "Peyer graph classifier history", "render_scripts": ["panel_B/figure_script/make_panel_B_training_history.py"], "components": ["panel_B_peyer_gat_training_history"], "display_layout": "2x2 row-major: loss,AP,AUROC,F1 at0.5"},
+    {"letter": "C", "title": "Held-out Day 90 Peyer window", "render_scripts": ["panel_C/figure_script/make_panel_C_heldout_window.py"], "components": ["panel_C_heldout_xenium_morphology", "panel_C_heldout_manual_peyer_label", "panel_C_heldout_gat_peyer_probability", "panel_C_heldout_gat_peyer_class"], "display_layout": "right column top-to-bottom"},
+    {"letter": "D", "title": "Peyer graph classifier held-out performance", "render_scripts": ["panel_D/figure_script/make_panel_D_heldout_performance.py"], "components": ["panel_D_peyer_gat_heldout_performance"], "display_layout": "bottom left; Day30r2, Day90r2, test sections pooled; validation sections excluded from this plot"}
+  ]
+}

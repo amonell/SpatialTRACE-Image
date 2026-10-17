@@ -8,7 +8,8 @@
     "C",
     "D",
     "E",
-    "F"
+    "F",
+    "G"
   ],
   "page_size_pt": [
     595.276,
@@ -19,6 +20,7 @@
   "dpi": 600,
   "png_dpi": 600,
   "elements": [],
+  "workflow_offset_y_pt": 148,
   "manual_path_indices": [
     6,
     7,
@@ -33,336 +35,354 @@
   ],
   "anchors": [
     {
-      "id": "A_original_path_6",
+      "id": "B_original_path_6",
       "rect_pt": [
         155.9504,
-        42.3444,
+        190.3444,
         79.66,
         41.321
       ]
     },
     {
-      "id": "A_original_path_7",
+      "id": "B_original_path_7",
       "rect_pt": [
         155.9504,
-        42.3444,
+        190.3444,
         79.66,
         41.321
       ]
     },
     {
-      "id": "A_original_path_8",
+      "id": "B_original_path_8",
       "rect_pt": [
         138.7699,
-        63.6511,
+        211.65109999999999,
         14.392,
         0
       ]
     },
     {
-      "id": "A_original_path_9",
+      "id": "B_original_path_9",
       "rect_pt": [
         150.7468,
-        61.0445,
+        209.0445,
         4.464,
         5.214
       ]
     },
     {
-      "id": "A_original_path_10",
+      "id": "B_original_path_10",
       "rect_pt": [
         7.8263,
-        44.0045,
+        192.0045,
         131,
         42.043
       ]
     },
     {
-      "id": "A_original_path_11",
+      "id": "B_original_path_11",
       "rect_pt": [
         7.8263,
-        44.0045,
+        192.0045,
         131,
         42.043
       ]
     },
     {
-      "id": "A_original_path_12",
+      "id": "B_original_path_12",
       "rect_pt": [
         236.3509,
-        63.6511,
+        211.65109999999999,
         14.441,
         0
       ]
     },
     {
-      "id": "A_original_path_13",
+      "id": "B_original_path_13",
       "rect_pt": [
         248.3769,
-        61.0445,
+        209.0445,
         4.464,
         5.214
       ]
     },
     {
-      "id": "A_original_path_14",
+      "id": "B_original_path_14",
       "rect_pt": [
         252.9896,
-        47.4933,
+        195.4933,
         104.761,
         31.024
       ]
     },
     {
-      "id": "A_original_path_15",
+      "id": "B_original_path_15",
       "rect_pt": [
         252.9896,
-        47.4933,
+        195.4933,
         104.761,
         31.024
       ]
     },
     {
-      "id": "B_transfer_tiles",
+      "id": "C_transfer_tiles",
       "rect_pt": [
         423.714,
-        34.577,
+        176,
         141.102,
-        61.916
+        45
       ]
     },
     {
-      "id": "C_objective",
+      "id": "D_objective",
       "rect_pt": [
         42.847,
-        138.073,
+        272,
         138.449,
-        98.832
+        67
       ]
     },
     {
-      "id": "C_crypt_villus",
+      "id": "D_crypt_villus",
       "rect_pt": [
         228.368,
-        138.073,
+        272,
         138.448,
-        98.832
+        67
       ]
     },
     {
-      "id": "C_epithelial",
+      "id": "D_epithelial",
       "rect_pt": [
         413.889,
-        138.073,
+        272,
         138.448,
-        98.832
+        67
       ]
     },
     {
-      "id": "E_DMSO",
+      "id": "F_DMSO",
       "rect_pt": [
         44.887,
-        495.236,
+        542.236,
         173.601,
         111.996
       ]
     },
     {
-      "id": "E_RARi",
+      "id": "F_RARi",
       "rect_pt": [
         287.556,
-        495.236,
+        542.236,
         173.601,
         111.996
       ]
     },
     {
-      "id": "E_DMSO_density_bar",
-      "rect_pt": [
-        223.21,
-        501.96,
-        4.92,
-        98.52
-      ]
-    },
-    {
-      "id": "E_RARi_density_bar",
+      "id": "F_shared_density_bar",
       "rect_pt": [
         465.85,
-        501.96,
+        548.96,
         4.92,
         98.52
       ]
     },
     {
-      "id": "F_DMSO_image",
+      "id": "G_DMSO_image",
       "rect_pt": [
-        9.2493,
-        663.7792,
-        139.9806,
-        139.9806
+        15,
+        700,
+        105,
+        105
       ]
     },
     {
-      "id": "F_DMSO_probability",
+      "id": "G_DMSO_probability",
       "rect_pt": [
-        157.6289,
-        663.5424,
-        139.98066,
-        140.45396
+        160,
+        700,
+        105,
+        105.355
       ]
     },
     {
-      "id": "F_RARi_image",
+      "id": "G_RARi_image",
       "rect_pt": [
-        301.7755,
-        662.2391,
-        139.9806,
-        139.9806
+        310,
+        700,
+        105,
+        105
       ]
     },
     {
-      "id": "F_RARi_probability",
+      "id": "G_RARi_probability",
       "rect_pt": [
-        450.15504,
-        662.00233,
-        139.98062,
-        140.45393
+        455,
+        700,
+        105,
+        105.355
       ]
     },
     {
-      "id": "F_shared_probability_bar",
+      "id": "G_shared_probability_bar",
       "rect_pt": [
-        236.5045,
-        808.9741,
+        222.962,
+        815,
         149.352,
-        7.392
+        5
       ]
     },
     {
-      "id": "E_DMSO_label_Top_IE",
+      "id": "F_DMSO_label_Top_IE",
       "rect_pt": [
         47.9098,
-        483.9344,
+        530.9344,
         42.564,
         8.57
       ]
     },
     {
-      "id": "E_DMSO_label_Top_LP",
+      "id": "F_DMSO_label_Top_LP",
       "rect_pt": [
         178.6542,
-        501.675,
+        548.675,
         29.485,
         16.691
       ]
     },
     {
-      "id": "E_DMSO_label_Crypt_IE",
+      "id": "F_DMSO_label_Crypt_IE",
       "rect_pt": [
         47.9097,
-        589.5694,
+        636.5694,
         27.662,
         16.319
       ]
     },
     {
-      "id": "E_DMSO_label_Crypt_LP",
+      "id": "F_DMSO_label_Crypt_LP",
       "rect_pt": [
         165.6759,
-        565.4413,
+        612.4413,
         46.595,
         8.572
       ]
     },
     {
-      "id": "E_DMSO_label_Muscularis",
+      "id": "F_DMSO_label_Muscularis",
       "rect_pt": [
         193.3968,
-        588.4357,
+        635.4357,
         21.77,
         15.291
       ]
     },
     {
-      "id": "E_RARi_label_Top_IE",
+      "id": "F_RARi_label_Top_IE",
       "rect_pt": [
         290.578,
-        483.9344,
+        530.9344,
         42.563,
         8.57
       ]
     },
     {
-      "id": "E_RARi_label_Top_LP",
+      "id": "F_RARi_label_Top_LP",
       "rect_pt": [
         416.8987,
-        501.675,
+        548.675,
         29.485,
         16.691
       ]
     },
     {
-      "id": "E_RARi_label_Crypt_IE",
+      "id": "F_RARi_label_Crypt_IE",
       "rect_pt": [
         289.8403,
-        588.2582,
+        635.2582,
         27.662,
         16.319
       ]
     },
     {
-      "id": "E_RARi_label_Crypt_LP",
+      "id": "F_RARi_label_Crypt_LP",
       "rect_pt": [
         409.5863,
-        566.7318,
+        613.7318,
         50.267,
         8.572
       ]
     },
     {
-      "id": "E_RARi_label_Muscularis",
+      "id": "F_RARi_label_Muscularis",
       "rect_pt": [
         434.7195,
-        588.4357,
+        635.4357,
         21.77,
         15.291
       ]
     },
     {
-      "id": "D_DMSO_image",
+      "id": "E_DMSO_image",
       "rect_pt": [
         15,
-        289,
+        389,
         127,
-        137.58333333333334
+        95.25
       ]
     },
     {
-      "id": "D_DMSO_gates",
+      "id": "E_DMSO_gates",
       "rect_pt": [
         161,
-        289,
+        389,
         127,
-        137.58333333333334
+        95.25
       ]
     },
     {
-      "id": "D_RARi_image",
+      "id": "E_RARi_image",
       "rect_pt": [
         307,
-        289,
+        389,
         127,
-        137.58333333333334
+        95.25
       ]
     },
     {
-      "id": "D_RARi_gates",
+      "id": "E_RARi_gates",
       "rect_pt": [
         453,
-        289,
+        389,
         127,
-        137.58333333333334
+        95.25
+      ]
+    },
+    {
+      "id": "A_DMSO_flow",
+      "rect_pt": [
+        61,
+        33,
+        102,
+        102
+      ]
+    },
+    {
+      "id": "A_RARi_flow",
+      "rect_pt": [
+        225,
+        33,
+        102,
+        102
+      ]
+    },
+    {
+      "id": "A_CCR9_summary",
+      "rect_pt": [
+        405,
+        33,
+        150,
+        102
       ]
     }
   ],
@@ -380,7 +400,18 @@
     "IF-only fine-tuning",
     "Xenium-fine-tuned checkpoint",
     "IF-fine-tuned checkpoint",
-    "Musc"
+    "Musc",
+    "heads only",
+    "full model",
+    "DMSO non-P14",
+    "RARi non-P14",
+    "CCR9",
+    "CD45.1",
+    "56.4%",
+    "0.6%",
+    "0.0137",
+    "IEL",
+    "IEL P14 CD8 T cells"
   ],
   "forbidden_text": [
     "8,575",
@@ -393,7 +424,12 @@
     "Xenium-only SFT checkpoint",
     "Post-IF SFT checkpoint",
     "Peyer probability",
-    "P14 (larger)"
+    "P14 (larger)",
+    "n =",
+    "n=",
+    "Equal mouse weights",
+    "labels show mean %",
+    "Anatomical localization of IMAP gates"
   ],
   "intentional_differences": [
     "Original vector IF workflow frames and arrows retained; original text removed structurally and replaced with Arial and the verified retained-training count.",
@@ -409,29 +445,38 @@
     "User-requested Extended Figure 4D styling: remove P14 outlines; increase colored marker areas by 2.25-fold (50% larger diameter). P14 remains identifiable by larger filled markers; all frozen cells, gate colors, assignments, microscopy, and windows remain unchanged.",
     "User-requested wording-only revision, 7 September 2026. Longer labels may wrap or use text-specific fit adjustments; scientific inputs, values, gates, colors, markers and axes remain unchanged.",
     "September 7 follow-up: Musc uses the original IMAP label box and baselines; non-IMAP displays use Muscularis. Gate assignments and percentages are unchanged.",
-    "September 7 user request: remove only the P14 (larger) legend entry from D; retain all gate-colored cells and existing marker sizes."
+    "September 7 user request: remove only the P14 (larger) legend entry from D; retain all gate-colored cells and existing marker sizes.",
+    "October 14 author-approved nine-mouse update: D uses the fixed pre-inference native square fields from new DMSO05 and RARi01. Image widths and top-left anchors are unchanged; heights become127pt to preserve the square field aspect. Cy5 supplies E-cadherin. Existing gate assignments and larger filled P14 markers are retained.",
+    "October 14: E uses equal-mouse-mean frozen non-P14 coordinate densities and mean gate percentages (four DMSO, five RARi), excluding tissue08. Workflow, training, transfer metrics and the original qualitative Peyer windows remain unchanged.",
+    "October 15 author-approved cleanup: C centers the two stage labels over epochs 1-7 and 8-11. E removes sample-size labels and the explanatory footer, and uses one shared 0-16 density colorbar in the existing right-hand slot. Training curves, checkpoint markers, both density maps, gate positions and percentages, and all A/B/D/F content remain unchanged.",
+    "16 October owner requested approved IEL CCR9 flow and mouse-level validation as A. Existing A\u2013F become B\u2013G. Manual workflow vectors and non-P14 layers are translated, training curves use shorter axes, and Peyer windows are rendered at smaller square display sizes. All original scientific inputs and fixed native windows remain unchanged; main Figure4 is unchanged.",
+    "Owner requested smaller CCR9 bar-plot dots, a properly positioned title and cleaner spacing. Panel A uses four-point markers, a left-aligned heading and aligned, evenly spaced display blocks. Frozen measurements, gates, representatives and statistics, and all B\u2013G geometry, remain unchanged.",
+    "Owner specified the exact heading IEL P14 CD8 T cells, centered over the two flow subplots. Only the heading wording and horizontal alignment change.",
+    "16 October owner requested moving panel B down to reduce unused space below the workflow. Original vectors, heading and internal labels move together by 12 pt; the panel letter and all other panels remain fixed.",
+    "Owner requested panel B closer to D and farther from A. Workflow offset is 148 pt (18 pt below the original placement); vectors, heading, internal text and panel letter move together. Other panels and all scientific inputs retain their current state.",
+    "Owner requested removal of the Anatomical localization of IMAP gates heading above E. All panel geometry, other text and scientific content remain unchanged."
   ],
   "raster_contracts": [
     {
-      "component": "panel_A_original_vector_paths.pdf",
+      "component": "panel_B_original_vector_paths.pdf",
       "vector_only": true
     },
     {
-      "component": "panel_B_transfer.pdf",
+      "component": "panel_C_transfer.pdf",
       "vector_only": true
     },
     {
-      "component": "panel_E_non_P14_IMAPs.pdf",
+      "component": "panel_F_non_P14_IMAPs.pdf",
       "image_count": 2,
       "minimum_ppi": 600
     },
     {
-      "component": "panel_F_Peyer_windows.pdf",
+      "component": "panel_G_Peyer_windows.pdf",
       "image_count": 2,
       "minimum_ppi": 600
     },
     {
-      "component": "panel_D_gate_backprojection.pdf",
+      "component": "panel_E_gate_backprojection.pdf",
       "image_count": 4,
       "minimum_ppi": 600
     }
@@ -468,9 +513,24 @@
         "E"
       ],
       "unchanged_scientific_values_and_styles": true
+    },
+    "iel_ccr9_addition": {
+      "date": "2026-10-16",
+      "user_request": "Use the approved smoothed CCR9 flow pair and Prism comparison; add as the first Extended Figure 4 panel and cite beside main Figure 4A.",
+      "old_to_new": {
+        "A": "B",
+        "B": "C",
+        "C": "D",
+        "D": "E",
+        "E": "F",
+        "F": "G"
+      },
+      "source_artwork_modified": false,
+      "new_scientific_readout": "Previously completed and owner-approved IEL CCR9 analysis; no new fitting, gating, testing or selection."
     }
   },
   "gate_projection_layout": {
+    "field_revision": "16 October: author selected original DMSO and RARi review option 32. Match the main-panel 6000 by 4500 fields without stretching; other panels stay fixed. October16 CCR9 integration moves this intact panel to E; the shared native fields, calibration and cell assignments remain fixed.",
     "page_size_pt": [
       595.276,
       841.89
@@ -478,32 +538,32 @@
     "axes_rect_pt": [
       [
         15,
-        289,
+        389,
         127,
-        137.58333333333334
+        95.25
       ],
       [
         161,
-        289,
+        389,
         127,
-        137.58333333333334
+        95.25
       ],
       [
         307,
-        289,
+        389,
         127,
-        137.58333333333334
+        95.25
       ],
       [
         453,
-        289,
+        389,
         127,
-        137.58333333333334
+        95.25
       ]
     ],
     "legend_anchor_pt": [
       297.638,
-      458
+      514
     ],
     "title_size_pt": 7,
     "legend_size_pt": 6.5,
@@ -530,5 +590,35 @@
     ],
     "unchanged_scientific_values_and_styles": true
   },
-  "panel_letter_punctuation": "none"
+  "panel_letter_punctuation": "none",
+  "iel_ccr9_layout": {
+    "flow_axes_pt": {
+      "DMSO": [
+        61,
+        33,
+        102,
+        102
+      ],
+      "RARi": [
+        225,
+        33,
+        102,
+        102
+      ]
+    },
+    "summary_axis_pt": [
+      405,
+      33,
+      150,
+      102
+    ],
+    "heading_pt": [
+      194.0,
+      13
+    ],
+    "heading_align": "center",
+    "summary_marker_size_pt": 4.0,
+    "summary_jitter": 0.16,
+    "heading_text": "IEL P14 CD8 T cells"
+  }
 }

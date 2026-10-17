@@ -1,0 +1,204 @@
+{
+  "selection": "First three fixed prepared test rows in the unchanged Figure1D window; no prediction-based selection",
+  "records": [
+    {
+      "prepared_index": 4489,
+      "source_id": "xenium:timecourse_replicates:day90_SI_r2",
+      "branch": "local",
+      "native_crop_fullres_px": 783,
+      "output_size_px": 256,
+      "center_x_fullres_px": 22919.78580051151,
+      "center_y_fullres_px": 36055.61066666667,
+      "frozen_shard": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/local_shard_00004.npy",
+      "frozen_array_sha256": "7202e2e1445681c1d29529e125430f1adae093dee2addab7c01856d908e7a0ee",
+      "pyramid_level": 1,
+      "direct_normalized_quantized": {
+        "exact": true,
+        "mae_uint8": 0.0,
+        "max_abs_uint8": 0.0,
+        "array_sha256": "7202e2e1445681c1d29529e125430f1adae093dee2addab7c01856d908e7a0ee"
+      },
+      "via_512_quantized_then_256_quantized": {
+        "exact": false,
+        "mae_uint8": 3.527557373046875,
+        "max_abs_uint8": 49.0,
+        "array_sha256": "b6c0fbd124450a08e68f2a1ddb5717bb7ffefe9e1dd78d0176976c4f27882dba"
+      }
+    },
+    {
+      "prepared_index": 4489,
+      "source_id": "xenium:timecourse_replicates:day90_SI_r2",
+      "branch": "context",
+      "native_crop_fullres_px": 3132,
+      "output_size_px": 256,
+      "center_x_fullres_px": 22919.78580051151,
+      "center_y_fullres_px": 36055.61066666667,
+      "frozen_shard": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/context_shard_00004.npy",
+      "frozen_array_sha256": "063238cd0785b93d23af76f8bfd49ba8ccb1a94fbe27b63e2398ed1385e20fc7",
+      "pyramid_level": 3,
+      "direct_normalized_quantized": {
+        "exact": true,
+        "mae_uint8": 0.0,
+        "max_abs_uint8": 0.0,
+        "array_sha256": "063238cd0785b93d23af76f8bfd49ba8ccb1a94fbe27b63e2398ed1385e20fc7"
+      },
+      "via_512_quantized_then_256_quantized": {
+        "exact": false,
+        "mae_uint8": 5.2112274169921875,
+        "max_abs_uint8": 78.0,
+        "array_sha256": "14342b7feddb3283224ad32d00de009e18f60d12d81886adfe84f5dea61ec72c"
+      }
+    },
+    {
+      "prepared_index": 4489,
+      "source_id": "xenium:timecourse_replicates:day90_SI_r2",
+      "branch": "fine",
+      "native_crop_fullres_px": 196,
+      "output_size_px": 128,
+      "center_x_fullres_px": 22919.78580051151,
+      "center_y_fullres_px": 36055.61066666667,
+      "frozen_shard": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/fine_shard_00004.npy",
+      "frozen_array_sha256": "79ad0aa657288da93c8d7f7fb038866d0eae2c7157d3cda30053a5c8ae811a48",
+      "pyramid_level": 0,
+      "direct_normalized_quantized": {
+        "exact": true,
+        "mae_uint8": 0.0,
+        "max_abs_uint8": 0.0,
+        "array_sha256": "79ad0aa657288da93c8d7f7fb038866d0eae2c7157d3cda30053a5c8ae811a48"
+      }
+    },
+    {
+      "prepared_index": 4492,
+      "source_id": "xenium:timecourse_replicates:day90_SI_r2",
+      "branch": "local",
+      "native_crop_fullres_px": 783,
+      "output_size_px": 256,
+      "center_x_fullres_px": 21721.312898395725,
+      "center_y_fullres_px": 36158.8736399287,
+      "frozen_shard": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/local_shard_00004.npy",
+      "frozen_array_sha256": "dd405616e314415b4e8a922c2c4c82eb14113607f94be7e132a1fb93a7cb97f2",
+      "pyramid_level": 1,
+      "direct_normalized_quantized": {
+        "exact": true,
+        "mae_uint8": 0.0,
+        "max_abs_uint8": 0.0,
+        "array_sha256": "dd405616e314415b4e8a922c2c4c82eb14113607f94be7e132a1fb93a7cb97f2"
+      },
+      "via_512_quantized_then_256_quantized": {
+        "exact": false,
+        "mae_uint8": 2.3188934326171875,
+        "max_abs_uint8": 44.0,
+        "array_sha256": "26317512a1aa7f0fa05c9d802e7bc7396181a780d688b11d1fc5b0ea30f916df"
+      }
+    },
+    {
+      "prepared_index": 4492,
+      "source_id": "xenium:timecourse_replicates:day90_SI_r2",
+      "branch": "context",
+      "native_crop_fullres_px": 3132,
+      "output_size_px": 256,
+      "center_x_fullres_px": 21721.312898395725,
+      "center_y_fullres_px": 36158.8736399287,
+      "frozen_shard": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/context_shard_00004.npy",
+      "frozen_array_sha256": "ddc07e6b62d518e99e4384aa222b6a6e11a1a66fd02247e7bcefe80123bf6d3c",
+      "pyramid_level": 3,
+      "direct_normalized_quantized": {
+        "exact": true,
+        "mae_uint8": 0.0,
+        "max_abs_uint8": 0.0,
+        "array_sha256": "ddc07e6b62d518e99e4384aa222b6a6e11a1a66fd02247e7bcefe80123bf6d3c"
+      },
+      "via_512_quantized_then_256_quantized": {
+        "exact": false,
+        "mae_uint8": 3.78533935546875,
+        "max_abs_uint8": 65.0,
+        "array_sha256": "b305559a1c0435e24b228e026ba8cfd19844b7ec2ddd97bf9c81e2291e096f8b"
+      }
+    },
+    {
+      "prepared_index": 4492,
+      "source_id": "xenium:timecourse_replicates:day90_SI_r2",
+      "branch": "fine",
+      "native_crop_fullres_px": 196,
+      "output_size_px": 128,
+      "center_x_fullres_px": 21721.312898395725,
+      "center_y_fullres_px": 36158.8736399287,
+      "frozen_shard": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/fine_shard_00004.npy",
+      "frozen_array_sha256": "08bdb3aa753c7bc7ffcd948c35f866430901c3faf7fd95eb21acd9dc15eb2945",
+      "pyramid_level": 0,
+      "direct_normalized_quantized": {
+        "exact": true,
+        "mae_uint8": 0.0,
+        "max_abs_uint8": 0.0,
+        "array_sha256": "08bdb3aa753c7bc7ffcd948c35f866430901c3faf7fd95eb21acd9dc15eb2945"
+      }
+    },
+    {
+      "prepared_index": 4502,
+      "source_id": "xenium:timecourse_replicates:day90_SI_r2",
+      "branch": "local",
+      "native_crop_fullres_px": 783,
+      "output_size_px": 256,
+      "center_x_fullres_px": 22798.99097805092,
+      "center_y_fullres_px": 36458.08183318701,
+      "frozen_shard": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/local_shard_00004.npy",
+      "frozen_array_sha256": "e6641b4c217216e672c9329ff0e3d018af116f5cb66e103ffbf213d9aa2761be",
+      "pyramid_level": 1,
+      "direct_normalized_quantized": {
+        "exact": true,
+        "mae_uint8": 0.0,
+        "max_abs_uint8": 0.0,
+        "array_sha256": "e6641b4c217216e672c9329ff0e3d018af116f5cb66e103ffbf213d9aa2761be"
+      },
+      "via_512_quantized_then_256_quantized": {
+        "exact": false,
+        "mae_uint8": 3.368255615234375,
+        "max_abs_uint8": 57.0,
+        "array_sha256": "28870f22833bea10a2de051fa147187c8c8e26082ff0f408eaf71b81c2006e62"
+      }
+    },
+    {
+      "prepared_index": 4502,
+      "source_id": "xenium:timecourse_replicates:day90_SI_r2",
+      "branch": "context",
+      "native_crop_fullres_px": 3132,
+      "output_size_px": 256,
+      "center_x_fullres_px": 22798.99097805092,
+      "center_y_fullres_px": 36458.08183318701,
+      "frozen_shard": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/context_shard_00004.npy",
+      "frozen_array_sha256": "1a67b09226568401c2b9f8fcb2c17ecfb5b08cab9979397e18a65776dc9115a8",
+      "pyramid_level": 3,
+      "direct_normalized_quantized": {
+        "exact": true,
+        "mae_uint8": 0.0,
+        "max_abs_uint8": 0.0,
+        "array_sha256": "1a67b09226568401c2b9f8fcb2c17ecfb5b08cab9979397e18a65776dc9115a8"
+      },
+      "via_512_quantized_then_256_quantized": {
+        "exact": false,
+        "mae_uint8": 4.746795654296875,
+        "max_abs_uint8": 74.0,
+        "array_sha256": "ddbc12942b1b958c3a2362b7cb515433231bdaa5f071957aa23775bf02f429b3"
+      }
+    },
+    {
+      "prepared_index": 4502,
+      "source_id": "xenium:timecourse_replicates:day90_SI_r2",
+      "branch": "fine",
+      "native_crop_fullres_px": 196,
+      "output_size_px": 128,
+      "center_x_fullres_px": 22798.99097805092,
+      "center_y_fullres_px": 36458.08183318701,
+      "frozen_shard": "/mnt/sata2/alex_storage/Desktop/giovanni/IF/if_xenium_multiscale_vit/baseline_512_2048/vit_256_16/prepared/xenium_supervised_shards_v1/fine_shard_00004.npy",
+      "frozen_array_sha256": "d2a388d4aea510c0b208ac963768386126272d1cc79ca548d2a27ed69a406c48",
+      "pyramid_level": 0,
+      "direct_normalized_quantized": {
+        "exact": true,
+        "mae_uint8": 0.0,
+        "max_abs_uint8": 0.0,
+        "array_sha256": "d2a388d4aea510c0b208ac963768386126272d1cc79ca548d2a27ed69a406c48"
+      }
+    }
+  ],
+  "all_direct_exact": true
+}

@@ -1,0 +1,32 @@
+{
+  "status": "candidate_review_only_user_selection_pending",
+  "purpose": "Twenty additional RARi field options, numbered 11–30, for author review on the home drive.",
+  "selection": "Spatially distributed alternatives from the original RARi specimen. Native microscopy and unchanged saved predictions are displayed together. No quantitative accuracy ranking is inferred.",
+  "candidate_size_px": [6000, 4500],
+  "conditions": ["RARi"],
+  "first_option": 11,
+  "current_RARi_not_a_candidate": [18000, 24000, 44000, 48500],
+  "unchanged": ["checkpoint", "predictions", "gate definitions", "gate assignments", "channel display settings", "larger dot sizes", "published figures", "DMSO field"],
+  "windows": [
+    {"id": "RARi11", "condition": "RARi", "bounds_xxyy_px": [17500, 23500, 37500, 42000]},
+    {"id": "RARi12", "condition": "RARi", "bounds_xxyy_px": [22500, 28500, 39500, 44000]},
+    {"id": "RARi13", "condition": "RARi", "bounds_xxyy_px": [26000, 32000, 46500, 51000]},
+    {"id": "RARi14", "condition": "RARi", "bounds_xxyy_px": [28500, 34500, 54500, 59000]},
+    {"id": "RARi15", "condition": "RARi", "bounds_xxyy_px": [26500, 32500, 59000, 63500]},
+    {"id": "RARi16", "condition": "RARi", "bounds_xxyy_px": [29000, 35000, 64000, 68500]},
+    {"id": "RARi17", "condition": "RARi", "bounds_xxyy_px": [23500, 29500, 69000, 73500]},
+    {"id": "RARi18", "condition": "RARi", "bounds_xxyy_px": [16500, 22500, 72000, 76500]},
+    {"id": "RARi19", "condition": "RARi", "bounds_xxyy_px": [10000, 16000, 71000, 75500]},
+    {"id": "RARi20", "condition": "RARi", "bounds_xxyy_px": [6500, 12500, 67500, 72000]},
+    {"id": "RARi21", "condition": "RARi", "bounds_xxyy_px": [3000, 9000, 64000, 68500]},
+    {"id": "RARi22", "condition": "RARi", "bounds_xxyy_px": [2500, 8500, 57000, 61500]},
+    {"id": "RARi23", "condition": "RARi", "bounds_xxyy_px": [5500, 11500, 49000, 53500]},
+    {"id": "RARi24", "condition": "RARi", "bounds_xxyy_px": [9000, 15000, 45500, 50000]},
+    {"id": "RARi25", "condition": "RARi", "bounds_xxyy_px": [15000, 21000, 50000, 54500]},
+    {"id": "RARi26", "condition": "RARi", "bounds_xxyy_px": [17500, 23500, 53500, 58000]},
+    {"id": "RARi27", "condition": "RARi", "bounds_xxyy_px": [23000, 29000, 55000, 59500]},
+    {"id": "RARi28", "condition": "RARi", "bounds_xxyy_px": [14000, 20000, 60000, 64500]},
+    {"id": "RARi29", "condition": "RARi", "bounds_xxyy_px": [16500, 22500, 64500, 69000]},
+    {"id": "RARi30", "condition": "RARi", "bounds_xxyy_px": [7500, 13500, 63500, 68000]}
+  ]
+}

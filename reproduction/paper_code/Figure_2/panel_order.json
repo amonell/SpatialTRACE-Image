@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "artwork_reference": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure2.pdf",
+  "component_path_rule": "panel_<letter>/<component>.pdf",
+  "panels": [
+    {"letter": "A", "title": "Graph coordinate model workflow", "render_scripts": ["panel_A/figure_script/make_panel_A_components.py", "panel_A/figure_script/make_panel_A_schematic_insets.py"], "components": ["panel_A_section_class_maps", "panel_A_scvi_embedding", "panel_A_spatial_neighbor_graph", "panel_A_sparse_coordinate_example", "panel_A_dense_coordinate_example", "panel_A_peyer_classifier_example"], "display_layout": "class maps 2x2 in Day6,Day8,Day30,Day90 row-major order; separately registered sparse-coordinate, dense-coordinate and Peyer-classifier schematic insets", "manual_artwork": "Architecture boxes, arrows and tensor diagrams", "schematic_data_lineage": "Frozen Day90 graph-coordinate zoom and sparse LabelMe coordinates; separate corrected-label BinaryGAT test-window hard calls at the validation-selected threshold"},
+    {"letter": "B", "title": "Day 90 SI sparse labels", "render_scripts": ["panel_B/figure_script/make_panel_B_components.py"], "components": ["panel_B_crypt_villus_day90_whole_section", "panel_B_crypt_villus_day90_zoom", "panel_B_epithelial_distance_day90_whole_section", "panel_B_epithelial_distance_day90_zoom"]},
+    {"letter": "C", "title": "Day 90 SI dense graph predictions", "render_scripts": ["panel_C/figure_script/make_panel_C_components.py"], "components": ["panel_C_crypt_villus_day90_whole_section", "panel_C_crypt_villus_day90_zoom", "panel_C_epithelial_distance_day90_whole_section", "panel_C_epithelial_distance_day90_zoom"]},
+    {"letter": "D", "title": "Section-disjoint coordinate scatterplots", "render_scripts": ["panel_D/figure_script/make_panel_D_section_disjoint_scatter.py"], "components": ["panel_D_section_disjoint_scatter"], "display_layout": "crypt-villus left; epithelial-distance right"},
+    {"letter": "E", "title": "Section-disjoint annotation scaling", "render_scripts": ["panel_E/figure_script/make_panel_E_training_villus_scaling.py"], "components": ["panel_E_training_villus_scaling"]}
+  ]
+}

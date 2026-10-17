@@ -144,8 +144,54 @@
         "C",
         "D",
         "E",
+        "F",
+        "G"
+      ],
+      "reference_panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
         "F"
-      ]
+      ],
+      "generated_layout_revision": {
+        "date": "2026-10-15",
+        "user_request": "Correct physical placement: abundance E at upper right; IMAP pair F at lower left; enrichment G at lower right directly below E.",
+        "panel_reorder": {
+          "previous_G_abundance": "E",
+          "previous_E_IMAP": "F",
+          "previous_F_enrichment": "G"
+        },
+        "unchanged_panels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "original_artwork_modified": false,
+        "scientific_values_modified": false,
+        "size_polish": {
+          "user_request": "Larger dots in E/G; E smaller, G bigger, F skinnier; clean fonts and spacing.",
+          "replicate_marker_area_pt2": 25,
+          "abundance_rect_pt": [
+            428,
+            468.25,
+            128,
+            120
+          ],
+          "enrichment_width_pt": 176,
+          "imap_width_pt": 152,
+          "imap_label_font_pt": 5.7,
+          "unchanged_panels": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "scientific_values_modified": false
+        }
+      }
     },
     {
       "package": "Figure_4_Extended",
@@ -158,7 +204,8 @@
         "C",
         "D",
         "E",
-        "F"
+        "F",
+        "G"
       ],
       "reference_panels": [
         "A",
@@ -177,6 +224,20 @@
             "F": "D"
           },
           "user_request": "Former F becomes D; former D/E become E/F."
+        },
+        "iel_ccr9_addition": {
+          "date": "2026-10-16",
+          "user_request": "Add these to figure 4 extended in the proper place; likely first panel, cited with Figure 4 panel a.",
+          "added_panel": "A",
+          "old_to_new": {
+            "A": "B",
+            "B": "C",
+            "C": "D",
+            "D": "E",
+            "E": "F",
+            "F": "G"
+          },
+          "existing_scientific_values_modified": false
         }
       }
     }

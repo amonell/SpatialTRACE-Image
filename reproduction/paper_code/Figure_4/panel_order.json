@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "figure": "Figure 4",
+  "authoritative_artwork": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figures/Figure4.pdf",
+  "path_base": "figure_code_directory",
+  "panels": [
+    {
+      "title": "Multichannel IF villus images",
+      "render_scripts": [
+        "panel_A/figure_script/make_panel_A_if_images.py"
+      ],
+      "display_order": [
+        "DMSO",
+        "RARi"
+      ],
+      "letter": "A",
+      "components": [
+        "panel_A_dmso_IF_overlay",
+        "panel_A_rari_IF_overlay"
+      ]
+    },
+    {
+      "title": "Sparse IF supervised training labels",
+      "render_scripts": [
+        "panel_B/figure_script/make_panel_B_sparse_if_labels.py"
+      ],
+      "letter": "B",
+      "components": [
+        "panel_B_sparse_IF_training_labels"
+      ]
+    },
+    {
+      "title": "Strict IF test coordinate predictions",
+      "render_scripts": [
+        "panel_C/figure_script/make_panel_C_strict_test_scatter.py"
+      ],
+      "display_order": [
+        "Crypt-villus scatter",
+        "Epithelial-distance scatter"
+      ],
+      "letter": "C",
+      "components": [
+        "panel_C_strict_IF_test_scatter"
+      ]
+    },
+    {
+      "title": "Whole-tissue coordinate predictions and zooms",
+      "render_scripts": [
+        "panel_D/figure_script/make_panel_D_whole_tissue_maps.py"
+      ],
+      "letter": "D",
+      "components": [
+        "panel_D_dmso_crypt_villus_whole_and_zoom",
+        "panel_D_dmso_epithelial_distance_whole_and_zoom",
+        "panel_D_rari_crypt_villus_whole_and_zoom",
+        "panel_D_rari_epithelial_distance_whole_and_zoom"
+      ]
+    },
+    {
+      "title": "Whole-section P14 abundance",
+      "render_scripts": [
+        "panel_E/figure_script/make_panel_E_total_p14_abundance.py"
+      ],
+      "display_order": [
+        "P14 per 10,000 non-P14 cells"
+      ],
+      "approved_candidate_panel": "A",
+      "letter": "E",
+      "components": [
+        "panel_E_P14_abundance"
+      ],
+      "previous_code_panel": "G"
+    },
+    {
+      "title": "P14 IMAPs",
+      "render_scripts": [
+        "panel_F/figure_script/make_panel_F_p14_imaps.py"
+      ],
+      "display_order": [
+        "DMSO left",
+        "RARi right"
+      ],
+      "previous_code_panel": "E",
+      "density_bars": "Shared 0-13 density scale; equal-mouse mean of unit-normalized P14 densities",
+      "letter": "F",
+      "components": [
+        "panel_F_P14_IMAPs"
+      ]
+    },
+    {
+      "title": "P14 enrichment by compartment",
+      "render_scripts": [
+        "panel_G/figure_script/make_panel_G_p14_enrichment.py"
+      ],
+      "letter": "G",
+      "approved_candidate_panel": "B",
+      "components": [
+        "panel_G_P14_enrichment"
+      ],
+      "previous_code_panel": "F"
+    }
+  ]
+}

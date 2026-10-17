@@ -1,0 +1,16 @@
+{
+  "status": "AUTHOR_APPROVED",
+  "date": "2026-10-16",
+  "author_request": "actually the R1 looks quite decent. and the original DMSO FOV we showed looks good. can we us both of those",
+  "scope": "Matching fields in main Figure 4D and Extended Figure 4D; no model, gate or statistical changes.",
+  "review_manifest": {
+    "path": "/mnt/sata1/Analysis_Alex/Desktop_2/spatial_axes_manuscript/Figure_4/stored_outputs/panel_D/field_review_20261016/native_candidates_v2/manifest.json",
+    "sha256": "9b3757f0d2af88a1ff63f9e97adc6ceab38e45a849cc9b89d112e2a38d722c73"
+  },
+  "selected": {"DMSO": "Current_DMSO", "RARi": "R1"},
+  "bounds_xxyy_px": {
+    "DMSO": [45000, 51000, 35000, 39500],
+    "RARi": [18000, 24000, 44000, 48500]
+  },
+  "selection_scope": "Author-selected qualitative illustrations after microscopy and prediction review; not an unbiased performance evaluation."
+}

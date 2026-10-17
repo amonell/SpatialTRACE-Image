@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "reference": "Figures/Figure3.pdf",
+  "notes": "Manual architecture assembly is preserved. Within A: left crop stack, middle pretraining components, right supervised inputs. D/E order follows left-to-right artwork, never filename sorting.",
+  "panels": [
+    {"letter": "A", "title": "Architecture artwork: original IF pretraining and Xenium supervised-side components", "render_scripts": ["panel_A/figure_script/make_panel_A_image_components.py"], "components": ["panel_A_overview_nested_fields", "panel_A_context_with_local_field", "panel_A_local_with_fine_field", "panel_A_fine_target_overlay", "panel_A_dihedral_augmentations", "panel_A_paired_pretraining_views", "panel_A_context_input", "panel_A_local_input", "panel_A_fine_sft_input", "panel_A_crypt_villus_head_prediction", "panel_A_epithelial_head_prediction", "panel_A_crypt_villus_regional_prediction", "panel_A_epithelial_regional_prediction"], "manual_artwork": true, "prediction_scope": "Saved 2744-cell Xenium Day90 regional inference, with exact golden supervised inputs for prepared row4540. Previously examined SFT-test section; qualitative illustration, not a fresh evaluation. Original Cont1 pretraining and all manual geometry remain fixed. Rendering performs no inference."},
+    {"letter": "B", "title": "Embedding UMAP: crypt-villus, epithelial distance", "render_scripts": ["panel_B/figure_script/make_panel_B_embedding_umap.py"], "components": ["panel_B_embedding_umap"]},
+    {"letter": "C", "title": "Coordinate scatter: crypt-villus, epithelial distance", "render_scripts": ["panel_C/figure_script/make_panel_C_coordinate_scatter.py"], "components": ["panel_C_coordinate_scatter"]},
+    {"letter": "D", "title": "Crypt-villus maps: reference, prediction, reference zoom, prediction zoom", "render_scripts": ["panel_D/figure_script/make_panel_D_crypt_villus_maps.py"], "components": ["panel_D_crypt_villus_reference", "panel_D_crypt_villus_prediction", "panel_D_crypt_villus_reference_zoom", "panel_D_crypt_villus_prediction_zoom"]},
+    {"letter": "E", "title": "Epithelial-distance maps: reference, prediction, reference zoom, prediction zoom", "render_scripts": ["panel_E/figure_script/make_panel_E_epithelial_distance_maps.py"], "components": ["panel_E_epithelial_distance_reference", "panel_E_epithelial_distance_prediction", "panel_E_epithelial_distance_reference_zoom", "panel_E_epithelial_distance_prediction_zoom"]}
+  ]
+}
