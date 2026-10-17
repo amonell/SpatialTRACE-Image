@@ -4,7 +4,7 @@ Render all eight figures from saved predictions, metrics, images, and schematic 
 
 ## Paper version
 
-Use commit `c05b865285c672ceeda099b0c0f0d570d8df669b` with the [frozen figure inputs on Zenodo](https://doi.org/10.5281/zenodo.23442009).
+Use commit `45027a72d24c77bbfed022dcb2ae6c76835a9c7c` with the [frozen figure inputs on Zenodo](https://doi.org/10.5281/zenodo.23442009).
 
 This release packages the paper's figure code and saved results. Rendering does not retrain the models or rerun the analyses. Later tool releases improve inference and training speed; they do not replace the results used in the submitted figures.
 
@@ -13,7 +13,7 @@ Clone the paper version into a separate directory:
 ```bash
 git clone https://github.com/amonell/SpatialTRACE-Image.git SpatialTRACE-Image-paper
 cd SpatialTRACE-Image-paper
-git checkout c05b865285c672ceeda099b0c0f0d570d8df669b
+git checkout 45027a72d24c77bbfed022dcb2ae6c76835a9c7c
 ```
 
 Keep this checkout and its `uv.lock` for paper reproduction. The [paper release record](paper_release.json) lists the commit and checksums. Cite the specific input-bundle DOI, `10.5281/zenodo.23442009`, rather than the DOI that follows all versions.
@@ -29,7 +29,7 @@ sha256sum -c ARCHIVE_SHA256.txt
 unzip SpatialTRACE-paper-figure-inputs-v2.zip
 ```
 
-The archive is 17.7 GB and expands to `spatialtrace_paper_bundle_2026-10-17` (about 30.4 GB). Install Poppler (`poppler-utils` on Debian or Ubuntu) and Arial fonts.
+The archive is 6.58 GB and expands to `spatialtrace_paper_bundle_2026-10-17` (about 15.9 GB). Install Poppler (`poppler-utils` on Debian or Ubuntu) and Arial fonts.
 
 Then, from the paper-version checkout, install the Python packages:
 

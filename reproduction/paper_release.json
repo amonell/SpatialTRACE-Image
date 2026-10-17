@@ -2,30 +2,29 @@
   "schema_version": 2,
   "purpose": "Reproduce the eight paper figures from frozen scientific outputs; no model retraining.",
   "repository": "https://github.com/amonell/SpatialTRACE-Image",
-  "figure_code_commit": "c05b865285c672ceeda099b0c0f0d570d8df669b",
+  "figure_code_commit": "45027a72d24c77bbfed022dcb2ae6c76835a9c7c",
   "input_bundle": {
     "doi": "10.5281/zenodo.23442009",
     "record": "https://zenodo.org/records/23442009",
     "version": "2026-10-17",
     "part_pattern": "SpatialTRACE-paper-figure-inputs-v2.zip.*.part",
-    "part_count": 92,
+    "part_count": 90,
     "part_layout": {
-      "leading_parts": 5,
-      "leading_part_bytes": 268435456,
-      "remaining_part_bytes": 188743680
+      "uniform_part_bytes": 73400320,
+      "final_part_bytes": 45274443
     },
     "archive_filename": "SpatialTRACE-paper-figure-inputs-v2.zip",
-    "archive_bytes": 17709744176,
-    "archive_sha256": "c05a10e3d16dc0fd671b97ed845b4776d03b395d6d29bf339314a3a77e0d147e",
-    "data_manifest_sha256": "6d3f6cfeafb4e03a5f75855b38b5ae8207e2d1bc351a4e6fdb30a12fb8a0c95c",
-    "frozen_input_count": 2902
+    "archive_bytes": 6577902923,
+    "archive_sha256": "eda0ef3ee67a26b391e03575bbb89f6b46fc394788f6d4c3500e3e230ed23842",
+    "data_manifest_sha256": "b0f66646ece7e508b7b21cf5b5906cd16b205e3bf5fed0d43717fad22481816a",
+    "frozen_input_count": 677
   },
   "environment_at_figure_code_commit": {
     "pyproject.toml": "3cac3b9b5e5b514bca83415cb2cd700ea25915c3ca6e76f0bf68e60baf6000e1",
     "uv.lock": "19113471bbf75b7e068b057038034b44b92509e019b8f14c8cc8ce20781a3f11"
   },
   "preserved_files": {
-    "reproduction/code_manifest.json": "39384717941b09fed512e346d28a7e52dbff4c22bfeeeb729753a6b08c7b3c2d",
+    "reproduction/code_manifest.json": "89ec55a5c2805431110eb9e65405f049750c0f6b855a1e1360f50529b5fc9af5",
     "reproduction/render.py": "834344e639906c3db507e986d1a1dc9d59e0d30becb51f26359d364de8a387b4",
     "reproduction/paper_paths.py": "11d87c0213f2fbeed0838c4ed73bf8de1150b004ebd32c2f1e71d80c0dfcfb1a"
   }
